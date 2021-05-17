@@ -1,0 +1,15 @@
+site_name: Chunky 2.4.0 Manual
+repo_url: https://github.com/chunky-dev/chunky/
+theme:
+  name: readthedocs
+
+nav:
+  - "Home": "index.md"
+  - "Getting Started":
+    - "Installing Chunky": "getting_started/installing.md"
+    - "Configuring Chunky": "getting_started/configuring.md"
+    - "Your First Render": "getting_started/your_first_render.md"
+  - "User Interface":
+    - "Render Controls":
+      - "Scene": "user_interface/render/scene.md"
+      - "Lighting": "user_interface/render/lighting.md"
