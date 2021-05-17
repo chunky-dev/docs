@@ -1,5 +1,5 @@
-site_name: Chunky 2.4.0 Manual
-repo_url: https://github.com/chunky-dev/chunky/
+site_name: Chunky Manual
+repo_url: https://github.com/chunky-dev/docs
 theme:
   name: readthedocs
 
