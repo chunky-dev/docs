@@ -1,5 +1,7 @@
 site_name: Chunky Manual
+site_url: https://chunky-dev.github.io/docs/
 repo_url: https://github.com/chunky-dev/docs
+edit_uri: edit/master/ChunkyDocs/docs/
 theme:
   name: readthedocs
 
