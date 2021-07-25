@@ -82,6 +82,9 @@ nav:
     - "FAQ": "faq/index.md"
     - "Troubleshooting": "faq/troubleshooting.md"
     - "Minecraft compatibility": "faq/minecraft_compatibility.md"
+  - "Rendering":
+    - "Introduction": "rendering/index.md"
+    - "Denoising": "rendering/denoising.md"
 
 extra:
   social:
