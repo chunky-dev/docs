@@ -5,6 +5,9 @@ edit_uri: edit/master/ChunkyDocs/docs/
 theme:
   name: readthedocs
 
+markdown_extensions:
+  - admonition
+
 nav:
   - "Home": "index.md"
   - "Getting Started":
@@ -15,3 +18,5 @@ nav:
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
       - "Lighting": "user_interface/render/lighting.md"
+  - "Miscellaneous":
+    - "Plugins": "plugins/index.md"
