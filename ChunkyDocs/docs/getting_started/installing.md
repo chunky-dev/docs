@@ -18,7 +18,7 @@ or you may download the Universal JAR (Chunky Launcher).
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
  
- 4. Launch ChunkyLauncher.jar.
+ 4. Launch ChunkyLauncher.jar. You may need to launch via commandline using `java -jar path\to\ChunkyLauncher.jar`
  
 ---
 
@@ -26,13 +26,13 @@ or you may download the Universal JAR (Chunky Launcher).
 
 The first time you start Chunky, you will be asked to pick a settings directory for Chunky:
 
-![First time setup](../img/installing/chunky_first-time_setup.png)
+![First time setup](../img/getting_started/chunky_first-time_setup.png)
 
 The recommended directory is usually the best option. Click "Use Selected Directory" to continue.
 
 Next, you will see the Chunky Launcher:
 
-![Launcher](../img/installing/chunky_launcher.png)
+![Launcher](../img/getting_started/chunky_launcher.png)
 
 If you downloaded the Universal JAR (only Chunky Launcher) then you will have to update Chunky, otherwise can click "Launch" to start Chunky.
 
@@ -42,7 +42,7 @@ This must be done the first time you start Chunky if you only downloaded the lau
 
 If an update to Chunky was is available you will soon see the "Update Available!" window:
 
-![Update available](../img/installing/chunky_update_available_2.4.0.png)
+![Update available](../img/getting_started/chunky_update_available_2.4.0.png)
 
 Click the "Update to New Version" button to start downloading the required files.
 When the download process has completed you can either click on "Launch Chunky" or "Close". If you click on "Close" you would need to click on "Launch" in the main Chunky Launcher window to launch Chunky.
