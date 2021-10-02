@@ -2,21 +2,47 @@ site_name: Chunky Manual
 site_url: https://chunky-dev.github.io/docs/
 repo_url: https://github.com/chunky-dev/docs
 edit_uri: edit/master/ChunkyDocs/docs/
+site_description: Chunky website 2.0!
+site_author: Chunky docs Contributors (https://github.com/chunky-dev/docs/graphs/contributors)
+copyright: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (https://github.com/chunky-dev/docs/blob/master/LICENSE)
+
 theme:
   name: readthedocs
+
+extra_css:
+  - extra/extra.css
+
+extra_javascript:
+  - extra/carousel.js
 
 markdown_extensions:
   - admonition
 
 nav:
   - "Home": "index.md"
+  - "Gallery": "gallery/gallery.md"
   - "Getting Started":
     - "Installing Chunky": "getting_started/installing.md"
     - "Configuring Chunky": "getting_started/configuring.md"
     - "Your First Render": "getting_started/your_first_render.md"
   - "User Interface":
+    - "Chunky Launcher": "index.md"
+    - "Map View": "index.md"
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
       - "Lighting": "user_interface/render/lighting.md"
+      - "Render Preview": "index.md"
+  - "FAQ": "index.md"
+  - "Documentation":
+    - "Path Tracing": "index.md"
+    - "Headless Rendering": "index.md"
+    - "Scene Format": "index.md"
+    - "Minecraft Compatibility": "index.md"
+    - "Plugin API": "index.md"
+    - "API Docs": "index.md"
   - "Miscellaneous":
     - "Plugins": "plugins/index.md"
+  - "Community":
+    - "Github": "index.md"
+    - "Discord": "index.md"
+    - "Reddit": "index.md"
