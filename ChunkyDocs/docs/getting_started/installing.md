@@ -8,7 +8,7 @@ or you may download the Universal JAR (Chunky Launcher).
 <a href="/download.html" class="button"> Windows <br><btnsub>some sub line</btnsub></a>
 <a href="/download.html" class="button"> Linux <br><btnsub>some sub line</btnsub></a>
 <a href="/download.html" class="button"> MacOS <br><btnsub>some sub line</btnsub></a>
-<a href="http://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="button"> Universal JAR <br><btnsub>some sub line</btnsub></a>
+<a href="http://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="button"> Universal JAR <br><btnsub>Launcher version 1.12.2</btnsub></a>
  
 #### Universal JAR - Chunky Launcher
  1. You must install [**Java 17**](https://adoptium.net/) for your platform.

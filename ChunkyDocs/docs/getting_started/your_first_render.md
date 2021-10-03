@@ -27,7 +27,7 @@ For now you can close Chunky/Chunky Launcher.
 
 Open Minecraft and a world you wish to render moving your player to where and what you wish to render, ensuring you are facing the direction too. 
 
-![MineCraft F3 menu](../img/getting_started/mc_f3_menu.jpg)
+![Minecraft F3 menu](../img/getting_started/mc_f3_menu.jpg)
 
 Take note of the fields highlighted in red, we will need these to position the camera correctly within Chunky once converted. You can close your game.
 
@@ -51,12 +51,12 @@ Once you have located the world, click on `Load selected world`.
 
 Select the correct dimension using the buttons in the right pane under `Map View` and then select the chunks you wish to render:
 
-- Left click a chunk to select / unselect the chunk
-- Shift click + drag to select a rectangular area
-- Crtl Shift click + drag to unselect a rectangular area
-- Click and drag to pan around the world
-- Zoom in and out using the scroll wheel
-- Right click to access a few options
+- `Left click` a chunk to select / unselect the chunk
+- `Shift` `click` + drag to select a rectangular area
+- `Ctrl` `Shift` `click` + drag to unselect a rectangular area
+- `Click` and drag to pan around the world
+- Zoom in and out using the `scroll wheel`
+- `Right click` to access a few options
 
 > Selecting fewer chunks can decrease rendering time, but they will be completely missing from the render. Try and only select what the camera can see!
 
@@ -95,7 +95,7 @@ Next, hit the `Camera` tab.
 
 ![Camera tab](../img/user_interface/render/camera.png)
 
-Click the Position and Orientation dropdown to expand it. Unfortunately you cannot just copy the values taken from the MineCraft F3 menu without a few tweaks first; There are some differences we need to account for. Below you can find a set of conversions:
+Click the Position and Orientation dropdown to expand it. Unfortunately you cannot just copy the values taken from the Minecraft F3 menu without a few tweaks first; There are some differences we need to account for. Below you can find a set of conversions:
 
 ```
 Camera X = mcX
@@ -116,7 +116,7 @@ Oh no! The camera is clipping into a player model! Either deselect `Load players
 
 ![Removed player](../img/user_interface/render/camera_ps_imported.png)
 
-The default **F**ield **o**f **V**iew for Minecraft is 70 vertical. Assuming a 16:9 aspect ratio for both MineCraft and canvas size you would need an FoV of ~76 to match the view with the standard projection.
+The default **F**ield **o**f **V**iew for Minecraft is 70 vertical. Assuming a 16:9 aspect ratio for both Minecraft and canvas size you would need an FoV of ~76 to match the view with the standard projection.
 
 ![FoV fixed](../img/user_interface/render/camera_ps_fov_fix.png)
 
