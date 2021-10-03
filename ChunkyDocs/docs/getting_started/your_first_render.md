@@ -1,5 +1,7 @@
 # Your first render from start to finish
 
+---
+
 ## Installation
 
 Please follow the [Installation instructions](../getting_started/installing.md).
