@@ -1,22 +1,62 @@
 site_name: Chunky Manual
 site_url: https://chunky-dev.github.io/docs/
-repo_url: https://github.com/chunky-dev/docs
-edit_uri: edit/master/ChunkyDocs/docs/
+repo_url: https://github.com/chunky-dev/chunky
+repo_name: chunky-dev/chunky
+edit_uri: https://github.com/chunky-dev/docs/edit/master/ChunkyDocs/docs/
 theme:
-  name: readthedocs
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
 
 markdown_extensions:
   - admonition
+  - abbr
+  - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
+copyright: The Chunky Manual is licensed under a CC-BY-NC-SA 4.0 Int. License (<a href="/docs/license">learn more</a>)
 nav:
   - "Home": "index.md"
   - "Getting Started":
-    - "Installing Chunky": "getting_started/installing.md"
-    - "Configuring Chunky": "getting_started/configuring.md"
-    - "Your First Render": "getting_started/your_first_render.md"
+      - "Installing Chunky": "getting_started/installing.md"
+      - "Configuring Chunky": "getting_started/configuring.md"
+      - "Your First Render": "getting_started/your_first_render.md"
   - "User Interface":
-    - "Render Controls":
-      - "Scene": "user_interface/render/scene.md"
-      - "Lighting": "user_interface/render/lighting.md"
-  - "Miscellaneous":
-    - "Plugins": "plugins/index.md"
+      - "Render Controls":
+          - "Scene": "user_interface/render/scene.md"
+          - "Lighting": "user_interface/render/lighting.md"
+  - "Plugins": "plugins/index.md"
+
+extra:
+  social:
+    - name: Chunky Discord
+      icon: fontawesome/brands/discord
+      link: https://discord.gg/VqcHpsF
+    - name: Chunky Subreddit
+      icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/chunky/

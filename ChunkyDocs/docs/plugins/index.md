@@ -1,20 +1,17 @@
 # Chunky Plugins
 
-### General Note
-As of Chunky 2.4.0 renderer switching is supported. ChunkyClPlugin’s `ChunkyCLRenderer` cannot yet be selected to be
-used in conjunction with the Denoising Plugin though they won’t cause an exception anymore.
-Plugins which have not yet been updated to support the new `addRenderer` API feature (Ambient Occlusion Plugin 
-and Depth Buffer Plugin) are still supported and are added with the name of PluginRenderer. 
-At the time of writing, the Discord Rich Presence plugin does not work with Chunky 2.4.
+!!! info "Renderer switching in Chunky 2.4.0 or later"
+      As of Chunky 2.4.0 renderer switching is supported. ChunkyClPlugin’s `ChunkyCLRenderer` cannot yet be selected to be
+      used in conjunction with the Denoising Plugin though they won’t cause an exception anymore.
+      
+      Plugins which have not yet been updated to support the new `addRenderer` API feature (Ambient Occlusion Plugin 
+      and Depth Buffer Plugin) are still supported and are added with the name of _PluginRenderer_.
 
 ### Installation
 Clicking `Manage Plugins` within the [Chunky Launcher](../getting_started/installing.md) will open the `Plugin Manager`.
 Plugins, which are `.jar` files, can be added by clicking the `Add` button.
-!!! note "Setup"
-    Some plugins may require additional setup.
-![Plugin Manager](../img/chunky_plugin_manager.png)
 
----
+![Plugin Manager](../img/chunky_plugin_manager.png)
 
 ## Plugins
 
@@ -51,7 +48,7 @@ An AI denoiser using Intel Open Image Denoise.
 [Plugin Releases](https://github.com/chunky-dev/chunky-denoiser/releases)
 
 ### Octree Plugin
-created by aTom3333
+[:material-account: aTom3333](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-octree-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-octree-plugin/releases)
 
 This is a plugin for Chunky that adds more octree implementations with a range of uses and benefits. See the GitHub
 repository for more information and use. Notable implementations:
@@ -62,16 +59,16 @@ repository for more information and use. Notable implementations:
 * Dictionary Implementation - Lower memory usage than `PACKED`. Slightly slower while rendering and loading.
 * Small DAG Implementation - Even lower memory usage than `DICTIONARY`. Slightly slower while rendering and loading.
 
-[Github Repository](https://github.com/aTom3333/chunky-octree-plugin)
-
-[Plugin Releases](https://github.com/aTom3333/chunky-octree-plugin/releases)
-
 ### OpenCL Plugin
 created by Redox
 
 A WIP OpenCL raytracer for Chunky. Requires Chunky 2.4.0.
 
 [Github Repository](https://github.com/ThatRedox/ChunkyClPlugin)
+
+
+!!! warning "Experimental"
+    This plugin is in early beta state and does not support all Chunky features yet.
 
 ### Animation Plugin
 created by Redox
