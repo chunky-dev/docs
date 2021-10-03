@@ -69,7 +69,7 @@ Select the correct dimension using the buttons in the right pane under `Map View
 
 Either right click the 2D map located in the center pane and click on `New scene from selection` OR over in the left pane (Render Controls) under `Scene` click on `Load selected chunks`.
 
-![Scene tab](../img/user_interface/render/scene.png)
+![Scene tab](../img/getting_started/render/scene.png)
 
 After loading the selected chunks the centeral pane should auto switch to the Render Preview and the bottom progress bar should be filled. The time it takes to load increases with the number of chunks.
 
@@ -93,7 +93,7 @@ Pressing `Start` and seeing what things look like is sometimes a good idea if on
 
 Next, hit the `Camera` tab.
 
-![Camera tab](../img/user_interface/render/camera.png)
+![Camera tab](../img/getting_started/render/camera.png)
 
 Click the Position and Orientation dropdown to expand it. Unfortunately you cannot just copy the values taken from the Minecraft F3 menu without a few tweaks first; There are some differences we need to account for. Below you can find a set of conversions:
 
@@ -110,15 +110,15 @@ Using the above conversions with our example we get the following:
 
 X = 32.2 ; Y = 73.2 ; Z = -232.7 ; Yaw = 22.5 ; Pitch = -81.8
 
-![Imported settings with player blocking view](../img/user_interface/render/camera_ps_imported_player.png)
+![Imported settings with player blocking view](../img/getting_started/render/camera_ps_imported_player.png)
 
 Oh no! The camera is clipping into a player model! Either deselect `Load players` under `Scene` and then hit `Reload chunks` or you will most likely need to explore the `Entities` tab to remove the player...
 
-![Removed player](../img/user_interface/render/camera_ps_imported.png)
+![Removed player](../img/getting_started/render/camera_ps_imported.png)
 
 The default **F**ield **o**f **V**iew for Minecraft is 70 vertical. Assuming a 16:9 aspect ratio for both Minecraft and canvas size you would need an FoV of ~76 to match the view with the standard projection.
 
-![FoV fixed](../img/user_interface/render/camera_ps_fov_fix.png)
+![FoV fixed](../img/getting_started/render/camera_ps_fov_fix.png)
 
 ---
 
@@ -126,7 +126,7 @@ The default **F**ield **o**f **V**iew for Minecraft is 70 vertical. Assuming a 1
 
 Head to the `Lighting` tab.
 
-![Lighting tab](../img/user_interface/render/lighting.png)
+![Lighting tab](../img/getting_started/render/lighting.png)
 
 From here you can adjust the amount of light the Sky, Emitters (torches, lava, etc.), and Sun produce. The default values should be perfect for daytime renders. Adjusting the Sun azimuth (yaw/rotation) and altitude (height) can change the scenes lighting drastically.
 
@@ -138,7 +138,7 @@ For this example I will just set the sun altitude to 25.
 
 ### Sky and Fog
 
-![Sky and Fog tab](../img/user_interface/render/sky_fog.png)
+![Sky and Fog tab](../img/getting_started/render/sky_fog.png)
 
 Not too much to explain here. Sky mode lets you pick between simulated, solid or gradient colors, and Skymaps/cubes. The only thing here that you might need help with is Fog. There is an example fog density listed; tweak this and the fog color. Fog is noisy so expect longer render times.
 
@@ -146,7 +146,7 @@ Not too much to explain here. Sky mode lets you pick between simulated, solid or
 
 ### Water
 
-![Water tab](../img/user_interface/render/water.png)
+![Water tab](../img/getting_started/render/water.png)
 
 By default water will have a ripple effect applied to it. Water visibility impacts how far underwater you can see. Water opacity affects how transparent the water appears (0 for clear, 1 for solid). By default water color is biome tinted but you can override this.
 
@@ -169,7 +169,7 @@ These tabs are not going to be covered in this guide. Explore and experiment on 
 
 ### Advanced
 
-![Advanced tab](../img/user_interface/render/advanced.png)
+![Advanced tab](../img/getting_started/render/advanced.png)
 
 Adjust CPU load and threads as you see fit. Chunky renders using solely CPU though a GPU rendering plugin is in development.
 
