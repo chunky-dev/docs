@@ -1,5 +1,43 @@
 # Render Controls - Scene
 
+---
+
+## General
+
+![Render controls general](../../img/user_interface/render_controls/general.png)
+
+`Scene(name)` - Input field for the current scene's name (Press enter to apply).
+
+`Save scene` - Saves current scene.
+
+`Load scene` - Opens the `Select 3D Scene` dialog.
+
+`Save current frame` - Saves the current frame of the Render.
+
+`Copy current frame` - Copies the current frame of the render to the clipboard.
+
+---
+
+### Select 3D Scene
+
+![Select 3D Scene](../../img/user_interface/render_controls/select3dscene.png)
+
+Provides a list of all detected scenes in the Scenes directory.
+
+`Delete` - Deletes the currently selected scene (with a confirmation prompt).
+
+`Export` - Exports the currently selected scene as a .zip file to a custom location.
+
+`Cancel` - Closes the `Select 3D Scene` dialog
+
+`Load selected scene` - Load the scene you have selected; Can also double click on a scene to load it.
+
+---
+
+## Scene tab
+
+![Scene tab](../../img/user_interface/render_controls/scene_tab.png)
+
 ### Open scene directory
 This opens the Chunky scenes directory. It is `~/.chunky/scenes` by default.
 
