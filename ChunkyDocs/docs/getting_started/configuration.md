@@ -2,15 +2,15 @@
 
 ![Chunky Launcher](../img/getting_started/chunky_launcher.png)
 
-`Version select` - Drop down list which allows you to pick a downloaded Chunky version.
+- `Version select` - Drop down list which allows you to pick a downloaded Chunky version.
 
-`Check for update` - Checks for updates on chosen update site.
+- `Check for update` - Checks for updates on chosen update site.
 
-`Minecraft directory` - The directory Minecraft is installed to.
+- `Minecraft directory` - The directory Minecraft is installed to.
 
-`Memory limit (MiB)` - Default is 1024 MiB but it is highly recommended that you raise this value to better reflect the amount of memory in your system. Please take into account that the OS and other applications will also require some memory so don't over set this. If you cannot raise this past 2000 MiB double check your Java installation is 64 bit.
+- `Memory limit (MiB)` - Default is 1024 MiB but it is highly recommended that you raise this value to better reflect the amount of memory in your system. Please take into account that the OS and other applications will also require some memory so don't over set this. If you cannot raise this past 2000 MiB double check your Java installation is 64 bit.
 
-`Always open Launcher` - Recommended you keep this checked. It is possible to access the launcher again via commandline or an option in Chunky but it's a bit more hassle.
+- `Always open Launcher` - Recommended you keep this checked. It is possible to access the launcher again via commandline or an option in Chunky but it's a bit more hassle.
 
 ---
 
@@ -18,31 +18,31 @@
 
 ![Advanced Settings](../img/getting_started/chunky_launcher_advanced.png)
 
-`Update Site` - Changes source for updates.
+- `Update Site` - Changes source for updates.
 
-- `http://chunkyupdate.llbit.se/` should be used to obtain Chunky 1.X which is upto Minecraft version 1.12.2.
+	- `http://chunkyupdate.llbit.se/` should be used to obtain Chunky 1.X which is upto Minecraft version 1.12.2.
 
-- `http://chunkyupdate2.llbit.se/` is for llbit's Chunky 2.0 for Minecraft 1.13 however you will need to enable snapshots to get the latest version, `2.0beta6`, else you will be stuck with an older version.
+	- `http://chunkyupdate2.llbit.se/` is for llbit's Chunky 2.0 for Minecraft 1.13 however you will need to enable snapshots to get the latest version, `2.0beta6`, else you will be stuck with an older version.
 
-- `http://chunkyupdate.lemaik.de/` is the new default update site for Chunky 2.X.
+	- `http://chunkyupdate.lemaik.de/` is the new default update site for Chunky 2.X.
 
-`Java Runtime` - Allows you to see and change the Runtime used for Chunky. Does not change the runtime used for the Launcher.
+- `Java Runtime` - Allows you to see and change the Runtime used for Chunky. Does not change the runtime used for the Launcher.
 
-`Java options` - See below for the list of Java options.
+- `Java options` - See below for the list of Java options.
 
-`Chunky options` - See below for the list of Chunky options.
+- `Chunky options` - See below for the list of Chunky options.
 
-`Enable debug console` & `Verbose logging` - The debug console is a seperate window that runs when you launch Chunky. As the name implies it is useful for debugging issues with Chunky and combined with Verbose logging, which enables addtional debug information, can be helpful in fixing bugs and crashes.
+- `Enable debug console` & `Verbose logging` - The debug console is a seperate window that runs when you launch Chunky. As the name implies it is useful for debugging issues with Chunky and combined with Verbose logging, which enables addtional debug information, can be helpful in fixing bugs and crashes.
 
-`Close console when Chunky exits` - Typically this can be left enabled. If an exception/error causes chunky to crash it should still be possible to read the console.
+- `Close console when Chunky exits` - Typically this can be left enabled. If an exception/error causes chunky to crash it should still be possible to read the console.
 
-`Download snapshots` - Snapshots are nightly/alpha/beta builds of Chunky, depending on the update site used, and may be unstable.
+- `Download snapshots` - Snapshots are nightly/alpha/beta builds of Chunky, depending on the update site used, and may be unstable.
 
-`Settings directory` - Does not let you change the settings directory but does let you see/access it.
+- `Settings directory` - Does not let you change the settings directory but does let you see/access it.
 
 ![Plugin Manager](../img/getting_started/chunky_launcher_plugin_manager.png)
 
-`Manage plugins` - The Plugin manager can be used to manage installed plugins. For a list of available plugins and their function, please refer to the [Plugins page](../plugins/plugins.md).
+- `Manage plugins` - The Plugin manager can be used to manage installed plugins. For a list of available plugins and their function, please refer to the [Plugins page](../plugins/plugins.md).
 
 ---
 
