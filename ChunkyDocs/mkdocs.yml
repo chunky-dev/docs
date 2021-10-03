@@ -3,6 +3,7 @@ site_url: https://chunky-dev.github.io/docs/
 repo_url: https://github.com/chunky-dev/chunky
 repo_name: chunky-dev/chunky
 edit_uri: https://github.com/chunky-dev/docs/edit/master/ChunkyDocs/docs/
+
 theme:
   name: material
   logo: assets/logo.svg
@@ -31,6 +32,12 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+extra_css:
+  - extra/extra.css
+
+extra_javascript:
+  - extra/carousel.js
+
 markdown_extensions:
   - admonition
   - abbr
@@ -41,17 +48,31 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: The Chunky Manual is licensed under a CC-BY-NC-SA 4.0 Int. License (<a href="/docs/license">learn more</a>)
+
+nav:
 nav:
   - "Home": "index.md"
+  - "Gallery": "gallery/gallery.md"
   - "Getting Started":
-      - "Installing Chunky": "getting_started/installing.md"
-      - "Configuring Chunky": "getting_started/configuring.md"
-      - "Your First Render": "getting_started/your_first_render.md"
+    - "Installing Chunky": "getting_started/installing.md"
+    - "Configuring Chunky": "getting_started/configuration.md"
+    - "Your First Render": "getting_started/your_first_render.md"
   - "User Interface":
-      - "Render Controls":
-          - "Scene": "user_interface/render/scene.md"
-          - "Lighting": "user_interface/render/lighting.md"
-  - "Plugins": "plugins/index.md"
+    - "Chunky": "user_interface/chunky_ui.md"
+    - "Render Controls":
+      - "Scene": "user_interface/render/scene.md"
+      - "Lighting": "user_interface/render/lighting.md"
+      - "Sky & Fog": "user_interface/render/sky_and_fog.md"
+      - "Water": "user_interface/render/water.md"
+      - "Camera": "user_interface/render/camera.md"
+      - "Entities": "user_interface/render/entities.md"
+      - "Materials": "user_interface/render/materials.md"
+      - "Postprocessing": "user_interface/render/postprocessing.md"
+      - "Advanced": "user_interface/render/advanced.md"
+      - "Help": "user_interface/render/help.md"
+      - "Render Preview": "user_interface/render/render_preview.md"
+  - "Miscellaneous":
+    - "Plugins": "plugins/plugins.md"
 
 extra:
   social:
