@@ -33,7 +33,12 @@ nav:
       - "Sky & Fog": "user_interface/render/sky_and_fog.md"
       - "Water": "user_interface/render/water.md"
       - "Camera": "user_interface/render/camera.md"
-      - "Render Preview": "index.md"
+      - "Entities": "user_interface/render/entities.md"
+      - "Materials": "user_interface/render/materials.md"
+      - "Postprocessing": "user_interface/render/postprocessing.md"
+      - "Advanced": "user_interface/render/advanced.md"
+      - "Help": "user_interface/render/help.md"
+      - "Render Preview": "user_interface/render/render_preview.md"
   - "FAQ": "index.md"
   - "Documentation":
     - "Path Tracing": "index.md"
