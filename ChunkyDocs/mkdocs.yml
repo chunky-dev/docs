@@ -23,10 +23,9 @@ nav:
   - "Gallery": "gallery/gallery.md"
   - "Getting Started":
     - "Installing Chunky": "getting_started/installing.md"
-    - "Configuring Chunky": "getting_started/configuring.md"
+    - "Configuring Chunky": "getting_started/configuration.md"
     - "Your First Render": "getting_started/your_first_render.md"
   - "User Interface":
-    - "Chunky Launcher": "index.md"
     - "Map View": "index.md"
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
@@ -41,7 +40,7 @@ nav:
     - "Plugin API": "index.md"
     - "API Docs": "index.md"
   - "Miscellaneous":
-    - "Plugins": "plugins/index.md"
+    - "Plugins": "plugins/plugins.md"
   - "Community":
     - "Github": "index.md"
     - "Discord": "index.md"
