@@ -30,6 +30,9 @@ nav:
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
       - "Lighting": "user_interface/render/lighting.md"
+      - "Sky & Fog": "user_interface/render/sky_and_fog.md"
+      - "Water": "user_interface/render/water.md"
+      - "Camera": "user_interface/render/camera.md"
       - "Render Preview": "index.md"
   - "FAQ": "index.md"
   - "Documentation":

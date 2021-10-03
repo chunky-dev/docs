@@ -10,7 +10,7 @@ Chunky's UI is built using JavaFX and is seperated into three panes which can be
 
 ![Overview](../img/user_interface/map.png)
 
-Chunky displays an overhead 2D view of your world within the center pane under the `Map` tab, highlighted in red in the above image, and should be the default view when you launch Chunky. While this view can be used for mapping purposes it's primarily used for making chunk selections for renders much easier. There are two available modes for the Map; At (map) `Scale` 13 or greater you will be shown individual blocks and for a `Scale` of 12 or under you will be displayed a biome view.
+Chunky displays an overhead 2D Map view of your world within the center pane under the `Map` tab, highlighted in red in the above image, and should be the default view when you launch Chunky. While this view can be used for mapping purposes it's primarily used for making chunk selections for renders much easier. There are two available modes for the Map; At (map) `Scale` 13 or greater you will be shown individual blocks and for a `Scale` of 12 or under you will be displayed a biome view.
 
 ### Controls
 
@@ -77,8 +77,8 @@ This tab allows you to pick the world and dimension you wish to view and a few o
 - `Change World` - Opens prompt to select a Minecraft world
 
 - `Reload` - Reloads currently selected Minecraft world
-- `Dimension` - Currently selected dimension is highlighted
-- `Scale` - Controls map Scale
+- `Dimension` - Displays the different dimensions of Minecraft if available.
+- `Scale` - Adjusts the current area of view of the 2D Map
 - `Min Y level`
 - `Max Y level`
 - `Coordinates` - Provides X,Z coordinates of the Maps view
@@ -107,7 +107,7 @@ This tab provides access to chunk related features.
 - `Export chunks to ZIP` - Exports selected chunks to a .ZIP archive
 - `Export view to PNG` - Exports current map view to a .PNG image
 
-- `Delete selected chunks` - WARNING - Delets currently selected chunks. Chunky is **NOT** responsible if you do not have a backup.
+- `Delete selected chunks` - WARNING - Delets currently selected chunks. Chunks will be generated again when the world is opened again in Minecraft. Chunky is **NOT** responsible if you do not have a backup.
 
 ---
 
@@ -120,7 +120,7 @@ This tab has a few options in it...
 - `Edit resource packs` - Allows you to select a Resource Pack `.zip` or Minecraft `.jar` for textures.
 - `Disable default textures (needs restart)`
 - `Single color textures (needs restart)` - Averages block textures into single color.
-- `Show launcher when starting Chunky`
+- `Show launcher when starting Chunky` - Toggles whether the Chunky luncher shows when starting Chunky.
 - `Open Scenes Directory` - Opens the directory Chunky uses to store it's scenes.
 - `Change Scenes Directory` - Changes folder used for the scenes directory.
 
