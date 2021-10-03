@@ -26,7 +26,7 @@ nav:
     - "Configuring Chunky": "getting_started/configuration.md"
     - "Your First Render": "getting_started/your_first_render.md"
   - "User Interface":
-    - "Map View": "index.md"
+    - "Chunky": "user_interface/chunky_ui.md"
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
       - "Lighting": "user_interface/render/lighting.md"
