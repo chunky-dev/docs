@@ -5,6 +5,7 @@ repo_name: chunky-dev/chunky
 edit_uri: https://github.com/chunky-dev/docs/edit/master/ChunkyDocs/docs/
 theme:
   name: material
+  logo: assets/logo.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
