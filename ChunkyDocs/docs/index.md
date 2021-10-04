@@ -15,19 +15,19 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../docs/img/index/Earth_900k.jpg" style="width:100%">
+    <img src="img/index/Earth_900k.jpg" style="width:100%">
     <div class="text">Minecraft Earth Map 1:1000 - 1 million Chunks</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="../docs/img/index/IHOU2_1.jpg" style="width:100%">
+    <img src="img/index/IHOU2_1.jpg" style="width:100%">
     <div class="text">IHOU 2</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="../docs/img/index/le_ultimate_rtx_5.jpg" style="width:100%">
+    <img src="img/index/le_ultimate_rtx_5.jpg" style="width:100%">
     <div class="text">le ultimate rtx - Material testing</div>
   </div>
 
