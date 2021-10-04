@@ -23,4 +23,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dist: ./ChunkyDocs/site/
           teardown: 'true'
-          build:
+          build: |
+            echo ""
