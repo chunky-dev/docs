@@ -12,12 +12,15 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      - run: |
+      - name: Build docs
+        run: |
           cd ChunkyDocs
           mkdocs build
-      - uses: afc163/surge-preview@v1
+      - name: Deploy preview
+        uses: afc163/surge-preview@v1
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dist: ./ChunkyDocs/site/
           teardown: 'true'
+          build:
