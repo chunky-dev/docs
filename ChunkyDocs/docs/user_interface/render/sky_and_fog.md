@@ -2,6 +2,8 @@
 
 ![Render controls Sky & Fog](../../img/user_interface/render_controls/sky_fog_simulated.png)
 
+## Sky Mode
+
 - `Sky mode` - Simulated, Solid Color, Color Gradient, Skymap (panoramic), Skymap (spherical), Skybox, and Black - These options are expanded on below.
 
 ---
@@ -48,9 +50,11 @@
 		
 	- `Black` - Sets the sky to a solid Black colour. This is redundant but quick and easy to use.
 
----
-	
 - `Transparent sky` - Makes the sky transparent.
+
+---
+
+## Clouds and Fog
 
 - `Enable clouds` - Toggles Minecraft style, blocky clouds. Currently only renders as flat planes, similar to clouds seen in Minecraft's fast graphics mode.
 

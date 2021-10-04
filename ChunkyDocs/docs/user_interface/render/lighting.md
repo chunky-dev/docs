@@ -2,6 +2,8 @@
 
 ![Render controls lighting](../../img/user_interface/render_controls/lighting.png)
 
+## Sky and Emitters
+
 - `Sky Light` - This adjusts the intensity of rays hitting the sky. Higher values will have more ambient lighting, lower values will have less. The default of `1` is a good balance. Reflections can appear blown out if set too high.
 
 - `Enable emitters` - Enables emitters such as torches, glowstone, etc.. When disabled, they are treated like normal, diffuse blocks, and will not light up the scene. When enabled, they may initially produce noise due to path tracing.
@@ -11,6 +13,8 @@
 - `Emitter Sampling Strategy (ESS)` - This is a powerful setting that helps decrease emitter noise at the cost of more processing power per sample. At each vertex of the ray traced path, a random (if `ONE` is selected) or all emitters (if `ALL` is selected) are sampled within a certain distance. The world must be reloaded if this is enabled when it was previously disabled.
 
 <!-- TODO - Add links to ESS description -->
+
+## Sunlight
 
 - `Enable sunlight` - This setting enables / disables the contribution of sunlight. In indoor renders, this may be safely disabled to increase performance espically if rendering underground.
 

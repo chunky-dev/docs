@@ -2,6 +2,8 @@
 
 ![Render controls Water](../../img/user_interface/render_controls/water.png)
 
+## Water controls
+
 - `Still water` - Disables the wavy water ripples.
 
 - `Water visibility` - Controls the distances rays can travel in water before being terminated.
@@ -11,6 +13,10 @@
 - `User custom water color` - Toggle; Otherwise will use biome water color
 
 - `Pick color` - Lets you pick the custom water color.
+
+---
+
+## Water World
 
 - `Water world mode` - Toggles an infinite water plane.
 

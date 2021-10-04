@@ -6,33 +6,39 @@
 
 The entities tab lets you create, pose, and remove entities within the scene.
 
-- `Entity table` - Stores a list of Entities
+## Entity controls
 
-- `-` & `+` - Remove or Add entity
+- `Entity table` - Stores a list of Entities that have been loaded and added by the user.
 
-- `Camera to entity`
+- `-` - Remove selected entity
 
-- `Player to camera`
+- `+` -  Add new player entity at target (crosshair)
 
-- `Entity to target`
+- `Camera to entity` - Teleports current camera to the selected entities position
 
-- `Face camera`
+- `Player to camera` - Moves selected entity to camera position
 
-- `Face target`
+- `Entity to target` - Moves selected entity to target (crosshair)
+
+- `Face camera` - Rotates selected entities head to face camera [Bugged]
+
+- `Face target` - Rotates selected entities head to face target (crosshair) [Bugged]
 
 ---
 
-- `Player model`
+## Entity posing
 
-- `Skin` & `Select skin`
+- `Player model` - `Steve` or `Alex`
 
-- `Show second layer`
+- `Skin` & `Select skin` - Select a skin .png file to use as the players texture
 
-- `Scale`
+- `Show second layer` - Show second skin layers. Usually for hats and stuff.
 
-- `Head scale`
+- `Scale` - Scale player model
 
-- `Pose part`
+- `Head scale` - Scales just the players head
+
+- `Pose part` - `all`, `head`, `chest`, `leftArm`, `rightArm`, `leftLeg`, `rightLeg`
 
 	- `pitch`
 	

@@ -18,6 +18,28 @@
 
 ---
 
+- `Start` - Start / Resume render
+
+- `Pause` - Pause current render; current sample must finish before Chunky can pause.
+
+- `Reset` - Reset render back to 0 samples/preview.
+
+- `Target SPP` - Controls target SPP. Can be altered on the go.
+
+---
+
+- `Render time` - Duration of the current render.
+
+- `Progress` - Visual progress bar of the current render progress.
+
+- `SPP`- Samples Per Pixel is one of the defining factors to render quality.
+
+- `SPS` - An averaged measure of the Samples Per Second. Should note that for a 1920x1080 image there are around 2.07 million, or mega, pixels and all of these need to be sampled before SPP is incremented.
+
+- `ETA` - Rough estimate for render completion based on SPS.
+
+---
+
 ### Select 3D Scene
 
 ![Select 3D Scene](../../img/user_interface/render_controls/select3dscene.png)
@@ -38,7 +60,9 @@ Provides a list of all detected scenes in the Scenes directory.
 
 ![Scene tab](../../img/user_interface/render_controls/scene_tab.png)
 
--`Open scene directory` - Opens current scenes directory on disk. It is `~/.chunky/scenes` by default.
+### Scene and chunks
+
+- `Open scene directory` - Opens current scenes directory on disk. It is `~/.chunky/scenes` by default.
 
 - `Export settings` - This allows you to export settings to a copyable JSON. You can individually choose which settings to export.
 
@@ -55,6 +79,8 @@ Provides a list of all detected scenes in the Scenes directory.
 `Reload chunks` - Re-load the currently selected chunks. If working with a loaded scene, ensure the the current selected world is the same as the world used to create the scene.
 
 ---
+
+### Render settings
 
 - `Canvas size` - This is the resolution at which to render at. The drop down has a few presets. (Width x Height)
 

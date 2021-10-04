@@ -2,6 +2,8 @@
 
 ![Render controls Camera](../../img/user_interface/render_controls/camera.png)
 
+## Camera General
+
 - `Load preset` - Loads a camera preset: `Isometric [NW, NE, SE, SW]`, `Skybox [Right, Left, Up, Down, Front (North), Back]`.
 
 	- `Isometric` modes set the camera `projection mode` to `parallel` with the camera aimed down at 45 degrees towards the center of the currently loaded chunks. Yaw depends on preset selected.
@@ -16,6 +18,8 @@
 
 ---
 
+## Camera Controls
+
 - `Position & Orientation`
 
 	- `Position` - Defines the X, Y, Z, coordinates of the Camera. These coordinates correlate with the Minecraft world positions.
@@ -28,6 +32,8 @@
 
 - `Center camera` - Moves the camera to the centre of the loaded world and faces the camera to the ground.
 
+### Projection modes
+
 - `Projection mode`
 
 	- `Standard` - Default pinhole projection works like a normal camera.
@@ -36,13 +42,16 @@
 	
 	- `Fisheye` - This projection makes is like an extrme wide angle lens which distorts images.
 	
-	- `Stereographic`
+	- `Stereographic` - Stereographic projection maps points on the sphere to a plane. If you want tiny planets this is one good way to achieve them.
 	
-	- `Panoramic (equirectangular)`
+	- `Panoramic (equirectangular)` - Simular to standard/pinhole projection.
 	
-	- `Panoramic (slot)`
+	- `Panoramic (slot)` - Behaves like a pinhole camera in the vertical direction, but like a spherical one in the horizontal direction.
 	
-	- `Omni-deirctional Stereo (left/right eye)`
+	- `Omni-deirctional Stereo (left/right eye)` - This projection can create distinct images for viewing on VR devices by factoring the inter-pupillary distance in. Some lines may appear slightly curved.
+
+
+### Depth of Field
 
 - `Field of view (zoom)` - Controls the field of view in the virtual camera. Lower causes a narrower field of view (higher magnification) and high value will result in a wider field of view (low magnification). 70 is the default value, which corresponds with Minecraft's normal field of view.
 

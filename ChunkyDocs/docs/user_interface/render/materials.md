@@ -2,7 +2,6 @@
 
 ![Render controls Materials](../../img/user_interface/render_controls/materials.png)
 
-
 - `Filter` - Can be used to filter materials list to find the exact block you wish to edit.
 
 -  `Material Properties`
