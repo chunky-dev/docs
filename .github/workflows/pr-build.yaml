@@ -2,9 +2,9 @@ name: Pull Request Build
 on:
   pull_request:
     branches: [master]
-  workflow_dispatch:
+    types: [opened, synchronize, reopened, closed]
 jobs:
-  deploy:
+  preview:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,13 +12,16 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      - run: |
+      - name: Build docs
+        run: |
           cd ChunkyDocs
           mkdocs build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        if: success()
+      - name: Deploy preview
+        uses: afc163/surge-preview@v1
         with:
-          name: site
-          path: ./ChunkyDocs/site/
-          if-no-files-found: error
+          surge_token: ${{ secrets.SURGE_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          dist: ./ChunkyDocs/site/
+          teardown: 'true'
+          build: |
+            echo ""
