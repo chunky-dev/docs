@@ -30,7 +30,7 @@ jobs:
                archive_format: 'zip',
             });
             var fs = require('fs');
-            fs.writeFileSync('${{github.workspace}}/pr.zip', Buffer.from(download.data));
+            fs.writeFileSync('${{github.workspace}}/site.zip', Buffer.from(download.data));
       - run: unzip site.zip
       - name: Deploy preview
         uses: afc163/surge-preview@v1
