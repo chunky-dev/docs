@@ -21,9 +21,9 @@ jobs:
           cd ChunkyDocs
           mkdocs build
       - name: Upload artifact
-          uses: actions/upload-artifact@v2
-          if: success()
-          with:
-            name: site
-            path: ./ChunkyDocs/site/
-            if-no-files-found: error
+        uses: actions/upload-artifact@v2
+        if: success()
+        with:
+          name: site
+          path: ./ChunkyDocs/site/
+          if-no-files-found: error
