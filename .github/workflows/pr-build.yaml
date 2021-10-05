@@ -11,17 +11,19 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
+      - name: Setup Python
+        run: |
+          python -m venv ./ venv --clear
+          source ./venv/bin/activate
+          pip install -r requirements.txt
       - name: Build docs
         run: |
           cd ChunkyDocs
           mkdocs build
-      - name: Deploy preview
-        uses: afc163/surge-preview@v1
-        with:
-          surge_token: ${{ secrets.SURGE_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          dist: ./ChunkyDocs/site/
-          teardown: 'true'
-          build: |
-            echo ""
+      - name: Upload artifact
+          uses: actions/upload-artifact@v2
+          if: success()
+          with:
+            name: site
+            path: ./ChunkyDocs/site/
+            if-no-files-found: error
