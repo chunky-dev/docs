@@ -18,6 +18,7 @@ jobs:
           pip install -r ./requirements.txt
       - name: Build docs
         run: |
+          source ./venv/bin/activate
           cd ChunkyDocs
           python -m mkdocs build
       - name: Upload artifact

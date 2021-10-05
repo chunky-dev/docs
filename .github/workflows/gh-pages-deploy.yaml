@@ -18,5 +18,6 @@ jobs:
           pip install -r ./requirements.txt
       - name: Build and Deploy
         run: |
+          source ./venv/bin/activate
           cd ChunkyDocs
           python -m mkdocs gh-deploy --force
