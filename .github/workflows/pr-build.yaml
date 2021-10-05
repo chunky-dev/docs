@@ -21,9 +21,6 @@ jobs:
           source ./venv/bin/activate
           cd ChunkyDocs
           python -m mkdocs build
-      - name: Save PR
-        run: |
-          echo ${{ github.event.pull_request.head.sha }} > ./site/NR
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         if: success()
@@ -31,3 +28,15 @@ jobs:
           name: site
           path: ./ChunkyDocs/site/
           if-no-files-found: error
+      - name: Deploy preview
+        uses: afc163/surge-preview@v1
+        if: success()
+        continue-on-error: true
+        with:
+          surge_token: ${{ secrets.SURGE_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          dist: ./ChunkyDocs/site/
+          teardown: 'true'
+          failOnError: 'false'
+          build: |
+            echo ""
