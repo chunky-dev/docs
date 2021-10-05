@@ -23,7 +23,7 @@ jobs:
           python -m mkdocs build
       - name: Save PR
         run: |
-          echo ${{ github.event.pull_request.head.sha }} > ./site/NR
+          echo ${{ github.event.pull_request.head.sha }} > ./ChunkyDocs/site/NR
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         if: success()
