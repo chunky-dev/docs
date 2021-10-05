@@ -21,6 +21,9 @@ jobs:
           source ./venv/bin/activate
           cd ChunkyDocs
           python -m mkdocs build
+      - name: Save PR
+        run: |
+          echo ${{ github.event.pull_request.head.sha }} > ./site/NR
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         if: success()
