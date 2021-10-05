@@ -19,7 +19,7 @@ jobs:
       - name: Build docs
         run: |
           cd ChunkyDocs
-          mkdocs build
+          python -m mkdocs build
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         if: success()

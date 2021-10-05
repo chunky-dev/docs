@@ -19,4 +19,4 @@ jobs:
       - name: Build and Deploy
         run: |
           cd ChunkyDocs
-          mkdocs gh-deploy --force
+          python -m mkdocs gh-deploy --force
