@@ -31,7 +31,7 @@ jobs:
             });
             var fs = require('fs');
             fs.writeFileSync('${{github.workspace}}/site.zip', Buffer.from(download.data));
-      - run: unzip site.zip
+      - run: unzip site.zip -d ./site/
       - name: Read ref
         id: ref
         uses: juliangruber/read-file-action@v1
