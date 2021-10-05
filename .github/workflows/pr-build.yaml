@@ -13,9 +13,9 @@ jobs:
           python-version: 3.x
       - name: Setup Python
         run: |
-          python -m venv ./ venv --clear
+          python -m venv ./venv --clear
           source ./venv/bin/activate
-          pip install -r requirements.txt
+          pip install -r ./requirements.txt
       - name: Build docs
         run: |
           cd ChunkyDocs
