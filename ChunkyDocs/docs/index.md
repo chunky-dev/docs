@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 
 <p align="center">
   <img width="100" src="https://raw.githubusercontent.com/llbit/chunky-docs/master/images/logo.png" alt="Chunky logo">
@@ -5,7 +9,11 @@
 <h1 align="center">Chunky</h1>
 
 
-<div align="center">Chunky is a Minecraft rendering tool that uses Path Tracing to create realistic images of your Minecraft worlds. </div>
+<div align="center">Chunky is a Minecraft rendering tool that uses Path Tracing to create realistic images of your Minecraft worlds.</div>
+
+<p align="center">
+<a href="/docs/getting_started/installing/" class="md-button button center">Download Chunky 2.4.1<br><btnsub>Minecraft 1.2.1 to 1.17.1</btnsub></a>
+</p>
 
 ---
 
@@ -41,11 +49,3 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
-<center>
-	<h2> Downloads </h2>
-	<a href="/download.html" class="button"> Chunky 2.4.0 <br><btnsub>Minecraft 1.2.1 to 1.17.1</btnsub></a>
-</center>
----
-
-<!-- EOF -->

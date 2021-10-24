@@ -1,16 +1,20 @@
 # Installing Chunky
 
-There are two ways to install Chunky. You may download the installer for your OS,
+There are two ways to install Chunky. You may download the installer for your OS[^1],
 or you may download the Universal JAR (Chunky Launcher).
 
-#### Downloads
+[^1]: Installers for Windows, Linux and macOS are [currently being worked on](https://github.com/leMaik/chunky-launcher-standalone).
 
-<a href="/download.html" class="button"> Windows <br><btnsub>some sub line</btnsub></a>
-<a href="/download.html" class="button"> Linux <br><btnsub>some sub line</btnsub></a>
-<a href="/download.html" class="button"> MacOS <br><btnsub>some sub line</btnsub></a>
-<a href="http://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="button"> Universal JAR <br><btnsub>Launcher version 1.12.2</btnsub></a>
- 
-#### Universal JAR - Chunky Launcher
+## Downloads
+
+<!-- soon
+<a href="https://chunky.llbit.se/download.html" class="md-button">:material-microsoft-windows: Windows<br><btnsub>Installer (beta)</btnsub></a>
+<a href="https://chunky.llbit.se/download.html" class="md-button">:material-linux: Linux<br><btnsub>Debian package (beta)</btnsub></a>
+<a href="https://chunky.llbit.se/download.html" class="md-button">:material-apple: macOS<br><btnsub>DMG image (beta)</btnsub></a>
+-->
+<a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="md-button">:material-package-variant-closed: Universal JAR <br><btnsub>Chunky Launcher v1.12.2</btnsub></a>
+
+## Universal JAR - Chunky Launcher
  1. You must install [**Java 17**](https://adoptium.net/) for your platform.
 	
  2. Download [**OpenJFX 11**](https://gluonhq.com/products/javafx/) and extract to it's own folder: The Launcher should auto detect this.
