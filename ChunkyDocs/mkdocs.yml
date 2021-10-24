@@ -54,14 +54,13 @@ markdown_extensions:
 copyright: The Chunky Manual is licensed under a CC-BY-NC-SA 4.0 Int. License (<a href="/docs/license">learn more</a>)
 
 nav:
-nav:
   - "Home": "index.md"
   - "Gallery": "gallery/gallery.md"
   - "Getting Started":
     - "Installing Chunky": "getting_started/installing.md"
     - "Configuring Chunky": "getting_started/configuration.md"
     - "Your First Render": "getting_started/your_first_render.md"
-  - "User Interface":
+  - "Reference":
     - "Chunky": "user_interface/chunky_ui.md"
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
