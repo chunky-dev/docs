@@ -76,7 +76,8 @@ nav:
       - "Help": "user_interface/render/help.md"
       - "Render Preview": "user_interface/render/render_preview.md"
   - "Plugins":
-    - "plugins/plugins.md"
+    - "Getting started": "plugins/index.md"
+    - "Plugins": "plugins/plugins.md"
     - "plugins/development.md"
 
 extra:
