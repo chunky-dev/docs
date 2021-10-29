@@ -97,28 +97,16 @@
 btnsub {
   font-size: 13px;
   line-height: 5px;
-  color: #e6e6e6;
+  font-weight: 400;
 }
 
 .button {
   display: inline-block;
-  background-color: #0D95AC;
-  color: #FFF;
-  border-radius: 3px;
-  border-bottom: 5px solid #0F889A;
-  padding: .6rem;
-  margin: 0.5rem 1rem;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 25px;
-  line-height: 20px;
-  padding-top: 0.8rem;
-  padding-bottom: 0.6rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  text-align: center;
 }
 
-.button:hover {
-  background-color: #0D95AC;
+.button a {
+  color: inherit;
 }
 
 /* Table Styling */

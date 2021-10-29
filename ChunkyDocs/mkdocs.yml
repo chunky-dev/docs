@@ -46,10 +46,13 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
 
 copyright: The Chunky Manual is licensed under a CC-BY-NC-SA 4.0 Int. License (<a href="/docs/license">learn more</a>)
 
-nav:
 nav:
   - "Home": "index.md"
   - "Gallery": "gallery/gallery.md"
@@ -57,7 +60,7 @@ nav:
     - "Installing Chunky": "getting_started/installing.md"
     - "Configuring Chunky": "getting_started/configuration.md"
     - "Your First Render": "getting_started/your_first_render.md"
-  - "User Interface":
+  - "Reference":
     - "Chunky": "user_interface/chunky_ui.md"
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
@@ -71,8 +74,10 @@ nav:
       - "Advanced": "user_interface/render/advanced.md"
       - "Help": "user_interface/render/help.md"
       - "Render Preview": "user_interface/render/render_preview.md"
-  - "Miscellaneous":
+  - "Plugins":
+    - "Getting started": "plugins/index.md"
     - "Plugins": "plugins/plugins.md"
+    - "plugins/development.md"
 
 extra:
   social:
