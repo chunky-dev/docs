@@ -35,7 +35,7 @@ Most entities are currently not rendered by Chunky, and some special blocks can 
 			<td class="center"> <a href="https://github.com/chunky-dev/chunky/issues/88">#88</a>, <a href="https://github.com/chunky-dev/chunky/issues/426">#426</a>, <a href="https://github.com/chunky-dev/chunky/issues/266">#266</a> </td>
 		</tr>
 		<tr>
-			<td class="left"> Item frames </td>
+			<td class="left"> (Glow) Item frames</td>
 			<td class="center"> No </td>
 			<td class="center"> <a href="https://github.com/chunky-dev/chunky/issues/790">#790</a>, <a href="https://github.com/chunky-dev/chunky/issues/789">#789</a> </td>
 		</tr>
@@ -88,6 +88,16 @@ Most entities are currently not rendered by Chunky, and some special blocks can 
 			<td class="left"> Particles </td>
 			<td class="center"> No </td>
 			<td class="center"> <a href="https://github.com/chunky-dev/chunky/issues/41">#41</a> </td>
+		</tr>
+		<tr>
+			<td class="left"> Bubble columns </td>
+			<td class="center"> No </td>
+			<td class="center"> &nbsp; </td>
+		</tr>
+		<tr>
+			<td class="left"> Campfire with items </td>
+			<td class="center"> No </td>
+			<td class="center"> &nbsp; </td>
 		</tr>
 	</tbody>
 </table>
