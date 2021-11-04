@@ -77,7 +77,7 @@ nav:
   - "Plugins":
     - "Getting started": "plugins/index.md"
     - "Plugins": "plugins/plugins.md"
-    - "plugins/development.md"
+    - "Plugin development": "plugins/development.md"
 
 extra:
   social:
