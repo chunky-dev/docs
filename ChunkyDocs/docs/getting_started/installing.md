@@ -17,12 +17,12 @@ or you may download the Universal JAR (Chunky Launcher).
 ## Universal JAR - Chunky Launcher
  1. You must install [**Java 17**](https://adoptium.net/) for your platform.
 	
- 2. Download [**OpenJFX 11**](https://gluonhq.com/products/javafx/) and extract to it's own folder: The Launcher should auto detect this.
+ 2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) and extract the `bin`, `legal`, and `lib` folders to `C:\Program Files\openjfx` or `..\.chunky\openjfx`.
  
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
  
- 4. Launch ChunkyLauncher.jar. You may need to launch via commandline using `java -jar path\to\ChunkyLauncher.jar`
+ 4. Launch ChunkyLauncher.jar. You may need to launch via commandline/script using `java -jar path\to\ChunkyLauncher.jar`.
  
 ---
 

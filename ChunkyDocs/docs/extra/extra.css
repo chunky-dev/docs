@@ -110,20 +110,20 @@ btnsub {
 }
 
 /* Table Styling */
-#tg{
+.tg{
 	border:none;
 	border-collapse:collapse;
 	border-spacing:0;
 }
 	
-#tg td{
+.tg .td{
 	border-style:solid;
 	border-width:0px;
 	overflow:hidden;
 	padding:10px 5px;
 	word-break:normal;
 }
-#tg th{
+.tg .th{
 	border-style:solid;
 	border-width:0px;
 	font-weight:bold;
@@ -131,20 +131,43 @@ btnsub {
 	padding:10px 5px;
 	word-break:normal;
 }
-#tg left{
+.tg .left{
 	text-align:left;
 	vertical-align:top;
 }
-#tg center{
+.tg .center{
 	text-align:center;
 	vertical-align:top;
 }
-#tg right{
+.tg .right{
 	text-align:right;
 	vertical-align:top;
 }
-#tg img{
+.tg img{
 	display:block;
 	width:100%;
 	height:auto;
 }
+
+/* Gallery Styling */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 360px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
