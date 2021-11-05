@@ -4,24 +4,24 @@ Unlike previous guides Render Controls has been broken out into seperate pages. 
 
 ## Render Controls
 
-[Scene](plugins){ .md-button }
+[Scene](../scene){ .md-button }
 
-[Lighting](plugins){ .md-button }
+[Lighting](../lighting){ .md-button }
 
-[Sky & Fog](plugins){ .md-button }
+[Sky & Fog](../sky_and_fog){ .md-button }
 
-[Water](plugins){ .md-button }
+[Water](../water){ .md-button }
 
-[Camera](plugins){ .md-button }
+[Camera](../camera){ .md-button }
 
-[Entities](plugins){ .md-button }
+[Entities](../entities){ .md-button }
 
-[Materials](plugins){ .md-button }
+[Materials](../materials){ .md-button }
 
-[Postprocessing](plugins){ .md-button }
+[Postprocessing](../postprocessing){ .md-button }
 
-[Advanced](plugins){ .md-button }
+[Advanced](../advanced){ .md-button }
 
-[Help](plugins){ .md-button }
+[Help](../help){ .md-button }
 
-[Render Preview](plugins){ .md-button }
+[Render Preview](../render_preview){ .md-button }
