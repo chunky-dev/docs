@@ -14,7 +14,7 @@ Adds functionality to render an animation without completely reloading the scene
 
 ## Bloom Plugin
 
-[:material-account: Redox](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-bloom-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-bloom-plugin/releases)
+[:material-account: aTom3333](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-bloom-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-bloom-plugin/releases)
 
 Adds a bloom post processing option.
 
@@ -64,7 +64,7 @@ change the render manager.
 
 ## Excel Plugin
 
-[:material-account: Redox](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-excel-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-excel-plugin/releases)
+[:material-account: aTom3333](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-excel-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-excel-plugin/releases)
 
 Exports renders as ODS such that an image viewer like Excel can render it.
 
@@ -72,7 +72,7 @@ Exports renders as ODS such that an image viewer like Excel can render it.
 
 ## JPEGXL Plugin
 
-[:material-account: Redox](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-jpegxl-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-jpegxl-plugin/releases)
+[:material-account: aTom3333](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-jpegxl-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-jpegxl-plugin/releases)
 
 Adds option to export the render as a JPEG-XL image.
 
