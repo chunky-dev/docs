@@ -4,7 +4,7 @@
 <h1 align="center"> Chunky Manual </h1>
 
 
-<div align="center">Chunky is a Minecraft rendering tool that uses Path Tracing to create realistic images of your Minecraft worlds. View the website [here](https://chunky-dev.github.io/docs/).</div>
+<div align="center">Chunky is a Minecraft rendering tool that uses Path Tracing to create realistic images of your Minecraft worlds. View the website <a href="https://chunky-dev.github.io/docs/">here</a>.</div>
 
 
 
