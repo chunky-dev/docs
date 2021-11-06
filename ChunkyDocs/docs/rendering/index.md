@@ -74,7 +74,7 @@ There are a few different Octrees that are available within Chunky being NODE (l
 
 Entities and objects larger than a single block in size are stored within a [Bounding Volume Hierarchy (BVH)](https://en.wikipedia.org/wiki/Bounding_volume_hierarchy) which is a similar tree like structure to the previously mentioned octree though it stores geometric objects.
 
-There are a few different BVH build methods available within Chunky being SAH_MA (default), SAH, and MIDPOINT all which have different pros and cons. Available Octrees can be expanded via [Plugins](../plugins/plugins) though no plugins yet exist to expand this functionally.
+There are a few different BVH build methods available within Chunky being SAH_MA (default), SAH, and MIDPOINT all which have different pros and cons. Available BVHs can be expanded via [Plugins](../plugins/plugins) though no plugins yet exist to expand this functionally.
 
 ---
 
