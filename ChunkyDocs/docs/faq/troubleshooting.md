@@ -57,3 +57,4 @@ First, make sure that you have selected some chunks before creating a new scene.
 
 If you still have the problem it may be caused by the `Y min clip`/`Y max clip` settings. The Y clip settings in the Render Controls pane under Scene can prevent the blocks from being loaded, especially if you are loading a superflat world. All blocks that have a Y value (height) outside the Y clip value will not be loaded.
 
+--8<-- "includes/abbreviations.md"

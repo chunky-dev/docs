@@ -1,4 +1,4 @@
-# Chunky
+# User Interface
 
 ![Overview](../img/user_interface/overview.png)
 
@@ -170,3 +170,5 @@ Should be noted that the phrasing here is confusing. The load order is bottom to
 ![Resource pack manager](../img/user_interface/right_pane/about_tab.png)
 
 The About tab has a few useful links in addtion to Chunky's copyright and credits.
+
+--8<-- "includes/abbreviations.md"

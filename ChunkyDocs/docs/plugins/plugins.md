@@ -111,3 +111,5 @@ A WIP OpenCL raytracer for Chunky. Not all blocks and features are supported.
 
 !!! warning "Experimental"
       This plugin is in early beta state and does not support all Chunky features yet.
+
+--8<-- "includes/abbreviations.md"

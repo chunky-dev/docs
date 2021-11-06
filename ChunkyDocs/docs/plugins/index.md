@@ -18,3 +18,5 @@ Plugins can be added by clicking the `Add` button.
 ![Plugin Manager](../img/getting_started/chunky_launcher_plugin_manager.png)
 
 Plugins are loaded from top to bottom. The loading order usually doesn't matter but can fix incompatibilities in some cases. Consult the documentation of the plugins you're using for further information.
+
+--8<-- "includes/abbreviations.md"

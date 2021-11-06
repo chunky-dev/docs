@@ -45,3 +45,4 @@ The Skymap page has some useful links for obtaining high quality skymaps.
 
 [Chunky (SpigotMC)](https://www.spigotmc.org/resources/chunky.81534/) is an unrelated project which has an unfortunate name collision. Said plugin is used to quickly pre-generate server chunks.
 
+--8<-- "includes/abbreviations.md"

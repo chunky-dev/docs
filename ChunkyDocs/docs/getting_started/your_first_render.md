@@ -227,3 +227,5 @@ Below you can see the finished product of this guide with a few minor tweaks to 
 > This guide was adapted and updated from a guide by EmeraldSnorlax.
 
 <!-- EOF -->
+
+--8<-- "includes/abbreviations.md"

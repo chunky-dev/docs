@@ -51,3 +51,4 @@ If an update to Chunky was is available you will soon see the "Update Available!
 Click the "Update to New Version" button to start downloading the required files.
 When the download process has completed you can either click on "Launch Chunky" or "Close". If you click on "Close" you would need to click on "Launch" in the main Chunky Launcher window to launch Chunky.
 
+--8<-- "includes/abbreviations.md"

@@ -16,3 +16,4 @@
 	
 	- `Metalness` - Controls the metal-like reflection which is tinted by the texture color (0.0 - 1.0).
 
+--8<-- "includes/abbreviations.md"

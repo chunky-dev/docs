@@ -61,3 +61,4 @@
 
 - `Autofocus` - Sets the Focal Offset and Depth of Field to the crosshair which is typically in the middle of the Render Preview unless `Set Target` is used.
 
+--8<-- "includes/abbreviations.md"

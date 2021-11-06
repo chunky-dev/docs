@@ -21,3 +21,5 @@ Click the images to view a larger version.
 	<div class="desc">"NCC1701e" - Render by jackjt8 - <a href="https://www.planetminecraft.com/project/11-star-trek-fleet/"> PMC map </a>
 	</div>
 </div>
+
+--8<-- "includes/abbreviations.md"

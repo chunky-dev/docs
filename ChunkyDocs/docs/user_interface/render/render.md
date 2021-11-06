@@ -25,3 +25,5 @@ Unlike previous guides Render Controls has been broken out into seperate pages. 
 [Help](../help){ .md-button }
 
 [Render Preview](../render_preview){ .md-button }
+
+--8<-- "includes/abbreviations.md"

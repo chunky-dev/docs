@@ -28,3 +28,4 @@
 
 - `Sun color` - The color of sunlight. Default is `pure white`.
 
+--8<-- "includes/abbreviations.md"

@@ -29,3 +29,5 @@ Cornell Box rendered at 1,000,000 spp.
 AI Based Denoising
 ---
 `TODO`
+
+--8<-- "includes/abbreviations.md"

@@ -72,3 +72,4 @@
 
 - `Fog color` - Sets the fog color.
 
+--8<-- "includes/abbreviations.md"

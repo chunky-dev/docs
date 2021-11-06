@@ -102,3 +102,4 @@ Most entities are currently not rendered by Chunky, and some special blocks can 
 	</tbody>
 </table>
 
+--8<-- "includes/abbreviations.md"
