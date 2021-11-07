@@ -4,7 +4,7 @@
 
 ## Installation
 
-Please follow the [Installation instructions](../getting_started/installing.md).
+Please follow the [Installation instructions](../getting_started/index.md).
 
 ---
 
