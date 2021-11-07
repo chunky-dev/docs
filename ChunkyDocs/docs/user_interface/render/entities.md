@@ -60,3 +60,4 @@ The entities tab lets you create, pose, and remove entities within the scene.
 	
 	- `feet`
 
+--8<-- "includes/abbreviations.md"

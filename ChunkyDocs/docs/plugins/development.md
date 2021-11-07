@@ -92,3 +92,5 @@ To demonstrate some of the features of the Plugin API, llbit created a few demo 
 - [Depth Buffer Plugin](https://github.com/llbit/Chunky-DepthPlugin)
 - [Block Plugin Template](https://github.com/llbit/Chunky-BlockMod)
 - [Tab Plugin Template](https://github.com/llbit/Chunky-TabMod)
+
+--8<-- "includes/abbreviations.md"

@@ -62,7 +62,9 @@ nav:
     - "Configuring Chunky": "getting_started/configuration.md"
     - "Your First Render": "getting_started/your_first_render.md"
   - "Reference":
-    - "Chunky": "user_interface/chunky_ui.md"
+    - "Introduction": "rendering/index.md"
+    - "Denoising": "rendering/denoising.md"
+    - "User Interface": "user_interface/chunky_ui.md"
     - "Render Controls":
       - "Scene": "user_interface/render/scene.md"
       - "Lighting": "user_interface/render/lighting.md"
@@ -83,6 +85,7 @@ nav:
     - "FAQ": "faq/index.md"
     - "Troubleshooting": "faq/troubleshooting.md"
     - "Minecraft compatibility": "faq/minecraft_compatibility.md"
+
 
 extra:
   social:

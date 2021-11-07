@@ -101,3 +101,4 @@ save it when the dump is saved when rendering.
 
 - `Y max clip` - This controls the maximum loaded level inclusively. For example if it is set to 255, all blocks at and below `y=255` are loaded factoring `Y min clip`.
 
+--8<-- "includes/abbreviations.md"

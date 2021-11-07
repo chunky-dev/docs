@@ -23,4 +23,7 @@ For more detailed information about which features of what snapshot are not yet 
 | Falling sand                     | Not supported  | [#454](https://github.com/chunky-dev/chunky/issues/454)                                                                                                                 |
 | Particles                        | Not supported  | [#41](https://github.com/chunky-dev/chunky/issues/41)                                                                                                                   |
 | Bubble columns                   | Not supported  |                                                                                                                                                                         |
-| Campfire with items              | Not supported  |                                                                                                                                                                         |
+| Campfire with items              | Not supported  |   
+
+--8<-- "includes/abbreviations.md"
+

@@ -50,3 +50,4 @@
 
 - `Preview Renderer` - `PreviewRenderer` - No other renderers are bundled. See plugins.
 
+--8<-- "includes/abbreviations.md"

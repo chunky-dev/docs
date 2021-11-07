@@ -56,3 +56,4 @@ The Target details box shows up in the bottom left hand corner of the preview ta
 
 - Position of target.
 
+--8<-- "includes/abbreviations.md"

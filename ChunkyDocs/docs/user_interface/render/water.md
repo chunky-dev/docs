@@ -25,3 +25,5 @@
 	- `Lower water by Minecraft offset` - Water in Minecraft isn't exactly at block level, this applies an offset so there aren't any gaps.
 	
 	- `Hide the water plane in loaded chunks`
+
+--8<-- "includes/abbreviations.md"

@@ -16,3 +16,4 @@
 	
 	- `Hable tonemapping`
 
+--8<-- "includes/abbreviations.md"

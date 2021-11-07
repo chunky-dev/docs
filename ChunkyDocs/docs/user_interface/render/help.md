@@ -22,3 +22,4 @@ Modifier keys
 
 - `Ctrl` - 100x
 
+--8<-- "includes/abbreviations.md"
