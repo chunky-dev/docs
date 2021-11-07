@@ -26,18 +26,18 @@ Chunky displays an overhead 2D Map view of your world within the center pane und
 <table class="tg">
 	<thead>
 	  <tr>
-		<th class="left"> <img src="../../img/user_interface/chunky_map_chunk_selection0.png"> Prior to left clicking an outline of the highlighted Chunk will be shown.</th>
-		<th class="left"> <img src="../../img/user_interface/chunky_map_chunk_selection1.png"> After left clicking the outline will be filled in and Selected.</th>
+		<th class="left"> <img src="../img/user_interface/chunky_map_chunk_selection0.png"> Prior to left clicking an outline of the highlighted Chunk will be shown.</th>
+		<th class="left"> <img src="../img/user_interface/chunky_map_chunk_selection1.png"> After left clicking the outline will be filled in and Selected.</th>
 	  </tr>
 	</thead>
 	<tbody>
 	  <tr>
-		<td class="left"> <img src="../../img/user_interface/chunky_map_region_selection0.png"> Prior to left clicking an outline of the highlighted Region will be shown.</td>
-		<td class="left"> <img src="../../img/user_interface/chunky_map_region_selection1.png"> After left clicking the Region outline will be filled in and Selected.</td>
+		<td class="left"> <img src="../img/user_interface/chunky_map_region_selection0.png"> Prior to left clicking an outline of the highlighted Region will be shown.</td>
+		<td class="left"> <img src="../img/user_interface/chunky_map_region_selection1.png"> After left clicking the Region outline will be filled in and Selected.</td>
 	  </tr>
 	  <tr>
-		<td class="left"> <img src="../../img/user_interface/chunky_map_draggable_selection.png"> Draggable selection</td>
-		<td class="left"> <img src="../../img/user_interface/chunky_map_rightclick.png"> Right click menu</td>
+		<td class="left"> <img src="../img/user_interface/chunky_map_draggable_selection.png"> Draggable selection</td>
+		<td class="left"> <img src="../img/user_interface/chunky_map_rightclick.png"> Right click menu</td>
 	  </tr>
 	</tbody>
 </table>
@@ -149,8 +149,8 @@ Should be noted that the phrasing here is confusing. The load order is bottom to
 	<table class="tg">
 	<thead>
 	  <tr>
-		<th class="left"> <img src="../../img/user_interface/right_pane/chunky_resource_packs_szip.png" alt="zip"> </th>
-		<th class="left"> <img src="../../img/user_interface/right_pane/chunky_resource_packs_sjar.png" alt="jar"> </th>
+		<th class="left"> <img src="../img/user_interface/right_pane/chunky_resource_packs_szip.png" alt="zip"> </th>
+		<th class="left"> <img src="../img/user_interface/right_pane/chunky_resource_packs_sjar.png" alt="jar"> </th>
 	  </tr>
 	</thead>
 	</table>
