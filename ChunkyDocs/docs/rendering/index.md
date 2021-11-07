@@ -95,15 +95,15 @@ In addition there is [Chunky Cloud](https://chunkycloud.lemaik.de/) which is a d
 An indoor scene rendered with increasing SPP. The white numbers show SPP:
 
 <div class="gallery">
-	<img src="../img/rendering/spp-compare-1.jpg" alt="Cornell Box">
-</div>
-
-<div class="gallery">
-	<img src="../img/rendering/spp-compare-2.jpg" alt="Box type 2 Emitters On">
-</div>
-
-<div class="gallery">
-	<img src="../img/rendering/spp-compare-3.jpg" alt="Box type 2 Emitters Off">
+	<div class=gallery__item>
+		<img src="../img/rendering/spp-compare-1.jpg" alt="Cornell Box">
+	</div>
+	<div class=gallery__item>
+		<img src="../img/rendering/spp-compare-2.jpg" alt="Box type 2 Emitters On">
+	</div>
+	<div class=gallery__item>
+		<img src="../img/rendering/spp-compare-3.jpg" alt="Box type 2 Emitters Off">
+	</div>
 </div>
 
 --8<-- "includes/abbreviations.md"
