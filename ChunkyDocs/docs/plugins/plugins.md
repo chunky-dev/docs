@@ -57,9 +57,6 @@ An AI denoiser using Intel Open Image Denoise. Very effective at reducing noise 
 Adds Discord rich presence integration to Chunky. Make sure this plugin is loaded after other plugins that
 change the render manager. 
 
-!!! warning "Lacks 2.4.0 update"
-	 Render manager changes made in Chunky 2.4.0 are not yet supported by the Discord Rich Presence plugin.
-
 ---
 
 ## Excel Plugin
