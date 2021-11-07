@@ -31,6 +31,7 @@ theme:
     - toc.integrate
   icon:
     repo: fontawesome/brands/github
+  custom_dir: docs/theme_override/
 
 extra_css:
   - extra/extra.css
@@ -95,3 +96,6 @@ extra:
     - name: Chunky Subreddit
       icon: fontawesome/brands/reddit
       link: https://www.reddit.com/r/chunky/
+    - name: Chunky GitHub
+      icon: fontawesome/brands/github
+      link: https://github.com/chunky-dev
