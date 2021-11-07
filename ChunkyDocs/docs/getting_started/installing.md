@@ -22,7 +22,7 @@ or you may download the Universal JAR (Chunky Launcher).
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
  
- 4. Launch ChunkyLauncher.jar. You may need to launch via commandline/script using `java -jar path\to\ChunkyLauncher.jar`.
+ 4. Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar path\to\ChunkyLauncher.jar --launcher`.
  
 ---
 
