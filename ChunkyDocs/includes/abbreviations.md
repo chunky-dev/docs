@@ -3,13 +3,12 @@
 *[RAM}: Random Access Memory (System Memory)
 *[VRAM]: Video RAM (GPU RAM)
 
-*[AI]: Artificial Intelligence
-
 *[Renderer]: A process that generates a visual image
+*[AO]: Ambient Occlusion
+*[AI]: Artificial Intelligence
 
 *[NEE]: Next Event Estimation
 *[ESS]: Emitter Sampling Strategy
-
 *[SVO}: Sparse Voxel Octree
 *[BVH]: Bounding Volume Hierarchy
 

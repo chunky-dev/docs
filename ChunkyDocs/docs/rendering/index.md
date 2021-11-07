@@ -20,7 +20,9 @@ The samples in a path-traced image are distributed evenly over all pixels. The c
 
 The defining factor for render quality is the number of Samples Per Pixel (SPP).
 
-![Indoor scene SPP Comparison](spp-compare.gif)
+<video src="../img/rendering/spp-compare.webm" preload="auto" controls autoplay loop>
+	<p><a href="https://chunky.llbit.se/spp-compare.gif"> Fallback gif </a></p>
+</video>
 
 The higher SPP you have in a rendered image the less noise will be noticeable. However the added quality per sample decreases the more samples you have already (since each sample is just contributing to an average over all samples).  The difference in image quality between, for example, 20,000 SPP and 21,000 SPP will not be as noticeable as between 1,000 SPP and 2,000 SPP.
 
@@ -91,5 +93,17 @@ In addition there is [Chunky Cloud](https://chunkycloud.lemaik.de/) which is a d
 ## SPP Comparisons
 
 An indoor scene rendered with increasing SPP. The white numbers show SPP:
+
+<div class="gallery">
+	<img src="../img/rendering/spp-compare-1.jpg" alt="Cornell Box">
+</div>
+
+<div class="gallery">
+	<img src="../img/rendering/spp-compare-2.jpg" alt="Box type 2 Emitters On">
+</div>
+
+<div class="gallery">
+	<img src="../img/rendering/spp-compare-3.jpg" alt="Box type 2 Emitters Off">
+</div>
 
 --8<-- "includes/abbreviations.md"
