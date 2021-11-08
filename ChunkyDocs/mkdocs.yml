@@ -84,6 +84,7 @@ nav:
       - "Advanced": "user_interface/render/advanced.md"
       - "Help": "user_interface/render/help.md"
       - "Render Preview": "user_interface/render/render_preview.md"
+    - "Headless": "user_interface/headless.md"
   - "Plugins":
     - "Getting started": "plugins/index.md"
     - "Plugins": "plugins/plugins.md"

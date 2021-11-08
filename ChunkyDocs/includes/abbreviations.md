@@ -3,6 +3,9 @@
 *[GPU]: Graphics Processing Unit
 *[RAM}: Random Access Memory (System Memory)
 *[VRAM]: Video RAM (GPU RAM)
+*[CLI]: Command-line interface
+*[GUI]: Graphical user interface
+*[JVM]: Java virtual machine
 
 *[AO]: Ambient Occlusion
 *[AI]: Artificial Intelligence
