@@ -18,6 +18,7 @@
 *[ESS]: Emitter Sampling Strategy
 *[SVO}: Sparse Voxel Octree
 *[BVH]: Bounding Volume Hierarchy
+*[SDF]: Scene Description Format
 
 *[SPP]: Samples Per Pixel
 *[SPS]: Samples Per Second
