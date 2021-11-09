@@ -1,5 +1,17 @@
 # Scene Format
 
+## Dump
+
+The dump file stores the current samples for each pixel in the canvas. For a scene named `MyScene` the dump file would be `MyScene.dump`.
+
+## Octee
+
+The octree file stores the generated octree such that the original world is not needed. For a scene named `MyScene` the dump file would be `MyScene.octree2`.
+
+## Emittergrid
+
+The emittergrid is only generated if Emitter Sampling Strategy is set to One or All. For a scene named `MyScene` the dump file would be `MyScene.emittergrid`.
+
 ## Scene Description Format (SDF)
 
 Most of the settings in Chunky scenes are stored in Scene Description files using a JSON-based file format. This page documents the SDF file format. The documentation is currently incomplete, and may lag behind the current Chunky version as new versions are released. Check the version history at the end of this page to see the latest updates made to the SDF documentation.
@@ -178,9 +190,9 @@ Note - XY Object is a XYZ Object just without the Z component.
 |---|---|---|---|
 | emittance | Number `{0+}` |  | How much light the material emits |
 | specular | Number `{0 to 1}` |  | Specular reflection coefficient |
-| roughness | Number `{0 to 1}` |  |  |
+| roughness | Number `{0 to 1}` |  | Blurriness of reflection |
 | ior | Number |  | Index of refraction |
-| metalness | Number `{0 to 1}` |  |  |
+| metalness | Number `{0 to 1}` |  | Percentage of rays tinted by material color (complex fresnel)  |
 
 
 #### Entity Object
