@@ -352,6 +352,7 @@ Note - XY Object is a XYZ Object just without the Z component.
 | other |  | true | Whether to load “other” entities |
 
 
+
 ---
 
 ## Scripting
@@ -381,7 +382,9 @@ A simple way to process scene files is by using a scripting language like Python
     			json.dump(scene, f)
 
 
+
 ---
+
 
 ## Version History
 
