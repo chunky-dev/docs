@@ -54,11 +54,12 @@ As covered before: With every intersection the sun is sampled due to NEE adding 
 
 Emitter Sampling Strategy (ESS) enables an "optimised" NEE, similar to the sampling which the sun uses, and, in theory, should lead to faster convergence.
 
-Whereas there is only a single sun present in the scene there can be multiple emitters and those at distances where they will not contribute much to the pixel being sampled- For this we have the emittergrid which holds the positions of all the loaded emitters within cells. When sampling we would only consider emitters within the cell at the intersection and adjacent cells; That way the cost of processing the additional samples is minimalised compared to if we would sample all emitters.
+Whereas there is only a single sun present in the scene there can be multiple emitters and those at distances where they will not contribute much to the pixel being sampled- For this we have the emittergrid which holds the positions of all the loaded emitters within cells. Each cell of the grid holds the position of the emitters present in this cell and in neighboring cells. As such when we want to sample emitters close from an intersection point, we only have to look at the cell where this intersection falls in and we will find every emitters we are interested in. That way the cost of processing the additional samples is minimalised compared to if we would sample all emitters. The reason we need to hold emitter of neighboring cells is because emitters a fex block away from the intersection point to have an effect even if it falls in a different cell.
 
 With ESS:ONE only a single emitter is sampled per intersection within the cell plus adjacent. For ESS:ALL every emitter in the cell plus adjacent are sampled per intersection. Sampling emitters increases the rendering cost but reduces the required samples. ESS:ONE tends to be very similar to ESS:NONE with ESS:ALL being the "slowest" but potentially fastest to converge- ESS:ALL also tends to result in much brighter images than NONE/ONE so a reduction in exposure or emittance value is required to compensate for this. This is known about and we need to fix some maths to solve it.
 
-The emitter grid (cell) size changes the size of the cells which can impact how many emitters would need to be sampled per intersection, potentially improving performance, however this could lead to issues such as light cut-off if set too low.
+
+With this every emitter at cellSize or less blocks from the intersection points will always be found. The maximum distance where an emitter can be found in some cases is `2*cellSize-1 blocks away`. Reducing this value too low can boost performance or lead to light cut-off.
 
 ---
 
@@ -68,7 +69,7 @@ Chunky uses two data structures to hold world data once loaded. These structures
 
 ### Octree
 
-Chunky makes use of a [Sparse Voxel Octree (SVO)](https://en.wikipedia.org/wiki/Sparse_voxel_octree) (also see [Octree](https://en.wikipedia.org/wiki/Octree)) to store loaded world data of blocks for renders in a tree like structure with eight siblings. Use of a SVO grants Chunky two main advantages; Firstly that only pixels that are displayed are computed. Secondly is that interior voxels or blocks, which are fully enclosed by other voxels, are not included in the SVO which limits the amount of system memory (RAM) required for the world.
+Chunky makes use of a [Sparse Voxel Octree (SVO)](https://en.wikipedia.org/wiki/Sparse_voxel_octree) (also see [Octree](https://en.wikipedia.org/wiki/Octree)) to store loaded world data of blocks for renders in a "bi"nary tree like structure with eight children/siblings instead of two. Use of a SVO grants Chunky two main advantages; Firstly that only pixels that are displayed are computed. Secondly is that interior voxels or blocks, which are fully enclosed by other voxels, are not included in the SVO which limits the amount of system memory (RAM) required for the world.
 
 There are a few different Octrees that are available within Chunky being NODE (legacy), PACKED (default), and BIGPACKED all which have different pros and cons. Available Octrees can be expanded via [Plugins](../plugins/plugins) such as aTom3333's [Octree plugin](https://github.com/aTom3333/chunky-octree-plugin).
 

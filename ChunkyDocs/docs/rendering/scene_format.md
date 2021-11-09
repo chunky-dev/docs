@@ -2,21 +2,81 @@
 
 ## Dump
 
-The dump file stores the current samples for each pixel in the canvas. For a scene named `MyScene` the dump file would be `MyScene.dump`.
+The `.dump` file stores a header containing width, height, spp, render time, and the actual dump.
 
-## Octee
 
-The octree file stores the generated octree such that the original world is not needed. For a scene named `MyScene` the dump file would be `MyScene.octree2`.
+### Old Dump Format
+
+GZIP stream of header + dump stored in column major order
+
+
+### New Dump Format
+
+
+`0x44 0x55 0x4D 0x50 <1 as int> <header> <dump compressed with fpc magic> `
+
+
+#### Header
+
+`<width int> <height int> <spp int> <render time in millis long>`
+
+
+---
+
+## Octree
+
+The octree file is GZIP compressed and contains a version integer, block palette, world octree, water octree, grass tinting, foliage tinting, and water tinting data. The first 4 bytes are a version number and currently must be between v3 and v6. v3-v4 octrees are currently converted to v5 for loading as data nodes (only used for water and lava) were replaced by new per-variant types.
+
+
+### Octree Format
+
+`<version int> <block palette data> <world octree data> <water octree data> <grass tinting data> <foliage tinting data> <water tinting data if version >= 4>`
+
+[The section of code](https://github.com/chunky-dev/chunky/blob/master/chunky/src/java/se/llbit/chunky/resources/OctreeFileFormat.java#L50).
+
+
+#### Block Palette Data
+
+Stores NBT tags for each block.
+
+`<version int == 4> <number of block types> <Serialized NBT tags for each block in order>`
+
+
+#### World and water Octree Data
+
+"octree is pretty complex lol"
+
+"The octree itself is something like storing it depth first with 0xFFFF FFFF as a node and the type if its a leaf."
+
+
+#### World/Tint Textures
+
+Stores tint colors for grass, foliage, and water as WorldTexture.
+
+`<number of tiles (chunks)> for each tile: <chunk x coordinate int> <chunk y coordinate int> <chunk texture in x major order, rgb as floats in linear color space>`
+
+
+---
 
 ## Emittergrid
 
-The emittergrid is only generated if Emitter Sampling Strategy is set to One or All. For a scene named `MyScene` the dump file would be `MyScene.emittergrid`.
+The .emittergrid is only generated if Emitter Sampling Strategy is set to One or All. Is also GZIP compressed.
+
+* Version 0 - `<version as int> <grid size as int> <cell size as int> for each emitter position <positions as ints, -x, -y, -z corner, +0.5 to get center> for each grid <number of emitters in grid, index of emitters in positions array>`
+
+* Version 1 -`<version as int> <cell size as int> <grid offset x> <grid size x> <grid offset y> ...`
+
+* Version 2 - `<x,y,z center float, radius as float> for emitter position`
+
+
+---
 
 ## Scene Description Format (SDF)
 
-Most of the settings in Chunky scenes are stored in Scene Description files using a JSON-based file format. This page documents the SDF file format. The documentation is currently incomplete, and may lag behind the current Chunky version as new versions are released. Check the version history at the end of this page to see the latest updates made to the SDF documentation.
+Most of the settings in Chunky scenes are stored in Scene Description files using a `JSON`-based file format. This page documents the SDF file format. The documentation is currently incomplete, and may lag behind the current Chunky version as new versions are released. Check the version history at the end of this page to see the latest updates made to the SDF documentation.
 
 SDF JSON files are stored in the scene directory and the filename is based on the scene name with `.json` appended. For example, the JSON file for a scene named `MyScene` would be `MyScene.json`.
+
 
 ### Structure
 
@@ -292,6 +352,8 @@ Note - XY Object is a XYZ Object just without the Z component.
 | other |  | true | Whether to load “other” entities |
 
 
+---
+
 ## Scripting
 
 A simple way to process scene files is by using a scripting language like Python. For example, here is a Python script that generates individual scenes for each chunk in a square grid of chunks. The script uses an original scene as template for the new scenes.
@@ -318,6 +380,8 @@ A simple way to process scene files is by using a scripting language like Python
     		with open(new_scene, 'w') as f:
     			json.dump(scene, f)
 
+
+---
 
 ## Version History
 
