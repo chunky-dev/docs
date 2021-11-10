@@ -152,17 +152,18 @@ btnsub {
 /* Gallery Styling */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	/* repeatrepeat(auto-fill, minmax(<image_size>px, 1fr))*/
+    grid-gap: 0px;
 	align-items: stretch;
 }
 
 .gallery__item {
-	border: 1px solid #ccc;
+	border: 1px solid #000;
 }
 
 .gallery__item:hover {
-  border: 1px solid #777;
+  border: 1px solid #fff;
 }
 
 .gallery__img {
