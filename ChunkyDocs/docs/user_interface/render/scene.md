@@ -12,9 +12,9 @@
 
 - `Load scene` - Opens the `Select 3D Scene` dialog.
 
-- `Save current frame` - Saves the current frame of the Render.
+- `Save current frame` - Saves the current frame of the Render based upon `Output mode` set under the [Advanced Tab](../advanced).
 
-- `Copy current frame` - Copies the current frame of the render to the clipboard.
+- `Copy current frame` - Copies the current frame of the render to the clipboard based upon `Output mode` set under the [Advanced Tab](../advanced).
 
 ---
 

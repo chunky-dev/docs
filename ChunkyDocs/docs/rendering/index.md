@@ -107,4 +107,20 @@ An indoor scene rendered with increasing SPP. The white numbers show SPP:
 	</div>
 </div>
 
+---
+
+## Image formats and color
+
+Internally Chunky stores the canvas with three "doubles" per pixel. Doubles are Double-precision floating-point format (sometimes called FP64 or float64). Storing a full double precision float for each channel (8 bytes × 3 = 24 bytes) is a burden for modern systems so compression is typically used. See the [.dump format](scene_format). Standard Dynamic Range (SDR) typically have 24 bits per pixel / 8 bits per color. High Dynamic Range (HDR) images are regarded as anything with an increased bits per color/pixel.
+
+- JPEG/JPG (SDR) - 24 bits per pixel and uses a lossy form of compression based on the discrete cosine transform which typically provides 10:1 compression. Smallest file size and often used for photos on websites.
+
+- PNG (SDR) - 24 bits per pixel and a lossless format. Often maintains original quality with relatively small file size often used on websites.
+
+- TIFF (HDR) - Upto 96 bits per pixel or 32 bits per color. "RAW" format.
+
+- PFM (HDR) - 96 bits per pixel or 32 bits per color. "RAW" format. Mainly used in conjunction with the Denoiser plugin and OIDN.
+
+- HDR (HDR) - The HDR/RGBE format stores pixels as one byte for each RGB (red, green, and blue) value with a one byte shared exponent. Thus it store 32 bits per pixel. This results in a 6:1 compression, at the expense of reduced colour fidelity.
+
 --8<-- "includes/abbreviations.md"
