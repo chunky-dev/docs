@@ -26,7 +26,7 @@ The defining factor for render quality is the number of Samples Per Pixel (SPP).
 
 The higher SPP you have in a rendered image the less noise will be noticeable. However the added quality per sample decreases the more samples you have already (since each sample is just contributing to an average over all samples).  The difference in image quality between, for example, 20,000 SPP and 21,000 SPP will not be as noticeable as between 1,000 SPP and 2,000 SPP.
 
-Sunlight does not require high SSP to give a nice image; This is due to Sunlight sampling or, it's more technical name, Next Event Estimation (NEE) which is enabled by default. Outdoor scenes can be rendered with relatively low SPP if sunlight is enabled. Emitters (torches, lava, glowstone, pumpkins, etc.) require a lot more samples to reduce the noise as NEE is not enabled by default due to a multitude of reasons which will be covered later. Outdoor scenes with emitters require more samples than a sunlight only scene and indoor scenes, or similar, in low-light environments require a lot more samples.
+Sunlight does not typically require a high SSP to give a nice image; This is due to Sunlight sampling or, it's more technical name, Next Event Estimation (NEE) which is enabled by default. Outdoor scenes can be rendered with relatively low SPP if sunlight is enabled. Emitters (torches, lava, glowstone, pumpkins, etc.) require a lot more samples to reduce the noise as NEE is not enabled by default due to a multitude of reasons which will be covered later. Outdoor scenes with emitters require more samples than a sunlight only scene and indoor scenes, or similar, in low-light environments require a lot more samples.
 
 ---
 
