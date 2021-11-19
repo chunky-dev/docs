@@ -8,7 +8,7 @@
 
 	- `Isometric` modes set the camera `projection mode` to `parallel` with the camera aimed down at 45 degrees towards the center of the currently loaded chunks. Yaw depends on preset selected.
 	
-	- `Skybox` - From the center of the currently loaded chunks look towards that cardinal direction.
+	- `Skybox` - From the center of the currently loaded chunks look towards that cardinal direction and sets the FoV to 90 degrees.
 
 - `Camera` - Allows a scene to have multiple independant cameras which can have different properties.
 
