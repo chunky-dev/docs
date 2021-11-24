@@ -2,7 +2,7 @@
 
 ## Dump
 
-The `.dump` file stores a header containing width, height, spp, render time, and the actual dump.
+The `.dump` file stores a header containing width, height, spp, render time, and the actual dump which is three "doubles" per pixel. Doubles are Double-precision floating-point format (sometimes called FP64 or float64).
 
 
 ### Old Dump Format

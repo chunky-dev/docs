@@ -26,7 +26,7 @@ The defining factor for render quality is the number of Samples Per Pixel (SPP).
 
 The higher SPP you have in a rendered image the less noise will be noticeable. However the added quality per sample decreases the more samples you have already (since each sample is just contributing to an average over all samples).  The difference in image quality between, for example, 20,000 SPP and 21,000 SPP will not be as noticeable as between 1,000 SPP and 2,000 SPP.
 
-Sunlight does not require high SSP to give a nice image; This is due to Sunlight sampling or, it's more technical name, Next Event Estimation (NEE) which is enabled by default. Outdoor scenes can be rendered with relatively low SPP if sunlight is enabled. Emitters (torches, lava, glowstone, pumpkins, etc.) require a lot more samples to reduce the noise as NEE is not enabled by default due to a multitude of reasons which will be covered later. Outdoor scenes with emitters require more samples than a sunlight only scene and indoor scenes, or similar, in low-light environments require a lot more samples.
+Sunlight does not typically require a high SSP to give a nice image; This is due to Sunlight sampling or, it's more technical name, Next Event Estimation (NEE) which is enabled by default. Outdoor scenes can be rendered with relatively low SPP if sunlight is enabled. Emitters (torches, lava, glowstone, pumpkins, etc.) require a lot more samples to reduce the noise as NEE is not enabled by default due to a multitude of reasons which will be covered later. Outdoor scenes with emitters require more samples than a sunlight only scene and indoor scenes, or similar, in low-light environments require a lot more samples.
 
 ---
 
@@ -106,5 +106,21 @@ An indoor scene rendered with increasing SPP. The white numbers show SPP:
 		<img src="../img/rendering/spp-compare-3.jpg" alt="Box type 2 Emitters Off">
 	</div>
 </div>
+
+---
+
+## Image formats and color
+
+Internally Chunky stores the canvas with three "doubles" per pixel. Doubles are Double-precision floating-point format (sometimes called FP64 or float64). Storing a full double precision float for each channel (8 bytes × 3 = 24 bytes) is a burden for modern systems so compression is typically used. See the [.dump format](scene_format). Standard Dynamic Range (SDR) typically have 24 bits per pixel / 8 bits per color. High Dynamic Range (HDR) images are regarded as anything with an increased bits per color/pixel.
+
+- JPEG/JPG (SDR) - 24 bits per pixel and uses a lossy form of compression based on the discrete cosine transform which typically provides 10:1 compression. Smallest file size and often used for photos on websites.
+
+- PNG (SDR) - 24 bits per pixel and a lossless format. Often maintains original quality with relatively small file size often used on websites.
+
+- TIFF (HDR) - Upto 96 bits per pixel or 32 bits per color. "RAW" format.
+
+- PFM (HDR) - 96 bits per pixel or 32 bits per color. "RAW" format. Mainly used in conjunction with the Denoiser plugin and OIDN.
+
+- HDR (HDR) - The HDR/RGBE format stores pixels as one byte for each RGB (red, green, and blue) value with a one byte shared exponent. Thus it store 32 bits per pixel. This results in a 6:1 compression, at the expense of reduced colour fidelity.
 
 --8<-- "includes/abbreviations.md"
