@@ -14,7 +14,8 @@ or you may download the Universal JAR (Chunky Launcher).
 -->
 <a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="md-button">:material-package-variant-closed: Universal JAR <br><btnsub>Chunky Launcher v1.12.2</btnsub></a>
 
-## Universal JAR - Chunky Launcher
+## Universal JAR - Chunky Launcher - Setup
+
  1. You must install [**Java 17**](https://adoptium.net/) for your platform.
 	
  2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) and extract the `bin`, `legal`, and `lib` folders to `C:\Program Files\openjfx` or `..\.chunky\openjfx`.
@@ -23,7 +24,13 @@ or you may download the Universal JAR (Chunky Launcher).
     in a safe place (you will use this to start Chunky).
  
  4. Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar path\to\ChunkyLauncher.jar --launcher`.
- 
+
+<div class="video-wrap">
+  <div class="video-container">
+	<iframe src="https://www.youtube.com/embed/GTUhZVjatPY"></iframe>
+  </div>
+</div>
+
 ---
 
 ## Chunky First-Time Setup
