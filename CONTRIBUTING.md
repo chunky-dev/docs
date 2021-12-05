@@ -40,9 +40,7 @@ Click on the pencil icon at the top right of any docs page to make small changes
 
 #### Make changes locally
 
-1. [Install Git LFS](https://docs.github.com/en/github/managing-large-files/versioning-large-files/installing-git-large-file-storage).
-
-2. Fork the repository.
+1. Fork the repository.
 - Using GitHub Desktop:
   - [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop.
   - Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
@@ -53,11 +51,11 @@ Click on the pencil icon at the top right of any docs page to make small changes
 - GitHub Codespaces:
   - [Fork, edit, and preview](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace) using [GitHub Codespaces](https://github.com/features/codespaces) without having to install and run the project locally.
 
-3. Install or update to **Python >=3.5**
+2. Install or update to **Python >=3.5**
 
-4. Install the required packages with pip: `pip3 install -r requirements.txt`
+3. Install the required packages with pip: `pip3 install -r requirements.txt`
 
-5. Create a working branch and start with your changes!
+4. Create a working branch and start with your changes!
 
 ##### Preview the local changes
 
