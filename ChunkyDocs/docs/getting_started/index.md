@@ -23,7 +23,7 @@ or you may download the Universal JAR (Chunky Launcher).
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
  
- 4. Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar path\to\ChunkyLauncher.jar --launcher`.
+ 4. Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar "path\to\ChunkyLauncher.jar" --launcher`.
 
 <div class="video-wrap">
   <div class="video-container">
@@ -69,8 +69,10 @@ The snapshots are automatically built every day from the [master branch](https:/
 
 If the launcher does not download the latest version or new snapshots, check the "Update Site" in the "Advanced Settings" panel. The URL changed with Chunky 2.1, so make sure it is set to `https://chunkyupdate.lemaik.de/`. If you have used Chunky 1.x, it may still be set to llbit's update site. You can keep using that if you want to use Chunky 1.4.5[^2].
 
-If you get an `unchecked exception` caused by `java.lang.NoClassDefFoundError: javafx/application/Application` when launching Chunky Launcher use `java --module-path path\to\javafx\lib --add-modules javafx.controls,javafx.fxml -jar path\to\ChunkyLauncher.jar` to launch Chunky Launcher. If you get this exception when clicking "Launch" in the Chunky Launcher, double check the `Java Options` field under `Advanced` is populated by `--module-path path\to\javafx\lib --add-modules javafx.controls,javafx.fxml`. This field should automatically be populated.
+If you get an `unchecked exception` caused by `java.lang.NoClassDefFoundError: javafx/application/Application` when launching Chunky Launcher use `java --module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml -jar "path\to\ChunkyLauncher.jar"` to launch Chunky Launcher. If you get this exception when clicking "Launch" in the Chunky Launcher, double check the `Java Options` field under `Advanced` is populated by `--module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml`[^3]. This field should automatically be populated.
 
 [^2]: As of Chunky 2.4.0, which supports Minecraft 1.2.1 (i.e. pre-flattening worlds), you probably don't need the old version anymore.
+
+[^3]: Important note that quotation marks `" "` need to be included surrounding any file paths to ensure that special characters like a hyphen, `-`, space, ` `, etc. do not cause issues.
 
 --8<-- "includes/abbreviations.md"
