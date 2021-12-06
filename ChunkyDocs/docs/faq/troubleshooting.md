@@ -18,7 +18,7 @@ This can be fixed by either uninstalling and reinstalling Java or through using 
 
 ## Exception in thread "main" java.lang.NoClassDefFoundError: javafx/stage/Stage
 
-JavaFX is only typically bundled with Oracle Java. On all OpenJDK/OpenJRE's you will need to manually download OpenJFX, extract it, and potentially launch Chunky Launcher and add to the `Java Options` field in the launcher: `--module-path path\to\javafx\lib --add-modules javafx.controls,javafx.fxml`
+JavaFX is only typically bundled with Oracle Java. On all OpenJDK/OpenJRE's you will need to manually download OpenJFX, extract it, and potentially launch Chunky Launcher and add to the `Java Options` field in the launcher: `--module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml`[^3].
 
 For Windows we cover this under [Universal JAR - Chunky Launcher](../../getting_started/installing#universal-jar-chunky-launcher)
 
@@ -96,5 +96,7 @@ Potential causes:
 1) Specified module path does not point to a valid javafx sdk
 
 2) Mismatched JDK/JavaFX architecture (ie x86 and 64 bit).
+
+[^3]: Important note that quotation marks `" "` need to be included surrounding any file paths to ensure that special characters like a hyphen, `-`, space, ` `, etc. do not cause issues.
 
 --8<-- "includes/abbreviations.md"
