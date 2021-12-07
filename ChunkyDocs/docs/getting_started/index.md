@@ -17,19 +17,33 @@ or you may download the Universal JAR (Chunky Launcher).
 ## Universal JAR - Chunky Launcher - Setup
 
  1. You must install [**Java 17**](https://adoptium.net/) for your platform.
-	
- 2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) and extract the `bin`, `legal`, and `lib` folders to `C:\Program Files\openjfx` or `..\.chunky\openjfx`.
- 
+
+ 2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform.
+
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
+
+### Windows
+	
+ 4. Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `C:\Program Files\openjfx` or `..\.chunky\openjfx`.
  
- 4. Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar "path\to\ChunkyLauncher.jar" --launcher`.
+ 5. Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar "path\to\ChunkyLauncher.jar" --launcher`.
 
 <div class="video-wrap">
   <div class="video-container">
 	<iframe src="https://www.youtube.com/embed/GTUhZVjatPY"></iframe>
   </div>
 </div>
+
+### Linux
+
+ 4. Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `/javafx-sdk-17.0.1/`
+
+ 5. Launch ChunkyLauncher.jar. `java --module-path javafx-sdk-17.0.1/lib --add-modules javafx.controls,javafx.fxml -jar launcher/ChunkyLauncher.jar`
+
+### MacOS
+
+ Erm... same as all the above guides...?
 
 ---
 
