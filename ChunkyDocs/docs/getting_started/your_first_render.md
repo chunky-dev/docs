@@ -99,7 +99,7 @@ Click the Position and Orientation dropdown to expand it. Unfortunately you cann
 
 ```
 Camera X = mcX
-Camera Y = mcY + ~1.5
+Camera Y = mcY + 1.62
 Camera Z = mcZ
 
 Camera Yaw = 90 - mcYaw

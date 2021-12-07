@@ -18,7 +18,7 @@ This can be fixed by either uninstalling and reinstalling Java or through using 
 
 ## Exception in thread "main" java.lang.NoClassDefFoundError: javafx/stage/Stage
 
-JavaFX is only typically bundled with Oracle Java. On all OpenJDK/OpenJRE's you will need to manually download OpenJFX, extract it, and potentially launch Chunky Launcher and add to the `Java Options` field in the launcher: `--module-path path\to\javafx\lib --add-modules javafx.controls,javafx.fxml`
+JavaFX is only typically bundled with Oracle Java. On all OpenJDK/OpenJRE's you will need to manually download OpenJFX, extract it, and potentially launch Chunky Launcher and add to the `Java Options` field in the launcher: `--module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml`[^3].
 
 For Windows we cover this under [Universal JAR - Chunky Launcher](../../getting_started/installing#universal-jar-chunky-launcher)
 
@@ -56,5 +56,53 @@ If you get the wrong textures when you create a 3D scene, there are two things y
 First, make sure that you have selected some chunks before creating a new scene.
 
 If you still have the problem it may be caused by the `Y min clip`/`Y max clip` settings. The Y clip settings in the Render Controls pane under Scene can prevent the blocks from being loaded, especially if you are loading a superflat world. All blocks that have a Y value (height) outside the Y clip value will not be loaded.
+
+
+## Rare bugs
+
+The section below is where we will be documenting rarer bugs that typically are not due to Chunky itself but other issues on your system. Given how rare these bugs are we have limited solutions available on how to resolve them.
+
+### Font garbled/broken
+
+![Rare font corruption in jar files](../img/faq/rare_font_corruption.png)
+
+Potential fixes:
+
+1) Use a dedicated GPU with java (Semi recommended)
+
+2) Disable cleartype (Not recommended) - Makes all text look ugly but at least not broken
+
+3) Update your graphics card driver (Best fix)
+
+4) Fix (uninstall and reinstall) the Segoe UI font and/or any other broken fonts
+
+
+### Graphics Device initialization failed for...
+
+```
+Graphics Device initialization failed for :  d3d, sw
+Error initializing QuantumRenderer: no suitable pipeline found
+```
+
+```
+Caused by: java.lang.RuntimeException: Error initializing QuantumRenderer: no suitable pipeline found
+        at javafx.graphics/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.init(QuantumRenderer.java:95)
+        at javafx.graphics/com.sun.javafx.tk.quantum.QuantumRenderer$PipelineRunnable.run(QuantumRenderer.java:125)
+        ... 1 more
+```
+
+Potential causes:
+
+1) Specified module path does not point to a valid javafx sdk
+
+2) Mismatched JDK/JavaFX architecture (ie x86 and 64 bit).
+
+
+### Module jrt.fs conflict
+
+If you get the following error: `java.lang.LayerInstantiationException: Package jdk.internal.jimage in both module java.base and module jrt.fs`, open `C:\Program Files\openjfx\lib` and delete `jrt-fs.jar`; However this issue typically occurs if you merge OpenJFX's lib folder into your OpenJDK lib folder which you should **NEVER** do. Please install openjfx correctly.
+
+
+[^3]: Important note that quotation marks `" "` need to be included surrounding any file paths to ensure that special characters like a hyphen, `-`, space, ` `, etc. do not cause issues.
 
 --8<-- "includes/abbreviations.md"

@@ -48,7 +48,9 @@
 
 ### Java options
 
-- `-Dprism.order=sw` - Should the Chunky Launcher or the Chunky window appear blank when started this is caused by an issue with the JavaFX hardware renderer for Windows. The only known solution is to add the listed Java command/option. This may reduce responsiveness over `hw` but that mode is limited by your GPU drivers maximum texture size.
+- `-Dprism.order=sw` - Should the Chunky Launcher or the Chunky window appear blank when started this is caused by an issue with the JavaFX hardware renderer for Windows. The only known solution is to add the listed Java command/option. This may reduce responsiveness over `hw`/`d3d` but that mode is limited by your GPU drivers maximum texture size. Use `-Dprism.verbose=true` to debug what pipelines are available.
+
+- `-Dprism.maxvram=512M` - The texture cache defaults to `512M`. Raising this value can allow you to render closer to the maximum texture size allowed in hardware modes but can also help resolve issues with the software mode. Can allocate using `M` or `G` suffixs. `1024M` = `1G`.
 
 - `-DlogLevel=INFO` - `ERROR`,`WARNING`, `INFO` - Default is WARNING which will mean Chunky shows warnings for missing items. ERROR should disable missing item warnings.
 
