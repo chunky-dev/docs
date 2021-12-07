@@ -97,6 +97,12 @@ Potential causes:
 
 2) Mismatched JDK/JavaFX architecture (ie x86 and 64 bit).
 
+
+### Module jrt.fs conflict
+
+If you get the following error: `java.lang.LayerInstantiationException: Package jdk.internal.jimage in both module java.base and module jrt.fs`, open `C:\Program Files\openjfx\lib` and delete `jrt-fs.jar`; However this issue typically occurs if you merge OpenJFX's lib folder into your OpenJDK lib folder which you should **NEVER** do. Please install openjfx correctly.
+
+
 [^3]: Important note that quotation marks `" "` need to be included surrounding any file paths to ensure that special characters like a hyphen, `-`, space, ` `, etc. do not cause issues.
 
 --8<-- "includes/abbreviations.md"
