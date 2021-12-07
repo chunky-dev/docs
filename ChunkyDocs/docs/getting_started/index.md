@@ -35,7 +35,6 @@ or you may download the Universal JAR (Chunky Launcher).
 </div>
 
 ### Linux
- {:start="3"}
  <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `/javafx-sdk-17.0.1/`
 
  <span>5.</span> Launch ChunkyLauncher.jar. `java --module-path javafx-sdk-17.0.1/lib --add-modules javafx.controls,javafx.fxml -jar launcher/ChunkyLauncher.jar`
