@@ -38,6 +38,8 @@ plugins:
             'getting_started/installing.md': 'getting_started/index.md'
             'user_interface/chunky_ui.md': 'user_interface/index.md'
             'user_interface/render/render.md': 'user_interface/render/index.md'
+    - search:
+        lang: en
 
 extra_css:
   - extra/extra.css
