@@ -6,6 +6,7 @@ edit_uri: https://github.com/chunky-dev/docs/edit/master/ChunkyDocs/docs/
 
 theme:
   name: material
+  favicon: assets/logo.svg
   logo: assets/logo.svg
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -44,9 +45,6 @@ plugins:
 
 extra_css:
   - extra/extra.css
-
-extra_javascript:
-  - extra/carousel.js
 
 markdown_extensions:
   - admonition
