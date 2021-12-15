@@ -42,6 +42,8 @@
 
 - `Prevent normal emitter when using emitter sampling` - Attempts to disable typical random emitter hits which would reduce noise.
 
+![Render controls *Prevent normal emitter when using emitter sampling*](../../img/user_interface/render_controls/prevent_normal_emitter.png)
+
 ---
 
 ## Manual renderer selection

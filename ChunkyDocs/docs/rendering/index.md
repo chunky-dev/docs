@@ -26,7 +26,7 @@ The defining factor for render quality is the number of Samples Per Pixel (SPP).
 
 The higher SPP you have in a rendered image the less noise will be noticeable. However the added quality per sample decreases the more samples you have already (since each sample is just contributing to an average over all samples).  The difference in image quality between, for example, 20,000 SPP and 21,000 SPP will not be as noticeable as between 1,000 SPP and 2,000 SPP.
 
-Sunlight does not typically require a high SSP to give a nice image; This is due to Sunlight sampling or, it's more technical name, Next Event Estimation (NEE) which is enabled by default. Outdoor scenes can be rendered with relatively low SPP if sunlight is enabled. Emitters (torches, lava, glowstone, pumpkins, etc.) require a lot more samples to reduce the noise as NEE is not enabled by default due to a multitude of reasons which will be covered later. Outdoor scenes with emitters require more samples than a sunlight only scene and indoor scenes, or similar, in low-light environments require a lot more samples.
+Sunlight does not typically require a high SPP to give a nice image; This is due to Sunlight sampling or, it's more technical name, Next Event Estimation (NEE) which is enabled by default. Outdoor scenes can be rendered with relatively low SPP if sunlight is enabled. Emitters (torches, lava, glowstone, pumpkins, etc.) require a lot more samples to reduce the noise as NEE is not enabled by default due to a multitude of reasons which will be covered later. Outdoor scenes with emitters require more samples than a sunlight only scene and indoor scenes, or similar, in low-light environments require a lot more samples.
 
 ---
 
@@ -34,7 +34,7 @@ Sunlight does not typically require a high SSP to give a nice image; This is due
 
 There is no definite answer to how long it will take to render a scene. The general guideline is that the longer you render an image, the better it will become. Take into account the diminishing returns explained above.
 
-The time required to render a nice looking image depends on how well-lit the scene is, how many Samples Per Second (SPS) the renderer can produce, depending on how fast your CPU is and the scene complexity, and how many pixels the canvas has. Scene complexity has no real measure outside of scene size (loaded chunks and entities), if fog is enabled, if you are using a HDRi skymap, the Ray Depth, etc. Not all options impact performance. Scaling the canvas has an effect on render time proportional to the pixel area of the canvas. An image of 800 by 800 pixels will take four times as long time to achieve the same quality as an image of 400 by 400 pixels since the total number of pixels has quadrupled. If your renders are taking too long, you can reduce the canvas size for quicker results.
+The time required to render a nice looking image depends on how well-lit the scene is, how many Samples Per Second (SPS) the renderer can produce, which depends on how fast your CPU is and the scene complexity, and how many pixels the canvas has. Scene complexity has no real measure outside of scene size (loaded chunks and entities), if fog is enabled, if you are using a HDRi skymap, the Ray Depth, etc. Not all options impact performance. Scaling the canvas has an effect on render time proportional to the pixel area of the canvas. An image of 800 by 800 pixels will take four times as long time to achieve the same quality as an image of 400 by 400 pixels since the total number of pixels has quadrupled. If your renders are taking too long, you can reduce the canvas size for quicker results.
 
 ---
 
@@ -60,6 +60,23 @@ With ESS:ONE only a single emitter is sampled per intersection within the cell p
 
 
 With this every emitter at cellSize or less blocks from the intersection points will always be found. The maximum distance where an emitter can be found in some cases is `2*cellSize-1 blocks away`. Reducing this value too low can boost performance or lead to light cut-off.
+
+The following renders demonstrate the effects of ESS. Each was rendered for one hour. Render speed depends on your CPU and your Chunky settings.
+
+![ESS: None](../img/rendering/ess_none.png)
+A scene rendered to 610 SPP with ESS set to *None*.
+
+![ESS: One](../img/rendering/ess_one.png)
+The same scene rendered to 460 SPP with ESS set to *One*.
+
+![ESS: All](../img/rendering/ess_all.png)
+The same scene rendered to 45 SPP with ESS set to *All*.
+
+ESS: None is the quickest to render, but has the most noise. ESS: One is somewhat slower, but noise is reduced and the image is brighter overall. ESS: All is by far the slowest to render, but it produces the least noise. It also produces much brighter renders compared to ESS: None and ESS: One, so turn down either the `Emitter intensity` or the `Exposure` to compensate.
+
+ESS also has the unfortunate problem of projecting the lighting as a ghost image of the emitter's texture onto other surfaces. This is due to a bug, and it will be fixed in a future release.
+
+![ESS Ghost Image](../img/rendering/ess_ghost.png)
 
 ---
 
