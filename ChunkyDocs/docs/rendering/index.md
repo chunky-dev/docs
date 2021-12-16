@@ -44,6 +44,12 @@ Small but bright light sources, such as torches, add a lot of noise to a scene. 
 
 The reason for this effect is based on the low probability for each sampled light path to include the torches, versus the high luminance of the object. The final render takes the average of all sampled values, but the average can be "too high" for a long time because of the high luminance. The average will decrease over time, but for a while there may be one pixel that has been lit by a particular light source in a neighbourhood of several pixels that will stand out sharply against the others that have not yet been lit by the same source, hence the bright dots seen above at low sample counts.
 
+![Scene lit by torch 128 SPP](../img/rendering/noise_torch.png)
+Torches add much noise to the scene and can take long to render. This scene was rendered to 128 SPP.
+
+![Scene let by glowstone 128 SPP](../img/rendering/noise_glowstone.png)
+Full block emitters, such as glowstone, have a much higher probability for a sampled light path to include the glowstone, because it is much larger. That means noise is reduced in much fewer samples than with torches. This scene was rendered to 128 SPP. Note how much less noise exists in this scene than the previous one.
+
 Outside of just brute forcing more samples to reduce noise there are a number of methods you can use to reduce noise or converge a render sooner. For more information please read the next article on [Denoising](denoising).
 
 ---
@@ -54,7 +60,7 @@ As covered before: With every intersection the sun is sampled due to NEE adding 
 
 Emitter Sampling Strategy (ESS) enables an "optimised" NEE, similar to the sampling which the sun uses, and, in theory, should lead to faster convergence.
 
-Whereas there is only a single sun present in the scene there can be multiple emitters and those at distances where they will not contribute much to the pixel being sampled- For this we have the emittergrid which holds the positions of all the loaded emitters within cells. Each cell of the grid holds the position of the emitters present in this cell and in neighboring cells. As such when we want to sample emitters close from an intersection point, we only have to look at the cell where this intersection falls in and we will find every emitters we are interested in. That way the cost of processing the additional samples is minimalised compared to if we would sample all emitters. The reason we need to hold emitter of neighboring cells is because emitters a fex block away from the intersection point to have an effect even if it falls in a different cell.
+Whereas there is only a single sun present in the scene there can be multiple emitters and those at distances where they will not contribute much to the pixel being sampled- For this we have the emittergrid which holds the positions of all the loaded emitters within cells. Each cell of the grid holds the position of the emitters present in this cell and in neighboring cells. As such when we want to sample emitters close from an intersection point, we only have to look at the cell where this intersection falls in and we will find every emitters we are interested in. That way the cost of processing the additional samples is minimalised compared to if we would sample all emitters. The reason we need to hold emitter of neighboring cells is because emitters a few block away from the intersection point to have an effect even if it falls in a different cell.
 
 With ESS:ONE only a single emitter is sampled per intersection within the cell plus adjacent. For ESS:ALL every emitter in the cell plus adjacent are sampled per intersection. Sampling emitters increases the rendering cost but reduces the required samples. ESS:ONE tends to be very similar to ESS:NONE with ESS:ALL being the "slowest" but potentially fastest to converge- ESS:ALL also tends to result in much brighter images than NONE/ONE so a reduction in exposure or emittance value is required to compensate for this. This is known about and we need to fix some maths to solve it.
 
