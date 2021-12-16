@@ -4,9 +4,9 @@ You can change the `Sky Mode` under the "Sky & Fog" tab. There are several diffe
 
 ## Vertical Resolution
 
-Equirectangular skymaps have a 360&deg horizontal and can have a 90&deg; or a 180&deg; vertical resolution.  With 90&deg; vertical resolution the skymap will only cover the sky above the horizon, so it is mirrored at the horizon. If the skymap has 180&deg; vertical resolution the mirroring is not needed: the skymap will cover both sky and ground.
+Equirectangular skymaps have a 360&deg; horizontal resolution and can have a 90&deg; or a 180&deg; vertical resolution.  With 90&deg; vertical resolution the skymap will only cover the sky above the horizon, so it is mirrored at the horizon. If the skymap has 180&deg; vertical resolution the mirroring is not needed: the skymap will cover both sky and ground.
 
-![Skymap vertical resolution](../../img/rendering/skymap_vertical_resolution.png)
+![Skymap vertical resolution](../img/rendering/skymap_vertical_resolution.png)
 
 ## Where to find skymaps
 These pages provide links to other pages, or downloads of non-HDR skymaps:
@@ -35,15 +35,21 @@ You can also try searcing Google for [Panoramic Sky Texture][0]
 Chunky can be used to render a sky map. You will need to follow these steps
 to set up the camera correctly to render a full 360x180 degree sky map:
 
-1. Go to the Camera tab in the Render Controls window.
-2. Enter `-90` into the second text field of the Direction values.
-3. Select `Panoramic (equirectangular)` from the Projection drop-down list.
-4. Set the field of view to 180 (max out the slider).
-5. Go to the General tab in the Render Controls window.
-6. You must set the canvas width to be twice the canvas height to ensure
+1. Open the `Camera` tab in the left panel.
+2. Open the `Position & Orientation` dropdown menu.
+3. Enter `-90` into the second text field of the `Orientation` values.
+4. Select `Panoramic (equirectangular)` from the `Projection mode` dropdown menu.
+5. Set the `Field of view (zoom)` to 180 (max out the slider).
+6. Open the `Scene` tab in the left panel.
+7. You must set the canvas width to be twice the canvas height to ensure
 that the horizontal resolution is 360 degrees. This can be done by entering for
 example `800x400` in the canvas size text field and hitting `Enter`.
 
+This shows the `Camera` tab with the correct settings selected.
+![Camera tab settings](../img/rendering/camera_tab_skymap.png)
+
+And this is what the resulting render should look like.
+![Finished skymap render](../img/rendering/skymap_render.png)
 ---
 
 [0]: https://www.google.com/search?q=panoramic+sky+texture

@@ -116,7 +116,10 @@ Oh no! The camera is clipping into a player model! Either deselect `Load players
 
 ![Removed player](../img/getting_started/render/camera_ps_imported.png)
 
-The default **F**ield **o**f **V**iew for Minecraft is 70 vertical. Assuming a 16:9 aspect ratio for both Minecraft and the canvas size the default Chunky FoV should match the view with the standard projection.
+The default **F**ield **o**f **V**iew for Minecraft is 70 vertical. Assuming a 16:9 aspect ratio for both Minecraft and the canvas size, the default Chunky FoV should match the view with the standard projection. 
+
+!!! info "Dynamic FoV"
+      If dynamic FoV is enabled in Minecraft, flying in Minecraft will increase the FoV. Disable dynamic FoV to get the same FoV as in Chunky, assuming both FoV settings match.
 
 ---
 

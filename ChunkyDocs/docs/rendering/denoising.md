@@ -2,7 +2,7 @@
 
 Image noise is an inevitable consequence of path tracing and as previously stated; Brute force was the conventional solution in the past.
 
-![Cornell Box at 16 SPP](../../img/rendering/cornell_box/16.png)
+![Cornell Box at 16 SPP](../img/rendering/cornell_box/16.png)
 Cornell Box rendered at 16 SPP with lots of image noise.
 
 
@@ -12,10 +12,10 @@ Path tracing renders a sample by recursively tracing a random ray for each pixel
 
 The simplest way to decrease noise is by simply rendering more SPP. The biggest disadvantage to this is that a 2x increase in SPP is required for a 2x decrease in noise. In other words, a 32 SPP image will need 32 more samples to decrease the noise in half, a 1,000,000 SPP image will need 1,000,000 more samples to decrease the noise by half. The time required increases exponentially and thus this is not a viable solution except for the most dedicated of renderers; Of course once the [OpenCL GPU acceleration plugin](https://github.com/alexhliu/ChunkyClPlugin) by Redox is "finished" this would make high sample count renders much more viable.
 
-![Cornell Box at 1024 spp](../../img/rendering/cornell_box/1024.png)
+![Cornell Box at 1024 spp](../img/rendering/cornell_box/1024.png)
 Cornell Box rendered at 1,024 spp.
 
-![Cornell Box at 1,000,000 spp](../../img/rendering/cornell_box/1000000.png)
+![Cornell Box at 1,000,000 spp](../img/rendering/cornell_box/1000000.png)
 Cornell Box rendered at 1,000,000 spp.
 
 
@@ -81,8 +81,24 @@ AI accelerated denoisers use a fundamentally different approach called deep lear
 
 For Chunky we have leMaik's [Denoising plugin](https://github.com/chunky-dev/chunky-denoiser) which both provides the required renderers for the two addtional feature images typically recomended, being the albedo and normal maps, but it is also capable of automatically denoising using [Intel Open Image Denoise (OIDN)](https://www.openimagedenoise.org/). We should note that this denoiser is not restricted to Intel platforms as any CPU with support for at least SSE4.1 or Apple Silicon is supported. Otherwise there is the NVidia AI-accelerated Denoiser (NVAIDN), which is part of OptiX, which requires a NVidia GPU of Maxwell architecture or newer plus at least driver 465.84 or higher. [Standalone NVAIDN](https://github.com/DeclanRussell/NvidiaAIDenoiser).
 
-An important disclaimer is needed regarding AI accelerated denoisers - **They aren't magic** - If you do not provide the addtional feature images and/or the noisy image you are trying to denoise is too challenging for the AI to handle it will result in visual artifacts: deformed blocks and blurred textures. This gives some denoised renders an "oil painting" effect. If possible provide the addtional feature images or raise the SPP.
+The albedo map:
+![Denoiser albedo map](../img/rendering/denoiser_albedo.png)
+The Albedo map is a feature image that provides the largest quality bump to the denoiser. It’s basically just a representation of the texture information within the scene independant of shading (lighting) or viewing angle. This map tends to help restore texture details.
 
-![Oil painting effect example](../../img/rendering/oil_painting.jpg)
+The normal map:
+![Denoiser normal map](../img/rendering/denoiser_normal.png)
+The Normal map is another feature image that can help. In order to use a Normal map you need to provide the Denoiser with the Albedo map first. This map tends to help restore block shape.
+
+Scene rendered to 64 SPP:
+![Scene rendered to 64 SPP](../img/rendering/denoiser_64SPP.png)
+
+Denoised image:
+![Denoised image](../img/rendering/denoiser_denoised.png)
+
+The higher the SPP the scene is rendered to, the better the denoiser will perform.
+
+An important disclaimer is needed regarding AI accelerated denoisers - **They aren't magic** - If you do not provide the addtional feature images, and/or the noisy image you are trying to denoise is too challenging for the AI to handle, it will result in visual artifacts, such as deformed blocks and blurred textures. This gives some denoised renders an "oil painting" effect. If possible provide the addtional feature images or raise the SPP.
+
+![Oil painting effect example](../img/rendering/oil_painting.jpg)
 
 --8<-- "includes/abbreviations.md"
