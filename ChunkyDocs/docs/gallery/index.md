@@ -1,7 +1,9 @@
-# Gallery
-
-Click the images to view a larger version.
-
+---
+title: Gallery
+hide:
+  - header
+  - edit-page
+  - navigation
 ---
 
 <div class="gallery">
@@ -244,6 +246,6 @@ Click the images to view a larger version.
 
 ---
 
-[Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](https://chunky.llbit.se/gallery.html){ .md-button }
+[:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](https://chunky.llbit.se/gallery.html){ .md-button }
 
 --8<-- "includes/abbreviations.md"
