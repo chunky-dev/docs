@@ -99,7 +99,7 @@ Potential causes:
 
 3) Missing GTK2 on Linux
 
-4) Try a differnt JDK like https://jdk.java.net/17/
+4) Try a differnt JDK like [such as this one](https://jdk.java.net/17/)
 
 
 ### Problematic frame...
