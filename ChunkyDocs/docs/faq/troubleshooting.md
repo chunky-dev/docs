@@ -95,7 +95,21 @@ Potential causes:
 
 1) Specified module path does not point to a valid javafx sdk
 
-2) Mismatched JDK/JavaFX architecture (ie x86 and 64 bit).
+2) Mismatched JDK/JavaFX architectures (ie x86 and x64, aarm64 and x64, etc)
+
+3) Missing GTK2 on Linux
+
+4) Try a differnt JDK like https://jdk.java.net/17/
+
+
+### Problematic frame...
+
+```
+Problematic frame:
+v  ~StubRoutines::SafeFetchN
+```
+
+This bug is in the Java issue tracker and will be fixed in 17.0.2. You may need to try a different JDK.
 
 
 ### Module jrt.fs conflict
@@ -104,5 +118,6 @@ If you get the following error: `java.lang.LayerInstantiationException: Package 
 
 
 [^3]: Important note that quotation marks `" "` need to be included surrounding any file paths to ensure that special characters like a hyphen, `-`, space, ` `, etc. do not cause issues.
+
 
 --8<-- "includes/abbreviations.md"
