@@ -12,7 +12,7 @@ or you may download the Universal JAR (Chunky Launcher).
 <a href="https://chunky.llbit.se/download.html" class="md-button">:material-linux: Linux<br><btnsub>Debian package (beta)</btnsub></a>
 <a href="https://chunky.llbit.se/download.html" class="md-button">:material-apple: macOS<br><btnsub>DMG image (beta)</btnsub></a>
 -->
-<a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="md-button">:material-package-variant-closed: Universal JAR <br><btnsub>Chunky Launcher v1.13.0</btnsub></a>
+<a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="md-button">:material-package-variant-closed: Universal JAR <br><btnsub>Chunky Launcher v1.13.1</btnsub></a>
 
 ## Universal JAR - Chunky Launcher - Setup
 
