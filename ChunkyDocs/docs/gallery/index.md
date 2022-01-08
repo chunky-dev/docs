@@ -246,6 +246,6 @@ hide:
 
 ---
 
-[:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](https://chunky.llbit.se/gallery.html){ .md-button }
+[:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](https://web.archive.org/web/20210521060623/https://chunky.llbit.se/gallery.html){ .md-button }
 
 --8<-- "includes/abbreviations.md"
