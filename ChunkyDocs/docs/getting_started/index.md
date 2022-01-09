@@ -53,6 +53,7 @@ Notes - On M1 equiqed macs, which are aarch64 (ARM based), Rosetta 2 enables an 
 
  <span>5.</span> Launch ChunkyLauncher.jar. `java -jar ChunkyLauncher.jar` (might be 
 `java -jar ~/Downloads/ChunkyLauncher.jar`)
+
 ---
 
 ## Chunky First-Time Setup
@@ -69,7 +70,7 @@ Next, you will see the Chunky Launcher:
 
 If you downloaded the Universal JAR (only Chunky Launcher) then you will have to update Chunky, otherwise can click "Launch" to start Chunky.
 
-## Updating Chunky
+### Updating Chunky
 
 In the launcher, hitting the "Check for Update" button will make the launcher check for an update to Chunky online.
 This must be done the first time you start Chunky if you only downloaded the launcher.
@@ -81,11 +82,15 @@ If an update to Chunky was is available you will soon see the "Update Available!
 Click the "Update to New Version" button to start downloading the required files.
 When the download process has completed you can either click on "Launch Chunky" or "Close". If you click on "Close" you would need to click on "Launch" in the main Chunky Launcher window to launch Chunky.
 
+---
+
 ## Snapshot builds
 
-By default, the launcher will download _stable_ releases of Chunky. If you want to get the latest features and bug fixes (and maybe some new bugs or incomplete features), you can enable the "Download snapshots" option in the "Advanced Settings" panel. The next time you check for updates, the launcher will download the latest Chunky snapshot.
+By default, the launcher will download _stable_ releases of Chunky. If you want to get the latest features and bug fixes (and maybe some new bugs or incomplete features), you can switch the "Release channel" under the "Advanced Settings" panel. The next time you check for updates, the launcher will download the latest Chunky snapshot.
 
-The snapshots are automatically built every day from the [master branch](https://github.com/chunky-dev/chunky/commits/master). Some plugins may not work with Chunky snapshots while some plugins may even require a certain snapshot (or later versions).
+The snapshots are automatically built every day from the [chunky-2.4.x](https://github.com/chunky-dev/chunky/tree/chunky-2.4.x) and [master](https://github.com/chunky-dev/chunky/commits/master) branches. Some plugins may not work with Chunky snapshots while some plugins may even require a certain snapshot (or later versions).
+
+---
 
 ## Troubleshooting
 
