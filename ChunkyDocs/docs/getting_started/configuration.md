@@ -36,7 +36,7 @@
 
 - `Close console when Chunky exits` - Typically this can be left enabled. If an exception/error causes chunky to crash it should still be possible to read the console.
 
-- `Download snapshots` - Snapshots are nightly/alpha/beta builds of Chunky, depending on the update site used, and may be unstable.
+- `Releas channel` - Allows you to select which type of release you would like to use. `Stable` is typically the most stable version. `Stable Snapshot` is like a beta release; Should be stable and can come with new features, bugs, and bug fixes. `Snapshot` is bleeding edge and probably unstable.
 
 - `Settings directory` - Does not let you change the settings directory but does let you see/access it.
 
