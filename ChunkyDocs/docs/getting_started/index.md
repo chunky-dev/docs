@@ -12,18 +12,21 @@ or you may download the Universal JAR (Chunky Launcher).
 <a href="https://chunky.llbit.se/download.html" class="md-button">:material-linux: Linux<br><btnsub>Debian package (beta)</btnsub></a>
 <a href="https://chunky.llbit.se/download.html" class="md-button">:material-apple: macOS<br><btnsub>DMG image (beta)</btnsub></a>
 -->
-<a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="md-button">:material-package-variant-closed: Universal JAR <br><btnsub>Chunky Launcher v1.12.2</btnsub></a>
+<a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" class="md-button">:material-package-variant-closed: Universal JAR <br><btnsub>Chunky Launcher v1.13.1</btnsub></a>
 
-## Universal JAR - Chunky Launcher - Setup
+---
 
- 1. You must install [**Java 17**](https://adoptium.net/) for your platform.
+### Universal JAR - Chunky Launcher - Setup
 
- 2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform.
+ 1. You must install [**Java 17**](https://adoptium.net/) for your platform[^4].
+
+ 2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform[^4].
 
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
 
-### Windows
+#### Windows
+
  <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `C:\Program Files\openjfx` or `..\.chunky\openjfx`.
  
  <span>5.</span> Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar "path\to\ChunkyLauncher.jar" --launcher`.
@@ -34,14 +37,24 @@ or you may download the Universal JAR (Chunky Launcher).
   </div>
 </div>
 
-### Linux
+#### Linux
+
  <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `/javafx-sdk-17.0.1/`
 
  <span>5.</span> Launch ChunkyLauncher.jar. `java --module-path javafx-sdk-17.0.1/lib --add-modules javafx.controls,javafx.fxml -jar launcher/ChunkyLauncher.jar`
 
-### MacOS
+#### macOS
 
- Erm... same as all the above guides...?
+Notes - On M1 equiqed macs, which are aarch64 (ARM based), Rosetta 2 enables an emulation, of sorts, of x64 macOS applications. Please ensure both JDK and OpenJFX have matching architectures. We recommended native aarch64 however x64 performance should be similar. Furthermore there are many other issues and bugs that are difficult to resolve. Please ask for assistance and we will try our best.
+
+
+<span>4.</span> Open the `Terminal` and run the following commands (while fixing the .zip name):
+	
+	mkdir ~/.chunky
+	unzip ~/Downloads/openjfx-17.0.1_osx-aarch64_bin-sdk.zip -d ~/.chunky/javafx
+
+ <span>5.</span> Launch ChunkyLauncher.jar. `java -jar ChunkyLauncher.jar` (might be 
+`java -jar ~/Downloads/ChunkyLauncher.jar`)
 
 ---
 
@@ -59,7 +72,7 @@ Next, you will see the Chunky Launcher:
 
 If you downloaded the Universal JAR (only Chunky Launcher) then you will have to update Chunky, otherwise can click "Launch" to start Chunky.
 
-## Updating Chunky
+### Updating Chunky
 
 In the launcher, hitting the "Check for Update" button will make the launcher check for an update to Chunky online.
 This must be done the first time you start Chunky if you only downloaded the launcher.
@@ -71,11 +84,15 @@ If an update to Chunky was is available you will soon see the "Update Available!
 Click the "Update to New Version" button to start downloading the required files.
 When the download process has completed you can either click on "Launch Chunky" or "Close". If you click on "Close" you would need to click on "Launch" in the main Chunky Launcher window to launch Chunky.
 
+---
+
 ## Snapshot builds
 
-By default, the launcher will download _stable_ releases of Chunky. If you want to get the latest features and bug fixes (and maybe some new bugs or incomplete features), you can enable the "Download snapshots" option in the "Advanced Settings" panel. The next time you check for updates, the launcher will download the latest Chunky snapshot.
+By default, the launcher will download _stable_ releases of Chunky. If you want to get the latest features and bug fixes (and maybe some new bugs or incomplete features), you can switch the "Release channel" under the "Advanced Settings" panel. The next time you check for updates, the launcher will download the latest Chunky snapshot.
 
-The snapshots are automatically built every day from the [master branch](https://github.com/chunky-dev/chunky/commits/master). Some plugins may not work with Chunky snapshots while some plugins may even require a certain snapshot (or later versions).
+The snapshots are automatically built every day from the [chunky-2.4.x](https://github.com/chunky-dev/chunky/tree/chunky-2.4.x) and [master](https://github.com/chunky-dev/chunky/commits/master) branches. Some plugins may not work with Chunky snapshots while some plugins may even require a certain snapshot (or later versions).
+
+---
 
 ## Troubleshooting
 
@@ -86,5 +103,8 @@ If you get an `unchecked exception` caused by `java.lang.NoClassDefFoundError: j
 [^2]: As of Chunky 2.4.0, which supports Minecraft 1.2.1 (i.e. pre-flattening worlds), you probably don't need the old version anymore.
 
 [^3]: Important note that quotation marks `" "` need to be included surrounding any file paths to ensure that special characters like a hyphen, `-`, space, ` `, etc. do not cause issues.
+
+[^4]: Ensure that the OS and Architecture correctly match your system.
+
 
 --8<-- "includes/abbreviations.md"
