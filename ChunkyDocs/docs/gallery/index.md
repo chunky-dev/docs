@@ -7,6 +7,7 @@ hide:
 ---
 
 <div class="gallery">
+
 	<!--- ###### B
 	-->
 	<div class=gallery__item>
@@ -56,7 +57,7 @@ hide:
 
 	<!--- ###### C
 	-->
-
+	<!---
 	<div class=gallery__item>
 		<a href="../img/gallery/Sage-at-night.denoised - Harry Howells.png">
 			<img border="0" class="gallery__img" alt="Bridge over water at night" src="../img/gallery/Sage-at-night.denoised - Harry Howells_q.jpg">
@@ -65,7 +66,7 @@ hide:
 			"Bridge over water at night" - Render by Coosanta
 		</div>
 	</div>
-	
+	-->	
 	<!--- ###### E
 	-->
 	<div class=gallery__item>
@@ -145,7 +146,7 @@ hide:
 			"City of Plexia" - Render by MadDog
 		</div>
 	</div>
-	
+	<!---
 	<div class=gallery__item>
 		<a href="../img/gallery/Cope-200 - Mad Dog.png">
 			<img border="0" class="gallery__img" alt="War Paint (Disabled EXP Farm)" src="../img/gallery/Cope-200 - Mad Dog_q.jpg">
@@ -154,7 +155,7 @@ hide:
 			"War Paint (Disabled EXP Farm)" - Render by MadDog
 		</div>
 	</div>
-	
+	-->
 	<!--- ###### P
 	-->
 	<div class=gallery__item>
@@ -163,6 +164,33 @@ hide:
 		</a>
 		<div class="gallery__desc">
 			"Edge of a Dark Forest" - Render by Peregrine05
+		</div>
+	</div>
+
+	<div class=gallery__item>
+		<a href="../img/gallery/Peregrine05_Badlands_1 - Josiah Hillman.png">
+			<img border="0" class="gallery__img" alt="Badlands" src="../img/gallery/Peregrine05_Badlands_1 - Josiah Hillman_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Badlands" - Render by Peregrine05
+		</div>
+	</div>
+
+	<div class=gallery__item>
+		<a href="../img/gallery/Peregrine05_Misty_Mountains_1 - Josiah Hillman.png">
+			<img border="0" class="gallery__img" alt="Misty Mountains" src="../img/gallery/Peregrine05_Misty_Mountains_1 - Josiah Hillman_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Misty Mountains" - Render by Peregrine05
+		</div>
+	</div>
+
+	<div class=gallery__item>
+		<a href="../img/gallery/Peregrine05_Mountain_Lake_1 - Josiah Hillman.png">
+			<img border="0" class="gallery__img" alt="Mountain Lake" src="../img/gallery/Peregrine05_Mountain_Lake_1 - Josiah Hillman_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Mountain Lake" - Render by Peregrine05
 		</div>
 	</div>
 	
@@ -179,7 +207,7 @@ hide:
 	-->
 	<div class=gallery__item>
 		<a href="../img/gallery/RavaPollo_1.png">
-			<img border="0" class="gallery__img" alt="Greenfield - Minekea" src="../img/gallery/RavaPollo_1_q.jpg">
+			<img border="0" class="gallery__img" alt="Space" src="../img/gallery/RavaPollo_1_q.jpg">
 		</a>
 		<div class="gallery__desc">
 			"Space" - Render by RavaPollo
@@ -187,7 +215,7 @@ hide:
 	</div>
 	<div class=gallery__item>
 		<a href="../img/gallery/RavaPollo_2.png">
-			<img border="0" class="gallery__img" alt="Greenfield - Minekea" src="../img/gallery/RavaPollo_2_q.jpg">
+			<img border="0" class="gallery__img" alt="Pandas Gaze" src="../img/gallery/RavaPollo_2_q.jpg">
 		</a>
 		<div class="gallery__desc">
 			"Pandas Gaze" - Render by RavaPollo
@@ -195,7 +223,7 @@ hide:
 	</div>
 	<div class=gallery__item>
 		<a href="../img/gallery/RavaPollo_3.png">
-			<img border="0" class="gallery__img" alt="Greenfield - Minekea" src="../img/gallery/RavaPollo_3_q.jpg">
+			<img border="0" class="gallery__img" alt="Coral Reef" src="../img/gallery/RavaPollo_3_q.jpg">
 		</a>
 		<div class="gallery__desc">
 			"Coral Reef" - Render by RavaPollo
@@ -214,6 +242,42 @@ hide:
 	<!--- ###### S
 	-->
 	<div class=gallery__item>
+		<a href="../img/gallery/727BB2B3-93DB-48AE-BC53-368700CA1153 - Sander Poelmans.png">
+			<img border="0" class="gallery__img" alt="ARTHAS" src="../img/gallery/727BB2B3-93DB-48AE-BC53-368700CA1153 - Sander Poelmans_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"ARTHAS" - Render by Sander Poelmans
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/9A3B2FFB-5335-4782-81B6-36809E336B07 - Sander Poelmans.jpeg">
+			<img border="0" class="gallery__img" alt="Arctic peak" src="../img/gallery/9A3B2FFB-5335-4782-81B6-36809E336B07 - Sander Poelmans_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Arctic peak" - Render by Sander Poelmans
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/AAFE56E8-4477-4583-A5B7-17EAB1A841DA - Sander Poelmans.jpeg">
+			<img border="0" class="gallery__img" alt="Land of plants" src="../img/gallery/AAFE56E8-4477-4583-A5B7-17EAB1A841DA - Sander Poelmans_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Land of plants" - Render by Sander Poelmans
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/82857F9C-B30A-450A-8559-D1CEB9591A5F - Sander Poelmans.png">
+			<img border="0" class="gallery__img" alt="Mountain castle" src="../img/gallery/82857F9C-B30A-450A-8559-D1CEB9591A5F - Sander Poelmans_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Mountain castle " - Render by Sander Poelmans
+		</div>
+	</div>
+	
+	<div class=gallery__item>
 		<a href="../img/gallery/cyberpunk_city_full - SPAWNRYS.png">
 			<img border="0" class="gallery__img" alt="Cyberpunk City 2" src="../img/gallery/cyberpunk_city_full - SPAWNRYS_q.jpg">
 		</a>
@@ -228,6 +292,15 @@ hide:
 		</a>
 		<div class="gallery__desc">
 			"Titania City" - Render by SPAWNRYS - <a href="https://www.planetminecraft.com/project/titania-a-massive-modern-and-original-metropolis/"> PMC map </a>
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/meridian-night-2 - Syphia.png">
+			<img border="0" class="gallery__img" alt="Meridian" src="../img/gallery/meridian-night-2 - Syphia_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Meridian" - Render by Syphia - Map created by Tannatron and frostie
 		</div>
 	</div>
 
