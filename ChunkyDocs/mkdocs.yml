@@ -92,7 +92,7 @@ nav:
     - "Getting started": "plugins/index.md"
     - "Plugins": "plugins/plugins.md"
     - "Plugin development": "plugins/development.md"
-  - "FAQ":
+  - "FAQ and Troubleshooting":
     - "FAQ": "faq/index.md"
     - "Troubleshooting": "faq/troubleshooting.md"
     - "Minecraft compatibility": "faq/minecraft_compatibility.md"
