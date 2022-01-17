@@ -6,7 +6,7 @@ edit_uri: https://github.com/chunky-dev/docs/edit/master/ChunkyDocs/docs/
 
 theme:
   name: material
-  favicon: assets/logo.svg
+  favicon: assets/favicon.ico
   logo: assets/logo.svg
   palette:
     - media: "(prefers-color-scheme: light)"
