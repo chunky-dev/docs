@@ -96,7 +96,7 @@ Run Chunky with the `-help` command to see a list of all available command-line 
 * `-reset <NAME> <SCENE>` - Reset a scene setting to its default value.
 * `-download-mc <VERSION>` - Download a particular version of Minecraft.
 * `-list-scenes` - List available scenes in the scene directory.
-* `-merge-dump <SCENE> <PATH>` Merge a render dump into the specified scene.
+* `-merge-dump <SCENE> <PATH>` Merge a render `.dump` file into the specified scene combining the total SPP[^1]. 
 * `-help` - Print the command-line help and Copyright notice.
 
 The launcher accepts these commands:
@@ -108,6 +108,6 @@ The launcher accepts these commands:
 * `--version` - Display the launcher version.
 * `--verbose` - Enable verbose logging.
 
-
+[^1]: Make sure that the SPP Target of the specified scene is greater than the sum of the current SPP for the scene and dump you are merging. Otherwise there may be unexpected behaviour...
 
 --8<-- "includes/abbreviations.md"

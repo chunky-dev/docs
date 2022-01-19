@@ -16,7 +16,7 @@
 
 --
 
-- `Merge render dump` - Useful for multi-PC rendering. Merges a renders .dump file into the currently loaded scene combining the total SPP.
+- `Merge render dump` - Useful for multi-PC rendering. Merges a renders `.dump` file into the currently loaded scene combining the total SPP[^1].
 
 ---
 
@@ -51,5 +51,7 @@
 - `Renderer` - `PathTracingRenderer` - No other renderers are bundled. See plugins.
 
 - `Preview Renderer` - `PreviewRenderer` - No other renderers are bundled. See plugins.
+
+[^1]: Make sure that the SPP Target of the specified scene is greater than the sum of the current SPP for the scene and dump you are merging. Otherwise there may be unexpected behaviour...
 
 --8<-- "includes/abbreviations.md"
