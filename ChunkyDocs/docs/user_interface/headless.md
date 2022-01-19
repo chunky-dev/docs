@@ -96,7 +96,7 @@ Run Chunky with the `-help` command to see a list of all available command-line 
 * `-reset <NAME> <SCENE>` - Reset a scene setting to its default value.
 * `-download-mc <VERSION>` - Download a particular version of Minecraft.
 * `-list-scenes` - List available scenes in the scene directory.
-* `-merge-dump <SCENE> <PATH>` Merge a render `.dump` file into the specified scene combining the total SPP[^1]. 
+* `-merge-dump <SCENE> <PATH>` - Merge a render `.dump` file into the specified scene combining the total SPP[^1]. 
 * `-help` - Print the command-line help and Copyright notice.
 
 The launcher accepts these commands:
