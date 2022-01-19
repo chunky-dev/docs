@@ -166,7 +166,7 @@ SDF JSON files are stored in the scene directory and the filename is based on th
 | orientation | Direction Object |  | See below |
 | projectionMode | `{"PINHOLE", "PARALLEL", "FISHEYE", "STEREOGRAPHIC", "PANORAMIC", "PANORAMIC_SLOT", “ODS_LEFT”, “ODS_RIGHT”}` | “PINHOLE” | Camera projection mode |
 | fov | Number | 70.0 | Field of View |
-| dof | Number | "Infinity" | Depth of Field |
+| dof | Number | "Infinity" | Depth of Field, also accepts numbers like "0.0" |
 | focalOffset | Number | 2.0 | Distance to target |
 | shift | XY Object |  | See XYZ object |
 
@@ -184,11 +184,11 @@ Note - XY Object is a XYZ Object just without the Z component.
 
 #### Direction Object
 
-| Key | Value range |
-|---|---|
-| roll | Number |
-| pitch | Number |
-| yaw | Number |
+| Key | Value range | Description |
+|---|---|---|
+| roll | Number | In radians |
+| pitch | Number | In radians |
+| yaw | Number | In radians |
 
 
 #### Sun Object
@@ -206,7 +206,7 @@ Note - XY Object is a XYZ Object just without the Z component.
 
 | Key | Value range | Default value | Description |
 |---|---|---|---|
-| skyYaw | Number `{0 to 2PI}` | 0.0 | Offset angle for the sky map |
+| skyYaw | Number `{0 to 2PI}` | 0.0 | Offset angle for the sky map in radians |
 | skyMirrored | Boolean | true | Enables mirroring of the skymap at the horizon (use when the vertical skymap angle is 90 degrees) |
 | skyLight | Number | 1.0 | Sky light scaling factor |
 | mode | `{"SIMULATED", "SOLID_COLOR", “GRADIENT”, “SKYMAP_PANORAMIC”, “SKYMAP_SPHERICAL”, “SKYBOX”, “BLACK”}` | "SIMULATED" | Sky rendering mode |

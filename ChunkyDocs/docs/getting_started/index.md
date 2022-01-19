@@ -3,7 +3,6 @@
 There are two ways to install Chunky. You may download the installer for your OS[^1],
 or you may download the Universal JAR (Chunky Launcher).
 
-[^1]: Installers for Windows, Linux and macOS are [currently being worked on](https://github.com/leMaik/chunky-launcher-standalone).
 
 ## Downloads
 
@@ -18,12 +17,16 @@ or you may download the Universal JAR (Chunky Launcher).
 
 ### Universal JAR - Chunky Launcher - Setup
 
+Chunky requires at least 512MB of free RAM and 23MiB of free storage[^5].
+
  1. You must install [**Java 17**](https://adoptium.net/) for your platform[^4].
 
  2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform[^4].
 
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
+
+---
 
 #### Windows
 
@@ -37,11 +40,15 @@ or you may download the Universal JAR (Chunky Launcher).
   </div>
 </div>
 
+---
+
 #### Linux
 
  <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `/javafx-sdk-17.0.1/`
 
  <span>5.</span> Launch ChunkyLauncher.jar. `java --module-path javafx-sdk-17.0.1/lib --add-modules javafx.controls,javafx.fxml -jar launcher/ChunkyLauncher.jar`
+
+---
 
 #### macOS
 
@@ -55,6 +62,7 @@ Notes - On M1 equiqed macs, which are aarch64 (ARM based), Rosetta 2 enables an 
 
  <span>5.</span> Launch ChunkyLauncher.jar. `java -jar ChunkyLauncher.jar` (might be 
 `java -jar ~/Downloads/ChunkyLauncher.jar`)
+
 
 ---
 
@@ -100,11 +108,16 @@ If the launcher does not download the latest version or new snapshots, check the
 
 If you get an `unchecked exception` caused by `java.lang.NoClassDefFoundError: javafx/application/Application` when launching Chunky Launcher use `java --module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml -jar "path\to\ChunkyLauncher.jar"` to launch Chunky Launcher. If you get this exception when clicking "Launch" in the Chunky Launcher, double check the `Java Options` field under `Advanced` is populated by `--module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml`[^3]. This field should automatically be populated.
 
+
+[^1]: Installers for Windows, Linux and macOS are [currently being worked on](https://github.com/leMaik/chunky-launcher-standalone).
+
 [^2]: As of Chunky 2.4.0, which supports Minecraft 1.2.1 (i.e. pre-flattening worlds), you probably don't need the old version anymore.
 
 [^3]: Important note that quotation marks `" "` need to be included surrounding any file paths to ensure that special characters like a hyphen, `-`, space, ` `, etc. do not cause issues.
 
 [^4]: Ensure that the OS and Architecture correctly match your system.
+
+[^5]: Bare minimum to run Chunky is Java 8 update 51, JavaFX, 512MB of free RAM, 100MiB of storage (for core files).
 
 
 --8<-- "includes/abbreviations.md"
