@@ -296,8 +296,8 @@ hide:
 	</div>
 	
 	<div class=gallery__item>
-		<a href="../img/gallery/meridian-night-2 - Syphia.png">
-			<img border="0" class="gallery__img" alt="Meridian" src="../img/gallery/meridian-night-2 - Syphia_q.jpg">
+		<a href="../img/gallery/meridian-night-2-Syphia.jpg">
+			<img border="0" class="gallery__img" alt="Meridian" src="../img/gallery/meridian-night-2-Syphia_q.jpg">
 		</a>
 		<div class="gallery__desc">
 			"Meridian" - Render by Syphia - Map created by Tannatron and frostie
