@@ -88,6 +88,7 @@ nav:
     - "Headless": "user_interface/headless.md"
     - "Scene Format": "rendering/scene_format.md"
     - "Skymaps": "rendering/skymaps.md"
+    - "Theming": "user_interface/style.md"
   - "Plugins":
     - "Getting started": "plugins/index.md"
     - "Plugins": "plugins/plugins.md"
