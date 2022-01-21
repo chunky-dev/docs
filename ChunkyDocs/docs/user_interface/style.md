@@ -87,7 +87,7 @@ Customisation is not limited to what is in the template. An example would be wit
 
 ### Light
 
-![](../img/themes/nice_blue.jpg)
+![](../img/themes/light.jpg)
 *Created by jackjt8 - Sorry*
 
 ```
