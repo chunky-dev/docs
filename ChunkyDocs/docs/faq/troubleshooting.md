@@ -39,6 +39,11 @@ Check the debug console (enable it under Advanced Settings in the launcher):
 
 The line that says "Could not reserve enough space for ...  object heap" indicates that the Java installation did not allow the configured memory limit.
 
+## Map View Ocean / red X / Unsupported World/Chunks
+
+![Rare font corruption in jar files](../img/faq/unsupported_chunks_map_view.png)
+
+If you attempt to load an unsupported world in Chunky you may find that `Map View` displays the chunks as either an Ocean biome, if the `Scale` is set below 13, or as red X's. That means the world is not currently supported (in this version of Chunky). It is recommended to try updating Chunky, potentially to `Stable Snapshot` or `Snapshot` via `Release Channels` in the Launcher if the world is from a newer version of Minecraft. Otherwise please refer to the issue tracker or our Discord server.
 
 ## Black blocks with a red X / Wrong Textures / Changing Texture Pack
 
