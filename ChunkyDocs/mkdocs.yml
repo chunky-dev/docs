@@ -6,7 +6,7 @@ edit_uri: https://github.com/chunky-dev/docs/edit/master/ChunkyDocs/docs/
 
 theme:
   name: material
-  favicon: assets/logo.svg
+  favicon: assets/favicon.ico
   logo: assets/logo.svg
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -88,11 +88,12 @@ nav:
     - "Headless": "user_interface/headless.md"
     - "Scene Format": "rendering/scene_format.md"
     - "Skymaps": "rendering/skymaps.md"
+    - "Theming": "user_interface/style.md"
   - "Plugins":
     - "Getting started": "plugins/index.md"
     - "Plugins": "plugins/plugins.md"
     - "Plugin development": "plugins/development.md"
-  - "FAQ":
+  - "FAQ and Troubleshooting":
     - "FAQ": "faq/index.md"
     - "Troubleshooting": "faq/troubleshooting.md"
     - "Minecraft compatibility": "faq/minecraft_compatibility.md"

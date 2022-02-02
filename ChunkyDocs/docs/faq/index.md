@@ -41,8 +41,8 @@ You might have a low resolution skymap or it may be the wrong format. Chunky sup
 The Skymap page has some useful links for obtaining high quality skymaps.
 
 
-## What about the SpigotMC Plugin?
+## What about the 3rd Party Server Plugin?
 
-[Chunky (SpigotMC)](https://www.spigotmc.org/resources/chunky.81534/) is an unrelated project which has an unfortunate name collision. Said plugin is used to quickly pre-generate server chunks.
+[Chunky (SpigotMC)](https://www.spigotmc.org/resources/chunky.81534/) and [Chunky Pregenerator](https://papermc.io/forums/t/1-13-2-1-18-1-chunky-pregenerator/4850) is an unrelated project which has an unfortunate name collision (iirc, Chunky is (C) 2010 and the Pregenerator was made in 2020). Said plugin is used to pre-generate server chunks.
 
 --8<-- "includes/abbreviations.md"
