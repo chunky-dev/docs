@@ -20,6 +20,14 @@ Adds a bloom post processing option.
 
 ---
 
+## BVH Plugin
+
+[:material-account: aTom3333](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-bvh-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-bvh-plugin/releases)
+
+Adds addtional BVH's to Chunky.
+
+---
+
 ## Denoising Plugin
 
 [:material-account: leMaik](https://github.com/leMaik) &middot; [:material-github: GitHub Repository](https://github.com/chunky-dev/chunky-denoiser) &middot; [:material-tag: Releases](https://github.com/chunky-dev/chunky-denoiser/releases)
