@@ -29,8 +29,8 @@ Click the images to view a larger version.
 	</div>
     
     <div class=gallery__item>
-		<a href="../../img/old_gallery/sunbeam.png">
-			<img border="0" class="gallery__img" alt="Atmosphere effects" src="../../img/old_gallery/sunbeam.jpg">
+		<a href="../../img/old_gallery/Sunbeam.png">
+			<img border="0" class="gallery__img" alt="Atmosphere effects" src="../../img/old_gallery/Sunbeam.jpg">
 		</a>
 		<div class="gallery__desc">
 			"Atmosphere effects"
