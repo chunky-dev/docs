@@ -62,6 +62,9 @@ First, make sure that you have selected some chunks before creating a new scene.
 
 If you still have the problem it may be caused by the `Y min clip`/`Y max clip` settings. The Y clip settings in the Render Controls pane under Scene can prevent the blocks from being loaded, especially if you are loading a superflat world. All blocks that have a Y value (height) outside the Y clip value will not be loaded.
 
+## java.lang.NoSuchMethodError: javafx.scene.control.ChoiceBox.setOnAction(Ljavafx/event/EventHandler;)
+
+The setOnAction method was added to the ChoiceBox API starting from Java 8 update 60. It is recommended to at least update to 8u60 however 8u300+ would be most secure with Java 17 LTS recommended.
 
 ## Rare bugs
 

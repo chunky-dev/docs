@@ -117,7 +117,7 @@ If you get an `unchecked exception` caused by `java.lang.NoClassDefFoundError: j
 
 [^4]: Ensure that the OS and Architecture correctly match your system.
 
-[^5]: Bare minimum to run Chunky is Java 8 update 51, JavaFX, 512MB of free RAM, 100MiB of storage (for core files).
+[^5]: Bare minimum to run Chunky is Java 8 update 60, JavaFX, 512MB of free RAM, 100MiB of storage (for core files).
 
 
 --8<-- "includes/abbreviations.md"
