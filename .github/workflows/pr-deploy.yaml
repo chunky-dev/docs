@@ -27,9 +27,8 @@ jobs:
       - name: Deploy Surge
         uses: afc163/surge-preview@v1
         with:
-#          surge_token: ${{ secrets.SURGE_TOKEN }}
+          surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dist: ./site/
           teardown: 'true'
-          failOnError: 'false'
           build: echo ""

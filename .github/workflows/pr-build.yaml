@@ -2,7 +2,8 @@ name: Pull Request Build
 on:
   pull_request:
     branches: [master]
-    types: [opened, synchronize, reopened, closed]
+    types: [opened, synchronize, reopened]
+
 jobs:
   preview:
     runs-on: ubuntu-latest
@@ -34,16 +35,3 @@ jobs:
           name: site
           path: ./ChunkyDocs/site/
           if-no-files-found: error
-
-#      - name: Deploy preview
-#        uses: afc163/surge-preview@v1
-#        if: success()
-#        continue-on-error: true
-#        with:
-#          surge_token: ${{ secrets.SURGE_TOKEN }}
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          dist: ./ChunkyDocs/site/
-#          teardown: 'true'
-#          failOnError: 'false'
-#          build: |
-#            echo ""
