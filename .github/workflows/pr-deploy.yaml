@@ -1,0 +1,31 @@
+name: Pull Request Deploy
+
+on:
+  workflow_run:
+    workflows:
+      - "Pull Request Build"
+    types:
+      - completed
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Download Artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: ${{ github.event.workflow_run.workflow_id }}
+          name: pr-build
+          path: ./site/
+
+      - name: Deploy Surge
+        uses: afc163/surge-preview@v1
+        with:
+#          surge_token: ${{ secrets.SURGE_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          dist: ./site/
+          teardown: 'true'
+          failOnError: 'false'
+          build: echo ""
