@@ -17,18 +17,15 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           workflow: ${{ github.event.workflow_run.workflow_id }}
-          name: site
-          path: ./site/docs/
-
-      - name: Create Redirect
-        run: |
-          echo "<html><body><div>Redirecting... <a href=\"/docs\">Click Here</a></div><script>window.location = \"/docs\";</script></body></html>" > ./site/index.html
+          name: pr-build
+          path: ./site/
 
       - name: Deploy Surge
         uses: afc163/surge-preview@v1
         with:
-          surge_token: ${{ secrets.SURGE_TOKEN }}
+#          surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dist: ./site/
           teardown: 'true'
+          failOnError: 'false'
           build: echo ""
