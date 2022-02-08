@@ -9,6 +9,10 @@ on:
     types:
       - completed
 
+concurrency:
+  group: pr-build-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   preview:
     runs-on: ubuntu-latest

@@ -5,6 +5,10 @@ on:
     types:
       - closed
 
+concurrency:
+  group: pr-build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   teardown:
     runs-on: ubuntu-latest
@@ -20,14 +24,14 @@ jobs:
 
       - name: Teardown Surge
         run: |
-          surge teardown https://chunky-dev-docs-pr-${{ github.event.pull_request.number }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+          surge teardown https://chunky-dev-docs-pr-${{ github.event.pull_request.number }}.surge.sh --token ${{ secrets.SURGE_TOKEN }} || true
 
       - name: Update Comment
         uses: actions-cool/maintain-one-comment@v1.2.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
-            PR Preview has been destroyed since this PR has been closed.
+            PR Preview has been destroyed since this PR is closed.
             
             <!-- Sticky Pull Request Comment -->
           body-include: "<!-- Sticky Pull Request Comment -->"

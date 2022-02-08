@@ -1,8 +1,13 @@
 name: Pull Request Build
+
 on:
   pull_request:
     branches: [master]
     types: [opened, synchronize, reopened]
+
+concurrency:
+  group: pr-build-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   preview:
