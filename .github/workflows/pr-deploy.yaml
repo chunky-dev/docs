@@ -1,11 +1,17 @@
 name: Pull Request Deploy
 
+# Based on the surge deploy script at https://github.com/ant-design/ant-design-pro
+
 on:
   workflow_run:
     workflows:
       - "Pull Request Build"
     types:
       - completed
+
+concurrency:
+  group: pr-build-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   preview:
@@ -20,15 +26,51 @@ jobs:
           name: site
           path: ./site/docs/
 
+      - name: Get PR Number
+        id: pr
+        run: echo "::set-output name=id::$(< ./site/docs/pr-number.txt)"
+
       - name: Create Redirect
         run: |
           echo "<html><body><div>Redirecting... <a href=\"/docs\">Click Here</a></div><script>window.location = \"/docs\";</script></body></html>" > ./site/index.html
 
-      - name: Deploy Surge
-        uses: afc163/surge-preview@v1
+      - name: Setup NPM
+        uses: actions/setup-node@v1
         with:
-          surge_token: ${{ secrets.SURGE_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          dist: ./site/
-          teardown: 'true'
-          build: echo ""
+          node-version: 8
+
+      - name: Install Surge
+        run: npm install -g surge
+
+      - name: Deploy Surge
+        run: |
+          surge ./site/ https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
+      - name: Update Comment - Success
+        uses: actions-cool/maintain-one-comment@v1.2.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            🎉 PR Preview has been sucessfully built and deployed to https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh
+            
+            <a href="https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh">
+              <img width="300" src="https://user-images.githubusercontent.com/507615/90250366-88233900-de6e-11ea-95a5-84f0762ffd39.png">
+            </a>
+            
+            <!-- Sticky Pull Request Comment -->
+          body-include: "<!-- Sticky Pull Request Comment -->"
+          number: ${{ steps.pr.outputs.id }}
+
+      - name: Update Comment - Fail
+        if: ${{ failure() }}
+        uses: actions-cool/maintain-one-comment@v1.2.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            😭 PR Preview deployment failed.
+            
+            <img width="300" src="https://user-images.githubusercontent.com/507615/90250824-4e066700-de6f-11ea-8230-600ecc3d6a6b.png">
+
+            <!-- Sticky Pull Request Comment -->
+          body-include: "<!-- Sticky Pull Request Comment -->"
+          number: ${{ steps.pr.outputs.id }}

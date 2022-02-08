@@ -1,8 +1,13 @@
 name: Pull Request Build
+
 on:
   pull_request:
     branches: [master]
     types: [opened, synchronize, reopened]
+
+concurrency:
+  group: pr-build-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   preview:
@@ -27,6 +32,9 @@ jobs:
           source ./venv/bin/activate
           cd ChunkyDocs
           python -m mkdocs build
+
+      - name: Save PR Number
+        run: echo ${{ github.event.number }} > ./ChunkyDocs/site/pr-number.txt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
