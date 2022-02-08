@@ -20,7 +20,7 @@ jobs:
 
       - name: Teardown Surge
         run: |
-          surge teardown https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+          surge teardown https://chunky-dev-docs-pr-${{ github.event.pull_request.number }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
       - name: Update Comment
         uses: actions-cool/maintain-one-comment@v1.2.1
@@ -31,4 +31,4 @@ jobs:
             
             <!-- Sticky Pull Request Comment -->
           body-include: "<!-- Sticky Pull Request Comment -->"
-          number: ${{ steps.pr.outputs.id }}
+          number: ${{ github.event.pull_request.number }}
