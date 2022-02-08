@@ -28,6 +28,9 @@ jobs:
           cd ChunkyDocs
           python -m mkdocs build
 
+      - name: Save PR Number
+        run: echo ${{ github.event.number }} > ./ChunkyDocs/site/pr-number.txt
+
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         if: success()

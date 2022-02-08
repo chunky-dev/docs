@@ -20,15 +20,33 @@ jobs:
           name: site
           path: ./site/docs/
 
+      - name: Get PR Number
+        id: pr
+        run: echo "::set-output name=id::$(< ./site/docs/pr-number.txt)"
+
       - name: Create Redirect
         run: |
           echo "<html><body><div>Redirecting... <a href=\"/docs\">Click Here</a></div><script>window.location = \"/docs\";</script></body></html>" > ./site/index.html
 
-      - name: Deploy Surge
-        uses: afc163/surge-preview@v1
+      - name: Setup NPM
+        uses: actions/setup-node@v1
         with:
-          surge_token: ${{ secrets.SURGE_TOKEN }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          dist: ./site/
-          teardown: 'true'
-          build: echo ""
+          node-version: 8
+
+      - name: Install Surge
+        run: npm install -g surge
+
+      - name: Deploy Surge
+        run: |
+          surge ./site/ https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
+      - name: Update Comment
+        uses: actions-cool/maintain-one-comment@v1.2.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            🎉 PR Preview has been sucessfully built and deployed to ttps://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh
+            
+            <!-- Sticky Pull Request Comment -->
+          body-include: "<!-- Sticky Pull Request Comment -->"
+          number: ${{ steps.pr.outputs.id }}
