@@ -1,0 +1,34 @@
+name: Pull Request Teardown
+
+on:
+  pull_request_target:
+    types:
+      - closed
+
+jobs:
+  teardown:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup NPM
+        uses: actions/setup-node@v1
+        with:
+          node-version: 8
+
+      - name: Install Surge
+        run: npm install -g surge
+
+      - name: Teardown Surge
+        run: |
+          surge teardown https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
+      - name: Update Comment
+        uses: actions-cool/maintain-one-comment@v1.2.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            PR Preview has been destroyed since this PR has been closed.
+            
+            <!-- Sticky Pull Request Comment -->
+          body-include: "<!-- Sticky Pull Request Comment -->"
+          number: ${{ steps.pr.outputs.id }}
