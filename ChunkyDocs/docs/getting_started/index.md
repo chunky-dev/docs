@@ -21,7 +21,7 @@ Chunky requires at least 512MB of free RAM and 23MiB of free storage[^5].
 
  1. You must install [**Java 17**](https://adoptium.net/) for your platform[^4].
 
- 2. Download the [**OpenJFX 17.0.1 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform[^4].
+ 2. Download the [**OpenJFX 17.0.2 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform[^4].
 
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
