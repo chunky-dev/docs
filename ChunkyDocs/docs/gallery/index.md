@@ -8,6 +8,8 @@ hide:
 
 Click the images to view a larger version.
 
+Help wanted: Submit renders for the gallery [here](https://github.com/chunky-dev/docs/issues/9).
+
 <div class="gallery">
 
 	<!--- ###### B
