@@ -66,6 +66,18 @@ If you still have the problem it may be caused by the `Y min clip`/`Y max clip` 
 
 The setOnAction method was added to the ChoiceBox API starting from Java 8 update 60. It is recommended to at least update to 8u60 however 8u300+ would be most secure with Java 17 LTS recommended.
 
+## Error initializing QuantumRenderer: no suitable pipeline found
+
+Try `-Dprism.order=sw` in the `Java options` field in the Launcher.
+
+Otherwise launch Chunky with `-Dprism.verbose=true` in the `Java options` field while the `Debug Console` is enabled and the debug console will display valid pipelines. Search for `Prism pipeline init order:` for a list of valid pipelines.
+
+## java.lang.NullPointerException: Cannot invoke "com.sun.prism.RTTexture.createGraphics()" because "<local9>" is null
+
+Try `-Dprism.order=sw` in the `Java options` field in the Launcher; Typically bypasses this issue at the cost of some responsiveness.
+
+This is issue is typically due to the Canvas size being increased and exceeding the maximum texture size supported by JavaFX, your GPU, or graphics driver. If launching Chunky with `-Dprism.verbose=true` in the `Java options` field, search for `Maximum supported texture size:`. Should be noted that the UI is also factored into this so your actual limit is dependant on the UI resolution.
+
 ## Rare bugs
 
 The section below is where we will be documenting rarer bugs that typically are not due to Chunky itself but other issues on your system. Given how rare these bugs are we have limited solutions available on how to resolve them.
