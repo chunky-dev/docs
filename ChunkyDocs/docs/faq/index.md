@@ -21,6 +21,17 @@ There is no exact answer to this question. The main thing that affects render ti
 GPU rendering support is currently in development in the form of an OpenCL 1.2 renderer plugin. This renderer is still under development and many features of the CPU renderer are not yet supported. For more information check out the [OpenCL plugin GitHub](https://github.com/ThatRedox/ChunkyClPlugin).
 
 
+## How do I pin Chunky to the taskbar / Create shortcuts?
+
+Unfortunately you cannot pin jar files in Windows. Though you can create a (bat)ch file which, not only can be double clicked to launch Chunky, but a shortcut can be made of- Shortcuts can be pinned.
+
+To do this open Notepad, or equivalent software, and paste the following:
+
+`java -jar %~dp0/ChunkyLauncher.jar`
+
+Then press `File`>`Save As`. Navigate to the folder containing ChunkyLauncher.jar. For the file name it is up to you however you do need to change the extention to `.bat` (ie `Chunky.bat`). From here you need to navigate to the newly created .bat file. Right Click on the .bat file and select `Create shortcut`. This shortcut can be dragged onto the taskbar to pin it or moved to the desktop, etc.
+
+
 ## Why are mobs not rendered?
 
 Chunky cannot currently render most entities. Entities are objects that are separate from the blocks that make up the Minecraft worlds, such as mobs, minecarts, projectiles, etc. Future support for rendering entities is planned, but there is no deadline for this feature yet, so stay tuned! For a list of what is supported check the article on [Minecraft Compatibility](minecraft_compatibility.md).
