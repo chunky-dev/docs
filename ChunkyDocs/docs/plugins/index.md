@@ -12,8 +12,7 @@ Chunky can be extended with plugins, e.g. to add new blocks, post processors or 
 
 ## Installation
 
-Plugins are distributed as `.jar` files and loaded by Chunky. To install them, click on `Manage Plugins` within the [Chunky Launcher](../getting_started/index.md) to open the `Plugin Manager`.
-Plugins can be added by clicking the `Add` button.
+Plugins are often distributed as `.jar` files, and sometimes are contained within a .zip archive, and can be loaded in Chunky via the `Plugin Manager`. To install plugins, click on `Manage Plugins` within the [Chunky Launcher](../getting_started/index.md) to open the `Plugin Manager`. Clicking on `Open plugin directory` will create a `plugins` folder within the Chunky settings directory. Plugins can be added by first either copying or extracting them to the `plugins` directory and then by selecting the plugin and clicking on the `Add` button within the `Plugin Manager`.
 
 ![Plugin Manager](../img/getting_started/chunky_launcher_plugin_manager.png)
 
