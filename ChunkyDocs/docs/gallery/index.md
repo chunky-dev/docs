@@ -321,6 +321,6 @@ Click the images to view a larger version.
 
 ---
 
-[:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](./old_gallery.md){ .md-button }
+[:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](./old_gallery.md){ .md-button } [Want your renders featured?](https://github.com/chunky-dev/docs/issues/9){ .md-button .md-button--primary }
 
 --8<-- "includes/abbreviations.md"
