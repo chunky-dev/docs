@@ -46,7 +46,7 @@ Stores NBT tags for each block.
 
 "octree is pretty complex lol"
 
-"The octree itself is something like storing it depth first with 0xFFFF FFFF as a node and the type if its a leaf."
+"The octree itself is something like storing it depth first with 0xFFFF FFFF as a node and the type if it is a leaf."
 
 
 #### World/Tint Textures
@@ -348,7 +348,7 @@ Note - XY Object is a XYZ Object just without the Z component.
 | se.llbit.chunky.entity.Book |  | true | Whether to load book entities |
 | se.llbit.chunky.entity.ArmorStand |  | true | Whether to load armor stand entities |
 | se.llbit.chunky.entity.PaintingEntity |  | true | Whether to load painting entities |
-| se.llbit.chunky.entity.PlayerEntity |  | true | Whether to load player entites |
+| se.llbit.chunky.entity.PlayerEntity |  | true | Whether to load player entities |
 | other |  | true | Whether to load “other” entities |
 
 

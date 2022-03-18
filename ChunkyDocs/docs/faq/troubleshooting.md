@@ -9,7 +9,7 @@ This page lists some common issues and how to fix them.
 If the Chunky or Chunky Launcher window is blank when you start it, this is caused by an issue in the JavaFX hardware renderer for Windows. The only known solution is to add `-Dprism.order=sw` to the Java command when starting Chunky. The option needs to be added in the [Java options](../../getting_started/configuration/#java-options) field in the launcher.
 
 
-## Double clicking ChunkyLauncher.jar doesn't work
+## Double-clicking ChunkyLauncher.jar doesn't work
 
 A common issue with Java on Windows is that jar files may not be correctly associated with Java.
 
@@ -44,12 +44,13 @@ The line that says "Could not reserve enough space for ...  object heap" indicat
 
 ![Rare font corruption in jar files](../img/faq/unsupported_chunks_map_view.png)
 
-If you attempt to load an unsupported world in Chunky you may find that `Map View` displays the chunks as either an Ocean biome, if the `Scale` is set below 13, or as red X's. That means the world is not currently supported (in this version of Chunky). It is recommended to try updating Chunky, potentially to `Stable Snapshot` or `Snapshot` via `Release Channels` in the Launcher if the world is from a newer version of Minecraft. Otherwise please refer to the issue tracker or our Discord server.
+If you attempt to load an unsupported world in Chunky you may find that `Map View` displays the chunks as either an 
+Ocean biome, if the `Scale` is set below 13, or as red X's. That means the world is not currently supported (in this version of Chunky). It is recommended to try updating Chunky, potentially to `Stable Snapshot` or `Snapshot` via `Release Channels` in the Launcher if the world is from a newer version of Minecraft. Otherwise, please refer to the issue tracker or our Discord server.
 
 
 ## Black blocks with a red X / Wrong Textures / Changing Texture Pack
 
-Chunky needs to load textures from a Minecraft installation or a resource pack, otherwise it uses its own built-in textures for the missing texutre.
+Chunky needs to load textures from a Minecraft installation or a resource pack, otherwise it uses its own built-in textures for the missing texture.
 
 If you get the wrong textures when you create a 3D scene, there are two things you can do:
 
@@ -74,14 +75,15 @@ The setOnAction method was added to the ChoiceBox API starting from Java 8 updat
 
 Try `-Dprism.order=sw` in the `Java options` field in the Launcher.
 
-Otherwise launch Chunky with `-Dprism.verbose=true` in the `Java options` field while the `Debug Console` is enabled and the debug console will display valid pipelines. Search for `Prism pipeline init order:` for a list of valid pipelines.
+Otherwise, launch Chunky with `-Dprism.verbose=true` in the `Java options` field while the `Debug Console` is 
+enabled and the debug console will display valid pipelines. Search for `Prism pipeline init order:` for a list of valid pipelines.
 
 
 ## java.lang.NullPointerException: Cannot invoke "com.sun.prism.RTTexture.createGraphics()" because "<local9>" is null
 
 Try `-Dprism.order=sw` in the `Java options` field in the Launcher; Typically bypasses this issue at the cost of some responsiveness.
 
-This is issue is typically due to the Canvas size being increased and exceeding the maximum texture size supported by JavaFX, your GPU, or graphics driver. If launching Chunky with `-Dprism.verbose=true` in the `Java options` field, search for `Maximum supported texture size:`. Should be noted that the UI is also factored into this so your actual limit is dependant on the UI resolution.
+This is issue is typically due to the Canvas size being increased and exceeding the maximum texture size supported by JavaFX, your GPU, or graphics driver. If launching Chunky with `-Dprism.verbose=true` in the `Java options` field, search for `Maximum supported texture size:`. Should be noted that the UI is also factored into this so your actual limit is dependent on the UI resolution.
 
 
 ## Rare bugs
@@ -122,7 +124,7 @@ Potential causes:
 
 1) Specified module path does not point to a valid javafx sdk
 
-2) Mismatched JDK/JavaFX architectures (ie x86 and x64, aarm64 and x64, etc)
+2) Mismatched JDK/JavaFX architectures (ie x86 and x64, aarm64 and x64, etc.)
 
 3) Missing GTK2 on Linux
 

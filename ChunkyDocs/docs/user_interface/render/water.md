@@ -26,4 +26,15 @@
 	
 	- `Hide the water plane in loaded chunks`
 
+## Procedural water
+!!! important ""
+    :octicons-beaker-16: Snapshot 2.5.0
+
+- `Procedural water` - Enable or disable the use of configurable simplex noise based procedural water shading.
+
+    - `Iterations` - How many iterations of noise used. Increasing this will reduce performance.
+    - `Frequency` - Increasing the frequency gives you more waves.
+    - `Amplitude` - Controls the "height" of the waves
+    - `Animation speed` - Only really used when varying the `Animation time`.
+
 --8<-- "includes/abbreviations.md"

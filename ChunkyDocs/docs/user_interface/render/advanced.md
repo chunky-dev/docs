@@ -12,7 +12,7 @@
 
 ## Some quality/performance related options
 
-- `Ray depth` - Controls the number of times a ray is allowed to bounce without striking a light source before killed. For outdoor scenes a value between 3-5 should typically be enough with indoor scenes benifitting more from higher values around 10. Higher values offer more realistic light bounce however at a cost to render time. Balance this carefully.
+- `Ray depth` - Controls the number of times a ray is allowed to bounce without striking a light source before killed. For outdoor scenes a value between 3-5 should typically be enough with indoor scenes benefiting more from higher values around 10. Higher values offer more realistic light bounce however at a cost to render time. Balance this carefully.
 
 --
 
@@ -20,9 +20,10 @@
 
 ---
 
-- `Shutdown computer when render completes` - Togglable
+- `Shutdown computer when render completes` - Toggleable
 
-- `Fast Fog` - Impacts the quality of fog rendering. Typically only noticable if viewing fog through alpha textures which is rare.
+- `Fast Fog` - Impacts the quality of fog rendering. Typically, only noticeable if viewing fog through alpha textures 
+  which is rare.
 
 - `Sky cache resolution` - Resolution of the rendered simulated sky. Lower values may boost rendering performance at the cost of sky model accuracy. Default 128.
 
@@ -52,6 +53,7 @@
 
 - `Preview Renderer` - `PreviewRenderer` - No other renderers are bundled. See plugins.
 
-[^1]: Make sure that the SPP Target of the specified scene is greater than the sum of the current SPP for the scene and dump you are merging. Otherwise there may be unexpected behaviour...
+[^1]: Make sure that the SPP Target of the specified scene is greater than the sum of the current SPP for the scene 
+and dump you are merging. Otherwise, there may be unexpected behaviour...
 
 --8<-- "includes/abbreviations.md"

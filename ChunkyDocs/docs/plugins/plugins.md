@@ -16,7 +16,7 @@ Adds functionality to render an animation without completely reloading the scene
 
 [:material-account: aTom3333](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-bloom-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-bloom-plugin/releases)
 
-Adds a bloom post processing filter.
+Adds a bloom post-processing filter.
 
 ---
 
@@ -24,7 +24,7 @@ Adds a bloom post processing filter.
 
 [:material-account: aTom3333](https://github.com/aTom3333) &middot; [:material-github: GitHub Repository](https://github.com/aTom3333/chunky-bvh-plugin) &middot; [:material-tag: Releases](https://github.com/aTom3333/chunky-bvh-plugin/releases)
 
-Adds addtional BVH's to Chunky.
+Adds additional BVH's to Chunky.
 
 ---
 
@@ -36,7 +36,7 @@ An AI denoiser using Intel Open Image Denoise. Very effective at reducing noise 
 
 ** Installation **
 
-1. Download the release version of the denoiser `.jar` from the Github Repo for the version of Chunky you have.
+1. Download the release version of the denoiser `.jar` from the GitHub Repo for the version of Chunky you have.
 
       | Version        | Plugin Version | Plugin File                   |
       | -------------- | -------------- | ----------------------------- |
@@ -49,12 +49,13 @@ An AI denoiser using Intel Open Image Denoise. Very effective at reducing noise 
 3. Extract the oidn `.zip` file to a chosen location. (ie `C:\Program Files\oidn-1.4.1.x64.vc14.windows\...`)
 4. Add and enable the denoising plugin `.jar` in Chunky.
 5. After launching Chunky, a new Denoiser tab will be found among the render controls. Expand this tab, next to the
-   Denoiser there will be a button `...` clicking this will open a file selector. Navigate to the install location and
+   Denoiser there will be a button `...` clicking this will open a file selector. Navigate to the installation 
+   location and
    then into bin and select `oidnDenoise.exe`. The full path to the Denoiser would be displayed in the text field.
    For this example it would be: `C:\Program Files\oidn-1.4.1.x64.vc14.windows\bin\oidnDenoise.exe`
 6. Render normally! Profit! The Denoising Plugin with render the Normal and Albedo Map before the Noisy image.
    Once the Target SPP is reached the image will be denoised and saved into snapshots with the extension `*.denoised.*`.
-   You can also find the original .pfm files in the scenes directory should you wish to use these for anything.
+   You can also find the original .pfm files in the scenes' directory should you wish to use these for anything.
 
 ---
 

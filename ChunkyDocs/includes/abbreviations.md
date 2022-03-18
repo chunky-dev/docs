@@ -2,7 +2,7 @@
 *[CPU]: Central Processing Unit
 *[SSE]: Streaming SIMD Extensions
 *[GPU]: Graphics Processing Unit
-*[RAM}: Random Access Memory (System Memory)
+*[RAM]: Random Access Memory (System Memory)
 *[VRAM]: Video RAM (GPU RAM)
 *[CLI]: Command-line interface
 *[GUI]: Graphical user interface
@@ -32,7 +32,7 @@
 <!-- Path tracing stuff -->
 *[NEE]: Next Event Estimation
 *[ESS]: Emitter Sampling Strategy
-*[SVO}: Sparse Voxel Octree
+*[SVO]: Sparse Voxel Octree
 *[BVH]: Bounding Volume Hierarchy
 *[SDF]: Scene Description Format
 *[IoR]: Index of Refraction

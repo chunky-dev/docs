@@ -52,7 +52,7 @@ Provides a list of all detected scenes in the Scenes directory.
 
 - `Cancel` - Closes the `Select 3D Scene` dialog
 
-- `Load selected scene` - Load the scene you have selected; Can also double click on a scene to load it.
+- `Load selected scene` - Load the scene you have selected; Can also double-click on a scene to load it.
 
 ---
 
@@ -62,7 +62,7 @@ Provides a list of all detected scenes in the Scenes directory.
 
 ### Scene and chunks
 
-- `Open scene directory` - Opens current scenes directory on disk. It is `~/.chunky/scenes` by default.
+- `Open scene directory` - Opens current scenes' directory on disk. It is `~/.chunky/scenes` by default.
 
 - `Export settings` - This allows you to export settings to a copyable JSON. You can individually choose which settings to export.
 
@@ -76,23 +76,51 @@ Provides a list of all detected scenes in the Scenes directory.
 
 `Load selected chunks` - Load the chunks selected in the Map view into Chunky. Once clicked, this will load each chunk of the Minecraft world (which may take a while)! After this process completes, you may begin rendering.
 
-`Reload chunks` - Re-load the currently selected chunks. If working with a loaded scene, ensure the the current selected world is the same as the world used to create the scene.
+`Reload chunks` - Re-load the currently selected chunks. If working with a loaded scene, ensure the current selected world is the same as the world used to create the scene.
 
 ---
 
 ### Render settings
 
-- `Canvas size` - This is the resolution at which to render at. The drop down has a few presets. (Width x Height)
+#### Canvas size
+!!! important ""
+	:octicons-beaker-16: Snapshot 2.5.0
 
-- `Set default` - Sets current canvas size as default.
+This is the resolution at which to render at.
 
-- `x0.5`, `x1.5`, `x2` - Modifies each axis of the canvas by the amount. ie Wx0.5, Hx0.5
+- `Width`
+- `Height`
+- `"Chain"` - Unlock ![Unlocked](../../img/user_interface/render_controls/canvas_unlocked.png) or Lock ![Unlocked](../../img/user_interface/render_controls/canvas_locked.png)  the aspect ratio. If locked, editing either `Width` or `Height` will proportionally alter the other.
 
-- `Load players` - If this checkbox is checked, player models are loaded when loading a world. Should be noted that deselecting this option does not unload players that have already been loaded; these need to be manually removed via the Entities tab.
+    - `Apply` - Applies any changes to canvas size. You may also press `Enter` to apply.
+    - `Set default` - Sets current canvas size as default.
+    - `Flip axes` - Flips `Width` and `Height` (only available if aspect ratio is not 1:1)
+    - `x0.5`, `x1.5`, `x2` - Modifies each axis of the canvas by the amount. ie Wx0.5, Hx0.5
+
+---
+
+#### Load entities
+
+![Scene tab entities](../../img/user_interface/render_controls/scene_tab_entities.png)
+
+- `Select All` - Select all entities for loading.
+
+- `Deselect All` - Deselect all entities for loading. 
+
+
+	Note - Should be noted that deselecting these options does not unload entities that have already been loaded; these need to be manually removed via the Entities tab.
+
+    - `Players`
+    - `Armor stands`
+    - `Paintings`
+    - `Other`
+
+---
 
 - `Enable biome colors` - This checkbox controls biome tinting of natural blocks like grass or leaves.
 
-- `Save dump once every X` - This checkbox controls if Chunky will automatically save the scene and render periodically while rendering. This is not instant and does take time to save so it is recommended to not save too frequently.
+- `Save dump once every X` - This checkbox controls if Chunky will automatically save the scene and render 
+  periodically while rendering. This is not instant and does take time to save, so it is recommended to not save too frequently.
 
 - `Save snapshot for each dump` - This checkbox controls if Chunky will automatically generate a snapshot and
 save it when the dump is saved when rendering.

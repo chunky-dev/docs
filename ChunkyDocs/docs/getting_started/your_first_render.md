@@ -12,7 +12,11 @@ Please follow the [Installation instructions](../getting_started/index.md).
 
 ![Chunky Launcher](../img/getting_started/chunky_launcher.png)
 
-Chunky can use a lot of memory depending on a number of factors. Many issues can be caused by Chunky not having enough memory so raising the `Memory limit (MiB)` can solve these issues. The default `1024` can be raised based upon how much memory your system has and is typically available. ie - If your system has 16GiB or 16384MiB of system memory, allocating upto 75% which is 12GiB or 12288MiB is typically fine (you can allocate more but you may run into other problems).
+Chunky can use a lot of memory depending on a number of factors. Many issues can be caused by Chunky not having 
+enough memory so raising the `Memory limit (MiB)` can solve these issues. The default `1024` can be raised based 
+upon how much memory your system has and is typically available. ie - If your system has 16GiB or 16384MiB of system 
+memory, allocating up to 75% which is 12GiB or 12288MiB is typically fine (you can allocate more however you may run 
+into other problems).
 
 If your `.minecraft` is located in a directory other than where Chunky is expecting you may also need to change this as otherwise Chunky will not have textures.
 
@@ -41,7 +45,7 @@ If Chunky isn't running go ahead and launch it. You should see something like th
 
 ![Overview no map selected](../img/user_interface/overview_no_map.png)
 
-Take note that the centeral pane under `Map` is white and black striped and over on the right panel, under `Map View`, `Current World` is blank. This indicates that no world is selected. Click on `Change World` to select or change the world.
+Take note that the central pane under `Map` is white and black striped and over on the right panel, under `Map View`, `Current World` is blank. This indicates that no world is selected. Click on `Change World` to select or change the world.
 
 ![Change World/World selection](../img/user_interface/right_pane/select_world.png)
 
@@ -63,7 +67,8 @@ Select the correct dimension using the buttons in the right pane under `Map View
 ---
 
 ## Setting up your render
-> This part of the process is where you can customise settings to your heart's content. The guide will only cover the absolute basics so it is recommended to experiment.
+> This part of the process is where you can customise settings to your heart's content. The guide will only cover 
+> the absolute basics, so it is recommended to experiment.
 
 ### Loading Chunks
 
@@ -71,7 +76,7 @@ Either right click the 2D map located in the center pane and click on `New scene
 
 ![Scene tab](../img/getting_started/render/scene.png)
 
-After loading the selected chunks the centeral pane should auto switch to the Render Preview and the bottom progress bar should be filled. The time it takes to load increases with the number of chunks.
+After loading the selected chunks the central pane should auto switch to the Render Preview and the bottom progress bar should be filled. The time it takes to load increases with the number of chunks.
 
 ### A few settings to change...
 
@@ -131,7 +136,8 @@ Head to the `Lighting` tab.
 
 From here you can adjust the amount of light the Sky, Emitters (torches, lava, etc.), and Sun produce. The default values should be perfect for daytime renders. Adjusting the Sun azimuth (yaw/rotation) and altitude (height) can change the scenes lighting drastically.
 
-> Emitters will *significantly* increase render times, and require a much higher SPP to look smooth! Otherwise you will have a lot of noise or "fireflies".
+> Emitters will *significantly* increase render times, and require a much higher SPP to look smooth! Otherwise, you 
+> will have a lot of noise or "fireflies".
 
 For this example I will just set the sun altitude to 25.
 
@@ -149,7 +155,8 @@ Not too much to explain here. Sky mode lets you pick between simulated, solid or
 
 ![Water tab](../img/getting_started/render/water.png)
 
-By default water will have a ripple effect applied to it. Water visibility impacts how far underwater you can see. Water opacity affects how transparent the water appears (0 for clear, 1 for solid). By default water color is biome tinted but you can override this.
+By default water will have a ripple effect applied to it. Water visibility impacts how far underwater you can see. 
+Water opacity affects how transparent the water appears (0 for clear, 1 for solid). By default water color is biome tinted, but you can override this.
 
 ---
 
@@ -174,11 +181,13 @@ These tabs are not going to be covered in this guide. Explore and experiment on 
 
 Adjust CPU load and threads as you see fit. Chunky renders using solely CPU though a GPU rendering plugin is in development.
 
-> If you plan to use your PC while it is rendering / have a weaker computer, reduce CPU load OR reduce threads as you see fit. Typically reducing the number of threads that Chunky uses provides much more control over actual system usage. Be aware that lower CPU load / less threads can significantly increase render times!
+> If you plan to use your PC while it is rendering / have a weaker computer, reduce CPU load OR reduce threads as 
+> you see fit. Typically, reducing the number of threads that Chunky uses provides much more control over actual 
+> system usage. Be aware that lower CPU load / fewer threads can significantly increase render times!
 
 Set Ray Depth to whatever you want. 3-8 is usually good enough for most scenes. Increasing ray depth increases render times but improves accuracy and render quality; A balance is required.
 
-Click the Shutdown on render complete if you want your computer to shutdown after the target SPP has been reached.
+Click the Shutdown on render complete if you want your computer to shut down after the target SPP has been reached.
 
 > If you are using linux, this option will have no effect unless you allow the `shutdown` command to run without needing `sudo` as the command requires `sudo` permissions. For obvious reasons, Chunky won't store your sudo password for when it's time to execute the command x). You can find a guide on the internet fairly easily for allowing the shutdown command to run without `sudo`.
 
@@ -192,7 +201,8 @@ Set the target SPP to whatever you want.
 
 > SPP means samples per pixel. Lower SPPs will be reached sooner but may have more noise/grain/fireflies. A higher SPP will take longer to reach but the image will be cleaner.
 
-Typically 32-1024 SPP is good for daylight renders without emitters (torches, lava, glowstone, etc.) enabled. 4096-16384 SPP is good for daylight renders with emitters. 16384+ SPP for night time renders or indoor renders with emitters.
+Typically, 32-1024 SPP is good for daylight renders without emitters (torches, lava, glowstone, etc.) enabled. 
+4096-16384 SPP is good for daylight renders with emitters. 16384+ SPP for night time renders or indoor renders with emitters.
 
 #### Save the scene
 
@@ -221,7 +231,7 @@ You can either use `Save current frame` or `Copy current frame` at any point (an
 
 Alternatively, on the right pane under `Options` click on `Open Scenes Directory`.
 
-Below you can see the finished product of this guide with a few minor tweaks to the Sky simulation, the addition of fog, lighting intensies and color, and the water.
+Below you can see the finished product of this guide with a few minor tweaks to the Sky simulation, the addition of fog, lighting intensities and color, and the water.
 
 ![Example first render](../img/getting_started/first_render.png)
 

@@ -10,7 +10,7 @@
 	
 	- `Skybox` - From the center of the currently loaded chunks look towards that cardinal direction and sets the FoV to 90 degrees.
 
-- `Camera` - Allows a scene to have multiple independant cameras which can have different properties.
+- `Camera` - Allows a scene to have multiple independent cameras which can have different properties.
 
 	- `Clone` - Clones selected camera
 
@@ -40,11 +40,11 @@
 	
 	- `Parallel` - Removes all perspective such that all blocks are the same size regardless of distance to camera.
 	
-	- `Fisheye` - This projection makes is like an extrme wide angle lens which distorts images.
+	- `Fisheye` - This projection makes is like an extreme wide angle lens which distorts images.
 	
 	- `Stereographic` - Stereographic projection maps points on the sphere to a plane. If you want tiny planets this is one good way to achieve them.
 	
-	- `Panoramic (equirectangular)` - Simular to standard/pinhole projection.
+	- `Panoramic (equirectangular)` - Similar to standard/pinhole projection.
 	
 	- `Panoramic (slot)` - Behaves like a pinhole camera in the vertical direction, but like a spherical one in the horizontal direction.
 	
@@ -59,6 +59,12 @@
 
 - `Subject distance` - Focal offset decides how far the focal plane is from the camera. If you want to focus an object that is 20 blocks away the focal plane should be set to 20. Estimating the distance (in blocks) to a given object is a good way to make an initial guess for the correct focal offset setting. Or by using the "Autofocus" button below. Objects at this range will appear perfectly sharp even if DOF is set to a low value.
 
-- `Autofocus` - Sets the Focal Offset and Depth of Field to the crosshair which is typically in the middle of the Render Preview unless `Set Target` is used.
+- `Autofocus` - Sets the Focal Offset and Depth of Field to the cross-hair which is typically in the middle of the Render Preview unless `Set Target` is used.
+
+#### Aperture Shape
+!!! important ""
+	:octicons-beaker-16: Snapshot 2.5.0
+
+- Change mask used to define the shape of the aperture. Creates more interesting bokeh/Depth of Field. Default is `Circle` with included options for `Hexagon`, `Pentagon`, `Star`, and `Gaussian`. User defined via a file picker if you select `Custom`.
 
 --8<-- "includes/abbreviations.md"
