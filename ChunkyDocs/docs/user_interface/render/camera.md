@@ -61,4 +61,8 @@
 
 - `Autofocus` - Sets the Focal Offset and Depth of Field to the cross-hair which is typically in the middle of the Render Preview unless `Set Target` is used.
 
+- `Aperture Shape` - Change mask used to define the shape of the aperture. Creates more interesting bokeh/Depth of 
+  Field. Default is `Circle` with included options for `Hexagon`, `Pentagon`, `Star`, and `Gaussian`. User defined 
+  via a file picker if you select `Custom`.
+
 --8<-- "includes/abbreviations.md"
