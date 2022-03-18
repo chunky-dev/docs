@@ -82,13 +82,39 @@ Provides a list of all detected scenes in the Scenes directory.
 
 ### Render settings
 
-- `Canvas size` - This is the resolution at which to render at. The drop down has a few presets. (Width x Height)
+#### Canvas size
 
+This is the resolution at which to render at.
+
+- `Width`
+- `Height`
+- `"Chain"` - Unlock ![Unlocked](../../img/user_interface/render_controls/canvas_unlocked.png) or Lock ![Unlocked](../../img/user_interface/render_controls/canvas_locked.png)  the aspect ratio. If locked, editing either `Width` or `Height` will proportionally alter the other.
+
+
+- `Apply` - Applies any changes to canvas size. You may also press `Enter` to apply.
 - `Set default` - Sets current canvas size as default.
-
+- `Flip axes` - Flips `Width` and `Height` (only available if aspect ratio is not 1:1)
 - `x0.5`, `x1.5`, `x2` - Modifies each axis of the canvas by the amount. ie Wx0.5, Hx0.5
 
-- `Load players` - If this checkbox is checked, player models are loaded when loading a world. Should be noted that deselecting this option does not unload players that have already been loaded; these need to be manually removed via the Entities tab.
+---
+
+#### Load entities
+
+![Scene tab entities](../../img/user_interface/render_controls/scene_tab_entities.png)
+
+- `Select All` - Select all entities for loading.
+
+- `Deselect All` - Deselect all entities for loading. 
+
+
+	Note - Should be noted that deselecting these options does not unload entities that have already been loaded; these need to be manually removed via the Entities tab.
+
+    - `Players`
+    - `Armor stands`
+    - `Paintings`
+    - `Other`
+
+---
 
 - `Enable biome colors` - This checkbox controls biome tinting of natural blocks like grass or leaves.
 
