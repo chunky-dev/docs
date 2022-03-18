@@ -83,6 +83,8 @@ Provides a list of all detected scenes in the Scenes directory.
 ### Render settings
 
 #### Canvas size
+!!! important ""
+	:octicons-beaker-16: Snapshot 2.5.0
 
 This is the resolution at which to render at.
 
@@ -90,11 +92,10 @@ This is the resolution at which to render at.
 - `Height`
 - `"Chain"` - Unlock ![Unlocked](../../img/user_interface/render_controls/canvas_unlocked.png) or Lock ![Unlocked](../../img/user_interface/render_controls/canvas_locked.png)  the aspect ratio. If locked, editing either `Width` or `Height` will proportionally alter the other.
 
-
-- `Apply` - Applies any changes to canvas size. You may also press `Enter` to apply.
-- `Set default` - Sets current canvas size as default.
-- `Flip axes` - Flips `Width` and `Height` (only available if aspect ratio is not 1:1)
-- `x0.5`, `x1.5`, `x2` - Modifies each axis of the canvas by the amount. ie Wx0.5, Hx0.5
+    - `Apply` - Applies any changes to canvas size. You may also press `Enter` to apply.
+    - `Set default` - Sets current canvas size as default.
+    - `Flip axes` - Flips `Width` and `Height` (only available if aspect ratio is not 1:1)
+    - `x0.5`, `x1.5`, `x2` - Modifies each axis of the canvas by the amount. ie Wx0.5, Hx0.5
 
 ---
 

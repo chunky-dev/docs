@@ -27,6 +27,8 @@
 	- `Hide the water plane in loaded chunks`
 
 ## Procedural water
+!!! important ""
+    :octicons-beaker-16: Snapshot 2.5.0
 
 - `Procedural water` - Enable or disable the use of configurable simplex noise based procedural water shading.
 
