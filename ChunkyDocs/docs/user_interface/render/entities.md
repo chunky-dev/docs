@@ -12,17 +12,17 @@ The entities tab lets you create, pose, and remove entities within the scene.
 
 - `-` - Remove selected entity
 
-- `+` -  Add new player entity at target (crosshair)
+- `+` -  Add new player entity at target (cross-hair)
 
 - `Camera to entity` - Teleports current camera to the selected entities position
 
 - `Player to camera` - Moves selected entity to camera position
 
-- `Entity to target` - Moves selected entity to target (crosshair)
+- `Entity to target` - Moves selected entity to target (cross-hair)
 
 - `Face camera` - Rotates selected entities head to face camera [Bugged]
 
-- `Face target` - Rotates selected entities head to face target (crosshair) [Bugged]
+- `Face target` - Rotates selected entities head to face target (cross-hair) [Bugged]
 
 ---
 

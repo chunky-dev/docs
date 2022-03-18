@@ -86,7 +86,7 @@ public class DemoPlugin implements Plugin {
 
 ## Demo plugins
 
-To demonstrate some of the features of the Plugin API, llbit created a few demo plugins.
+To demonstrate some features of the Plugin API, llbit created a few demo plugins.
 
 - [Ambient Occlusion Plugin](https://github.com/llbit/Chunky-AOPlugin)
 - [Depth Buffer Plugin](https://github.com/llbit/Chunky-DepthPlugin)

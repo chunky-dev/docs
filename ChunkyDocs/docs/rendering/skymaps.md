@@ -1,6 +1,6 @@
 # Skymaps
 
-You can change the `Sky Mode` under the "Sky & Fog" tab. There are several different types of sky mode you can use from simulated to solid or gradient color or a Skymap. Chunky supports a few different kinds of skymap projections, however "equirectangular" projection is the most common type of sky map. It is recommended to use a high resolution skymap in order to avoid the sky looking blurry.  However, if the skymap is too large it will take a long time to load.
+You can change the `Sky Mode` under the "Sky & Fog" tab. There are several types of sky mode you can use from simulated to solid or gradient color or a Skymap. Chunky supports a few different kinds of skymap projections, however "equirectangular" projection is the most common type of sky map. It is recommended to use a high resolution skymap in order to avoid the sky looking blurry.  However, if the skymap is too large it will take a long time to load.
 
 ## Vertical Resolution
 
@@ -28,7 +28,7 @@ HDRi skymaps have the advantage that they can be used to provide more realistic 
 * [Light probes by Bernhard Vogl][10]
 * [HDRI Skies][12]
 
-You can also try searcing Google for [Panoramic Sky Texture][0]
+You can also try searching Google for [Panoramic Sky Texture][0]
 
 ## Render a Sky Map with Chunky
 

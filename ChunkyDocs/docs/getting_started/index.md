@@ -52,7 +52,8 @@ Chunky requires at least 512MB of free RAM and 23MiB of free storage[^5].
 
 #### macOS
 
-Notes - On M1 equiqed macs, which are aarch64 (ARM based), Rosetta 2 enables an emulation, of sorts, of x64 macOS applications. Please ensure both JDK and OpenJFX have matching architectures. We recommended native aarch64 however x64 performance should be similar. Furthermore there are many other issues and bugs that are difficult to resolve. Please ask for assistance and we will try our best.
+Notes - On M1 equipped macs, which are aarch64 (ARM based), Rosetta 2 enables an emulation, of sorts, of x64 macOS 
+applications. Please ensure both JDK and OpenJFX have matching architectures. We recommended native aarch64 however x64 performance should be similar. Furthermore, there are many other issues and bugs that are difficult to resolve. Please ask for assistance and we will try our best.
 
 
 <span>4.</span> Open the `Terminal` and run the following commands (while fixing the .zip name):
@@ -85,7 +86,7 @@ If you downloaded the Universal JAR (only Chunky Launcher) then you will have to
 In the launcher, hitting the "Check for Update" button will make the launcher check for an update to Chunky online.
 This must be done the first time you start Chunky if you only downloaded the launcher.
 
-If an update to Chunky was is available you will soon see the "Update Available!" window:
+If an update to Chunky is available you will soon see the "Update Available!" window:
 
 ![Update available](../img/getting_started/chunky_update_available_2.4.0.png)
 
@@ -106,7 +107,10 @@ The snapshots are automatically built every day from the [chunky-2.4.x](https://
 
 If the launcher does not download the latest version or new snapshots, check the "Update Site" in the "Advanced Settings" panel. The URL changed with Chunky 2.1, so make sure it is set to `https://chunkyupdate.lemaik.de/`. If you have used Chunky 1.x, it may still be set to llbit's update site. You can keep using that if you want to use Chunky 1.4.5[^2].
 
-If you get an `unchecked exception` caused by `java.lang.NoClassDefFoundError: javafx/application/Application` when launching Chunky Launcher use `java --module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml -jar "path\to\ChunkyLauncher.jar"` to launch Chunky Launcher. If you get this exception when clicking "Launch" in the Chunky Launcher, double check the `Java Options` field under `Advanced` is populated by `--module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml`[^3]. This field should automatically be populated.
+If you get an `unchecked exception` caused by `java.lang.NoClassDefFoundError: javafx/application/Application` when 
+launching Chunky Launcher use `java --module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml 
+-jar "path\to\ChunkyLauncher.jar"` to launch Chunky Launcher. If you get this exception when clicking "Launch" in 
+the Chunky Launcher, double-check the `Java Options` field under `Advanced` is populated by `--module-path "path\to\javafx\lib" --add-modules javafx.controls,javafx.fxml`[^3]. This field should automatically be populated.
 
 
 [^1]: Installers for Windows, Linux and macOS are [currently being worked on](https://github.com/leMaik/chunky-launcher-standalone).

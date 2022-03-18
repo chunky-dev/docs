@@ -38,7 +38,7 @@ Modifier keys
 
 ![Render controls Render Preview right click](../../img/user_interface/render_controls/preview_rightclick.png)
 
-- `Set target` - Default targetting is center view, this changes the target to a location on screen. Useful for `Autofocus`.
+- `Set target` - Default targeting is center view, this changes the target to a location on screen. Useful for `Autofocus`.
 
 - `Show Guides` - Enables thirds guidelines (overlay) to help frame up shots.
 
@@ -48,7 +48,8 @@ Modifier keys
 
 ![Render controls Render Preview right click](../../img/user_interface/render_controls/preview_target.png)
 
-The Target details box shows up in the bottom left hand corner of the preview tab when the target changes; mouse dragging or via `Set Target`. The three lines provide the following information:
+The Target details box shows up in the bottom left-hand corner of the preview tab when the target changes; mouse 
+dragging or via `Set Target`. The three lines provide the following information:
 
 - Subject Distance in metres.
 

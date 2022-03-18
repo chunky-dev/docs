@@ -23,7 +23,7 @@ This controls the _specular_ reflection (0.0 - 1.0). This is a mirror-like refle
 
 ### Smoothness
 
-This controls a material smoothness/roughness (0.0 - 1.0). This is an approxiamtion of surface irregularaties and leads to fuzzy or diffuse reflection. Lower values increase roughness.
+This controls a material smoothness/roughness (0.0 - 1.0). This is an approximation of surface irregularities and leads to fuzzy or diffuse reflection. Lower values increase roughness.
 
 ![Render controls Smoothness](../../img/user_interface/render_controls/smoothness.png)
 
@@ -34,13 +34,13 @@ This controls a material smoothness/roughness (0.0 - 1.0). This is an approxiamt
 
 ### IoR
 
-The Index of Refraction controls how much slower the light travels inside of the block, relative to a vacuum. This is the effect that makes water and glass "bend" the light while it enters and exits (i.e. transitions between materials).
+The Index of Refraction controls how much slower the light travels inside the block, relative to a vacuum. This is the effect that makes water and glass "bend" the light while it enters and exits (i.e. transitions between materials).
 
 ![Render controls IoR](../../img/user_interface/render_controls/ior.png)
 
 ### Metalness
 
-In the real world, metals reflect in a different way than diaelectrice (i.e. non-metals), which is what makes them shiny. A value of 0 means that it will only have specular reflection and a value of 1 means that it will only have metallic reflection.
+In the real world, metals reflect in a different way than dielectric (i.e. non-metals), which is what makes them shiny. A value of 0 means that it will only have specular reflection and a value of 1 means that it will only have metallic reflection.
 
 ![Render controls Metalness](../../img/user_interface/render_controls/metalness.png)
 

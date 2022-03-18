@@ -16,7 +16,8 @@
 
 			Preetham is a faster, approximate simulation of daytime skies. It is most similar to Minecraft.
 
-			Nishita is a slower, simulation of all skies. It is most photorealistic but may be challenging to setup since it is not rendered below the horizon. It is best for low sun angles, such as a sunrise or sunset.
+			Nishita is a slower, simulation of all skies. It is most photorealistic but may be challenging to set up 
+		  since it is not rendered below the horizon. It is best for low sun angles, such as a sunrise or sunset.
 	
 		- `Horizon offset` - can be adjusted to push the simulated horizon below the real horizon.
 
@@ -42,7 +43,8 @@
 
 		- `Skymap rotation` - Rotates the skymap horizontally.
 	
-	- `Skybox` - Load upto six textures which get mapped onto a cuboid to act as a sky. [More information](https://en.wikipedia.org/wiki/Skybox_(video_games))
+	- `Skybox` - Load up to six textures which get mapped onto a cuboid to act as a sky. [More information]
+	  (https://en.wikipedia.org/wiki/Skybox_(video_games))
 	
 		- `Up`, `Down`, `Front`, `Back`, `Left`, `Right` - Opens a file picker
 
@@ -56,9 +58,9 @@
 
 ## Clouds and Fog
 
-- `Enable clouds` - Toggles Minecraft style, blocky clouds. Currently only renders as flat planes, similar to clouds seen in Minecraft's fast graphics mode.
+- `Enable clouds` - Toggles Minecraft style, blocky clouds. Currently, only renders as flat planes, similar to clouds seen in Minecraft's fast graphics mode.
 
-- `Cloud size` - Controls the scaling of the clouds; The position of the clouds will change too due the the clouds being based on a texture.
+- `Cloud size` - Controls the scaling of the clouds; The position of the clouds will change too due the clouds being based on a texture.
 
 - `Cloud X` - Shifts clouds along X axis.
 

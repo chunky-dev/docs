@@ -2,7 +2,7 @@
 
 ![Overview](../img/user_interface/overview.png)
 
-Chunky's UI is built using JavaFX and is seperated into three panes which can be slide to increase/decrease screenspace of the different components. These panes often have tabs which contain addtional controls. There are three main panes; The left pane handles Render Controls (to be covered on a seperate page), the middle pane is for previews (both 2D and 3D), and the right pane is for general options.
+Chunky's UI is built using JavaFX and is separated into three panes which can be slid to increase/decrease screenspace of the different components. These panes often have tabs which contain additional controls. There are three main panes; The left pane handles Render Controls (to be covered on a separate page), the middle pane is for previews (both 2D and 3D), and the right pane is for general options.
 
 ---
 
@@ -17,7 +17,7 @@ Chunky displays an overhead 2D Map view of your world within the center pane und
 - `Left click` and drag to move the viewport (also see Map View tab)
 - `Left click` to select/deselect a Chunk (at `Scale` 16 or higher) or a Region (at `Scale` 15 or lower)
 - `Shift` + `Left click` and drag to create a draggable rectangular chunk selection. Note - Shift does not need to be held continuously only Left click does; On release selection of Chunks is made.
-- `Ctrl` + `Shift` + `Left click` and drag to create a draggable unselection rectangular area
+- `Ctrl` + `Shift` + `Left click` and drag to create a draggable deselection rectangular area
 - `Mouse wheel` to change Map Scale (also see Map View tab)
 - `Right click` to open a menu with some Selection and Render related options
 
@@ -26,14 +26,18 @@ Chunky displays an overhead 2D Map view of your world within the center pane und
 <table class="tg">
 	<thead>
 	  <tr>
-		<th class="left"> <img src="../img/user_interface/chunky_map_chunk_selection0.png"> Prior to left clicking an outline of the highlighted Chunk will be shown.</th>
-		<th class="left"> <img src="../img/user_interface/chunky_map_chunk_selection1.png"> After left clicking the outline will be filled in and Selected.</th>
+		<th class="left"> <img src="../img/user_interface/chunky_map_chunk_selection0.png"> Prior to left-clicking 
+an outline of the highlighted Chunk will be shown.</th>
+		<th class="left"> <img src="../img/user_interface/chunky_map_chunk_selection1.png"> After left-clicking the 
+outline will be filled in and Selected.</th>
 	  </tr>
 	</thead>
 	<tbody>
 	  <tr>
-		<td class="left"> <img src="../img/user_interface/chunky_map_region_selection0.png"> Prior to left clicking an outline of the highlighted Region will be shown.</td>
-		<td class="left"> <img src="../img/user_interface/chunky_map_region_selection1.png"> After left clicking the Region outline will be filled in and Selected.</td>
+		<td class="left"> <img src="../img/user_interface/chunky_map_region_selection0.png"> Prior to left-clicking 
+an outline of the highlighted Region will be shown.</td>
+		<td class="left"> <img src="../img/user_interface/chunky_map_region_selection1.png"> After left-clicking the 
+Region outline will be filled in and Selected.</td>
 	  </tr>
 	  <tr>
 		<td class="left"> <img src="../img/user_interface/chunky_map_draggable_selection.png"> Draggable selection</td>
@@ -107,7 +111,8 @@ This tab provides access to chunk related features.
 - `Export chunks to ZIP` - Exports selected chunks to a .ZIP archive
 - `Export view to PNG` - Exports current map view to a .PNG image
 
-- `Delete selected chunks` - WARNING - Delets currently selected chunks. Chunks will be generated again when the world is opened again in Minecraft. Chunky is **NOT** responsible if you do not have a backup.
+- `Delete selected chunks` - WARNING - Deletes currently selected chunks. Chunks will be generated again when the 
+  world is opened again in Minecraft. Chunky is **NOT** responsible if you do not have a backup.
 
 ---
 
@@ -120,9 +125,9 @@ This tab has a few options in it...
 - `Edit resource packs` - Allows you to select a Resource Pack `.zip` or Minecraft `.jar` for textures.
 - `Disable default textures (needs restart)`
 - `Single color textures (needs restart)` - Averages block textures into single color.
-- `Show launcher when starting Chunky` - Toggles whether the Chunky luncher shows when starting Chunky.
-- `Open Scenes Directory` - Opens the directory Chunky uses to store it's scenes.
-- `Change Scenes Directory` - Changes folder used for the scenes directory.
+- `Show launcher when starting Chunky` - Toggles whether the Chunky launcher shows when starting Chunky.
+- `Open Scenes Directory` - Opens the directory Chunky uses to store scenes.
+- `Change Scenes Directory` - Changes folder used for the scenes' directory.
 
 ---
 
@@ -161,7 +166,7 @@ Should be noted that the phrasing here is confusing. The load order is bottom to
 
  4. `Apply`
 
- 5. You may need to to hit `Reload` under the Map View Tab and/or `Reload Chunks` if you have an active render; This should be done automatically...
+ 5. You may need to hit `Reload` under the Map View Tab and/or `Reload Chunks` if you have an active render; This should be done automatically...
 
 ---
 
@@ -169,6 +174,6 @@ Should be noted that the phrasing here is confusing. The load order is bottom to
 
 ![Resource pack manager](../img/user_interface/right_pane/about_tab.png)
 
-The About tab has a few useful links in addtion to Chunky's copyright and credits.
+The About tab has a few useful links in addition to Chunky's copyright and credits.
 
 --8<-- "includes/abbreviations.md"

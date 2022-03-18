@@ -16,7 +16,7 @@
 
 ## Sunlight
 
-- `Enable sunlight` - This setting enables / disables the contribution of sunlight. In indoor renders, this may be safely disabled to increase performance espically if rendering underground.
+- `Enable sunlight` - This setting enables / disables the contribution of sunlight. In indoor renders, this may be safely disabled to increase performance especially if rendering underground.
 
 - `Draw sun` - This setting controls drawing the sun on the skybox.
 

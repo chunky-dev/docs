@@ -2,7 +2,8 @@
 
 ## Path Tracing
 
-[Path Tracing](https://en.wikipedia.org/wiki/Path_tracing) is a rendering algorithm under the umbrella of [ray tracing](http://en.wikipedia.org/wiki/Ray_tracing_(graphics)) in which rays are cast from a virtual camera and traced through a simulated scene. Ray tracing is most similar to how the world around you works. Photons are emitted from light sources and bounce around before they hit your eyes. However this is extremely computationally intensive and most real-time computer graphics have long used a technique call rasterization. Please read the following NVIDIA blog post if you want more information on the [differences between Ray Tracing and Rasterization](https://blogs.nvidia.com/blog/2018/03/19/whats-difference-between-ray-tracing-rasterization/).
+[Path Tracing](https://en.wikipedia.org/wiki/Path_tracing) is a rendering algorithm under the umbrella of [ray 
+tracing](http://en.wikipedia.org/wiki/Ray_tracing_(graphics)) in which rays are cast from a virtual camera and traced through a simulated scene. Ray tracing is most similar to how the world around you works. Photons are emitted from light sources and bounce around before they hit your eyes. However, this is extremely computationally intensive and most real-time computer graphics have long used a technique call rasterization. Please read the following NVIDIA blog post if you want more information on the [differences between Ray Tracing and Rasterization](https://blogs.nvidia.com/blog/2018/03/19/whats-difference-between-ray-tracing-rasterization/).
 
 Path tracing uses random sampling to incrementally compute a final image. The random sampling process makes it possible to render some complex phenomena which are not handled in regular ray tracing, but it generally takes longer time to produce a high quality path traced image. The random sampling in path tracing causes noise to appear in the rendered image. The noise is removed by letting the algorithm generate more samples, i.e. color values resulting from a single ray. A more in-depth explanation of the path tracing algorithm is given below or watch the following video on [Disney's Practical Guide to Path Tracing](https://youtu.be/frLwRLS_ZR0).
 
@@ -24,7 +25,8 @@ The defining factor for render quality is the number of Samples Per Pixel (SPP).
 	<p><a href="https://chunky.llbit.se/spp-compare.gif"> Fallback gif </a></p>
 </video>
 
-The higher SPP you have in a rendered image the less noise will be noticeable. However the added quality per sample decreases the more samples you have already (since each sample is just contributing to an average over all samples).  The difference in image quality between, for example, 20,000 SPP and 21,000 SPP will not be as noticeable as between 1,000 SPP and 2,000 SPP.
+The higher SPP you have in a rendered image the less noise will be noticeable. However, the added quality per sample 
+decreases the more samples you have already (since each sample is just contributing to an average over all samples).  The difference in image quality between, for example, 20,000 SPP and 21,000 SPP will not be as noticeable as between 1,000 SPP and 2,000 SPP.
 
 Sunlight does not typically require a high SPP to give a nice image; This is due to Sunlight sampling or, it's more technical name, Next Event Estimation (NEE) which is enabled by default. Outdoor scenes can be rendered with relatively low SPP if sunlight is enabled. Emitters (torches, lava, glowstone, pumpkins, etc.) require a lot more samples to reduce the noise as NEE is not enabled by default due to a multitude of reasons which will be covered later. Outdoor scenes with emitters require more samples than a sunlight only scene and indoor scenes, or similar, in low-light environments require a lot more samples.
 
@@ -60,12 +62,13 @@ As covered before: With every intersection the sun is sampled due to NEE adding 
 
 Emitter Sampling Strategy (ESS) enables an "optimised" NEE, similar to the sampling which the sun uses, and, in theory, should lead to faster convergence.
 
-Whereas there is only a single sun present in the scene there can be multiple emitters and those at distances where they will not contribute much to the pixel being sampled- For this we have the emittergrid which holds the positions of all the loaded emitters within cells. Each cell of the grid holds the position of the emitters present in this cell and in neighboring cells. As such when we want to sample emitters close from an intersection point, we only have to look at the cell where this intersection falls in and we will find every emitters we are interested in. That way the cost of processing the additional samples is minimalised compared to if we would sample all emitters. The reason we need to hold emitter of neighboring cells is because emitters a few block away from the intersection point to have an effect even if it falls in a different cell.
+Whereas there is only a single sun present in the scene there can be multiple emitters and those at distances where they will not contribute much to the pixel being sampled- For this we have the emittergrid which holds the positions of all the loaded emitters within cells. Each cell of the grid holds the position of the emitters present in this cell and in neighboring cells. As such when we want to sample emitters close from an intersection point, we only have to look at the cell where this intersection falls in and we will find every emitter we are interested in. That way the cost of processing the additional samples is minimalised compared to if we would sample all emitters. The reason we need to hold emitter of neighboring cells is because emitters a few block away from the intersection point to have an effect even if it falls in a different cell.
 
 With ESS:ONE only a single emitter is sampled per intersection within the cell plus adjacent. For ESS:ALL every emitter in the cell plus adjacent are sampled per intersection. Sampling emitters increases the rendering cost but reduces the required samples. ESS:ONE tends to be very similar to ESS:NONE with ESS:ALL being the "slowest" but potentially fastest to converge- ESS:ALL also tends to result in much brighter images than NONE/ONE so a reduction in exposure or emittance value is required to compensate for this. This is known about and we need to fix some maths to solve it.
 
 
-With this every emitter at cellSize or less blocks from the intersection points will always be found. The maximum distance where an emitter can be found in some cases is `2*cellSize-1 blocks away`. Reducing this value too low can boost performance or lead to light cut-off.
+With this every emitter at cellSize or fewer blocks from the intersection points will always be found. The maximum 
+distance where an emitter can be found in some cases is `2*cellSize-1 blocks away`. Reducing this value too low can boost performance or lead to light cut-off.
 
 The following renders demonstrate the effects of ESS. Each was rendered for one hour. Render speed depends on your CPU and your Chunky settings.
 
@@ -110,7 +113,8 @@ Chunky's path traced renderer was built back in 2010 and has been slowly improve
 
 It is possible to switch the renderer in Chunky using [Plugins](../plugins/plugins). A renderer can be used to render feature images like albedo maps (base color), normal maps, depth maps, etc. or an alternative rendering algorithm. The two most notable in this category are leMaik's [Denoising plugin](https://github.com/chunky-dev/chunky-denoiser), which leverages Artificial Intelligence (AI) to smartly denoise noisy images, and Redox's [ChunkyCl plugin](https://github.com/alexhliu/ChunkyClPlugin), which adds experimental GPU path tracing which can drastically accelerate rendering.
 
-In addition there is [Chunky Cloud](https://chunkycloud.lemaik.de/) which is a distributed cloud rendering service in beta. Chunky Cloud is a community driven cloud rendering platform that requires community donated render nodes.
+In addition, there is [Chunky Cloud](https://chunkycloud.lemaik.de/) which is a distributed cloud rendering service 
+in beta. Chunky Cloud is a community driven cloud rendering platform that requires community donated render nodes.
 
 ---
 
@@ -144,6 +148,7 @@ Internally Chunky stores the canvas with three "doubles" per pixel. Doubles are 
 
 - PFM (HDR) - 96 bits per pixel or 32 bits per color. "RAW" format. Mainly used in conjunction with the Denoiser plugin and OIDN.
 
-- HDR (HDR) - The HDR/RGBE format stores pixels as one byte for each RGB (red, green, and blue) value with a one byte shared exponent. Thus it store 32 bits per pixel. This results in a 6:1 compression, at the expense of reduced colour fidelity.
+- HDR (HDR) - The HDR/RGBE format stores pixels as one byte for each RGB (red, green, and blue) value with a one 
+  byte shared exponent. Thus it stores 32 bits per pixel. This results in a 6:1 compression, at the expense of reduced colour fidelity.
 
 --8<-- "includes/abbreviations.md"

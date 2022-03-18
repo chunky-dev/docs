@@ -23,13 +23,15 @@ GPU rendering support is currently in development in the form of an OpenCL 1.2 r
 
 ## How do I pin Chunky to the taskbar / Create shortcuts?
 
-Unfortunately you cannot pin jar files in Windows. Though you can create a (bat)ch file which, not only can be double clicked to launch Chunky, but a shortcut can be made of- Shortcuts can be pinned.
+Unfortunately you cannot pin jar files in Windows. Though you can create a (bat)ch file which, not only can be 
+double-clicked to launch Chunky, but a shortcut can be made of- Shortcuts can be pinned.
 
 To do this open Notepad, or equivalent software, and paste the following:
 
 `java -jar %~dp0/ChunkyLauncher.jar`
 
-Then press `File`>`Save As`. Navigate to the folder containing ChunkyLauncher.jar. For the file name it is up to you however you do need to change the extention to `.bat` (ie `Chunky.bat`). From here you need to navigate to the newly created .bat file. Right Click on the .bat file and select `Create shortcut`. This shortcut can be dragged onto the taskbar to pin it or moved to the desktop, etc.
+Then press `File`>`Save As`. Navigate to the folder containing ChunkyLauncher.jar. For the file name it is up to you 
+however you do need to change the extension to `.bat` (ie `Chunky.bat`). From here you need to navigate to the newly created .bat file. Right-Click on the .bat file and select `Create shortcut`. This shortcut can be dragged onto the taskbar to pin it or moved to the desktop, etc.
 
 
 ## Why are mobs not rendered?
@@ -39,7 +41,8 @@ Chunky cannot currently render most entities. Entities are objects that are sepa
 
 ## Can Chunky render custom block models and mod blocks?
 
-Support for custom block models and mod blocks is currently in development and the target is to have it ready for Chunky 2.5.0; as the name implies this would enable support for block models defined by json files. This feature may roll out as a plugin. Otherwise for information on currently supported blocks check out the article on [Minecraft Compatibility](minecraft_compatibility.md).
+Support for custom block models and mod blocks is currently in development and the target is to have it ready for 
+Chunky 2.5.0; as the name implies this would enable support for block models defined by json files. This feature may roll out as a plugin. Otherwise, for information on currently supported blocks check out the article on [Minecraft Compatibility](minecraft_compatibility.md).
 
 
 ## Why does the sky look bad?

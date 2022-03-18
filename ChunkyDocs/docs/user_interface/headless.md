@@ -29,7 +29,7 @@ Here is an example showing how to specify a custom scene directory:
     $ java -Dchunky.home="~/chunky" -jar ChunkyLauncher.jar --update
 
 
-Note that the `-Dchunky.home` argument must be passed before `-jar`.  If you are using Bash it is convient to make an alias for the `java` command above, for example:
+Note that the `-Dchunky.home` argument must be passed before `-jar`.  If you are using Bash it is convenient to make an alias for the `java` command above, for example:
 
     CHUNKY_HOME=~/chunky
     alias chunky java -Dchunky.home="$CHUNKY_HOME" -jar ChunkyLauncher.jar
