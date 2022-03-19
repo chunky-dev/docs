@@ -73,6 +73,8 @@ The setOnAction method was added to the ChoiceBox API starting from Java 8 updat
 
 ## Error initializing QuantumRenderer: no suitable pipeline found
 
+This typically occurs due to a mismatched Java - JavaFX architecture. Please ensure you are using x64-x64, etc.
+
 Try `-Dprism.order=sw` in the `Java options` field in the Launcher.
 
 Otherwise, launch Chunky with `-Dprism.verbose=true` in the `Java options` field while the `Debug Console` is 
