@@ -135,7 +135,7 @@ This tab has a few options in it...
 
 ![Resource pack manager](../img/user_interface/right_pane/chunky_resource_packs0.png)
 
-Should be noted that the phrasing here is confusing. The load order is bottom to top meaning that packs on top will override packs on the bottom.
+Items higher in the list take priority over lower items.
 
 - `Up` - Move selected pack up
 - `Down` - Move selected pack down
@@ -160,7 +160,7 @@ Should be noted that the phrasing here is confusing. The load order is bottom to
 	</thead>
 	</table>
 
- 3. `Left Click` a resource pack in the list and use `Up`/`Down` to move resource packs. Packs higher in the list will have their textures take priority over those below, including the latest Minecraft .jar which should be loaded regardless (would be noted in the `debug console`).
+ 3. `Left Click` a resource pack in the list and use `Up`/`Down` to move resource packs. Packs higher in the list will take priority over those below, including the latest Minecraft .jar which should be loaded by default (would be noted in the `debug console`).
 
 	![Resource pack manager](../img/user_interface/right_pane/chunky_resource_packs_order.png)
 
