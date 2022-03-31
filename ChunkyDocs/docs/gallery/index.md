@@ -495,6 +495,32 @@ Click the images to view a larger version.
 		
 </div>
 
+<!---
+| User            | Renders          |
+|-----------------|------------------|
+| boscawinks      | 5                |
+| ChomChom        | 1                |
+| Enzo_frsh       | 1                |
+| Esorcism        | 1                |
+| firehart        | 1                |
+| jackjt8         | 3                |
+| Jatizso         | 1                |
+| Jayjayli        | 3                |
+| MadDog          | 1                |
+| OneCore         | 1                |
+| Peregrine05     | 4                |
+| Pylons          | 3                |
+| RavaPollo       | 3                |
+| Redox           | 1                |
+| u/Salamantic    | 4                |
+| Sander Poelmans | 4                |
+| SPAWNRYS        | 10               | <-- Max 5 renders per person?
+| Syphia          | 2                |
+| Zak Fynn        | 1                |
+| SUM             | 50               |
+| AVERAGE         | 2.63157894736842 |
+--->
+
 ---
 
 [:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](./old_gallery.md){ .md-button } [Want your renders featured?](https://github.com/chunky-dev/docs/issues/9){ .md-button .md-button--primary }
