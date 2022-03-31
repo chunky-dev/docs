@@ -59,16 +59,16 @@ Click the images to view a larger version.
 
 	<!--- ###### C
 	-->
-	<!---
+
 	<div class=gallery__item>
-		<a href="../img/gallery/Sage-at-night.denoised - Harry Howells.png">
-			<img border="0" class="gallery__img" alt="Bridge over water at night" src="../img/gallery/Sage-at-night.denoised - Harry Howells_q.jpg">
+		<a href="../img/gallery/Garden-50.denioisededited-1 - ChomChom.png">
+			<img border="0" class="gallery__img" alt="Jungle Garden" src="../img/gallery/Garden-50.denioisededited-1 - ChomChom_q.jpg">
 		</a>
 		<div class="gallery__desc">
-			"Bridge over water at night" - Render by Coosanta
+			"Jungle Garden" - Render by ChomChom
 		</div>
 	</div>
-	-->	
+	
 	<!--- ###### E
 	-->
 	<div class=gallery__item>
@@ -77,6 +77,15 @@ Click the images to view a larger version.
 		</a>
 		<div class="gallery__desc">
 			"Northern Landscape" - Render by Enzo_frsh</a>
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Esorcism Render - Esorcism.png">
+			<img border="0" class="gallery__img" alt="Mini Biomes 01 - Plains" src="../img/gallery/Esorcism Render - Esorcism_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Mini Biomes 01 - Plains" - Render by Esorcism (MattWillen#1604)
 		</div>
 	</div>
 	
@@ -108,6 +117,24 @@ Click the images to view a larger version.
 		</a>
 		<div class="gallery__desc">
 			"The Uncensored Library" - Render by jackjt8 - <a href="https://www.uncensoredlibrary.com/en"> Press freedom! </a>
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/SNK_Mikasa-_comp.png">
+			<img border="0" class="gallery__img" alt="Omni-directional mobility gear" src="../img/gallery/SNK_Mikasa-_comp_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Omni-directional mobility gear" - Render by jackjt8 - <a href="https://www.planetminecraft.com/project/shingeki-no-kyojin---mikasa-ackerman/"> PMC map 1 </a> <a href="https://www.planetminecraft.com/project/attack-on-titan-shiganshina-map/"> PMC map 2 </a>
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/New Mombasa 2.2-969 - Clarkson Morehouse.png">
+			<img border="0" class="gallery__img" alt="New Mombasa, Kenya" src="../img/gallery/New Mombasa 2.2-969 - Clarkson Morehouse_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"New Mombasa, Kenya" - Render by Jatizso
 		</div>
 	</div>
 	
@@ -148,16 +175,18 @@ Click the images to view a larger version.
 			"City of Plexia" - Render by MadDog
 		</div>
 	</div>
-	<!---
+
+	<!--- ###### O
+	-->
 	<div class=gallery__item>
-		<a href="../img/gallery/Cope-200 - Mad Dog.png">
-			<img border="0" class="gallery__img" alt="War Paint (Disabled EXP Farm)" src="../img/gallery/Cope-200 - Mad Dog_q.jpg">
+		<a href="../img/gallery/Celestis 2 [SpaceFinal] - Gabrian Rullin.jpg">
+			<img border="0" class="gallery__img" alt="Terra Celestis" src="../img/gallery/Celestis 2 [SpaceFinal] - Gabrian Rullin_q.jpg">
 		</a>
 		<div class="gallery__desc">
-			"War Paint (Disabled EXP Farm)" - Render by MadDog
+			"Terra Celestis" - Render by OneCore - <a href="https://www.planetminecraft.com/project/terra-celestis-5120-x-5120-multibiome/"> PMC </a>
 		</div>
 	</div>
-	-->
+	
 	<!--- ###### P
 	-->
 	<div class=gallery__item>
@@ -204,6 +233,24 @@ Click the images to view a larger version.
 			"1.18 world" - Render by Pylons
 		</div>
 	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/default_2022-01-29_18-37-05-200 - Nathanael Edwards.png">
+			<img border="0" class="gallery__img" alt="Survival world" src="../img/gallery/default_2022-01-29_18-37-05-200 - Nathanael Edwards_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Survival world" - Render by Pylons
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Tuck_old_survival - Nathanael Edwards.png">
+			<img border="0" class="gallery__img" alt="νησί" src="../img/gallery/Tuck_old_survival - Nathanael Edwards_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"νησί" - Render by Pylons
+		</div>
+	</div>
 
 	<!--- ###### R
 	-->
@@ -243,6 +290,48 @@ Click the images to view a larger version.
 
 	<!--- ###### S
 	-->
+	<!--- ###### Salamantic
+	-->
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Big city night shot HQ EXPORT - Dylan Jackson.png">
+			<img border="0" class="gallery__img" alt="Midnight in Downtown" src="../img/gallery/Big city night shot HQ EXPORT - Dylan Jackson_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Midnight in Downtown" - Render by u/Salamantic
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Looking at city from alcy-230 - Dylan Jackson.png">
+			<img border="0" class="gallery__img" alt="Distant Metropolis" src="../img/gallery/Looking at city from alcy-230 - Dylan Jackson_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Distant Metropolis" - Render by u/Salamantic
+		</div>
+	</div>
+
+	<div class=gallery__item>
+		<a href="../img/gallery/Nightime reflection PHOTOSHOP FILE Wallpaper - Dylan Jackson.png">
+			<img border="0" class="gallery__img" alt="Hong Kong's Luminosity" src="../img/gallery/Nightime reflection PHOTOSHOP FILE Wallpaper - Dylan Jackson_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Hong Kong's Luminosity" - Render by u/Salamantic
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Waterfront 2 HQ - Dylan Jackson.png">
+			<img border="0" class="gallery__img" alt="Chicago River" src="../img/gallery/Waterfront 2 HQ - Dylan Jackson_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Chicago River" - Render by u/Salamantic
+		</div>
+	</div>
+	
+	<!--- ###### Sander Poelmans
+	-->
+	
 	<div class=gallery__item>
 		<a href="../img/gallery/727BB2B3-93DB-48AE-BC53-368700CA1153 - Sander Poelmans.png">
 			<img border="0" class="gallery__img" alt="ARTHAS" src="../img/gallery/727BB2B3-93DB-48AE-BC53-368700CA1153 - Sander Poelmans_q.jpg">
@@ -279,6 +368,9 @@ Click the images to view a larger version.
 		</div>
 	</div>
 	
+	<!--- ###### SPAWNRYS
+	-->
+	
 	<div class=gallery__item>
 		<a href="../img/gallery/cyberpunk_city_full - SPAWNRYS.png">
 			<img border="0" class="gallery__img" alt="Cyberpunk City 2" src="../img/gallery/cyberpunk_city_full - SPAWNRYS_q.jpg">
@@ -298,11 +390,95 @@ Click the images to view a larger version.
 	</div>
 	
 	<div class=gallery__item>
+		<a href="../img/gallery/Kremlin-Alfedov-Mineshield-First-Season.png">
+			<img border="0" class="gallery__img" alt="Kremlin Alfedov" src="../img/gallery/Kremlin-Alfedov-Mineshield-First-Season_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Kremlin Alfedov | Mineshield: First Season" - Render by SPAWNRYS 
+		</div>
+	</div>
+
+	<div class=gallery__item>
+		<a href="../img/gallery/DEB-Off-Mineshield-First-Season.png">
+			<img border="0" class="gallery__img" alt="DEB_Off" src="../img/gallery/DEB-Off-Mineshield-First-Season_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"DEB_Off | Mineshield: First Season" - Render by SPAWNRYS
+		</div>
+	</div>
+
+	<div class=gallery__item>
+		<a href="../img/gallery/Oldcraft-maybe.png">
+			<img border="0" class="gallery__img" alt="Oldcraft" src="../img/gallery/Oldcraft-maybe_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Oldcraft | Последний спавн" - Render by SPAWNRYS
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Kemono-Friends-Serval.png">
+			<img border="0" class="gallery__img" alt="Kemono Friends - Serval" src="../img/gallery/Kemono-Friends-Serval_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Kemono Friends - Serval" - Render by SPAWNRYS - <a href="https://www.planetminecraft.com/project/kemono-friends-serval-statue/"> PMC map </a>
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Ankha.png">
+			<img border="0" class="gallery__img" alt="Ankha" src="../img/gallery/Ankha_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Ankha" - Render by SPAWNRYS - <a href="https://www.planetminecraft.com/project/animal-crossing-ankha-zone-statues/"> PMC map </a>
+		</div>
+	</div>
+
+	<div class=gallery__item>
+		<a href="../img/gallery/Angela-Balzac-Rakuen-Tsuihou.png">
+			<img border="0" class="gallery__img" alt="Angela Balzac - Rakuen Tsuihou" src="../img/gallery/Angela-Balzac-Rakuen-Tsuihou_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Angela Balzac - Rakuen Tsuihou" - Render by SPAWNRYS - <a href="https://www.planetminecraft.com/project/angela-balzac-rakuen-tsuihou-1-12-1-18-3d-model-art/"> PMC map </a>
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/Aqua-Subshield-Hills.png">
+			<img border="0" class="gallery__img" alt="Город клана Aqua (Полностью готов) | Subshield [Hills]" src="../img/gallery/Aqua-Subshield-Hills_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Город клана Aqua (Полностью готов) | Subshield [Hills]" - Render by SPAWNRYS
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/City-17.png">
+			<img border="0" class="gallery__img" alt="City-17" src="../img/gallery/City-17_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"City-17" - Render by SPAWNRYS - <a href="https://www.planetminecraft.com/project/city17-grand-project-half-life-2-map/"> PMC map </a>
+		</div>
+	</div>
+	
+	<!--- ###### Syphia
+	-->
+	
+	<div class=gallery__item>
 		<a href="../img/gallery/meridian-night-2-Syphia.jpg">
 			<img border="0" class="gallery__img" alt="Meridian" src="../img/gallery/meridian-night-2-Syphia_q.jpg">
 		</a>
 		<div class="gallery__desc">
 			"Meridian" - Render by Syphia - Map created by Tannatron and frostie
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/forestv2 - Syphia.png">
+			<img border="0" class="gallery__img" alt="Pumpkin Taiga" src="../img/gallery/forestv2 - Syphia_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Pumpkin Taiga" - Render by Syphia
 		</div>
 	</div>
 
@@ -319,8 +495,34 @@ Click the images to view a larger version.
 		
 </div>
 
+<!---
+| User            | Renders          |
+|-----------------|------------------|
+| boscawinks      | 5                |
+| ChomChom        | 1                |
+| Enzo_frsh       | 1                |
+| Esorcism        | 1                |
+| firehart        | 1                |
+| jackjt8         | 3                |
+| Jatizso         | 1                |
+| Jayjayli        | 3                |
+| MadDog          | 1                |
+| OneCore         | 1                |
+| Peregrine05     | 4                |
+| Pylons          | 3                |
+| RavaPollo       | 3                |
+| Redox           | 1                |
+| u/Salamantic    | 4                |
+| Sander Poelmans | 4                |
+| SPAWNRYS        | 10               | <-- Max 5 renders per person?
+| Syphia          | 2                |
+| Zak Fynn        | 1                |
+| SUM             | 50               |
+| AVERAGE         | 2.63157894736842 |
+--->
+
 ---
 
-[:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](./old_gallery.md){ .md-button } [Want your renders featured?](https://github.com/chunky-dev/docs/issues/9){ .md-button .md-button--primary }
+[:fontawesome-brands-reddit: Subreddit](https://www.reddit.com/r/chunky/){ .md-button } [Old Chunky Gallery](./old_gallery.md){ .md-button } [Want your renders featured?](https://forms.gle/zwdBjRxGS6Sm1GL96){ .md-button .md-button--primary }
 
 --8<-- "includes/abbreviations.md"
