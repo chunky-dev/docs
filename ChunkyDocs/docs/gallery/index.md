@@ -175,16 +175,6 @@ Click the images to view a larger version.
 			"City of Plexia" - Render by MadDog
 		</div>
 	</div>
-	<!---
-	<div class=gallery__item>
-		<a href="../img/gallery/Cope-200 - Mad Dog.png">
-			<img border="0" class="gallery__img" alt="War Paint (Disabled EXP Farm)" src="../img/gallery/Cope-200 - Mad Dog_q.jpg">
-		</a>
-		<div class="gallery__desc">
-			"War Paint (Disabled EXP Farm)" - Render by MadDog
-		</div>
-	</div>
-	-->	
 
 	<!--- ###### O
 	-->
