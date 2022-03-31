@@ -69,16 +69,6 @@ Click the images to view a larger version.
 		</div>
 	</div>
 	
-	<!---
-	<div class=gallery__item>
-		<a href="../img/gallery/Sage-at-night.denoised - Harry Howells.png">
-			<img border="0" class="gallery__img" alt="Bridge over water at night" src="../img/gallery/Sage-at-night.denoised - Harry Howells_q.jpg">
-		</a>
-		<div class="gallery__desc">
-			"Bridge over water at night" - Render by Coosanta
-		</div>
-	</div>
-	-->	
 	<!--- ###### E
 	-->
 	<div class=gallery__item>
@@ -127,6 +117,15 @@ Click the images to view a larger version.
 		</a>
 		<div class="gallery__desc">
 			"The Uncensored Library" - Render by jackjt8 - <a href="https://www.uncensoredlibrary.com/en"> Press freedom! </a>
+		</div>
+	</div>
+	
+	<div class=gallery__item>
+		<a href="../img/gallery/SNK_Mikasa-_comp.png">
+			<img border="0" class="gallery__img" alt="Omni-directional mobility gear" src="../img/gallery/SNK_Mikasa-_comp_q.jpg">
+		</a>
+		<div class="gallery__desc">
+			"Omni-directional mobility gear" - Render by jackjt8 - <a href="https://www.planetminecraft.com/project/shingeki-no-kyojin---mikasa-ackerman/"> PMC map 1 </a> <a href="https://www.planetminecraft.com/project/attack-on-titan-shiganshina-map/"> PMC map 2 </a>
 		</div>
 	</div>
 	
