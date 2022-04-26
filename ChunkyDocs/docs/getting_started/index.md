@@ -21,7 +21,7 @@ Chunky requires at least 512MB of free RAM and 23MiB of free storage[^5].
 
  1. You must install [**Java 17**](https://adoptium.net/) for your platform[^4].
 
- 2. Download the [**OpenJFX 17.0.2 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform[^4].
+ 2. Download [**OpenJFX 18 |LTS| x64 SDK**](https://gluonhq.com/products/javafx/) for your platform[^4][^6].
 
  3. [Download the Universal JAR / Chunky Launcher (ChunkyLauncher.jar)](http://chunkyupdate.lemaik.de/ChunkyLauncher.jar) and keep it
     in a safe place (you will use this to start Chunky).
@@ -30,7 +30,7 @@ Chunky requires at least 512MB of free RAM and 23MiB of free storage[^5].
 
 #### Windows
 
- <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `C:\Program Files\openjfx` or `..\.chunky\openjfx`.
+ <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `C:\Program Files\openjfx` or `..\.chunky\openjfx`, creating these folders if necessary.
  
  <span>5.</span> Launch ChunkyLauncher.jar. You may need to launch via command line/script using `java -jar "path\to\ChunkyLauncher.jar" --launcher`.
 
@@ -44,7 +44,7 @@ Chunky requires at least 512MB of free RAM and 23MiB of free storage[^5].
 
 #### Linux
 
- <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `/javafx-sdk-17.0.1/`
+ <span>4.</span> Extract from the OpenJFX .zip the `bin`, `legal`, and `lib` folders to `/javafx-sdk-17.0.1/`, creating these folders if necessary.
 
  <span>5.</span> Launch ChunkyLauncher.jar. `java --module-path javafx-sdk-17.0.1/lib --add-modules javafx.controls,javafx.fxml -jar launcher/ChunkyLauncher.jar`
 
@@ -122,6 +122,8 @@ the Chunky Launcher, double-check the `Java Options` field under `Advanced` is p
 [^4]: Ensure that the OS and Architecture correctly match your system.
 
 [^5]: Bare minimum to run Chunky is Java 8 update 60, JavaFX, 512MB of free RAM, 100MiB of storage (for core files).
+
+[^6]: We have not tested OpenJFX 19 at this time but it is assumed that it will work.
 
 
 --8<-- "includes/abbreviations.md"
