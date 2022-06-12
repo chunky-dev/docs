@@ -6,26 +6,22 @@ Most entities are currently not rendered by Chunky, and some special blocks can 
 
 For more detailed information about which features of what snapshot are not yet supported, check the [issues with the minecraft label](https://github.com/chunky-dev/chunky/issues?q=is%3Aissue+is%3Aopen+label%3Aminecraft) on GitHub.
 
-| Feature                          | Status (per release channel) |                       |                  | Related issues                                                                                                                                                          |     |
-|----------------------------------|------------------------------|-----------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-|                                  | Stable (2.4.2)               | Stable Snapshot (n/a) | Snapshot (2.5.0) |                                                                                                                                                                         |     |
-| Minecraft Java Versions          | 1.2.1 - 1.18.2               | -                     | 1.2.1 - 22w15a   |                                                                                                                                                                         |     |
-| Mod blocks                       | Not supported                | -                     | Planned          | [#88](https://github.com/chunky-dev/chunky/issues/88), [#426](https://github.com/chunky-dev/chunky/issues/426), [#266](https://github.com/chunky-dev/chunky/issues/266) |     |
-| Custom block models              | Not supported                | -                     | Planned          | [#88](https://github.com/chunky-dev/chunky/issues/88), [#426](https://github.com/chunky-dev/chunky/issues/426), [#266](https://github.com/chunky-dev/chunky/issues/266) |     |
-| PBR textures                     | Not supported                | -                     | Planned          | [#751](https://github.com/chunky-dev/chunky/issues/751)                                                                                                                 |     |
-| (Glow) Item frames               | Not supported                | -                     | Not supported    | [#790](https://github.com/chunky-dev/chunky/issues/790), [#789](https://github.com/chunky-dev/chunky/issues/789)                                                        |     |
-| Held item rendering              | Not supported                | -                     | Not supported    | [#669](https://github.com/chunky-dev/chunky/issues/669), [#595](https://github.com/chunky-dev/chunky/issues/595)                                                        |     |
-| Players                          | Supported                    | -                     | Supported        |                                                                                                                                                                         |     |
-| Mobs (animals and monsters)      | Not supported                | -                     | Not supported    | [#41](https://github.com/chunky-dev/chunky/issues/41)                                                                                                                   |     |
-| Book (enchanting table, lectern) | Supported                    | -                     | Supported        |                                                                                                                                                                         |     |
-| Beacon beam                      | Supported                    | -                     | Supported        |                                                                                                                                                                         |     |
-| Ender crystals                   | Not supported                | -                     | Not supported    | [#41](https://github.com/chunky-dev/chunky/issues/41)                                                                                                                   |     |
-| Boats                            | Not supported                | -                     | Not supported    |                                                                                                                                                                         |     |
-| Minecarts                        | Not supported                | -                     | Not supported    |                                                                                                                                                                         |     |
-| Falling sand                     | Not supported                | -                     | Not supported    | [#454](https://github.com/chunky-dev/chunky/issues/454)                                                                                                                 |     |
-| Particles                        | Not supported                | -                     | Not supported    | [#41](https://github.com/chunky-dev/chunky/issues/41)                                                                                                                   |     |
-| Bubble columns                   | Not supported                | -                     | Not supported    |                                                                                                                                                                         |     |
-| Campfire with items              | Not supported                | -                     | Not supported    |                                                                                                                                                                         |     |
+| Feature                     | Stable (2.4.2) | Stable snapshot (2.4.3) | Snapshot (2.5.0)           | Related issues  |
+| --------------------------- | -------------- | ----------------------- | -------------------------- | --------------- |
+| Minecraft Java Versions     | 1.2.1 - 1.18   | 1.2.1 - 1.19            | 1.2.1 - 1.19               |                 |
+| Vertical biomes             | Not supported  | Not supported           | Supported (off by default) | #1225           |
+| Mod blocks                  | Not supported  | Not supported           | Planned                    | #88, #426, #266 |
+| Custom block models         | Not supported  | Not supported           | Planned                    | #88, #426, #266 |
+| PBR textures                | Not supported  | Not supported           | Planned                    | #751, #1276     |
+| (Glow) Item frames          | Not supported  | Not supported           | Not supported              | #790, #789      |
+| Held item rendering         | Not supported  | Not supported           | Not supported              | #669, #595      |
+| Mobs (animals and monsters) | Not supported  | Not supported           | Not supported              | #41             |
+| Ender crystals              | Not supported  | Not supported           | Not supported              | #41             |
+| Boats                       | Not supported  | Not supported           | Not supported              |                 |
+| Minecarts                   | Not supported  | Not supported           | Not supported              |                 |
+| Falling sand                | Not supported  | Not supported           | Not supported              | #454            |
+| Particles                   | Not supported  | Not supported           | Not supported              | #41             |
+| Bubble columns              | Not supported  | Not supported           | Not supported              | #518            |
+| Campfire with items         | Not supported  | Not supported           | Not supported              |                 |
 
 --8<-- "includes/abbreviations.md"
-
