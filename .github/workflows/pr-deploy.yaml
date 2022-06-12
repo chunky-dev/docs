@@ -44,6 +44,7 @@ jobs:
 
       - name: Deploy Surge
         run: |
+          echo "site/docs/img/gallery" > .surgeignore
           surge ./site/ https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
       - name: Update Comment - Success
