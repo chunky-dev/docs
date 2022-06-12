@@ -58,6 +58,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.snippets
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      provider: github
+      user: chunky-dev
+      repo: chunky
   - tables
   - toc:
       permalink: true
