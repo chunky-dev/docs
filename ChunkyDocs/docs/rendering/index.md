@@ -146,7 +146,7 @@ Internally Chunky stores the canvas with three "doubles" per pixel. Doubles are 
 
 - TIFF (HDR) - Upto 96 bits per pixel or 32 bits per color. "RAW" format.
 
-- PFM (HDR) - 96 bits per pixel or 32 bits per color. "RAW" format. Mainly used in conjunction with the Denoiser plugin and OIDN.
+- PFM (HDR) - 96 bits per pixel or 32 bits per color. "RAW" format. Mainly used in conjunction with the [Denoiser plugin](../plugins/plugins.md#denoising-plugin) and OIDN.
 
 - HDR (HDR) - The HDR/RGBE format stores pixels as one byte for each RGB (red, green, and blue) value with a one 
   byte shared exponent. Thus it stores 32 bits per pixel. This results in a 6:1 compression, at the expense of reduced colour fidelity.
