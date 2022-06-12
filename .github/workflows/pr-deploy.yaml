@@ -44,7 +44,6 @@ jobs:
 
       - name: Deploy Surge
         run: |
-          echo "302   /docs/img/gallery/:image   https://raw.githubusercontent.com/chunky-dev/docs/$GITHUB_SHA/ChunkyDocs/docs/img/gallery/:slug" > ./site/ROUTER
           surge ./site/ https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
       - name: Update Comment - Success

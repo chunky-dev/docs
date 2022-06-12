@@ -33,8 +33,9 @@ jobs:
           cd ChunkyDocs
           python -m mkdocs build
       
-      - name: Remove gallery images
+      - name: Replace gallery images
         run: |
+          sed -i -e "s/..\/img\/gallery\//https:\/\/raw.githubusercontent.com\/chunky-dev\/docs\/$GITHUB_SHA\/ChunkyDocs\/docs\/img\/gallery\//g" ./ChunkyDocs/site/gallery/index.html
           rm -rf ./ChunkyDocs/site/img/gallery/
 
       - name: Save PR Number
