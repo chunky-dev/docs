@@ -43,8 +43,7 @@
 
 		- `Skymap rotation` - Rotates the skymap horizontally.
 	
-	- `Skybox` - Load up to six textures which get mapped onto a cuboid to act as a sky. [More information]
-	  (https://en.wikipedia.org/wiki/Skybox_(video_games))
+	- `Skybox` - Load up to six textures which get mapped onto a cuboid to act as a sky ([more information](https://en.wikipedia.org/wiki/Skybox_(video_games))).
 	
 		- `Up`, `Down`, `Front`, `Back`, `Left`, `Right` - Opens a file picker
 
