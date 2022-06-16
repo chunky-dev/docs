@@ -226,8 +226,8 @@ Should you need to stop at any point hit `Pause`, wait for CPU usage to dip down
 
 You can either use `Save current frame` or `Copy current frame` at any point (any SPP) to get your render. Or probably best to get the finished render from (assuming default locations):
 
-- Windows: C:\Users\<Your_User_Name>\.chunky\scenes\<scene_name>\snapshots
-- Linux: /home/.chunky/scenes/<scene_name>/snapshots
+- Windows: C:\Users\<Your_User_Name>\.chunky\scenes\scene_name\snapshots
+- Linux: /home/.chunky/scenes/scene_name/snapshots
 
 Alternatively, on the right pane under `Options` click on `Open Scenes Directory`.
 
