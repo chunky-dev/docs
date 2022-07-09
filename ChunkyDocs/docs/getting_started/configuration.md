@@ -23,11 +23,13 @@
 
 - `Update Site` - Changes source for updates.
 
-	- `http://chunkyupdate.llbit.se/` should be used to obtain Chunky 1.X which is up to Minecraft version 1.12.2.
+    - `http://chunkyupdate.llbit.se/` should be used to obtain Chunky 1.X which is up to Minecraft version 1.12.2.
 
-	- `http://chunkyupdate2.llbit.se/` is for llbit's Chunky 2.0 for Minecraft 1.13 however you will need to enable snapshots to get the latest version, `2.0beta6`, else you will be stuck with an older version.
+    - `http://chunkyupdate2.llbit.se/` is for llbit's Chunky 2.0 for Minecraft 1.13 however you will need to enable snapshots to get the latest version, `2.0beta6`, else you will be stuck with an older version.
 
-	- `http://chunkyupdate.lemaik.de/` is the new default update site for Chunky 2.X.
+    - `http://chunkyupdate.lemaik.de/` is the new default update site for Chunky 2.X.
+
+    - `https://chunky-pr.lemaik.de/` is used to download builds of open pull requests. Add the number of the open pull request after the slash. Click `Reload` next to the `Release channel` dropdown menu and then set the `Release Channel` to `PR #xxxx`, with "xxxx" being the number of the open pull request.
 
 - `Java Runtime` - Allows you to see and change the Runtime used for Chunky. Does not change the runtime used for the Launcher.
 
@@ -39,7 +41,7 @@
 
 - `Close console when Chunky exits` - Typically this can be left enabled. If an exception/error causes chunky to crash it should still be possible to read the console.
 
-- `Release channel` - Allows you to select which type of release you would like to use. `Stable` is typically the most stable version. `Stable Snapshot` is like a beta release; Should be stable and can come with new features, bugs, and bug fixes. `Snapshot` is bleeding edge and probably unstable.
+- `Release channel` - Allows you to select which type of release you would like to use. `Stable` is typically the most stable version. `Stable Snapshot` is like a beta release; Should be stable and can come with new features, bugs, and bug fixes. `Snapshot` is bleeding edge and probably unstable. `PR #xxxx` is the latest build of the open pull request specified in the update site, if it is set to `https://chunky-pr.lemaik.de/`.
 
 - `Settings directory` - Does not let you change the settings directory but does let you see/access it.
 
