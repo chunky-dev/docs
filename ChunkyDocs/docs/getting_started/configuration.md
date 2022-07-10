@@ -29,7 +29,7 @@
 
     - `http://chunkyupdate.lemaik.de/` is the new default update site for Chunky 2.X.
 
-    - `https://chunky-pr.lemaik.de/` is used to download builds of open pull requests. Add the number of the open pull request after the slash. Click `Reload` next to the `Release channel` dropdown menu and then set the `Release Channel` to `PR #xxxx`, with "xxxx" being the number of the open pull request.
+    - `https://chunky-pr.lemaik.de/` is used to download builds of open pull requests. Click `Reload` next to the `Release channel` dropdown menu and then set the `Release Channel` to `PR #xxxx`, with "xxxx" being the number of the open pull request.
 
 - `Java Runtime` - Allows you to see and change the Runtime used for Chunky. Does not change the runtime used for the Launcher.
 
