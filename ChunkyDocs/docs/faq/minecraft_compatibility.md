@@ -8,7 +8,7 @@ For more detailed information about which features of what snapshot are not yet 
 
 | Feature                     | Stable (2.4.3) | Stable snapshot (2.4.x) | Snapshot (2.5.0)           | Related issues         |
 | --------------------------- | -------------- | ----------------------- | -------------------------- | ---------------------- |
-| Minecraft Java Versions     | 1.2.1 - 1.19   | 1.2.1 - 1.19            | 1.2.1 - 1.19               |                        |
+| Minecraft Java Versions     | 1.2.1 - 1.19.1 | 1.2.1 - 1.19.1          | 1.2.1 - 1.19.1             |                        |
 | Vertical biomes             | Not supported  | Not supported           | Supported (off by default) | #1225                  |
 | Mod blocks                  | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332 |
 | Custom block models         | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332 |
