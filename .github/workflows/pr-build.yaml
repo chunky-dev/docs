@@ -32,6 +32,11 @@ jobs:
           source ./venv/bin/activate
           cd ChunkyDocs
           python -m mkdocs build
+      
+      - name: Replace gallery images
+        run: |
+          sed -i -e "s/..\/img\/gallery\//https:\/\/raw.githubusercontent.com\/chunky-dev\/docs\/$GITHUB_SHA\/ChunkyDocs\/docs\/img\/gallery\//g" ./ChunkyDocs/site/gallery/index.html
+          rm -rf ./ChunkyDocs/site/img/gallery/
 
       - name: Save PR Number
         run: echo ${{ github.event.number }} > ./ChunkyDocs/site/pr-number.txt
