@@ -2,7 +2,9 @@
 
 ---
 
-This guide uses the [`Stable`](../configuring_chunky_launcher#advanced-settings) release of Chunky.
+This guide uses the [Stable](../configuring_chunky_launcher#advanced-settings) release of Chunky.
+
+---
 
 ## Installation
 
