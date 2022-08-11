@@ -1,169 +1,276 @@
-# Your first render from start to finish
+# Your First Render From Start To Finish
 
 ---
 
+This guide uses the [`Stable`](../configuring_chunky_launcher#advanced-settings) release of Chunky.
+
 ## Installation
 
-Please follow the [Installation instructions](../getting_started/index.md).
+Please follow the [Installation instructions](../getting_started/installing_chunky.md).
 
 ---
 
 ## Chunky Launcher
 
-![Chunky Launcher](../img/getting_started/chunky_launcher.png)
+Start the Chunky Launcher. You should be presented with a window similar to what is shown in [Figure 1.3.1](#figure-1-3-1).
 
-Chunky can use a lot of memory depending on a number of factors. Many issues can be caused by Chunky not having 
-enough memory so raising the `Memory limit (MiB)` can solve these issues. The default `1024` can be raised based 
-upon how much memory your system has and is typically available. ie - If your system has 16GiB or 16384MiB of system 
-memory, allocating up to 75% which is 12GiB or 12288MiB is typically fine (you can allocate more however you may run 
-into other problems).
+<div class="figure" id="figure-1-3-1">
+  <p class="figure">
+  Figure 1.3.1: The Chunky Launcher
+  </p>
+  <hr>
+  <a href="../../img/getting_started/chunky_launcher.png">
+  <img class="figure" src="../../img/getting_started/chunky_launcher.png" alt="Chunky Launcher">
+  </a>
+</div>
 
-If your `.minecraft` is located in a directory other than where Chunky is expecting you may also need to change this as otherwise Chunky will not have textures.
+You might need to change some settings at this point.
 
-You should not need to access Advanced Settings.
+- Minecraft directory: If your Minecraft game directory (.minecraft) is located somewhere other than its default location, then you may also need to change this to point to your current Minecraft installation; otherwise, blocks rendered in Chunky will not have proper textures, and your worlds will not be found.
 
-For now you can close Chunky/Chunky Launcher.
+- Memory limit (MiB): Chunky can use much memory depending on a number of factors. Many issues can be caused by Chunky not having enough memory, so raising the `Memory limit (MiB)` can solve these issues. The default of *1024* can be raised based upon how much memory your system has and how much is typically available. For example, if your system has 16 GiB (16384 MiB) of system memory, allocating up to 75% of that, which is 12 GiB (12288 MiB), is typically fine. You can allocate more; however, you may eventually encounter other problems.
+
+You should not need to access `Advanced Settings`.
+
+For now, you can close the Chunky Launcher.
 
 ---
 
 ## Getting camera position
-> This part is for taking an in-game view and rendering it out. Feel free to skip this part if you are more confident!
 
-Open Minecraft and a world you wish to render moving your player to where and what you wish to render, ensuring you are facing the direction too. 
+> This part is for taking an in-game view and rendering it. Feel free to skip this part if you are more confident!
 
-![Minecraft F3 menu](../img/getting_started/mc_f3_menu.jpg)
+Open Minecraft, and load a world you wish to render. Move your player to the location of what you wish to render, and ensure that you are facing the right direction, too. Record the values of the fields outlined in red (shown in [Figure 1.3.2](#figure-1-3-2)). You will need these to position the camera correctly in Chunky. Save and quit your world.
 
-Take note of the fields highlighted in red, we will need these to position the camera correctly within Chunky once converted. You can close your game.
+<div class="figure" id="figure-1-3-2">
+  <p class="figure">
+  Figure 1.3.2: Recording position and direction information in Minecraft
+  </p>
+  <hr>
+  <a href="../../img/getting_started/mc_f3_menu.jpg">
+  <img class="figure" src="../../img/getting_started/mc_f3_menu.jpg" alt="Minecraft Debug Screen">
+  </a>
+</div>
 
-> ie X = 32.2 ; Y = 71.7 ; Z = -232.7 ; Yaw = 67.5 ; Pitch = 8.2 (rounded to 1 DP)
+> In this example, the coordinates and direction values are as follows: X = 32.2 ; Y = 71.7 ; Z = -232.7 ; Yaw = 67.5 ; Pitch = 8.2 (rounded to 1 decimal place).
 
 ---
 
 ## Selecting Chunks
 
-If Chunky isn't running go ahead and launch it. You should see something like this:
+If Chunky isn't running yet, then launch it. You should see something like what is shown in [Figure 1.3.3](#figure-1-3-3).
 
-![Overview no map selected](../img/user_interface/overview_no_map.png)
+<div class="figure" id="figure-1-3-3">
+  <p class="figure">
+  Figure 1.3.3: Chunky with no world loaded
+  </p>
+  <hr>
+  <a href="../../img/user_interface/overview_no_map.png">
+  <img class="figure" src="../../img/user_interface/overview_no_map.png" alt="Chunky with no world loaded">
+  </a>
+</div>
 
-Take note that the central pane under `Map` is white and black striped and over on the right panel, under `Map View`, `Current World` is blank. This indicates that no world is selected. Click on `Change World` to select or change the world.
+Currently, no world is loaded into Chunky. Click on `Change World`, located in the [`Map View`](../../reference/user_interface/right_panel_controls/map_view) tab in the right panel to select a world to load. You should be presented with a window like the one shown in [Figure 1.3.4](#figure-1-3-4).
 
-![Change World/World selection](../img/user_interface/right_pane/select_world.png)
+<div class="figure" id="figure-1-3-4">
+  <p class="figure">
+  Figure 1.3.4: The world selection dialog box
+  </p>
+  <hr>
+  <a href="../../img/user_interface/right_panel/select_world.png">
+  <img class="figure" src="../../img/user_interface/right_panel/select_world.png" alt="World selection dialog box">
+  </a>
+</div>
 
-Once you have located the world, click on `Load selected world`.
+Once you have located the world, click on `Load selected world`. The [`Map`](../../reference/user_interface/map) tab will load an interactive map view of your world, as shown in [Figure 1.3.5](#figure-1-3-5).
 
-![Overview](../img/user_interface/overview.png)
+<div class="figure" id="figure-1-3-5">
+  <p class="figure">
+  Figure 1.3.5: The map view of the loaded world
+  </p>
+  <hr>
+  <a href="../../img/user_interface/overview.png">
+  <img class="figure" src="../../img/user_interface/overview.png" alt="Map view of the loaded world">
+  </a>
+</div>
 
-Select the correct dimension using the buttons in the right pane under `Map View` and then select the chunks you wish to render:
+Select the dimension of your world that you want to render using the buttons in the right panel found in the [`Map View`](../../reference/user_interface/right_panel_controls/map_view) tab, and then select the chunks you wish to render using the controls listed below in the [`Map`](../../reference/user_interface/map) tab.
 
-- `Left click` a chunk to select / unselect the chunk
-- `Shift` `click` + drag to select a rectangular area
-- `Ctrl` `Shift` `click` + drag to unselect a rectangular area
-- `Click` and drag to pan around the world
-- Zoom in and out using the `scroll wheel`
-- `Right click` to access a few options
+- Left-click a chunk to select / deselect the chunk.
 
-> Selecting fewer chunks can decrease rendering time, but they will be completely missing from the render. Try and only select what the camera can see!
+- Hold `Shift` and left-click + drag to select a rectangular area.
+
+- Hold `Ctrl` + `Shift` and left-click + drag to deselect a rectangular area.
+
+- Left-click and drag to pan the map view across the world.
+
+- Zoom in and out using the scroll wheel.
+
+- Right-click to access a menu with a few options.
+
+> Selecting fewer chunks can decrease rendering time, but they will be completely missing from the render. Try to only select what the camera can see!
 
 ---
 
 ## Setting up your render
-> This part of the process is where you can customise settings to your heart's content. The guide will only cover 
-> the absolute basics, so it is recommended to experiment.
+
+> This part of the process is where you can customize settings to your heart's content. The guide will only cover the absolute basics, so it is recommended to experiment.
 
 ### Loading Chunks
 
-Either right click the 2D map located in the center pane and click on `New scene from selection` OR over in the left pane (Render Controls) under `Scene` click on `Load selected chunks`.
+To load chunks, either right click on the map view located in the center panel and click on `New scene from selection`, or click on `Load selected chunks`, which is found in the [`Scene`](../../reference/user_interface/render_controls/scene) tab in the left panel, which contains render controls. After loading the selected chunks, the center panel should automatically switch to the [`Render Preview`](../../reference/user_interface/render_preview) tab, which displays a 3D preview of the chunks selected from your world. The progress bar at the bottom should be filled. The time it takes to load the selected chunks increases with the number of chunks selected.
 
-![Scene tab](../img/getting_started/render/scene.png)
+<div class="figure" id="figure-1-3-6">
+  <p class="figure">
+  Figure 1.3.6: The render preview
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/scene.png">
+  <img class="figure" src="../../img/getting_started/render/scene.png" alt="Render preview">
+  </a>
+</div>
 
-After loading the selected chunks the central pane should auto switch to the Render Preview and the bottom progress bar should be filled. The time it takes to load increases with the number of chunks.
+---
 
 ### A few settings to change...
 
-There are a few options under `Scene` you may wish to tweak:
+There are a few options inside the [`Scene`](../../reference/user_interface/render_controls/scene) tab that you may wish to change.
 
-`Canvas size` is the aspect ratio and resolution you want the preview and the final render to be. Higher values take longer to render so using a lower resolution, like 960x540, can massively boost preview/test render performance (and the `X2` button can double both axis up to 1920x1080).
+`Canvas size` is the resolution you want the preview and the final render to be. Higher values take longer to render, so using a lower resolution, such as 960x540, can massively boost preview/test render performance. The `x2` button can quickly double the measures of both dimensions to 1920x1080.
 
-`Save dump once every X` is effectively an auto save feature. Chunky will not render while dumping so do not set this too low unless you believe your system is unstable.
+`Save dump once every X` is effectively an auto-save feature. Every time Chunky reaches an SPP value that is a multiple of `X` that you set, it will save your scene. Chunky will not render while dumping so do not set this too low unless you believe your system is unstable.
 
-`Load players` may need to be disabled, and you might need to use `Reload chunks`, if you are going to match the camera positions to the in game one...
+If you want to match the Chunky camera position to the player's position in-game, then `Load entities > Players` should be disabled.
+
+---
 
 ### Previewing
 
-Pressing `Start` and seeing what things look like is sometimes a good idea if only for a few seconds. You can always hit `Reset` and return to tweaking settings...
+Pressing `Start` and allowing Chunky to render the scene for a few seconds to get an idea of how the render will look at the end is a good idea. You can always press `Reset` to return to changing settings.
 
 ---
 
 ### Camera
 
-Next, hit the `Camera` tab.
+Next, open the `Camera` tab.
 
-![Camera tab](../img/getting_started/render/camera.png)
+<div class="figure" id="figure-1-3-7">
+  <p class="figure">
+  Figure 1.3.7: The Camera tab
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/camera.png">
+  <img class="figure" src="../../img/getting_started/render/camera.png" alt="Camera tab">
+  </a>
+</div>
 
-Click the Position and Orientation dropdown to expand it. Unfortunately you cannot just copy the values taken from the Minecraft F3 menu without a few tweaks first; There are some differences we need to account for. Below you can find a set of conversions:
+Click the `Position & Orientation` dropdown to expand it. Unfortunately, you cannot simply copy the values taken from the Minecraft debug screen. A few adjustments must be made first, because there are some differences that must be accounted for. Below is a set of conversions:
 
 ```
-Camera X = mcX
-Camera Y = mcY + 1.62
-Camera Z = mcZ
+Chunky Camera X = Minecraft X
+Chunky Camera Y = Minecraft Y + 1.62
+Chunky Camera Z = Minecraft Z
 
-Camera Yaw = 90 - mcYaw
-Camera Pitch = mcPtich - 90
+Chunky Camera Yaw = 90 - Minecraft Yaw
+Camera Pitch = Minecraft Pitch - 90
 ```
 
-Using the above conversions with our example we get the following:
+Using the above conversions with our example results in the following values:
 
-X = 32.2 ; Y = 73.2 ; Z = -232.7 ; Yaw = 22.5 ; Pitch = -81.8
+> Chunky Camera X = 32.2 ; Chunky Camera Y = 73.32 ; Z = -232.7 ; Yaw = 22.5 ; Pitch = -81.8
 
-![Imported settings with player blocking view](../img/getting_started/render/camera_ps_imported_player.png)
+Enter the X, Y, and Z coordinates for the camera into the three text boxes on the `Position` row, pressing the Enter key after each one. Do the same with the Camera pitch and yaw values, but place them into the first two text boxes of the `Orientation` row, pressing the Enter key after each one. If `Load entities > Players` in the [`Scene`](../../reference/user_interface/render_controls/scene) tab was enabled when you clicked `Load selected chunks`, then the camera may clip into the player after you enter the values, as shown in [Figure 1.3.8](#figure-1-3-8).
 
-Oh no! The camera is clipping into a player model! Either deselect `Load players` under `Scene` and then hit `Reload chunks` or you will most likely need to explore the `Entities` tab to remove the player...
+<div class="figure" id="figure-1-3-8">
+  <p class="figure">
+  Figure 1.3.8: Camera clipping into player
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/camera_ps_imported_player.png">
+  <img class="figure" src="../../img/getting_started/render/camera_ps_imported_player.png"   alt="Camera clipping into player">
+  </a>
+</div>
 
-![Removed player](../img/getting_started/render/camera_ps_imported.png)
+To remove the player, open the [`Entities`](../../reference/user_interface/render_controls/entities) tab, select the player which the camera is clipping into (likely the first and only one on the list), and then press the `-` button.
 
-The default **F**ield **o**f **V**iew for Minecraft is 70 vertical. Assuming a 16:9 aspect ratio for both Minecraft and the canvas size, the default Chunky FoV should match the view with the standard projection. 
+<div class="figure" id="figure-1-3-9">
+  <p class="figure">
+  Figure 1.3.9: Player removed from the scene
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/camera_ps_imported.png">
+  <img class="figure" src="../../img/getting_started/render/camera_ps_imported.png" alt="Player removed from the scene">
+  </a>
+</div>
+
+The default Field of View (FoV) for Minecraft is 70 degrees vertical. Assuming a 16:9 aspect ratio for both Minecraft and the Chunky render canvas resolution, the camera view with the default Chunky FoV of 70 degrees and the `Standard` projection mode should match the view in Mincraft.
 
 !!! info "Dynamic FoV"
-      If dynamic FoV is enabled in Minecraft, flying in Minecraft will increase the FoV. Disable dynamic FoV to get the same FoV as in Chunky, assuming both FoV settings match.
+      If dynamic FoV is enabled in Minecraft, flying in Minecraft will increase the FoV. Disable dynamic FoV in Minecraft by setting `FOV Effects` in `Video Settings` to 0% to get the same FoV as in Chunky, assuming both FoV settings match.
 
 ---
 
 ### Lighting
 
-Head to the `Lighting` tab.
+Open the [`Lighting`](../../reference/user_interface/render_controls/lighting) tab.
 
-![Lighting tab](../img/getting_started/render/lighting.png)
+<div class="figure" id="figure-1-3-10">
+  <p class="figure">
+  Figure 1.3.10: The Lighting tab
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/lighting.png">
+  <img class="figure" src="../../img/getting_started/render/lighting.png" alt="Lighting tab">
+  </a>
+</div>
 
-From here you can adjust the amount of light the Sky, Emitters (torches, lava, etc.), and Sun produce. The default values should be perfect for daytime renders. Adjusting the Sun azimuth (yaw/rotation) and altitude (height) can change the scenes lighting drastically.
+Here you can adjust the amount of light the Sky, Emitters (torches, glowstone, etc.), and Sun produce. The default values should be perfect for daytime renders. Adjusting the Sun azimuth (yaw/rotation) and altitude (height) can change the lighting of the scene dramatically.
 
-> Emitters will *significantly* increase render times, and require a much higher SPP to look smooth! Otherwise, you 
-> will have a lot of noise or "fireflies".
+For this example, I will simply set the sun altitude to *25*.
 
-For this example I will just set the sun altitude to 25.
+> Emitters can *significantly* increase render times, and often require a much higher SPP to look smooth! Not rendering long enough will leave much noise, or "fireflies".
 
 ---
 
 ### Sky and Fog
 
-![Sky and Fog tab](../img/getting_started/render/sky_fog.png)
+Open the [`Sky & Fog`](../../reference/user_interface/render_controls/sky_and_fog) tab.
 
-Not too much to explain here. Sky mode lets you pick between simulated, solid or gradient colors, and Skymaps/cubes. The only thing here that you might need help with is Fog. There is an example fog density listed; tweak this and the fog color. Fog is noisy so expect longer render times.
+<div class="figure" id="figure-1-3-11">
+  <p class="figure">
+  Figure 1.3.11: The Sky & Fog tab
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/sky_fog.png">
+  <img class="figure" src="../../img/getting_started/render/sky_fog.png" alt="Sky & Fog tab">
+  </a>
+</div>
+
+There is not too much to explain here. The `Sky mode` setting lets you chose between a simulated sky, solid color, color gradient, and Skymaps/cubes. `Cloud X, Y, and Z` control the location of the clouds, and `Cloud size` controls the size of the clouds, if they are enabled using `Enable clouds`. `Fog density` controls the thickness of the fog; set it to *0* to disable it. There is an example fog density listed as a guide. Fog produces much noise, so expect longer render times.
 
 ---
 
 ### Water
 
-![Water tab](../img/getting_started/render/water.png)
+Open the [`Water`](../../reference/user_interface/render_controls/water) tab.
 
-By default water will have a ripple effect applied to it. Water visibility impacts how far underwater you can see. 
-Water opacity affects how transparent the water appears (0 for clear, 1 for solid). By default water color is biome tinted, but you can override this.
+<div class="figure" id="figure-1-3-12">
+  <p class="figure">
+  Figure 1.3.12: The Water tab
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/water.png">
+  <img class="figure" src="../../img/getting_started/render/water.png" alt="Water tab">
+  </a>
+</div>
+
+By default, the water will have a slight wave effect applied to it. You can disable it by enabling `Still water`. The `Water visibility` setting affects how far underwater you can see. The `Water opacity` setting controls how transparent the surface of the water is. Setting it to *0* makes the water clear, and setting it to *1* makes the water a solid color. By default, water color is biome-tinted, but you can override this by enabling `Use custom water color`.
 
 ---
 
 ### Entities
 
-Feel free to adjust whatever you want in the entity tab.
-Press `-` to remove the entity from the render, and `+` to add new ones.
+Adjust whatever you want in the entity tab to your liking. Press `-` to remove the selected entity from the render, and press `+` to add new entities.
 
 > Entities usually have a minimal effect on render times.
 
@@ -171,69 +278,94 @@ Press `-` to remove the entity from the render, and `+` to add new ones.
 
 ### Materials & Postprocessing tabs
 
-These tabs are not going to be covered in this guide. Explore and experiment on your own.
+These tabs shall not be covered in this guide. Explore and experiment on your own.
 
 ---
 
 ### Advanced
 
-![Advanced tab](../img/getting_started/render/advanced.png)
+Open the [`Advanced`](../../reference/user_interface/render_controls/advanced) tab.
 
-Adjust CPU load and threads as you see fit. Chunky renders using solely CPU though a GPU rendering plugin is in development.
+<div class="figure" id="figure-1-3-13">
+  <p class="figure">
+  Figure 1.3.13: The Advanced tab
+  </p>
+  <hr>
+  <a href="../../img/getting_started/render/advanced.png">
+  <img class="figure" src="../../img/getting_started/render/advanced.png" alt="Advanced tab">
+  </a>
+</div>
 
-> If you plan to use your PC while it is rendering / have a weaker computer, reduce CPU load OR reduce threads as 
-> you see fit. Typically, reducing the number of threads that Chunky uses provides much more control over actual 
-> system usage. Be aware that lower CPU load / fewer threads can significantly increase render times!
+Adjust the `CPU utilization` and `Render threads` as you see fit. Chunky renders solely using the CPU, though a [GPU rendering plugin](../../plugins/plugin_list#chunkycl-plugin) is in development.
 
-Set Ray Depth to whatever you want. 3-8 is usually good enough for most scenes. Increasing ray depth increases render times but improves accuracy and render quality; A balance is required.
+> If you plan to use your PC while it is rendering or have a weaker computer, then reduce the `CPU utilization` or the `Render threads` as you see fit. Typically, reducing the number of threads that Chunky uses provides much more control over actual system usage. Be aware that reduced CPU load and fewer threads can significantly increase render times!
 
-Click the Shutdown on render complete if you want your computer to shut down after the target SPP has been reached.
+Set `Ray Depth` to whatever you want. A value anywhere from 3 to 8 is usually good enough for most scenes. Increasing ray depth increases render times but improves accuracy and render quality; a balance is required.
 
-> If you are using linux, this option will have no effect unless you allow the `shutdown` command to run without needing `sudo` as the command requires `sudo` permissions. For obvious reasons, Chunky won't store your sudo password for when it's time to execute the command x). You can find a guide on the internet fairly easily for allowing the shutdown command to run without `sudo`.
+Enable `Shutdown computer when render completes` if you want your computer to shut down after the target SPP has been reached.
+
+> If you are using Linux, then this option will have no effect unless you allow the `shutdown` command to run without needing `sudo`, since the `shutdown` command requires `sudo` permissions by default. For obvious reasons, Chunky won't store your sudo password for when it's time to execute the command. You can find a guide for allowing the shutdown command to run without `sudo` on the internet fairly easily.
 
 You may wish to change the image `Output mode` here too.
 
 ---
 
-### Just before we render
+## Just before we render
 
 Set the target SPP to whatever you want.
 
-> SPP means samples per pixel. Lower SPPs will be reached sooner but may have more noise/grain/fireflies. A higher SPP will take longer to reach but the image will be cleaner.
+> SPP stands for Samples Per Pixel. Lower target SPP values will be reached sooner, but images rendered to lower SPP values may have more noise/grain/fireflies. A higher target SPP value will take longer to render to, but the image will be less noisy.
 
-Typically, 32-1024 SPP is good for daylight renders without emitters (torches, lava, glowstone, etc.) enabled. 
-4096-16384 SPP is good for daylight renders with emitters. 16384+ SPP for night time renders or indoor renders with emitters.
+Typically, 32-1024 SPP is good for daylight renders without emitters (torches, lava, glowstone, etc.) enabled. For daylight renders with emitters, 4096-16384 SPP is better. For night-time renders or indoor renders with emitters, 16384 SPP or more is required to yield a sufficiently noise-free image.
 
-#### Save the scene
+### Save the scene
 
-![Save and load](../img/user_interface/save_load_buttons.png)
+<div class="figure" id="figure-1-3-14">
+  <p class="figure">
+  Figure 1.3.14: Scene name, save, and load controls
+  </p>
+  <hr>
+  <a href="../../img/user_interface/save_load_buttons.png">
+  <img class="figure" src="../../img/user_interface/save_load_buttons.png" alt="Scene name, save,   and load controls">
+  </a>
+</div>
 
-In the top left, change the scene name to something more reasonable, hit the save icon (the blue file icon). Should you wish to load a scene you can click on the final icon (blue file with green arrow).
+In the top left of the Chunky window, enter a more reasonable scene name in the `Scene` text box. Then click the Save button, which is marked with a blue disk icon. To load a scene, click on the Load scene button, which is marked with a blue disk icon with a green arrow.
 
 ---
 
-### Render
+## Render
 
-When you are ready, hit `Start`, and wait for your beautiful image to be produced!
+When you are ready, click `Start`, and wait for your beautiful image to be produced!
 
 > This could take anywhere between two minutes and two years. Sit tight!
 
-Should you need to stop at any point hit `Pause`, wait for CPU usage to dip down to idle, and then hit `Save` before you close. Failure to do so can lead to loss progress (if not saving dumps frequently).
+Should you need to stop at any point, click `Pause`, wait for CPU usage to dip down to idle, and then click the `Save` button. Wait for Chunky to finish saving the scene. Then it is safe to close Chunky. Failure to do so can lead to loss of render progress if not saving dumps frequently.
 
 ---
 
-### Profit!
+## Profit!
 
-You can either use `Save current frame` or `Copy current frame` at any point (any SPP) to get your render. Or probably best to get the finished render from (assuming default locations):
+You can use either `Save current frame` <!-- Change these upon release of 2.5.0 --> or `Copy current frame` at any point during the render progress to get your render. If the target SPP has been reached, then you can find the finished render in (assuming default locations):
 
-- Windows: C:\Users\<Your_User_Name>\.chunky\scenes\<scene_name>\snapshots
-- Linux: /home/.chunky/scenes/<scene_name>/snapshots
+- Windows: `C:\Users\<Your_User_Name>\.chunky\scenes\<scene_name>\snapshots`
 
-Alternatively, on the right pane under `Options` click on `Open Scenes Directory`.
+- Linux: `~/.chunky/scenes/<scene_name>/snapshots`
 
-Below you can see the finished product of this guide with a few minor tweaks to the Sky simulation, the addition of fog, lighting intensities and color, and the water.
+Alternatively, on the left control panel, inside the `Scene` tab, click `Open Scene Directory`.
 
-![Example first render](../img/getting_started/first_render.png)
+[Figure 1.3.15](#figure-1-3-15) shows the finished product of this guide with a few minor tweaks to the sky simulation, the addition of fog, changes to the lighting intensities and color, and changes to the water.
+
+<div class="figure" id="figure-1-3-15">
+  <p class="figure">
+  Figure 1.3.15: The finished render
+  </p>
+  <hr>
+  <a href="../../img/getting_started/first_render.png">
+  <img class="figure" src="../../img/getting_started/first_render.png" alt="Finished render">
+  </a>
+</div>
+
 
 ---
 

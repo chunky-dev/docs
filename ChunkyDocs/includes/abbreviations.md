@@ -1,4 +1,4 @@
-<!-- General computer terms-->
+<!-- General computer terms -->
 *[CPU]: Central Processing Unit
 *[SSE]: Streaming SIMD Extensions
 *[GPU]: Graphics Processing Unit
@@ -6,10 +6,12 @@
 *[VRAM]: Video RAM (GPU RAM)
 *[CLI]: Command-line interface
 *[GUI]: Graphical user interface
-*[JVM]: Java virtual machine
+*[JVM]: Java virtual Machine
 *[JDK]: Java Development Kit
-*[JRE}: Java Runtime Environment
-*{JFX]: JavaFX
+*[JRE]: Java Runtime Environment
+*[JFX]: JavaFX
+*[JAR]: Java ARchive
+*[OS]: Operating System
 
 <!-- General graphics stuff -->
 *[AO]: Ambient Occlusion
@@ -32,18 +34,21 @@
 <!-- Path tracing stuff -->
 *[NEE]: Next Event Estimation
 *[ESS]: Emitter Sampling Strategy
+*[SSS]: Sunlight Sampling Strategy
 *[SVO]: Sparse Voxel Octree
 *[BVH]: Bounding Volume Hierarchy
 *[SDF]: Scene Description Format
 *[IoR]: Index of Refraction
 
-<!-- Renderer terms-->
+<!-- Renderer terms -->
 *[SPP]: Samples Per Pixel
 *[SPS]: Samples Per Second
 
-<!-- Typical abbreviations of settings-->
+<!-- Typical abbreviations of settings -->
 *[DoF]: Depth of Field
 *[FoV]: Field of View
 
-
-
+<!-- Not actually abbreviations, but other useful information -->
+*[pitch]: Rotation around the transverse (lateral/sideways) axis.
+*[roll]: Rotation around the longitudinal (forward) axis.
+*[yaw]: Rotation around the vertical axis.

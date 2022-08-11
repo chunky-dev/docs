@@ -37,9 +37,35 @@ theme:
 plugins:
     - redirects:
         redirect_maps:
-            'getting_started/installing.md': 'getting_started/index.md'
-            'user_interface/chunky_ui.md': 'user_interface/index.md'
-            'user_interface/render/render.md': 'user_interface/render/index.md'
+            'getting_started/index.md': 'getting_started/installing_chunky.md'
+            'getting_started/installing.md': 'getting_started/installing_chunky.md'
+            'getting_started/configuration.md': 'getting_started/configuring_chunky_launcher.md'
+            'rendering/index.md': 'reference/introduction/path_tracing.md'
+            'rendering/denoising.md': 'reference/other_topics/denoising.md'
+            'user_interface/index.md': 'reference/user_interface/chunky_gui.md'
+            'user_interface/render/scene.md': 'reference/user_interface/render_controls/scene.md'
+            'user_interface/render/lighting.md': 'reference/user_interface/render_controls/lighting.md'
+            'user_interface/render/sky_and_fog.md': 'reference/user_interface/render_controls/sky_and_fog.md'
+            'user_interface/render/water.md': 'reference/user_interface/render_controls/water.md'
+            'user_interface/render/camera.md': 'reference/user_interface/render_controls/camera.md'
+            'user_interface/render/entities.md': 'reference/user_interface/render_controls/entities.md'
+            'user_interface/render/materials.md': 'reference/user_interface/render_controls/materials.md'
+            'user_interface/render/postprocessing.md': 'reference/user_interface/render_controls/postprocessing.md'
+            'user_interface/render/advanced.md': 'reference/user_interface/render_controls/advanced.md'
+            'user_interface/render/help.md': 'reference/user_interface/render_controls/help.md'
+            'user_interface/render/render_preview.md': 'reference/user_interface/render_preview.md'
+            'user_interface/headless.md': 'reference/user_interface/headless.md'
+            'rendering/scene_format.md': 'reference/technical/scene_format.md'
+            'rendering/skymaps.md': 'reference/other_topics/skymaps.md'
+            'user_interface/style.md': 'reference/other_topics/styling_chunky.md'
+            'plugins/index.md': 'plugins/chunky_plugins.md'
+            'plugins/plugins.md': 'plugins/plugin_list.md'
+            'plugins/development.md': 'plugins/plugin_development.md'
+            'faq/index.md': 'support/faq.md'
+            'faq/troubleshooting.md': 'support/troubleshooting.md'
+            'faq/minecraft_compatibility.md': 'support/minecraft_compatibility.md'
+            'user_interface/chunky_ui.md': 'reference/user_interface/chunky_gui.md'
+            'user_interface/render.md': 'reference/user_interface/render_controls/index.md'
     - search:
         lang: en
 
@@ -58,45 +84,72 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.snippets
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      provider: github
+      user: chunky-dev
+      repo: chunky
   - tables
+  - toc:
+      permalink: true
 
 copyright: The Chunky Manual is licensed under a CC-BY-NC-SA 4.0 Int. License (<a href="/docs/license">learn more</a>)
 
 nav:
   - "Home": "index.md"
-  - "Gallery": "gallery/index.md"
   - "Getting Started":
-    - "Installing Chunky": "getting_started/index.md"
-    - "Configuring Chunky": "getting_started/configuration.md"
+    - "Installing Chunky": "getting_started/installing_chunky.md"
+    - "Configuring Chunky Launcher": "getting_started/configuring_chunky_launcher.md"
     - "Your First Render": "getting_started/your_first_render.md"
+  - "Support":
+    - "FAQ": "support/faq.md"
+    - "Troubleshooting": "support/troubleshooting.md"
+    - "Minecraft compatibility": "support/minecraft_compatibility.md"
   - "Reference":
-    - "Introduction": "rendering/index.md"
-    - "Denoising": "rendering/denoising.md"
-    - "User Interface": "user_interface/index.md"
-    - "Render Controls":
-      - "Scene": "user_interface/render/scene.md"
-      - "Lighting": "user_interface/render/lighting.md"
-      - "Sky & Fog": "user_interface/render/sky_and_fog.md"
-      - "Water": "user_interface/render/water.md"
-      - "Camera": "user_interface/render/camera.md"
-      - "Entities": "user_interface/render/entities.md"
-      - "Materials": "user_interface/render/materials.md"
-      - "Postprocessing": "user_interface/render/postprocessing.md"
-      - "Advanced": "user_interface/render/advanced.md"
-      - "Help": "user_interface/render/help.md"
-      - "Render Preview": "user_interface/render/render_preview.md"
-    - "Headless": "user_interface/headless.md"
-    - "Scene Format": "rendering/scene_format.md"
-    - "Skymaps": "rendering/skymaps.md"
-    - "Theming": "user_interface/style.md"
+    - "Introduction":
+      - "Path Tracing": "reference/introduction/path_tracing.md"
+      - "Samples and Noise": "reference/introduction/samples_and_noise.md"
+      - "Next Event Estimation": "reference/introduction/next_event_estimation.md"
+      - "Material Properties": "reference/introduction/material_properties.md"
+    - "User Interface":
+      - "Chunky GUI": "reference/user_interface/chunky_gui.md"
+      - "Menu Bar (2.5.0 Snapshot Controls)":
+        - "File (Scene Management)": "reference/user_interface/menu_bar/file.md"
+        - "Help (Chunky Resources)": "reference/user_interface/menu_bar/help.md"
+      - "Scene Management": "reference/user_interface/scene_management.md"
+      - "Map": "reference/user_interface/map.md"
+      - "Render Preview": "reference/user_interface/render_preview.md"
+      - "Right Panel Controls":
+        - "Map View": "reference/user_interface/right_panel_controls/map_view.md"
+        - "Chunks": "reference/user_interface/right_panel_controls/chunks.md"
+        - "Options": "reference/user_interface/right_panel_controls/options.md"
+        - "About": "reference/user_interface/right_panel_controls/about.md"
+      - "Render Controls (Left Panel)":
+        - "Scene": "reference/user_interface/render_controls/scene.md"
+        - "Lighting": "reference/user_interface/render_controls/lighting.md"
+        - "Sky & Fog": "reference/user_interface/render_controls/sky_and_fog.md"
+        - "Water": "reference/user_interface/render_controls/water.md"
+        - "Camera": "reference/user_interface/render_controls/camera.md"
+        - "Entities": "reference/user_interface/render_controls/entities.md"
+        - "Materials": "reference/user_interface/render_controls/materials.md"
+        - "Postprocessing": "reference/user_interface/render_controls/postprocessing.md"
+        - "Textures & Resource Packs (2.5.0 Snapshot Controls)": "reference/user_interface/render_controls/textures_and_resource_packs.md"
+        - "Advanced": "reference/user_interface/render_controls/advanced.md"
+        - "Help": "reference/user_interface/render_controls/help.md"
+        - "Render Progress Controls": "reference/user_interface/render_controls/render_progress_controls.md"
+      - "Headless (Command Line)": "reference/user_interface/headless.md"
+    - "Other Topics":
+      - "Denoising": "reference/other_topics/denoising.md"
+      - "Skymaps": "reference/other_topics/skymaps.md"
+      - "Styling Chunky": "reference/other_topics/styling_chunky.md"
+    - "Technical":
+      - "Scene Format": "reference/technical/scene_format.md"
   - "Plugins":
-    - "Getting started": "plugins/index.md"
-    - "Plugins": "plugins/plugins.md"
-    - "Plugin development": "plugins/development.md"
-  - "FAQ and Troubleshooting":
-    - "FAQ": "faq/index.md"
-    - "Troubleshooting": "faq/troubleshooting.md"
-    - "Minecraft compatibility": "faq/minecraft_compatibility.md"
+    - "Chunky Plugins": "plugins/chunky_plugins.md"
+    - "Plugin list": "plugins/plugin_list.md"
+    - "Plugin development": "plugins/plugin_development.md"
+  - "Gallery": "gallery/index.md"
+
 
 
 extra:
