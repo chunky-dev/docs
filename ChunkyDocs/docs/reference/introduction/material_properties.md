@@ -2,7 +2,7 @@
 
 ---
 
-In Chunky, every block and "entity" is listed as a material. Each material has several properties which determine how light interacts with that material. For every material except for beacon beam segments, these properties can be set in the [`Materials`](../../user_interface/render_controls/materials) tab. Material properites for beacon beam segments can be set in the [`Entities`](../../user_interface/render_controls/entities#beacon-beam-controls) tab.
+Every block and "entity" in Chunky is listed as a material. Each material has several properties which determine how light interacts with that material. Material properties for beacon beam segments can be set in the [`Entities`](../../user_interface/render_controls/entities#beacon-beam-controls) tab, and material properties for every other material can be set in the [`Materials`](../../user_interface/render_controls/materials) tab.
 
 ---
 

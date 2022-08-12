@@ -77,7 +77,7 @@ The `Scene` tab, which is the first tab in the left control panel, contains gene
 
 - `Save dump once every...`: Changes whether Chunky saves the scene and saves a render dump of the current progress whenever a multiple of the specified number of SPP has passed since the render started.
 
-- <img src="../../../../img/user_interface/render_controls/save_dump_SPP.png" alt="Render dump SPP" style="vertical-align: middle;">: Input field for number of SPP a multiple of which must be rendered to before the scene and a render dump of the scene should be saved. Alternatively, select one of six preset values from the dropdown menu, which is accessed by clicking the button immediately to the right of the input field.
+- `..."X" frames`: Input field for number of SPP a multiple of which must be rendered to before the scene and a render dump of the scene should be saved. Alternatively, select one of six preset values from the dropdown menu, which is accessed by clicking the button immediately to the right of the input field.
 
     - `50` SPP
 
