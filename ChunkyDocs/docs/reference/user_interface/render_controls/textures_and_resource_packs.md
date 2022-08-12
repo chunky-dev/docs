@@ -8,10 +8,11 @@ The `Textures & Resource Packs` tab, which, in the [Chunky 2.5.0 snapshots](../.
   <p class="figure">
   Figure 3.2.19.1: The Textures & Resource Packs tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/textures_and_resource_packs_tab.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/textures_and_resource_packs_tab.png" alt="Textures & Resource Packs tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/textures_and_resource_packs_tab.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/textures_and_resource_packs_tab.png" alt="Textures & Resource Packs tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -38,23 +39,24 @@ The `Select Resource Packs` dialog box, shown in [Figure 3.2.19.2](#figure-3-2-1
   <p class="figure">
   Figure 3.2.19.2: Select Resource packs dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/select_resource_packs.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/select_resource_packs.png" alt="Select Resource Packs dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/select_resource_packs.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/select_resource_packs.png" alt="Select Resource Packs dialog box">
+    </a>
+  </div>
 </div>
 
 - `Available Resource Packs`: List of all resource packs detected in the "resourcepacks" directory of the set Minecraft directory, in alphabetical order. A resource pack in the list can be clicked to select it.
 
 - `Selected resource packs`: List of all resource packs selected to be loaded, including any pre-loaded Minecraft version.jar at the bottom. A resource pack in the list can be clicked to select it.
 
-- <img src="../../../../img/user_interface/render_controls/select_resource_packs_right_arrow.png"> : Moves the selected resource pack from the `Available resource packs` list to the `Selected resource packs` list. This control is only available if a selected resource pack be in the `Available resource packs` list.
+- <img src="../../../../img/user_interface/render_controls/select_resource_packs_right_arrow.png" style="vertical-align: middle;"> : Moves the selected resource pack from the `Available resource packs` list to the `Selected resource packs` list. This control is only available if a selected resource pack be in the `Available resource packs` list.
 
-- <img src="../../../../img/user_interface/render_controls/select_resource_packs_left_arrow.png"> : Removes the selected resource pack from the `Selected resource packs` list to the `Available resource packs` list. This control is only available if a selected resource pack be in the `Selected resource packs` list. If the selected resource pack is not located within the "resourcepacks" directory of the set Minecraft directory, then this control does not actually move that resource pack to the "resourcepacks" directory of the set Minecraft directory. It simply removes it from the list of resource packs selected to be loaded; no files are changed.
+- <img src="../../../../img/user_interface/render_controls/select_resource_packs_left_arrow.png" style="vertical-align: middle;"> : Removes the selected resource pack from the `Selected resource packs` list to the `Available resource packs` list. This control is only available if a selected resource pack be in the `Selected resource packs` list. If the selected resource pack is not located within the "resourcepacks" directory of the set Minecraft directory, then this control does not actually move that resource pack to the "resourcepacks" directory of the set Minecraft directory. It simply removes it from the list of resource packs selected to be loaded; no files are changed.
 
-- <img src="../../../../img/user_interface/render_controls/select_resource_packs_up_arrow.png"> : Moves the selected resource pack above the resource pack that is immediately above it. This control is only available if the resource pack on which the control exists is not at the top of the list and the resource pack is not a pre-loaded Minecraft client.jar.
+- <img src="../../../../img/user_interface/render_controls/select_resource_packs_up_arrow.png" style="vertical-align: middle;"> : Moves the selected resource pack above the resource pack that is immediately above it. This control is only available if the resource pack on which the control exists is not at the top of the list and the resource pack is not a pre-loaded Minecraft client.jar.
 
-- <img src="../../../../img/user_interface/render_controls/select_resource_packs_down_arrow.png"> : Moves the selected resource pack below the resource pack that is immediately below it. This control is only available if the resource pack on which the control exists is not immediately above a pre-loaded Minecraft client.jar and the resource pack is not a pre-loaded Minecraft client.jar.
+- <img src="../../../../img/user_interface/render_controls/select_resource_packs_down_arrow.png" style="vertical-align: middle;"> : Moves the selected resource pack below the resource pack that is immediately below it. This control is only available if the resource pack on which the control exists is not immediately above a pre-loaded Minecraft client.jar and the resource pack is not a pre-loaded Minecraft client.jar.
 
 - `Right-click`: Opens a [context menu](#right-click-menu) with more controls when used within either of the lists.
 
@@ -74,10 +76,11 @@ Right-clicking within either of the resource pack lists opens a context menu con
   <p class="figure">
   Figure 3.2.19.3: Select Resource packs dialog box right-click menu
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/select_resource_packs_rightclick_menu.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/select_resource_packs_rightclick_menu.png" alt="Select Resource Packs dialog box right-click menu">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/select_resource_packs_rightclick_menu.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/select_resource_packs_rightclick_menu.png" alt="Select Resource Packs dialog box right-click menu">
+    </a>
+  </div>
 </div>
 
 - `Open in system file browser`: Opens in a file explorer window the directory containing the resource pack on which the right-click was performed.

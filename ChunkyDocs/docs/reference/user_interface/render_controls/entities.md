@@ -8,10 +8,11 @@ The `Entities` tab, which is the sixth tab in the left control panel, contains c
   <p class="figure">
   Figure 3.2.16.1: The Entities tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/entities_tab_2.4.x.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_2.4.x.png" alt="Entities tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/entities_tab_2.4.x.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_2.4.x.png" alt="Entities tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -44,10 +45,11 @@ If the selected entity is a player, then controls pertaining to player entities 
   <p class="figure">
   Figure 3.2.16.2: Player entity controls
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/entities_tab_player.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_player.png" alt="Player entity controls">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/entities_tab_player.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_player.png" alt="Player entity controls">
+    </a>
+  </div>
 </div>
 
 - `Player model`: Dropdown menu to select the player model of the selected player.
@@ -100,10 +102,11 @@ If the selected entity is an armor stand, then controls pertaining to armor stan
   <p class="figure">
   Figure 3.2.16.3: Armor stand entity controls
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/entities_tab_armor_stand.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_armor_stand.png" alt="Armor stand entity controls">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/entities_tab_armor_stand.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_armor_stand.png" alt="Armor stand entity controls">
+    </a>
+  </div>
 </div>
 
 - `Scale`: Changes the size of the selected armor stand. Positive values beyond the range of the slider can be entered into the associated input field.
@@ -142,10 +145,11 @@ If the selected entity is a book or a book on a lectern, then controls pertainin
   <p class="figure">
   Figure 3.2.16.4: Book entity controls
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/entities_tab_book.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_book.png" alt="Book entity controls">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/entities_tab_book.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_book.png" alt="Book entity controls">
+    </a>
+  </div>
 </div>
 
 - `Opening angle`: Changes the size of the angle between the two sides of the selected book, which changes how widely the book is opened.
@@ -172,10 +176,11 @@ If the selected entity is a beacon beam, then controls pertaining to beacon beam
   <p class="figure">
   Figure 3.2.16.5: Beacon beam entity controls
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/entities_tab_beacon_beam.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_beacon_beam.png" alt="Beacon beam entity controls">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/entities_tab_beacon_beam.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_beacon_beam.png" alt="Beacon beam entity controls">
+    </a>
+  </div>
 </div>
 
 - `Height`: Changes the height of the selected beacon beam.
@@ -184,7 +189,7 @@ If the selected entity is a beacon beam, then controls pertaining to beacon beam
 
 - `Delete`: Removes the selected control point from the list.
 
-- ` `: Input field for a Y-coordinate, relative to the bottom of the selected beacon beam, of a segment of the beacon beam to be used as a control point.
+- <img src="../../../../img/user_interface/render_controls/beacon_beam_input_field.png" style="vertical-align: middle;">: Input field for a Y-coordinate, relative to the bottom of the selected beacon beam, of a segment of the beacon beam to be used as a control point.
 
 - `Add`: Creates a control point of a segment of the selected beacon beam, the Y-coordinate, relative to the bottom of that beacon beam, of which be specified in the input field immediately to the left, if it does not already exist.
 
@@ -216,10 +221,11 @@ The `Input player identifier` dialog box, shown in [Figure 3.2.16.6](#figure-3-2
   <p class="figure">
   Figure 3.2.16.6: Input player identifier dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/input_player_identifier.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/input_player_identifier.png" alt="Input player identifier dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/input_player_identifier.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/input_player_identifier.png" alt="Input player identifier dialog box">
+    </a>
+  </div>
 </div>
 
 - `UUID / player name`: Input field for the username or UUID of the Minecraft user, the skin of which should be downloaded and applied to the selected player.
@@ -238,10 +244,11 @@ The `Entities` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_
   <p class="figure">
   Figure 3.2.16.7: The Entities tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/entities_tab_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_2.5.0.png" alt="2.5.0 Snapshot Entities tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/entities_tab_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/entities_tab_2.5.0.png" alt="2.5.0 Snapshot Entities tab">
+    </a>
+  </div>
 </div>
 
 - `Player to camera`: This control was renamed to `Entity to camera`.

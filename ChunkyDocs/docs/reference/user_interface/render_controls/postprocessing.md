@@ -8,10 +8,11 @@ The `Postprocessing` tab, which is the eighth tab in the left control panel, con
   <p class="figure">
   Figure 3.2.18.1: The Postprocessing tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/postprocessing_tab.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/postprocessing_tab.png" alt="Postprocessing tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/postprocessing_tab.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/postprocessing_tab.png" alt="Postprocessing tab">
+    </a>
+  </div>
 </div>
 
 ---

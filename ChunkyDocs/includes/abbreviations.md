@@ -30,6 +30,8 @@
 *[PNG]: Portable Network Graphics (SDR)
 *[JPG]: Joint Photographic Expert Group compressed image format (SDR)
 *[JPEG]: Joint Photographic Expert Group compressed image format (SDR)
+*[FP64]: Double-precision floating-point
+*[FP32]: Single-precision floating point
 
 <!-- Path tracing stuff -->
 *[NEE]: Next Event Estimation

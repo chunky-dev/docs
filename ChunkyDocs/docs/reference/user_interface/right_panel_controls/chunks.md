@@ -8,10 +8,11 @@ The `Chunks` tab, located in the right control panel, contains controls for to t
   <p class="figure">
   Figure 3.2.8.1: The Chunks tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/right_panel/chunks_tab.png">
-  <img class="figure" src="../../../../img/user_interface/right_panel/chunks_tab.png" alt="Chunks tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/right_panel/chunks_tab.png">
+      <img class="figure" src="../../../../img/user_interface/right_panel/chunks_tab.png" alt="Chunks tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -20,7 +21,7 @@ The `Chunks` tab, located in the right control panel, contains controls for to t
 
 - `Clear selection`: Clears the map view chunk selection.
 
-- `Export chunks to ZIP`: Opens a 'Save As' dialog box to export the selected chunks as region files containing the chunks to a .ZIP archive.
+- `Export chunks to ZIP`: Opens a 'Save As' dialog box to export the selected chunks as region files containing the chunks to a ZIP archive.
 
 - `Export view to PNG`: Opens a 'Save As' dialog box to export the current map view as a PNG file.
 

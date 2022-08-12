@@ -8,10 +8,11 @@ The `Map` tab is located in the center control panel, and is the default view wh
   <p class="figure">
   Figure 3.2.5.1: The Map view
   </p>
-  <hr>
-  <a href="../../../img/user_interface/map.png">
-  <img class="figure" src="../../../img/user_interface/map.png" alt="Map View">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/map.png">
+      <img class="figure" src="../../../img/user_interface/map.png" alt="Map View">
+    </a>
+  </div>
 </div>
 
 The map will display one of two display modes, depending on the map [`Scale`](../right_panel_controls/map_view#controls). At map scale of *13* or greater, Chunky will display individual blocks of the world (albeit in a simplified manner), and at map scale of *12* or less, Chunky will display the biome map of the world, like the one in [Figure 3.2.5.2](#figure-3-2-5-2).
@@ -20,10 +21,11 @@ The map will display one of two display modes, depending on the map [`Scale`](..
   <p class="figure">
   Figure 3.2.5.2: The biome map
   </p>
-  <hr>
-  <a href="../../../img/user_interface/map_biome_view.png">
-  <img class="figure" src="../../../img/user_interface/map_biome_view.png" alt="Biome map">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/map_biome_view.png">
+      <img class="figure" src="../../../img/user_interface/map_biome_view.png" alt="Biome map">
+    </a>
+  </div>
 </div>
 
 ---
@@ -46,12 +48,11 @@ The map will display one of two display modes, depending on the map [`Scale`](..
   <p class="figure">
   Figure 3.2.5.3: Map view controls
   </p>
-  <hr>
   <table class="figure">
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/user_interface/chunky_map_chunk_selection0.png">
-        <img class="figure" src="../../../img/user_interface/chunky_map_chunk_selection0.png" alt="Chunk outline">
+          <img class="figure" src="../../../img/user_interface/chunky_map_chunk_selection0.png" alt="Chunk outline">
         </a>
         <p>
         Prior to left-clicking, an outline of the highlighted chunk will be shown.
@@ -59,7 +60,7 @@ The map will display one of two display modes, depending on the map [`Scale`](..
       </td>
       <td class="figure">
         <a href="../../../img/user_interface/chunky_map_chunk_selection1.png">
-        <img class="figure" src="../../../img/user_interface/chunky_map_chunk_selection1.png" alt="Chunk selected">
+          <img class="figure" src="../../../img/user_interface/chunky_map_chunk_selection1.png" alt="Chunk selected">
         </a>
         <p>
         After left-clicking, the outline will be filled in and selected.
@@ -69,7 +70,7 @@ The map will display one of two display modes, depending on the map [`Scale`](..
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/user_interface/chunky_map_region_selection0.png">
-        <img class="figure" src="../../../img/user_interface/chunky_map_region_selection0.png" alt="Region outline">
+          <img class="figure" src="../../../img/user_interface/chunky_map_region_selection0.png" alt="Region outline">
         </a>
         <p>
         Prior to left-clicking, an outline of the highlighted region will be shown.
@@ -77,7 +78,7 @@ The map will display one of two display modes, depending on the map [`Scale`](..
       </td>
       <td class="figure">
         <a href="../../../img/user_interface/chunky_map_region_selection1.png">
-        <img class="figure" src="../../../img/user_interface/chunky_map_region_selection1.png" alt="Region selected">
+          <img class="figure" src="../../../img/user_interface/chunky_map_region_selection1.png" alt="Region selected">
         </a>
         <p>
         After left-clicking, the region outline will be filled in and selected.
@@ -87,7 +88,7 @@ The map will display one of two display modes, depending on the map [`Scale`](..
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/user_interface/chunky_map_draggable_selection.png">
-        <img class="figure" src="../../../img/user_interface/chunky_map_draggable_selection.png" alt="Resizable selection">
+          <img class="figure" src="../../../img/user_interface/chunky_map_draggable_selection.png" alt="Resizable selection">
         </a>
         <p>
         Resizable selection
@@ -110,10 +111,11 @@ Right-clicking in the map opens a context menu containing some selection- and sc
   <p class="figure">
   Figure 3.2.5.4: Map right-click menu
   </p>
-  <hr>
-  <a href="../../../img/user_interface/chunky_map_rightclick_large.png">
-  <img class="figure" src="../../../img/user_interface/chunky_map_rightclick_large.png" alt="Map right-click menu">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/chunky_map_rightclick_large.png">
+      <img class="figure" src="../../../img/user_interface/chunky_map_rightclick_large.png" alt="Map right-click menu">
+    </a>
+  </div>
 </div>
 
 - `New scene from selection`: Creates a new scene from the selected chunks.
@@ -132,10 +134,11 @@ The Chunky GUI was improved and reorganized in the [Chunky 2.5.0 snapshots](../.
   <p class="figure">
   Figure 3.2.5.5: Map right-click menu in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../img/user_interface/chunky_map_rightclick_2.5.0.png">
-  <img class="figure" src="../../../img/user_interface/chunky_map_rightclick_2.5.0.png" alt="Map right-click menu in Chunky 2.5.0 snapshots">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/chunky_map_rightclick_2.5.0.png">
+      <img class="figure" src="../../../img/user_interface/chunky_map_rightclick_2.5.0.png" alt="Map right-click menu in Chunky 2.5.0 snapshots">
+    </a>
+  </div>
 </div>
 
 - `Load selected chunks`: Loads the selected chunks.
@@ -156,10 +159,11 @@ The map view displays a box containing information about the chunk, if any, and 
   <p class="figure">
   Figure 3.2.5.6: The map view details box
   </p>
-  <hr>
-  <a href="../../../img/user_interface/map_details.png">
-  <img class="figure" src="../../../img/user_interface/map_details.png" alt="Map details">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/map_details.png">
+      <img class="figure" src="../../../img/user_interface/map_details.png" alt="Map details">
+    </a>
+  </div>
 </div>
 
 The three lines in the box provide the following information:
@@ -182,10 +186,11 @@ The right control panel contains only controls from the [`Map View`](../right_pa
   <p class="figure">
   Figure 3.2.5.7: The Map tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../img/user_interface/map_2.5.0.png">
-  <img class="figure" src="../../../img/user_interface/map_2.5.0.png" alt="2.5.0 Snapshot Map tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/map_2.5.0.png">
+      <img class="figure" src="../../../img/user_interface/map_2.5.0.png" alt="2.5.0 Snapshot Map tab">
+    </a>
+  </div>
 </div>
 
 - `Coordinates`: The map view is always centered over the X- and Z-coordinates displayed.

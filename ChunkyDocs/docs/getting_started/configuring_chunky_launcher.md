@@ -8,10 +8,11 @@ The Chunky Launcher contains controls that are set before launching Chunky.
   <p class="figure">
   Figure 1.2.1: The Chunky Launcher
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_launcher.png">
-  <img class="figure" src="../../img/getting_started/chunky_launcher.png" alt="The Chunky Launcher">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_launcher.png">
+      <img class="figure" src="../../img/getting_started/chunky_launcher.png" alt="The Chunky Launcher">
+    </a>
+  </div>
 </div>
 
 ---
@@ -36,10 +37,11 @@ The Chunky Launcher contains controls that are set before launching Chunky.
   <p class="figure">
   Figure 1.2.2: Chunky Launcher Advanced Settings
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_launcher_advanced.png">
-  <img class="figure" src="../../img/getting_started/chunky_launcher_advanced.png" alt="Chunky Launcher Advanced Settings">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_launcher_advanced.png">
+      <img class="figure" src="../../img/getting_started/chunky_launcher_advanced.png" alt="Chunky Launcher Advanced Settings">
+    </a>
+  </div>
 </div>
 
 - `Update Site`: Input field for the source of Chunky updates.
@@ -56,9 +58,9 @@ The Chunky Launcher contains controls that are set before launching Chunky.
 
 - `Java Runtime`: Displays the path of the runtime used for Chunky. It can be changed by clicking the `...` button immediately to the right of the text box. It does not change the runtime used for the Launcher.
 
-- `Java options`: Input field for Java options to be set for Chunky upon launch. See [below](#java-options) for the list of Java options.
+- `Java options`: Input field for Java options that will be set for Chunky upon launch. See [below](#java-options) for the list of Java options.
 
-- `Chunky options`: Input field for options specific to Chunky to be set upon launch. See [below](#chunky-options) for the list of Chunky options.
+- `Chunky options`: Input field for options specific to Chunky that will be set upon launch. See [below](#chunky-options) for the list of Chunky options.
 
 - `Enable debug console`: Enables the debug console, which is a separate window that opens when Chunky is launched. The debug console logs information that is useful for debugging issues with Chunky.
 
@@ -120,10 +122,11 @@ The `Plugin Manager` dialog box, shown in [Figure 1.2.3](#figure-1-2-3), display
   <p class="figure">
   Figure 1.2.3: Plugin Manager dialog box
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_launcher_plugin_manager.png">
-  <img class="figure" src="../../img/getting_started/chunky_launcher_plugin_manager.png" alt="Plugins Manager dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_launcher_plugin_manager.png">
+      <img class="figure" src="../../img/getting_started/chunky_launcher_plugin_manager.png" alt="Plugins Manager dialog box">
+    </a>
+  </div>
 </div>
 
 The `Plugin manager` dialog box will display any plugins from the "plugins" directory of the Chunky [settings directory](#controls). The column headers can be clicked to reorder the plugins by any listed detail. A plugin in the list can be clicked to select it. The checkbox on a plugin entry can be checked to select that plugin to be loaded when Chunky is launched.

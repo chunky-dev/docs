@@ -20,7 +20,7 @@ There is no definite answer to this question. Render time is mainly dependent on
 
 ## Is GPU rendering supported?
 
-GPU rendering support is currently in development in the form of an OpenCL 1.2 renderer plugin. This renderer is still under development and many features of the CPU renderer are not yet supported. For more information, visit the <a href="https://github.com/ThatRedox/ChunkyClPlugin" target="_blank">OpenCL plugin GitHub repository</a>.
+Limited GPU rendering support is currently available in the form of an OpenCL 1.2 renderer plugin. This renderer is still work-in-progress, but is currently not undergoing any active support or development. As of yet, many features of the CPU renderer are not yet supported. For more information, visit the <a href="https://github.com/ThatRedox/ChunkyClPlugin" target="_blank">OpenCL plugin GitHub repository</a>.
 
 
 ## How do I pin Chunky to the taskbar / Create shortcuts?

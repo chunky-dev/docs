@@ -8,10 +8,11 @@ The scene management controls are located in the menu bar at the top of the wind
   <p class="figure">
   Figure 3.2.2.1: Scene Management Controls in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/scene_management_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/scene_management_2.5.0.png" alt="Scene Management Controls in Chunky 2.5.0 snapshots">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/scene_management_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/scene_management_2.5.0.png" alt="Scene Management Controls in Chunky 2.5.0 snapshots">
+    </a>
+  </div>
 </div>
 
 ---
@@ -46,10 +47,11 @@ The `Load Chunky Scene` dialog box, shown in [Figure 3.2.2.2](#figure-3-2-2-2), 
   <p class="figure">
   Figure 3.2.2.2: Load Chunky Scene dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/load_chunky_scene.png">
-  <img class="figure" src="../../../../img/user_interface/load_chunky_scene.png" alt="Load Chunky Scene dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/load_chunky_scene.png">
+      <img class="figure" src="../../../../img/user_interface/load_chunky_scene.png" alt="Load Chunky Scene dialog box">
+    </a>
+  </div>
 </div>
 
 The column headers can be clicked to reorder the scenes by any listed detail. A scene in the list can be clicked to select it.

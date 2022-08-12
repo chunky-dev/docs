@@ -36,10 +36,11 @@ Repeat the process for any other plugins. Plugins are loaded in the order that t
   <p class="figure">
   Figure 4.1.1: Plugin Manager dialog box
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_launcher_plugin_manager.png">
-  <img class="figure" src="../../img/getting_started/chunky_launcher_plugin_manager.png" alt="Plugins Manager dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_launcher_plugin_manager.png">
+      <img class="figure" src="../../img/getting_started/chunky_launcher_plugin_manager.png" alt="Plugins Manager dialog box">
+    </a>
+  </div>
 </div>
 
 ---

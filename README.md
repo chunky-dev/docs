@@ -15,7 +15,7 @@ This site uses <a href="https://www.mkdocs.org/" target="_blank">mkdocs</a>. Pyt
 
 3. Install the required packages with pip by using the command, `pip3 install -r requirements.txt`.
 
-4. If running Windows, simply run `serve.bat`. Otherwise, change the working directory to `./ChunkyGallery`.
+4. If running Windows, simply run `serve.bat`. Otherwise, change the working directory to `./ChunkyDocs`.
 
 5. Serve the site for development by using the command, `python -m mkdocs serve`.
 

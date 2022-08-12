@@ -8,10 +8,11 @@ The scene management controls are located above the three control panels, near t
   <p class="figure">
   Figure 3.2.4.1: Scene Management Controls
   </p>
-  <hr>
-  <a href="../../../img/user_interface/scene_management.png">
-  <img class="figure" src="../../../img/user_interface/scene_management.png" alt="Scene Management Controls">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/scene_management.png">
+      <img class="figure" src="../../../img/user_interface/scene_management.png" alt="Scene Management Controls">
+    </a>
+  </div>
 </div>
 
 ---
@@ -20,9 +21,9 @@ The scene management controls are located above the three control panels, near t
 
 - `Scene: (name)`: Input field for the name of the currently-loaded scene. Press [Enter] to apply.
 
-- <img src="../../../img/user_interface/disk.png" alt="Save Scene Icon"> `Save Scene`: Saves the currently-loaded scene, including any render progress.
+- <img src="../../../img/user_interface/disk.png" alt="Save Scene Icon" style="vertical-align: middle;"> `Save Scene`: Saves the currently-loaded scene, including any render progress.
 
-- <img src="../../../img/user_interface/load.png" alt="Load Scene Icon"> `Load Scene`: Opens the [`Select 3D Scene`](#select-3d-scene) dialog box.
+- <img src="../../../img/user_interface/load.png" alt="Load Scene Icon" style="vertical-align: middle;"> `Load Scene`: Opens the [`Select 3D Scene`](#select-3d-scene) dialog box.
 
 - `Save current frame`: Opens a 'Save As' dialog box to save the current frame of the render preview, the output file format of which can be selected.
 
@@ -36,9 +37,9 @@ The scene management controls were reorganized in the [Chunky 2.5.0 snapshots](.
 
 - `Scene (name)`: This control was relocated to the [`Save scene as...`](../menu_bar/file#250-snapshot-controls) dialog box.
 
-- <img src="../../../img/user_interface/disk.png" alt="Save Scene Icon"> `Save Scene`: This control was relocated to the menu bar, under the [`File`](../menu_bar/file) dropdown menu.
+- <img src="../../../img/user_interface/disk.png" alt="Save Scene Icon" style="vertical-align: middle;"> `Save Scene`: This control was relocated to the menu bar, under the [`File`](../menu_bar/file) dropdown menu.
 
-- <img src="../../../img/user_interface/load.png" alt="Load Scene Icon"> `Load Scene`: This control was relocated to the menu bar, under the [`File`](../menu_bar/file) dropdown menu.
+- <img src="../../../img/user_interface/load.png" alt="Load Scene Icon" style="vertical-align: middle;"> `Load Scene`: This control was relocated to the menu bar, under the [`File`](../menu_bar/file) dropdown menu.
 
 - `Save current frame`: This control was relocated to the [`Render Preview` tab right-click menu](../render_preview#250-snapshot-controls) and renamed to `Save image as...`.
 
@@ -54,10 +55,11 @@ The `Select 3D Scene` dialog box, shown in [Figure 3.2.4.2](#figure-3-2-4-2), di
   <p class="figure">
   Figure 3.2.4.2: Select 3D Scene dialog box
   </p>
-  <hr>
-  <a href="../../../img/user_interface/select_3d_scene.png">
-  <img class="figure" src="../../../img/user_interface/select_3d_scene.png" alt="Select 3D Scene dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/select_3d_scene.png">
+      <img class="figure" src="../../../img/user_interface/select_3d_scene.png" alt="Select 3D Scene dialog box">
+    </a>
+  </div>
 </div>
 
 The column headers can be clicked to reorder the scenes by any listed detail. A scene in the list can be clicked to select it.

@@ -61,7 +61,7 @@ This plugin adds an additional BVH to Chunky.
 This plugin adds a work-in-progress OpenCL ray tracer to Chunky. Not all blocks and features are supported.
 
 !!! warning "Experimental"
-    This plugin is in early beta state and does not support all Chunky features yet.
+    This plugin is in early beta state and does not support all Chunky features yet. Additionally, while this plugin is still available for download, as of now, it is not being actively supported or developed.
 
 !!! info "Renderer switching in Chunky 2.4.0 or later"
     As of Chunky 2.4.0, renderer switching is supported. The `ChunkyCLRenderer` of the ChunkyCL plugin cannot yet be used in conjunction with the Denoising Plugin, although loading both plugins concurrently does not cause an exception anymore.

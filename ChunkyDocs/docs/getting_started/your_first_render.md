@@ -20,10 +20,11 @@ Start the Chunky Launcher. You should be presented with a window similar to what
   <p class="figure">
   Figure 1.3.1: The Chunky Launcher
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_launcher.png">
-  <img class="figure" src="../../img/getting_started/chunky_launcher.png" alt="Chunky Launcher">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_launcher.png">
+      <img class="figure" src="../../img/getting_started/chunky_launcher.png" alt="Chunky Launcher">
+    </a>
+  </div>
 </div>
 
 You might need to change some settings at this point.
@@ -48,10 +49,11 @@ Open Minecraft, and load a world you wish to render. Move your player to the loc
   <p class="figure">
   Figure 1.3.2: Recording position and direction information in Minecraft
   </p>
-  <hr>
-  <a href="../../img/getting_started/mc_f3_menu.jpg">
-  <img class="figure" src="../../img/getting_started/mc_f3_menu.jpg" alt="Minecraft Debug Screen">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/mc_f3_menu.jpg">
+      <img class="figure" src="../../img/getting_started/mc_f3_menu.jpg" alt="Minecraft Debug Screen">
+    </a>
+  </div>
 </div>
 
 > In this example, the coordinates and direction values are as follows: X = 32.2 ; Y = 71.7 ; Z = -232.7 ; Yaw = 67.5 ; Pitch = 8.2 (rounded to 1 decimal place).
@@ -66,10 +68,11 @@ If Chunky isn't running yet, then launch it. You should see something like what 
   <p class="figure">
   Figure 1.3.3: Chunky with no world loaded
   </p>
-  <hr>
-  <a href="../../img/user_interface/overview_no_map.png">
-  <img class="figure" src="../../img/user_interface/overview_no_map.png" alt="Chunky with no world loaded">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/user_interface/overview_no_map.png">
+      <img class="figure" src="../../img/user_interface/overview_no_map.png" alt="Chunky with no world loaded">
+    </a>
+  </div>
 </div>
 
 Currently, no world is loaded into Chunky. Click on `Change World`, located in the [`Map View`](../../reference/user_interface/right_panel_controls/map_view) tab in the right panel to select a world to load. You should be presented with a window like the one shown in [Figure 1.3.4](#figure-1-3-4).
@@ -78,10 +81,11 @@ Currently, no world is loaded into Chunky. Click on `Change World`, located in t
   <p class="figure">
   Figure 1.3.4: The world selection dialog box
   </p>
-  <hr>
-  <a href="../../img/user_interface/right_panel/select_world.png">
-  <img class="figure" src="../../img/user_interface/right_panel/select_world.png" alt="World selection dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/user_interface/right_panel/select_world.png">
+      <img class="figure" src="../../img/user_interface/right_panel/select_world.png" alt="World selection dialog box">
+    </a>
+  </div>
 </div>
 
 Once you have located the world, click on `Load selected world`. The [`Map`](../../reference/user_interface/map) tab will load an interactive map view of your world, as shown in [Figure 1.3.5](#figure-1-3-5).
@@ -90,10 +94,11 @@ Once you have located the world, click on `Load selected world`. The [`Map`](../
   <p class="figure">
   Figure 1.3.5: The map view of the loaded world
   </p>
-  <hr>
-  <a href="../../img/user_interface/overview.png">
-  <img class="figure" src="../../img/user_interface/overview.png" alt="Map view of the loaded world">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/user_interface/overview.png">
+      <img class="figure" src="../../img/user_interface/overview.png" alt="Map view of the loaded world">
+    </a>
+  </div>
 </div>
 
 Select the dimension of your world that you want to render using the buttons in the right panel found in the [`Map View`](../../reference/user_interface/right_panel_controls/map_view) tab, and then select the chunks you wish to render using the controls listed below in the [`Map`](../../reference/user_interface/map) tab.
@@ -126,10 +131,11 @@ To load chunks, either right click on the map view located in the center panel a
   <p class="figure">
   Figure 1.3.6: The render preview
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/scene.png">
-  <img class="figure" src="../../img/getting_started/render/scene.png" alt="Render preview">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/scene.png">
+      <img class="figure" src="../../img/getting_started/render/scene.png" alt="Render preview">
+    </a>
+  </div>
 </div>
 
 ---
@@ -160,10 +166,11 @@ Next, open the `Camera` tab.
   <p class="figure">
   Figure 1.3.7: The Camera tab
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/camera.png">
-  <img class="figure" src="../../img/getting_started/render/camera.png" alt="Camera tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/camera.png">
+      <img class="figure" src="../../img/getting_started/render/camera.png" alt="Camera tab">
+    </a>
+  </div> 
 </div>
 
 Click the `Position & Orientation` dropdown to expand it. Unfortunately, you cannot simply copy the values taken from the Minecraft debug screen. A few adjustments must be made first, because there are some differences that must be accounted for. Below is a set of conversions:
@@ -187,10 +194,11 @@ Enter the X, Y, and Z coordinates for the camera into the three text boxes on th
   <p class="figure">
   Figure 1.3.8: Camera clipping into player
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/camera_ps_imported_player.png">
-  <img class="figure" src="../../img/getting_started/render/camera_ps_imported_player.png"   alt="Camera clipping into player">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/camera_ps_imported_player.png">
+      <img class="figure" src="../../img/getting_started/render/camera_ps_imported_player.png"   alt="Camera clipping into player">
+    </a>
+  </div>
 </div>
 
 To remove the player, open the [`Entities`](../../reference/user_interface/render_controls/entities) tab, select the player which the camera is clipping into (likely the first and only one on the list), and then press the `-` button.
@@ -199,10 +207,11 @@ To remove the player, open the [`Entities`](../../reference/user_interface/rende
   <p class="figure">
   Figure 1.3.9: Player removed from the scene
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/camera_ps_imported.png">
-  <img class="figure" src="../../img/getting_started/render/camera_ps_imported.png" alt="Player removed from the scene">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/camera_ps_imported.png">
+      <img class="figure" src="../../img/getting_started/render/camera_ps_imported.png" alt="Player removed from the scene">
+    </a>
+  </div>
 </div>
 
 The default Field of View (FoV) for Minecraft is 70 degrees vertical. Assuming a 16:9 aspect ratio for both Minecraft and the Chunky render canvas resolution, the camera view with the default Chunky FoV of 70 degrees and the `Standard` projection mode should match the view in Mincraft.
@@ -220,10 +229,11 @@ Open the [`Lighting`](../../reference/user_interface/render_controls/lighting) t
   <p class="figure">
   Figure 1.3.10: The Lighting tab
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/lighting.png">
-  <img class="figure" src="../../img/getting_started/render/lighting.png" alt="Lighting tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/lighting.png">
+      <img class="figure" src="../../img/getting_started/render/lighting.png" alt="Lighting tab">
+    </a>
+  </div>
 </div>
 
 Here you can adjust the amount of light the Sky, Emitters (torches, glowstone, etc.), and Sun produce. The default values should be perfect for daytime renders. Adjusting the Sun azimuth (yaw/rotation) and altitude (height) can change the lighting of the scene dramatically.
@@ -242,10 +252,11 @@ Open the [`Sky & Fog`](../../reference/user_interface/render_controls/sky_and_fo
   <p class="figure">
   Figure 1.3.11: The Sky & Fog tab
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/sky_fog.png">
-  <img class="figure" src="../../img/getting_started/render/sky_fog.png" alt="Sky & Fog tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/sky_fog.png">
+      <img class="figure" src="../../img/getting_started/render/sky_fog.png" alt="Sky & Fog tab">
+    </a>
+  </div>
 </div>
 
 There is not too much to explain here. The `Sky mode` setting lets you chose between a simulated sky, solid color, color gradient, and Skymaps/cubes. `Cloud X, Y, and Z` control the location of the clouds, and `Cloud size` controls the size of the clouds, if they are enabled using `Enable clouds`. `Fog density` controls the thickness of the fog; set it to *0* to disable it. There is an example fog density listed as a guide. Fog produces much noise, so expect longer render times.
@@ -260,10 +271,11 @@ Open the [`Water`](../../reference/user_interface/render_controls/water) tab.
   <p class="figure">
   Figure 1.3.12: The Water tab
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/water.png">
-  <img class="figure" src="../../img/getting_started/render/water.png" alt="Water tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/water.png">
+      <img class="figure" src="../../img/getting_started/render/water.png" alt="Water tab">
+    </a>
+  </div>
 </div>
 
 By default, the water will have a slight wave effect applied to it. You can disable it by enabling `Still water`. The `Water visibility` setting affects how far underwater you can see. The `Water opacity` setting controls how transparent the surface of the water is. Setting it to *0* makes the water clear, and setting it to *1* makes the water a solid color. By default, water color is biome-tinted, but you can override this by enabling `Use custom water color`.
@@ -292,10 +304,11 @@ Open the [`Advanced`](../../reference/user_interface/render_controls/advanced) t
   <p class="figure">
   Figure 1.3.13: The Advanced tab
   </p>
-  <hr>
-  <a href="../../img/getting_started/render/advanced.png">
-  <img class="figure" src="../../img/getting_started/render/advanced.png" alt="Advanced tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/render/advanced.png">
+      <img class="figure" src="../../img/getting_started/render/advanced.png" alt="Advanced tab">
+    </a>
+  </div>
 </div>
 
 Adjust the `CPU utilization` and `Render threads` as you see fit. Chunky renders solely using the CPU, though a [GPU rendering plugin](../../plugins/plugin_list#chunkycl-plugin) is in development.
@@ -326,10 +339,11 @@ Typically, 32-1024 SPP is good for daylight renders without emitters (torches, l
   <p class="figure">
   Figure 1.3.14: Scene name, save, and load controls
   </p>
-  <hr>
-  <a href="../../img/user_interface/save_load_buttons.png">
-  <img class="figure" src="../../img/user_interface/save_load_buttons.png" alt="Scene name, save,   and load controls">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/user_interface/save_load_buttons.png">
+      <img class="figure" src="../../img/user_interface/save_load_buttons.png" alt="Scene name, save,   and load controls">
+    </a>
+  </div>
 </div>
 
 In the top left of the Chunky window, enter a more reasonable scene name in the `Scene` text box. Then click the Save button, which is marked with a blue disk icon. To load a scene, click on the Load scene button, which is marked with a blue disk icon with a green arrow.
@@ -362,10 +376,11 @@ Alternatively, on the left control panel, inside the `Scene` tab, click `Open Sc
   <p class="figure">
   Figure 1.3.15: The finished render
   </p>
-  <hr>
-  <a href="../../img/getting_started/first_render.png">
-  <img class="figure" src="../../img/getting_started/first_render.png" alt="Finished render">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/first_render.png">
+      <img class="figure" src="../../img/getting_started/first_render.png" alt="Finished render">
+    </a>
+  </div>
 </div>
 
 

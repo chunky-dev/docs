@@ -8,10 +8,11 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
   <p class="figure">
   Figure 3.2.15.1: The Camera tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/camera_tab_2.4.x.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/camera_tab_2.4.x.png" alt="Camera tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/camera_tab_2.4.x.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/camera_tab_2.4.x.png" alt="Camera tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -20,25 +21,25 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
 
 - `Load preset`: Dropdown menu to select a camera preset to load for the selected camera.
 
-    - `Isometric West-North (North-West)`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera North-West with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-nw.png" style="vertical-align: middle;"> `Isometric West-North (North-West)`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera North-West with an altitude angle of 45 degrees below the horizon. 
 
-    - `Isometric North-East`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera North-East with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-ne.png" style="vertical-align: middle;"> `Isometric North-East`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera North-East with an altitude angle of 45 degrees below the horizon. 
 
-    - `Isometric East-South (South-East)`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera South-East with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-se.png" style="vertical-align: middle;"> `Isometric East-South (South-East)`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera South-East with an altitude angle of 45 degrees below the horizon. 
 
-    - `Isometric South-West`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera South-West with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-sw.png" style="vertical-align: middle;"> `Isometric South-West`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera South-West with an altitude angle of 45 degrees below the horizon. 
 
-    - `Skybox Right`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera East.
+    - <img src="../../../../img/user_interface/render_controls/skybox-right.png" style="vertical-align: middle;"> `Skybox Right`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera East.
 
-    - `Skybox Left`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera West.
+    - <img src="../../../../img/user_interface/render_controls/skybox-left.png" style="vertical-align: middle;"> `Skybox Left`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera West.
 
-    - `Skybox Up`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera upward, with North being at the bottom of the frame.
+    - <img src="../../../../img/user_interface/render_controls/skybox-up.png" style="vertical-align: middle;"> `Skybox Up`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera upward, with North being at the bottom of the frame.
 
-    - `Skybox Down`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera downward, with South being at the bottom of the frame.
+    - <img src="../../../../img/user_interface/render_controls/skybox-down.png" style="vertical-align: middle;"> `Skybox Down`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera downward, with South being at the bottom of the frame.
 
-    - `Skybox Front (North)`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera North.
+    - <img src="../../../../img/user_interface/render_controls/skybox-front.png" style="vertical-align: middle;"> `Skybox Front (North)`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera North.
 
-    - `Skybox Back`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera South.
+    - <img src="../../../../img/user_interface/render_controls/skybox-back.png" style="vertical-align: middle;"> `Skybox Back`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera South.
 
 - `Camera`: Input field to set a name for the current camera. By clicking the button immediately to the right of the input field, a dropdown menu containing a list of all named cameras can be accessed. A camera can be switched to by clicking on its list entry.
 
@@ -92,45 +93,39 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
   <p class="figure">
   Figure 3.2.15.2: Comparison of the different camera projection modes, at their default FoV values and a canvas aspect ratio of <em>2:1</em>.
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/standard_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/standard_projection.png" alt="Standard projection">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/fisheye_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/fisheye_projection.png" alt="Fisheye projection">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/stereographic_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/stereographic_projection.png" alt="Stereographic projection">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/panoramic_equirectangular_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/panoramic_equirectangular_projection.png" alt="Panoramic (equirectangular) projection">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/panoramic_slot_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/panoramic_slot_projection.png" alt="Panoramic (slot) projection">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/omni-directional_stereo_left_eye_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/omni-directional_stereo_left_eye_projection.png" alt="Omni-directional Stereo projection (left eye)">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/omni-directional_stereo_right_eye_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/omni-directional_stereo_right_eye_projection.png" alt="Omni-directional Stereo projection (right eye)">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/parallel_projection.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/parallel_projection.png" alt="Parallel projection">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/camera/standard_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/standard_projection.png" alt="Standard projection">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/fisheye_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/fisheye_projection.png" alt="Fisheye projection">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/stereographic_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/stereographic_projection.png" alt="Stereographic projection">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/panoramic_equirectangular_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/panoramic_equirectangular_projection.png" alt="Panoramic (equirectangular) projection">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/panoramic_slot_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/panoramic_slot_projection.png" alt="Panoramic (slot) projection">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/omni-directional_stereo_left_eye_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/omni-directional_stereo_left_eye_projection.png" alt="Omni-directional Stereo projection (left eye)">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/omni-directional_stereo_right_eye_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/omni-directional_stereo_right_eye_projection.png" alt="Omni-directional Stereo projection (right eye)">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/parallel_projection.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/parallel_projection.png" alt="Parallel projection">
+    </a>
+  </div>
 </div>
 
 ---
@@ -143,10 +138,11 @@ The `Camera` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_st
   <p class="figure">
   Figure 3.2.15.3: The Camera tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/camera_tab_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/camera_tab_2.5.0.png" alt="2.5.0 Snapshot Camera tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/camera_tab_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/camera_tab_2.5.0.png" alt="2.5.0 Snapshot Camera tab">
+    </a>
+  </div>
 </div>
 
 - `Position & Orientation`: Collapsible panel that contains controls to change the position, orientation, and lens shift of the selected camera.
@@ -197,20 +193,19 @@ The `Camera` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_st
   <p class="figure">
   Figure 3.2.15.4: Comparison of different aperture shapes
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/aperture_circle.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/aperture_circle.png" alt="Circle aperture shape">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/aperture_star.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/aperture_star.png" alt="Star aperture shape">
-  </a>
-
-  <hr>
-  <a href="../../../../img/examples/render_controls/camera/aperture_custom.png">
-  <img class="figure" src="../../../../img/examples/render_controls/camera/aperture_custom.png" alt="Custom aperture shape">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/camera/aperture_circle.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/aperture_circle.png" alt="Circle aperture shape">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/aperture_star.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/aperture_star.png" alt="Star aperture shape">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/camera/aperture_custom.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/aperture_custom.png" alt="Custom aperture shape">
+    </a>
+  </div>
 </div>
 
 [^1]: This control is out-of-date, and was removed in the 2.5.0 snapshots. Its replacement is the `Camera to entity` control in the [`Entities`](../entities#controls) tab.

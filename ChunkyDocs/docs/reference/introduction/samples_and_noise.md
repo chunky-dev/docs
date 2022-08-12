@@ -16,12 +16,13 @@ The defining factor for render quality is the number of Samples Per Pixel (SPP) 
   <p class="figure">
   Figure 3.1.2.1: Image noise decreases as SPP value increases
   </p>
-  <hr>
-  <picture class="figure">
-    <source srcset="../../../img/examples/introduction/x2_2-sec_loop.webp" type="image/webp">
-    <source srcset="../../../img/examples/introduction/x2_2-sec_loop.gif" type="image/gif">
-    <img class="figure" src="../../../img/examples/introduction/x2_2-sec_loop.gif" alt="Increasing SPP animation">
-  </picture>
+  <div class="figureimgcontainer">
+    <picture class="figure">
+      <source srcset="../../../img/examples/introduction/x2_2-sec_loop.webp" type="image/webp">
+      <source srcset="../../../img/examples/introduction/x2_2-sec_loop.gif" type="image/gif">
+      <img class="figure" src="../../../img/examples/introduction/x2_2-sec_loop.gif" alt="Increasing SPP animation">
+    </picture>
+  </div>
 </div>
 
 The higher the SPP the image is rendered to, the less noise will be noticeable in that image. However, the added quality per sample decreases as the number of samples rendered increases, since each sample is just contributing to an average of all samples. For example, the difference in image quality between 20,000 SPP and 21,000 SPP will not be as noticeable as the difference between 1,000 SPP and 2,000 SPP. This effect is demonstrated in [Figure 3.1.2.2](#figure-3-1-2-2) below. The result of this is that a doubling of the current SPP of the image is required for a reduction of the image noise by half.
@@ -30,18 +31,17 @@ The higher the SPP the image is rendered to, the less noise will be noticeable i
   <p class="figure">
   Figure 3.1.2.2: Speed at which image quality increases decreases as SPP value increases
   </p>
-  <hr>
-  <div style="display: grid; grid: 400px / 420px 400px;">
-  <picture class="figure">
-    <source srcset="../../../img/examples/introduction/1ki-2ki_2-sec_loop.webp" type="image/webp">
-    <source srcset="../../../img/examples/introduction/1ki-2ki_2-sec_loop.gif" type="image/gif">
-    <img class="figure" src="../../../img/examples/introduction/1ki-2ki_2-sec_loop.gif" alt="1024-2048 SPP comparison">
-  </picture>
-  <picture class="figure">
-    <source srcset="../../../img/examples/introduction/20k-21k_2-sec_loop.webp" type="image/webp">
-    <source srcset="../../../img/examples/introduction/20k-21k_2-sec_loop.gif" type="image/gif">
-    <img class="figure" src="../../../img/examples/introduction/20k-21k_2-sec_loop.gif" alt="20000-21000 SPP comparison">
-  </picture>
+  <div class="figuregridcontainer">
+    <picture class="figure">
+      <source srcset="../../../img/examples/introduction/1ki-2ki_2-sec_loop.webp" type="image/webp">
+      <source srcset="../../../img/examples/introduction/1ki-2ki_2-sec_loop.gif" type="image/gif">
+      <img class="figure" src="../../../img/examples/introduction/1ki-2ki_2-sec_loop.gif" alt="1024-2048 SPP comparison">
+    </picture>
+    <picture class="figure">
+      <source srcset="../../../img/examples/introduction/20k-21k_2-sec_loop.webp" type="image/webp">
+      <source srcset="../../../img/examples/introduction/20k-21k_2-sec_loop.gif" type="image/gif">
+      <img class="figure" src="../../../img/examples/introduction/20k-21k_2-sec_loop.gif" alt="20000-21000 SPP comparison">
+    </picture>
   </div>
 </div>
 
@@ -57,10 +57,11 @@ The reason for this effect is based on the low probability for each sampled ligh
   <p class="figure">
   Figure 3.1.2.3: Scene lit by torch rendered to 128 SPP
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/noise_torch.png">
-  <img class="figure" src="../../../img/examples/introduction/noise_torch.png" alt="Scene lit by torch">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/noise_torch.png">
+      <img class="figure" src="../../../img/examples/introduction/noise_torch.png" alt="Scene lit by torch">
+    </a>
+  </div>
 </div>
 
 Torches add much noise to the scene and can take long to render. The scene in [Figure 3.1.2.3](#figure-3-1-2-3) was rendered to 128 SPP. Full block emitters, such as glowstone, have a much higher probability for a sampled light path to include the glowstone, because it is much larger. That means noise is reduced in much fewer samples than with torches. [Figure 3.1.2.4](#figure-3-1-2-4) shows a scene lit by glowstone also rendered to 128 SPP. Note how much less noise exists in that scene than the previous one.
@@ -69,10 +70,11 @@ Torches add much noise to the scene and can take long to render. The scene in [F
   <p class="figure">
   Figure 3.1.2.4: Scene lit by glowstone rendered to 128 SPP
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/noise_glowstone.png">
-  <img class="figure" src="../../../img/examples/introduction/noise_glowstone.png" alt="Scene lit by glowstone">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/noise_glowstone.png">
+      <img class="figure" src="../../../img/examples/introduction/noise_glowstone.png" alt="Scene lit by glowstone">
+    </a>
+  </div>
 </div>
 
 Outside of simply brute-forcing more samples to reduce noise, there are a number of methods that can be used to reduce noise or converge a render sooner. For more information, please read the next article on [Next Event Estimation](../next_event_estimation), the article on [Denoising](../../other_topics/denoising), and <a href="https://jackjt8.github.io/ChunkyGuide/docs/advanced_techniques/denoising.html" target="_blank">jackjt8's Guide to Chunky - Denoising</a>.

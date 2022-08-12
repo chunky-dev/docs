@@ -18,10 +18,11 @@ Two types of equirectangular skymaps exist. Both types have a horizontal field o
   <p class="figure">
   Figure 3.3.2.1: Different equirectangular skymap types
   </p>
-  <hr>
-  <a href="../../../img/examples/skymaps/skymap_vertical_resolution.png">
-  <img class="figure" src="../../../img/examples/skymaps/skymap_vertical_resolution.png" alt="Different equirectangular skymap types">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/skymaps/skymap_vertical_resolution.png">
+      <img class="figure" src="../../../img/examples/skymaps/skymap_vertical_resolution.png" alt="Different equirectangular skymap types">
+    </a>
+  </div>
 </div>
 
 To use a skymap with a vertical field of view of 90 degrees, set the `Vertical resolution` in the [`Sky mode settings`](../../user_interface/render_controls/sky_and_fog#sky-mode-settings) to `Half (mirrored)`. To use a skymap with a vertical field of view of 180 degrees, set the `Vertical resolution` to `Full`.
@@ -106,10 +107,11 @@ To render an equirectangular skymap, follow the instructions below.
   <p class="figure">
   Figure 3.3.2.2: The Camera tab with correct values displayed
   </p>
-  <hr>
-  <a href="../../../img/examples/skymaps/skymap_camera_tab.png">
-  <img class="figure" src="../../../img/examples/skymaps/skymap_camera_tab.png" alt="Camera tab with correct values displayed">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/skymaps/skymap_camera_tab.png">
+      <img class="figure" src="../../../img/examples/skymaps/skymap_camera_tab.png" alt="Camera tab with correct values displayed">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -117,10 +119,11 @@ To render an equirectangular skymap, follow the instructions below.
   <p class="figure">
   Figure 3.3.2.3: Example of a rendered skymap
   </p>
-  <hr>
-  <a href="../../../img/examples/skymaps/skymap_render.png">
-  <img class="figure" src="../../../img/examples/skymaps/skymap_render.png" alt="Rendered skymap example">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/skymaps/skymap_render.png">
+      <img class="figure" src="../../../img/examples/skymaps/skymap_render.png" alt="Rendered skymap example">
+    </a>
+  </div>
 </div>
 
 ### Skybox

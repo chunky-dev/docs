@@ -8,10 +8,11 @@ The `Sky & Fog` tab, which is the third tab in the left control panel, contains 
   <p class="figure">
   Figure 3.2.13.1: The Sky & Fog tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/sky_and_fog_tab.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/sky_and_fog_tab.png" alt="Sky & Fog tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/sky_and_fog_tab.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/sky_and_fog_tab.png" alt="Sky & Fog tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -28,7 +29,7 @@ The `Sky & Fog` tab, which is the third tab in the left control panel, contains 
 
 		    - `Preetham`: A faster simulation of daytime skies. It is more similar to the Minecraft sky. An example panorama of the Preetham sky is shown in [Figure 3.2.13.2](#figure-3-2-13-2).
 
-			- `Nishita`: A slower and more realistic sky simulation that can also simulate twilight. An example panorama of the Nishita sky is shown in [Figure 3.2.13.3](#figure-3-2-13-3).
+			- `Nishita`: A slower and more realistic sky simulation that can also simulate twilight. An example panorama of the Nishita sky is shown in [Figure 3.2.13.2](#figure-3-2-13-2).
 
 		- `Horizon offset`: Offsets the simulated horizon downward from its default position.
 
@@ -44,7 +45,7 @@ The `Sky & Fog` tab, which is the third tab in the left control panel, contains 
 
 	    - `Load preset`: Dropdown menu to select a color gradient preset for the sky.
 
-		The color gradient editor, which is shown in [Figure 3.2.13.4](#figure-3-2-13-4), displays the currently-set color gradient, and has controls to change the color gradient.
+		The color gradient editor, which is shown in [Figure 3.2.13.3](#figure-3-2-13-3), displays the currently-set color gradient, and has controls to change the color gradient.
 
 		The editor contains color control markers, which set the color for a position on the gradient. Click any color control marker to select it for editing.
 
@@ -112,36 +113,30 @@ The `Sky & Fog` tab, which is the third tab in the left control panel, contains 
 
 <div class="figure" id="figure-3-2-13-2">
   <p class="figure">
-  Figure 3.2.13.2: Preetham sky panorama
+  Figure 3.2.13.2: Preetham sky and Nishita sky panoramas
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/sky_and_fog/preetham_panorama.png">
-  <img class="figure" src="../../../../img/examples/render_controls/sky_and_fog/preetham_panorama.png" alt="Preetham sky panorama">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/sky_and_fog/preetham_panorama.png">
+      <img class="figure" src="../../../../img/examples/render_controls/sky_and_fog/preetham_panorama.png" alt="Preetham sky panorama">
+    </a>
+    <hr>
+    <a href="../../../../img/examples/render_controls/sky_and_fog/nishita_panorama.png">
+      <img class="figure" src="../../../../img/examples/render_controls/sky_and_fog/nishita_panorama.png" alt="Nishita sky panorama">
+    </a>
+  </div>
 </div>
 
 <br>
 
 <div class="figure" id="figure-3-2-13-3">
   <p class="figure">
-  Figure 3.2.13.3: Nishita sky panorama
+  Figure 3.2.13.3: Color Gradient editor
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/sky_and_fog/nishita_panorama.png">
-  <img class="figure" src="../../../../img/examples/render_controls/sky_and_fog/nishita_panorama.png" alt="Nishita sky panorama">
-  </a>
-</div>
-
-<br>
-
-<div class="figure" id="figure-3-2-13-4">
-  <p class="figure">
-  Figure 3.2.13.4: Color Gradient editor
-  </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/sky_color_gradient.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/sky_color_gradient.png" alt="Sky color gradient editor">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/sky_color_gradient.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/sky_color_gradient.png" alt="Sky color gradient editor">
+    </a>
+  </div>
 </div>
 
 ---
@@ -158,20 +153,21 @@ The `Sky & Fog` tab, which is the third tab in the left control panel, contains 
 
 - `Cloud Z`: Changes the offset of the clouds on the Z-axis in blocks.
 
-- `Fog density`: Changes the density of the fog. A value of 0 disables fog completely. See [Figure 3.2.13.5](#figure-3-2-13-5) for a comparison of different fog density levels.
+- `Fog density`: Changes the density of the fog. A value of 0 disables fog completely. See [Figure 3.2.13.4](#figure-3-2-13-4) for a comparison of different fog density levels.
 
 - `Sky fog blending`: Changes how much the fog is blended with the sky.
 
 - `Fog color`: Opens a color selector dialog box to change the color of the fog.
 
-<div class="figure" id="figure-3-2-13-5">
+<div class="figure" id="figure-3-2-13-4">
   <p class="figure">
-  Figure 3.2.13.5: Comparison of different Fog density levels
+  Figure 3.2.13.4: Comparison of different Fog density levels
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/sky_and_fog/fog_comparison.png">
-  <img class="figure" src="../../../../img/examples/render_controls/sky_and_fog/fog_comparison.png" alt="Comparison of different fog density levels">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/sky_and_fog/fog_comparison.png">
+      <img class="figure" src="../../../../img/examples/render_controls/sky_and_fog/fog_comparison.png" alt="Comparison of different fog density levels">
+    </a>
+  </div>
 </div>
 
 ---

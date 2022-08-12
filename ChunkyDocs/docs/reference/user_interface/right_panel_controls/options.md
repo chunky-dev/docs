@@ -8,10 +8,11 @@ The `Options` tab, located in the right control panel, contains some Chunky opti
   <p class="figure">
   Figure 3.2.9.1: The Options tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/right_panel/options_tab.png">
-  <img class="figure" src="../../../../img/user_interface/right_panel/options_tab.png" alt="Options tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/right_panel/options_tab.png">
+      <img class="figure" src="../../../../img/user_interface/right_panel/options_tab.png" alt="Options tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -62,10 +63,11 @@ The `Resource Packs` dialog box, shown in [Figure 3.2.9.2](#figure-3-2-9-2), dis
   <p class="figure">
   Figure 3.2.9.2: Resource Packs dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/right_panel/resource_packs.png">
-  <img class="figure" src="../../../../img/user_interface/right_panel/resource_packs.png" alt="Resource Packs dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/right_panel/resource_packs.png">
+      <img class="figure" src="../../../../img/user_interface/right_panel/resource_packs.png" alt="Resource Packs dialog box">
+    </a>
+  </div>
 </div>
 
 A resource pack in the list can be clicked to select it.
@@ -94,10 +96,11 @@ The `Scenes Directory Picker` dialog box, shown in [Figure 3.2.9.3](#figure-3-2-
   <p class="figure">
   Figure 3.2.9.3: Scene Directory Picker dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/right_panel/scene_directory_picker.png">
-  <img class="figure" src="../../../../img/user_interface/right_panel/scene_directory_picker.png" alt="Scene Directory Picker dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/right_panel/scene_directory_picker.png">
+      <img class="figure" src="../../../../img/user_interface/right_panel/scene_directory_picker.png" alt="Scene Directory Picker dialog box">
+    </a>
+  </div>
 </div>
 
 - `Browse`: Opens a file explorer dialog box to browse for a directory to which Chunky should save scenes. Alternatively, type the folder path in the input field to the left.

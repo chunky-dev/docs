@@ -8,10 +8,11 @@ The `Advanced` tab, which is the ninth tab in the left control panel in the [Chu
   <p class="figure">
   Figure 3.2.20.1: The Advanced tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/advanced_tab_2.4.x.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/advanced_tab_2.4.x.png" alt="Advanced tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/advanced_tab_2.4.x.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/advanced_tab_2.4.x.png" alt="Advanced tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -86,10 +87,11 @@ Other preview renderers can be added to Chunky using [plugins](../../../../plugi
   <p class="figure">
   Figure 3.2.20.2: Effect of the 'Prevent normal emitter when using emitter sampling' control
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/advanced/prevent_normal_emitter.png">
-  <img class="figure" src="../../../../img/examples/render_controls/advanced/prevent_normal_emitter.png" alt="Effect of the 'Prevent normal emitter when using emitter sampling' control">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/advanced/prevent_normal_emitter.png">
+      <img class="figure" src="../../../../img/examples/render_controls/advanced/prevent_normal_emitter.png" alt="Effect of the 'Prevent normal emitter when using emitter sampling' control">
+    </a>
+  </div>
 </div>
 
 ---
@@ -102,10 +104,11 @@ The `Advanced` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_
   <p class="figure">
   Figure 3.2.20.3: The Advanced tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/advanced_tab_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/advanced_tab_2.5.0.png" alt="Advanced tab in Chunky 2.5.0 snapshots">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/advanced_tab_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/advanced_tab_2.5.0.png" alt="Advanced tab in Chunky 2.5.0 snapshots">
+    </a>
+  </div>
 </div>
 
 - `Hide unknown blocks`:Changes whether the question marks that represent blocks unknown to Chunky are visible.

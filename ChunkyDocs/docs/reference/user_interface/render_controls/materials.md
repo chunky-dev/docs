@@ -8,10 +8,11 @@ The `Materials` tab, which is the seventh tab in the left control panel, contain
   <p class="figure">
   Figure 3.2.17.1: The Materials tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/materials_tab.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/materials_tab.png" alt="Materials tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/materials_tab.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/materials_tab.png" alt="Materials tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -38,10 +39,11 @@ The `Materials` tab, which is the seventh tab in the left control panel, contain
   <p class="figure">
   Figure 3.2.17.2: Comparison of different Specular levels
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/materials/specular_comparison.png">
-  <img class="figure" src="../../../../img/examples/render_controls/materials/specular_comparison.png" alt="Comparison of different Specular levels">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/materials/specular_comparison.png">
+      <img class="figure" src="../../../../img/examples/render_controls/materials/specular_comparison.png" alt="Comparison of different Specular levels">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -49,10 +51,11 @@ The `Materials` tab, which is the seventh tab in the left control panel, contain
   <p class="figure">
   Figure 3.2.17.3: Comparison of different Smoothness levels
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/materials/smoothness_comparison.png">
-  <img class="figure" src="../../../../img/examples/render_controls/materials/smoothness_comparison.png" alt="Comparison of different Smoothness levels">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/materials/smoothness_comparison.png">
+      <img class="figure" src="../../../../img/examples/render_controls/materials/smoothness_comparison.png" alt="Comparison of different Smoothness levels">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -60,10 +63,11 @@ The `Materials` tab, which is the seventh tab in the left control panel, contain
   <p class="figure">
   Figure 3.2.17.4: Comparison of different IoR levels
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/materials/ior_comparison.png">
-  <img class="figure" src="../../../../img/examples/render_controls/materials/ior_comparison.png" alt="Comparison of different IoR levels">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/materials/ior_comparison.png">
+      <img class="figure" src="../../../../img/examples/render_controls/materials/ior_comparison.png" alt="Comparison of different IoR levels">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -71,10 +75,11 @@ The `Materials` tab, which is the seventh tab in the left control panel, contain
   <p class="figure">
   Figure 3.2.17.5: Comparison of different Metalness levels
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/materials/metalness_comparison.png">
-  <img class="figure" src="../../../../img/examples/render_controls/materials/metalness_comparison.png" alt="Comparison of different Metalness levels">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/materials/metalness_comparison.png">
+      <img class="figure" src="../../../../img/examples/render_controls/materials/metalness_comparison.png" alt="Comparison of different Metalness levels">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -82,10 +87,11 @@ The `Materials` tab, which is the seventh tab in the left control panel, contain
   <p class="figure">
   Figure 3.2.17.6: Comparison of Metalness and Specular properties
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/materials/metalness_specular_comparison.png">
-  <img class="figure" src="../../../../img/examples/render_controls/materials/metalness_specular_comparison.png" alt="Comparison of Metalness and Specular properties">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/materials/metalness_specular_comparison.png">
+      <img class="figure" src="../../../../img/examples/render_controls/materials/metalness_specular_comparison.png" alt="Comparison of Metalness and Specular properties">
+    </a>
+  </div>
 </div>
 
 ---

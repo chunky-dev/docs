@@ -8,10 +8,11 @@ The `Map View` tab, located in the right control panel, contains controls for th
   <p class="figure">
   Figure 3.2.7.1: The Map View tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/right_panel/map_view_tab.png">
-  <img class="figure" src="../../../../img/user_interface/right_panel/map_view_tab.png" alt="Map View tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/right_panel/map_view_tab.png">
+      <img class="figure" src="../../../../img/user_interface/right_panel/map_view_tab.png" alt="Map View tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -52,7 +53,7 @@ The `Map View` tab, located in the right control panel, contains controls for th
 
 The Chunky GUI was improved and reorganized in the [Chunky 2.5.0 snapshots](../../../../getting_started/configuring_chunky_launcher#advanced-settings).
 
-The right control panel contains only controls from the `Map View` tab, and is integrated into the [`Map`](../../map) tab. Therefore, the right control panel is only visible when the [`Map`](../../map) tab is open.
+The right control panel contains only controls from the `Map View` tab, and is integrated into the [`Map`](../../map#250-snapshot-controls-1) tab. Therefore, the right control panel is only visible when the [`Map`](../../map#250-snapshot-controls-1) tab is open.
 
 ---
 
@@ -64,10 +65,11 @@ The `Select World` dialog box, shown in [Figure 3.2.7.2](#figure-3-2-7-2), displ
   <p class="figure">
   Figure 3.2.7.2: Select World dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/right_panel/select_world.png">
-  <img class="figure" src="../../../../img/user_interface/right_panel/select_world.png" alt="Select World dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/right_panel/select_world.png">
+      <img class="figure" src="../../../../img/user_interface/right_panel/select_world.png" alt="Select World dialog box">
+    </a>
+  </div>
 </div>
 
 By default, Chunky will display worlds from the "saves" folder of the `Minecraft directory` [specified in the Chunky Launcher](../../../../getting_started/configuring_chunky_launcher#controls).

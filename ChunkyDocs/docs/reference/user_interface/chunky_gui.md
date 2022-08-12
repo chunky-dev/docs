@@ -8,10 +8,11 @@ The GUI of Chunky is built using JavaFX and is separated into three panels which
   <p class="figure">
   Figure 3.2.1.1: The Chunky GUI
   </p>
-  <hr>
-  <a href="../../../img/user_interface/overview.png">
-  <img class="figure" src="../../../img/user_interface/overview.png" alt="Chunky GUI">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/overview.png">
+      <img class="figure" src="../../../img/user_interface/overview.png" alt="Chunky GUI">
+    </a>
+  </div>
 </div>
 
 ---
@@ -26,10 +27,11 @@ The control panel on the left still contains render controls, the control panel 
   <p class="figure">
   Figure 3.2.1.2: The Chunky GUI in 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../img/user_interface/overview_2.5.0.png">
-  <img class="figure" src="../../../img/user_interface/overview_2.5.0.png" alt="Chunky GUI in 2.5.0 snapshots">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/user_interface/overview_2.5.0.png">
+      <img class="figure" src="../../../img/user_interface/overview_2.5.0.png" alt="Chunky GUI in 2.5.0 snapshots">
+    </a>
+  </div>
 </div>
 
 ---

@@ -12,14 +12,13 @@ Scenes rendered with sunlight enabled do not typically require to be rendered to
   <p class="figure">
   Figure 3.1.3.1: Sun sampling reduces noise in much fewer samples than if it were disabled
   </p>
-  <hr>
-  <div style="display: grid; grid: 400px / 420px 400px;">
-  <a href="../../../img/examples/introduction/spp_comparison_sss_fast.png">
-  <img class="figure" src="../../../img/examples/introduction/spp_comparison_sss_fast.png" alt="Sunlight sampling enabled">
-  </a>
-  <a href="../../../img/examples/introduction/spp_comparison_sss_off.png">
-  <img class="figure" src="../../../img/examples/introduction/spp_comparison_sss_off.png" alt="Sunlight sampling disabled">
-  </a>
+  <div class="figuregridcontainer">
+    <a href="../../../img/examples/introduction/spp_comparison_sss_fast.png">
+      <img class="figure" src="../../../img/examples/introduction/spp_comparison_sss_fast.png" alt="Sunlight sampling enabled">
+    </a>
+    <a href="../../../img/examples/introduction/spp_comparison_sss_off.png">
+      <img class="figure" src="../../../img/examples/introduction/spp_comparison_sss_off.png" alt="Sunlight sampling disabled">
+    </a>
   </div>
 </div>
 
@@ -29,18 +28,18 @@ However, Sunlight sampling has the drawback of being unable to produce certain v
   <p class="figure">
   Figure 3.1.3.2: Disabling Sunlight sampling allows rendering of certain visual effects, such as caustics.
   </p>
-  <hr>
-  <div style="display: grid; grid: 320px 300px / 480px;">
-  <a href="../../../img/examples/introduction/no_caustics.png">
-  <img class="figure" src="../../../img/examples/introduction/no_caustics.png" alt="No caustics with Sunlight sampling enabled">
-  </a>
-  <a href="../../../img/examples/introduction/caustics.png">
-  <img class="figure" src="../../../img/examples/introduction/caustics.png" alt="Caustics with Sunlight sampling disabled">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/no_caustics.png">
+      <img class="figure" src="../../../img/examples/introduction/no_caustics.png" alt="No caustics with Sunlight sampling enabled">
+    </a>
+    <hr>
+    <a href="../../../img/examples/introduction/caustics.png">
+      <img class="figure" src="../../../img/examples/introduction/caustics.png" alt="Caustics with Sunlight sampling disabled">
+    </a>
   </div>
 </div>
 
-Sunlight sampling can be disabled in part or in whole by using [2.5.0 snapshots](../../../getting_started/configuring_chunky_launcher#advanced-settings) and setting [`Sunlight Sampling Strategy`](../../user_interface/render_controls/lighting#250-snapshot-controls) to `HIGH_QUALITY` or `OFF`, respectively. However, as previously stated, disabling Sunlight sampling in sunlit scenes will require many more samples to converge than sunlit scenes rendered with Sunlight sampling enabled.
+Sunlight sampling can be disabled in part or in whole by using [2.5.0 snapshots](../../../getting_started/configuring_chunky_launcher#advanced-settings) and setting [`Sunlight Sampling Strategy`](../../user_interface/render_controls/lighting#250-snapshot-controls) to `HIGH_QUALITY` or `OFF`, respectively. However, as previously stated, disabling Sunlight sampling in sunlit scenes will require very many more samples to converge than sunlit scenes rendered with Sunlight sampling enabled.
 
 ---
 
@@ -54,14 +53,13 @@ Emitter Sampling Strategy (ESS) enables an "optimized" NEE, similar to the sampl
   <p class="figure">
   Figure 3.1.3.3: Scenes rendered with ESS converge in fewer samples
   </p>
-  <hr>
-  <div style="display: grid; grid: 400px / 420px 400px;">
-  <a href="../../../img/examples/introduction/spp_comparison_ess_none.png">
-  <img class="figure" src="../../../img/examples/introduction/spp_comparison_ess_none.png" alt="ESS: Off">
-  </a>
-  <a href="../../../img/examples/introduction/spp_comparison_ess_all.png">
-  <img class="figure" src="../../../img/examples/introduction/spp_comparison_ess_all.png" alt="ESS: On">
-  </a>
+  <div class="figuregridcontainer">
+    <a href="../../../img/examples/introduction/spp_comparison_ess_none.png">
+      <img class="figure" src="../../../img/examples/introduction/spp_comparison_ess_none.png" alt="ESS: Off">
+    </a>
+    <a href="../../../img/examples/introduction/spp_comparison_ess_all.png">
+      <img class="figure" src="../../../img/examples/introduction/spp_comparison_ess_all.png" alt="ESS: On">
+    </a>
   </div>
 </div>
 
@@ -75,15 +73,16 @@ When a ray intersects the scene, Chunky reads from the emittergrid the emitter l
   <p class="figure">
   Figure 3.1.3.4: Emittergrid diagram
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_diagram.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_diagram.png" alt="Emittergrid diagram">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_diagram.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_diagram.png" alt="Emittergrid diagram">
+    </a>
+  </div>
 </div>
 
 ---
 
-Chunky has three [ESS settings](../../user_interface/render_controls/lighting#controls). These are `NONE`, `ONE`, and `ALL`. `ESS: NONE` disables ESS completely. With `ESS: ONE`, only a single randomly-selected emitter within the cell of intersection and its adjacent cells is sampled per ray intersection. With `ESS: ALL`, every emitter within the cell of intersection and its adjacent cells is sampled per ray intersection. Sampling emitters increases the computing cost per sample, but can reduce the total number of SPP required to converge. Render speeds vary, but generally, `ESS: ONE` is slightly slower per sample than `ESS: NONE`. `ESS: ALL` is the slowest per sample, but potentially fastest to converge.
+Chunky has three [ESS settings](../../user_interface/render_controls/lighting#controls). These are `NONE`, `ONE`, and `ALL`. With `ESS: NONE`, ESS is disabled. With `ESS: ONE`, only a single randomly-selected emitter within the cell of intersection and its adjacent cells is sampled per ray intersection. With `ESS: ALL`, every emitter within the cell of intersection and its adjacent cells is sampled per ray intersection. Sampling emitters increases the computing cost per sample, but can reduce the total number of SPP required to converge. Render speeds vary from scene to scene, but generally, `ESS: ONE` is slightly slower per sample than `ESS: NONE`, but potentially faster to converge. `ESS: ALL` is the slowest per sample, but potentially fastest to converge.
 
 The following renders demonstrate the effects of ESS. Each was rendered for approximately the same amount of time.
 
@@ -91,10 +90,11 @@ The following renders demonstrate the effects of ESS. Each was rendered for appr
   <p class="figure">
   Figure 3.1.3.5: Scene lit by emitters rendered to 610 SPP with ESS: NONE
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_none.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_none.png" alt="Scene with ESS: NONE">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_none.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_none.png" alt="Scene with ESS: NONE">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -102,10 +102,11 @@ The following renders demonstrate the effects of ESS. Each was rendered for appr
   <p class="figure">
   Figure 3.1.3.6: Scene lit by emitters rendered to 460 SPP with ESS: ONE
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_one.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_one.png" alt="Scene with ESS: ONE">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_one.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_one.png" alt="Scene with ESS: ONE">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -113,10 +114,11 @@ The following renders demonstrate the effects of ESS. Each was rendered for appr
   <p class="figure">
   Figure 3.1.3.7: Scene lit by emitters rendered to 45 SPP with ESS: ALL
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_all.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_all.png" alt="Scene with ESS: ALL">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_all.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_all.png" alt="Scene with ESS: ALL">
+    </a>
+  </div>
 </div>
 
 `ESS: NONE` is the quickest to render, but has the most noise. `ESS: ONE` is somewhat slower, but noise is reduced. `ESS: ALL` is by far the slowest to render, but it produces the least noise.
@@ -127,7 +129,7 @@ The following renders demonstrate the effects of ESS. Each was rendered for appr
 ESS Bugs
 </h3>
 
-When ESS is enabled, it can increase the brightness of emitter lighting. This is apparent to a lesser extent when using `ESS: ONE`, as shown in [Figure 3.1.3.6](#figure-3-1-3-6), and can be very apparent when using `ESS: ALL`, as shown in [Figure 3.1.3.7](#figure-3-1-3-7). Reduce either the [`Emitter intensity`](../../user_interface/render_controls/lighting#controls) or the [`Exposure`](../../user_interface/render_controls/postprocessing#controls) to compensate. This is a known bug, and we need to fix some maths to solve it.
+When ESS is enabled, it can increase the brightness of emitter lighting. This is apparent to a lesser extent when using `ESS: ONE`, as shown in [Figure 3.1.3.6](#figure-3-1-3-6), and can be very apparent when using `ESS: ALL`, as shown in [Figure 3.1.3.7](#figure-3-1-3-7). Reduce either the [`Emitter intensity`](../../user_interface/render_controls/lighting#controls), the [`Exposure`](../../user_interface/render_controls/postprocessing#controls), or material [emittance](../../user_interface/render_controls/materials#controls) levels to compensate. This is a known bug, and we need to fix some maths to solve it.
 
 ESS also has the unfortunate problem of projecting the lighting as a ghost image of the texture of the emitter onto other surfaces. This is due to a bug, and it will be fixed in a future release.
 
@@ -135,10 +137,11 @@ ESS also has the unfortunate problem of projecting the lighting as a ghost image
   <p class="figure">
   Figure 3.1.3.8: ESS ghost image lighting
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_ghost.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_ghost.png" alt="ESS ghost image lighting">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_ghost.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_ghost.png" alt="ESS ghost image lighting">
+    </a>
+  </div>
 </div>
 
 ---
@@ -153,10 +156,11 @@ The following renders display the new effects of ESS. Each was rendered for appr
   <p class="figure">
   Figure 3.1.3.9: Scene lit by emitters rendered to 64 SPP with ESS: NONE
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_none_2.5.0.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_none_2.5.0.png" alt="Scene with ESS: NONE in 2.5.0">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_none_2.5.0.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_none_2.5.0.png" alt="Scene with ESS: NONE in 2.5.0">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -164,10 +168,11 @@ The following renders display the new effects of ESS. Each was rendered for appr
   <p class="figure">
   Figure 3.1.3.10: Scene lit by emitters rendered to 42 SPP with ESS: ONE
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_one_2.5.0.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_one_2.5.0.png" alt="Scene with ESS: ONE in 2.5.0">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_one_2.5.0.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_one_2.5.0.png" alt="Scene with ESS: ONE in 2.5.0">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -175,10 +180,11 @@ The following renders display the new effects of ESS. Each was rendered for appr
   <p class="figure">
   Figure 3.1.3.11: Scene lit by emitters rendered to 18 SPP with ESS: ONE_BLOCK
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_one_block_2.5.0.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_one_block_2.5.0.png" alt="Scene with ESS: ONE_BLOCK in 2.5.0">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_one_block_2.5.0.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_one_block_2.5.0.png" alt="Scene with ESS: ONE_BLOCK in 2.5.0">
+    </a>
+  </div>
 </div>
 <br>
 
@@ -186,10 +192,11 @@ The following renders display the new effects of ESS. Each was rendered for appr
   <p class="figure">
   Figure 3.1.3.12: Scene lit by emitters rendered to 6 SPP with ESS: ALL
   </p>
-  <hr>
-  <a href="../../../img/examples/introduction/ess_all_2.5.0.png">
-  <img class="figure" src="../../../img/examples/introduction/ess_all_2.5.0.png" alt="Scene with ESS: ALL in 2.5.0">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/introduction/ess_all_2.5.0.png">
+      <img class="figure" src="../../../img/examples/introduction/ess_all_2.5.0.png" alt="Scene with ESS: ALL in 2.5.0">
+    </a>
+  </div>
 </div>
 
 Just as in the [Stable](../../../getting_started/configuring_chunky_launcher#advanced-settings) release, `ESS: NONE` is the quickest to render, but has the most noise. `ESS: ONE` is somewhat slower, and contains somewhat less noise. `ESS: ONE_BLOCK` is even slower to render, but contains even less noise. `ESS: All` is by far the slowest to render, but contains the least noise.

@@ -14,15 +14,11 @@ As stated in the [Samples and Noise](../../introduction/samples_and_noise) artic
 
 ## Artificial Intelligence-accelerated Denoising
 
-While most denoising methods use a basic blurring approach, AI-accelerated denoising software uses a different approach called *deep learning*. With this approach, the software is trained to distinguish between image signal and image noise in images rendered to a wide range of SPP values. This range extends from 1 SPP to the SPP of an image that is almost fully converged. While the denoising software can operate solely on the noisy input, the denoised results can improve greatly with the utilization of Arbitrary Output Variables (AOVs), which provide additional information to the software. Some AOVs are listed below.
+While most denoising methods use a basic blurring approach, AI-accelerated denoising software uses a different approach called *deep learning*. With this approach, the software is trained to distinguish between image signal and image noise in images rendered to a wide range of SPP values. This range extends from 1 SPP to the SPP of an image that is almost fully converged. While the denoising software can operate solely on the noisy input, the denoised results can improve greatly with the utilization of Arbitrary Output Variables (AOVs), which provide additional information to the software. Some AOVs related to denoising are listed below.
 
 - Albedo: The *Albedo* AOV contains the pure color information of the scene independent of lighting.
 
 - Normal: The *Normal* AOV contains information about the normals of the surfaces of objects in the scene.
-
-- Ambient Occlusion (AO): The *Ambient Occlusion* AOV contains information about the exposure of different points in the scene to sky lighting.
-
-- Depth Buffer: The *Depth Buffer* AOV contains information about the distance to the camera of different points in the scene.
 
 Chunky does not have native support to render such AOVs, but such support can be added through [plugins](../../../plugins/chunky_plugins). One such plugin is the [Denoising Plugin](../../../plugins/plugin_list#denoising-plugin), which not only adds support for rendering the Albedo AOV and the Normal AOV, but also can automatically denoise the image by using <a href="https://www.openimagedenoise.org/" target="_blank">Intel Open Image Denoise</a>, which runs on any 64-bit CPU that supports SSE 4.1, or on Apple Silicon. An alternative to Intel Open Image Denoise is the <a href="https://github.com/DeclanRussell/NvidiaAIDenoiser" target="_blank">NVIDIA AI Denoiser</a>, which runs on an NVIDIA GPU of Maxwell architecture or newer, with a driver version of 465.84 or greater. However, denoising with this tool must be done manually.
 
@@ -30,12 +26,11 @@ Chunky does not have native support to render such AOVs, but such support can be
   <p class="figure">
   Figure 3.3.1.1: Denoiser plugin AOVs and denoised result
   </p>
-  <hr>
   <table class="figure">
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/examples/denoising/denoiser_albedo.png">
-        <img class="figure" src="../../../img/examples/denoising/denoiser_albedo.png" alt="Albedo AOV">
+          <img class="figure" src="../../../img/examples/denoising/denoiser_albedo.png" alt="Albedo AOV">
         </a>
         <p>
         Albedo AOV
@@ -43,7 +38,7 @@ Chunky does not have native support to render such AOVs, but such support can be
       </td>
       <td class="figure">
         <a href="../../../img/examples/denoising/denoiser_normal.png">
-        <img class="figure" src="../../../img/examples/denoising/denoiser_normal.png" alt="Normal AOV">
+          <img class="figure" src="../../../img/examples/denoising/denoiser_normal.png" alt="Normal AOV">
         </a>
         <p>
         Normal AOV
@@ -53,7 +48,7 @@ Chunky does not have native support to render such AOVs, but such support can be
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/examples/denoising/denoiser_64_spp.png">
-        <img class="figure" src="../../../img/examples/denoising/denoiser_64_spp.png" alt="Scene rendered to 64 SPP">
+          <img class="figure" src="../../../img/examples/denoising/denoiser_64_spp.png" alt="Scene rendered to 64 SPP">
         </a>
         <p>
         Scene rendered to 64 SPP
@@ -61,7 +56,7 @@ Chunky does not have native support to render such AOVs, but such support can be
       </td>
       <td class="figure">
         <a href="../../../img/examples/denoising/denoiser_denoised.png">
-        <img class="figure" src="../../../img/examples/denoising/denoiser_denoised.png" alt="Denoised image">
+          <img class="figure" src="../../../img/examples/denoising/denoiser_denoised.png" alt="Denoised image">
         </a>
         <p>
         Denoised image
@@ -77,10 +72,11 @@ An important aspect of AI-accelerated denoisers is that they cannot be expected 
   <p class="figure">
   Figure 3.3.1.2: The "oil painting" effect in a denoised image
   </p>
-  <hr>
-  <a href="../../../img/examples/denoising/oil_painting_effect.jpg">
-  <img class="figure" src="../../../img/examples/denoising/oil_painting_effect.jpg" alt="&quot;Oil painting&quot; effect in a denoised image">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/denoising/oil_painting_effect.jpg">
+      <img class="figure" src="../../../img/examples/denoising/oil_painting_effect.jpg" alt="&quot;Oil painting&quot; effect in a denoised image">
+    </a>
+  </div>
 </div>
 
 ---
@@ -103,12 +99,11 @@ Below are listed the control values required to obtain renders of certain lighti
   <p class="figure">
   Figure 3.3.1.3: Extracting lighting feature images
   </p>
-  <hr>
   <table class="figure">
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/examples/denoising/noise_test_sun-8192.jpg">
-        <img class="figure" src="../../../img/examples/denoising/noise_test_sun-8192.jpg" alt="Sunlight pass">
+          <img class="figure" src="../../../img/examples/denoising/noise_test_sun-8192.jpg" alt="Sunlight pass">
         </a>
         <p>
         Sunlight pass
@@ -116,7 +111,7 @@ Below are listed the control values required to obtain renders of certain lighti
       </td>
       <td class="figure">
         <a href="../../../img/examples/denoising/noise_test_sky-16384.jpg">
-        <img class="figure" src="../../../img/examples/denoising/noise_test_sky-16384.jpg" alt="Sky light pass">
+          <img class="figure" src="../../../img/examples/denoising/noise_test_sky-16384.jpg" alt="Sky light pass">
         </a>
         <p>
         Sky light pass
@@ -126,7 +121,7 @@ Below are listed the control values required to obtain renders of certain lighti
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/examples/denoising/noise_test_emitter-16384.jpg">
-        <img class="figure" src="../../../img/examples/denoising/noise_test_emitter-16384.jpg" alt="Emitter light pass">
+          <img class="figure" src="../../../img/examples/denoising/noise_test_emitter-16384.jpg" alt="Emitter light pass">
         </a>
         <p>
         Emitter light pass
@@ -134,7 +129,7 @@ Below are listed the control values required to obtain renders of certain lighti
       </td>
       <td class="figure">
         <a href="../../../img/examples/denoising/noise_test_comp.jpg">
-        <img class="figure" src="../../../img/examples/denoising/noise_test_comp.jpg" alt="Composite">
+          <img class="figure" src="../../../img/examples/denoising/noise_test_comp.jpg" alt="Composite">
         </a>
         <p>
         Composite
@@ -144,7 +139,7 @@ Below are listed the control values required to obtain renders of certain lighti
     <tr class="figure">
       <td class="figure">
         <a href="../../../img/examples/denoising/noise_test_all-16384.jpg">
-        <img class="figure" src="../../../img/examples/denoising/noise_test_all-16384.jpg" alt="Scene rendered to 16384 SPP">
+          <img class="figure" src="../../../img/examples/denoising/noise_test_all-16384.jpg" alt="Scene rendered to 16384 SPP">
         </a>
         <p>
         Scene rendered to 16384 SPP

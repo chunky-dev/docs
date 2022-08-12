@@ -8,10 +8,11 @@ The render progress controls are located at the bottom of the left control panel
   <p class="figure">
   Figure 3.2.22.1: Render Progress Controls
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_progress_controls.png">
-  <img class="figure" src="../../../../img/user_interface/render_progress_controls.png" alt="Render Progress Controls">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_progress_controls.png">
+      <img class="figure" src="../../../../img/user_interface/render_progress_controls.png" alt="Render Progress Controls">
+    </a>
+  </div>
 </div>
 
 ---

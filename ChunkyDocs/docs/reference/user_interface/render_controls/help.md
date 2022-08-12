@@ -8,10 +8,11 @@ The `Help` tab, which is the tenth tab in the left control panel in the [Chunky 
   <p class="figure">
   Figure 3.2.21.1: The Help tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/help_tab_2.4.x.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/help_tab_2.4.x.png" alt="Help tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/help_tab_2.4.x.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/help_tab_2.4.x.png" alt="Help tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -41,10 +42,11 @@ The `Help` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_star
   <p class="figure">
   Figure 3.2.21.2: The Help tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/help_tab_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/help_tab_2.5.0.png" alt="Help tab in Chunky 2.5.0 snapshots">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/help_tab_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/help_tab_2.5.0.png" alt="Help tab in Chunky 2.5.0 snapshots">
+    </a>
+  </div>
 </div>
 
 > Many controls contain a short description. Hover the cursor over the control to view that description.  

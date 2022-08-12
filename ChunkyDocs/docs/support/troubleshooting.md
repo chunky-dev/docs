@@ -31,13 +31,15 @@ This problem is caused by the usage of a 32-bit JRE to launch Chunky. The soluti
   <p class="figure">
   Figure 2.2.1: 32-bit JRE memory limit error
   </p>
-  <hr>
-  <a href="../../img/support/heapsize_win32.png">
-  <img class="figure" src="../../img/support/heapsize_win32.png" alt="32-bit JRE memory limit error">
-  </a>
-  <a href="../../img/support/heapsize_win32_console.png">
-  <img class="figure" src="../../img/support/heapsize_win32_console.png" alt="32-bit JRE memory limit error">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/support/heapsize_win32.png">
+      <img class="figure" src="../../img/support/heapsize_win32.png" alt="32-bit JRE memory limit error">
+    </a>
+    <hr>
+    <a href="../../img/support/heapsize_win32_console.png">
+      <img class="figure" src="../../img/support/heapsize_win32_console.png" alt="32-bit JRE memory limit error">
+    </a>
+  </div>
 </div>
 
 
@@ -49,10 +51,11 @@ This problem is caused by a world with unsupported chunks being loaded. A world 
   <p class="figure">
   Figure 2.2.2: Unsupported chunks in the `Map` tab
   </p>
-  <hr>
-  <a href="../../img/support/unsupported_chunks_map_view.png">
-  <img class="figure" src="../../img/support/unsupported_chunks_map_view.png" alt="Unsupported chunks in the Map tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/support/unsupported_chunks_map_view.png">
+      <img class="figure" src="../../img/support/unsupported_chunks_map_view.png" alt="Unsupported chunks in the Map tab">
+    </a>
+  </div>
 </div>
 
 
@@ -78,7 +81,7 @@ This problem is often caused by a mismatch between the architectures of Java and
 To view a list of valid pipelines, add `-Dprism.verbose=true` to the startup command before `-jar`. The startup command then becomes of the form: `java -Dprism.verbose=true -jar ChunkyLauncher.jar` The terminal will display a list of valid pipelines with the text, "Prism pipeline init order:". The `-Dprism.verbose=true` can also be added to the [`Java options`](../../getting_started/configuring_chunky_launcher/#controls) input field in the Chunky Launcher. Then enable the Debug console, and then click `Launch`. The debug console will display a list of valid pipelines with the text, "Prism pipeline init order:".
 
 
-## java.lang.NullPointerException: Cannot invoke "com.sun.prism.RTTexture.createGraphics()" because "&lt;local9&gt;" is null
+## java.lang.NullPointerException: Cannot invoke "com.sun.prism.RTTexture.<br>createGraphics()" because "&lt;local9&gt;" is null
 
 This problem is often caused by the render canvas size being increased beyond the maximum texture size supported by JavaFX, the GPU, or the GPU driver. A potential solution to the problem is to add `-Dprism.order=sw` to the [`Java options`](../../getting_started/configuring_chunky_launcher/#controls) input field in the Chunky Launcher.
 
@@ -97,10 +100,11 @@ This problem is often caused by broken fonts on your system, and results in what
   <p class="figure">
   Figure 2.2.3: Corrupted text in Chunky
   </p>
-  <hr>
-  <a href="../../img/support/rare_font_corruption.png">
-  <img class="figure" src="../../img/support/rare_font_corruption.png" alt="Corrupted text in Chunky">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/support/rare_font_corruption.png">
+      <img class="figure" src="../../img/support/rare_font_corruption.png" alt="Corrupted text in Chunky">
+    </a>
+  </div>
 </div>
 
 

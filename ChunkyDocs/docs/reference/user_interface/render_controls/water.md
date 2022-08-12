@@ -8,10 +8,11 @@ The `Water` tab, which is the fourth tab in the left control panel, contains con
   <p class="figure">
   Figure 3.2.14.1: The Water tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/water_tab_2.4.x.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/water_tab_2.4.x.png" alt="Water tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/water_tab_2.4.x.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/water_tab_2.4.x.png" alt="Water tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -50,10 +51,11 @@ The `Water` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_sta
   <p class="figure">
   Figure 3.2.14.2: The Water tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/water_tab_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/water_tab_2.5.0.png" alt="2.5.0 Snapshot Water tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/water_tab_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/water_tab_2.5.0.png" alt="2.5.0 Snapshot Water tab">
+    </a>
+  </div>
 </div>
 
 - `Procedural water`: Changes whether configurable simplex noise is used to procedurally shade the water. See [Figure 3.2.14.3](#figure-3-2-14-3) for a comparison between normal water and procedural water.
@@ -70,10 +72,11 @@ The `Water` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_sta
   <p class="figure">
   Figure 3.2.14.3: Comparison between normal water and Procedural water
   </p>
-  <hr>
-  <a href="../../../../img/examples/render_controls/water/water_comparison.png">
-  <img class="figure" src="../../../../img/examples/render_controls/water/water_comparison.png" alt="Comparison between normal water and Procedural water">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/water/water_comparison.png">
+      <img class="figure" src="../../../../img/examples/render_controls/water/water_comparison.png" alt="Comparison between normal water and Procedural water">
+    </a>
+  </div>
 </div>
 
 ---

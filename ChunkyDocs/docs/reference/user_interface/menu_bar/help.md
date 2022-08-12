@@ -8,10 +8,11 @@ Information about Chunky and online resources are located in the menu bar at the
   <p class="figure">
   Figure 3.2.3.1: Chunky Resources
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/about_chunky.png">
-  <img class="figure" src="../../../../img/user_interface/about_chunky.png" alt="Chunky Resources">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/about_chunky.png">
+      <img class="figure" src="../../../../img/user_interface/about_chunky.png" alt="Chunky Resources">
+    </a>
+  </div>
 </div>
 
 ---

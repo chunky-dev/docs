@@ -90,12 +90,13 @@ Below are some example themes.
 
 <div class="figure" id="figure-3-3-3-1">
   <p class="figure">
-  Figure 3.3.3.1: Custom theme: "Sorry", by jackjt8 (light)
+  Figure 3.3.3.1: Custom theme: "Light", by jackjt8. <i>Sorry</i>
   </p>
-  <hr>
-  <a href="../../../img/examples/themes/theme_light.jpg">
-  <img class="figure" src="../../../img/examples/themes/theme_light.jpg" alt="Light theme">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/themes/theme_light.jpg">
+      <img class="figure" src="../../../img/examples/themes/theme_light.jpg" alt="Light theme">
+    </a>
+  </div>
 </div>
 
 This theme uses the style.css below.
@@ -172,12 +173,13 @@ Hyperlink:hover {
 
 <div class="figure" id="figure-3-3-3-2">
   <p class="figure">
-  Figure 3.3.3.2: Custom theme: "MIA", by EmeraldSnorlax (nice blue)
+  Figure 3.3.3.2: Custom theme: "Nice Blue", by EmeraldSnorlax. <i>MIA</i>
   </p>
-  <hr>
-  <a href="../../../img/examples/themes/theme_nice_blue.jpg">
-  <img class="figure" src="../../../img/examples/themes/theme_nice_blue.jpg" alt="Nice blue theme">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/themes/theme_nice_blue.jpg">
+      <img class="figure" src="../../../img/examples/themes/theme_nice_blue.jpg" alt="Nice blue theme">
+    </a>
+  </div>
 </div>
 
 This theme uses the style.css below.

@@ -8,10 +8,11 @@ The `Scene` tab, which is the first tab in the left control panel, contains gene
   <p class="figure">
   Figure 3.2.11.1: The Scene tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/scene_tab_2.4.x.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/scene_tab_2.4.x.png" alt="Scene tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/scene_tab_2.4.x.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/scene_tab_2.4.x.png" alt="Scene tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -76,19 +77,19 @@ The `Scene` tab, which is the first tab in the left control panel, contains gene
 
 - `Save dump once every...`: Changes whether Chunky saves the scene and saves a render dump of the current progress whenever a multiple of the specified number of SPP has passed since the render started.
 
-- <img src="../../../../img/user_interface/render_controls/save_dump_SPP.png" alt="Render dump SPP">: Input field for number of SPP a multiple of which must be rendered to before a render dump should be saved. Alternatively, select one of six preset values from the dropdown menu, which is accessed by clicking the button immediately to the right of the input field.
+- <img src="../../../../img/user_interface/render_controls/save_dump_SPP.png" alt="Render dump SPP" style="vertical-align: middle;">: Input field for number of SPP a multiple of which must be rendered to before the scene and a render dump of the scene should be saved. Alternatively, select one of six preset values from the dropdown menu, which is accessed by clicking the button immediately to the right of the input field.
 
-    - `50` SPP: Sets Chunky to save the scene and a render dump of the scene once every 50 SPP.
+    - `50` SPP
 
-    - `100` SPP: Sets Chunky to save the scene and a render dump of the scene once every 100 SPP.
+    - `100` SPP
 
-    - `500` SPP: Sets Chunky to save the scene and a render dump of the scene once every 500 SPP.
+    - `500` SPP
 
-    - `1000` SPP: Sets Chunky to save the scene and a render dump of the scene once every 1000 SPP.
+    - `1000` SPP
 
-    - `2500` SPP: Sets Chunky to save the scene and a render dump of the scene once every 2500 SPP.
+    - `2500` SPP
 
-    - `5000` SPP: Sets Chunky to save the scene and a render dump of the scene once every 5000 SPP.
+    - `5000` SPP
 
 - `Save snapshot for every dump`: Changes whether Chunky saves a snapshot of the render progress at the time a dump is saved when a dump is saved.
 
@@ -106,10 +107,11 @@ The `Scene` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_sta
   <p class="figure">
   Figure 3.2.11.2: The Scene tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/scene_tab_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/scene_tab_2.5.0.png" alt="2.5.0 Snapshot Scene tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/scene_tab_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/scene_tab_2.5.0.png" alt="2.5.0 Snapshot Scene tab">
+    </a>
+  </div>
 </div>
 
 - `Canvas size`: Input fields for the resolution of the render canvas.
@@ -118,7 +120,7 @@ The `Scene` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_sta
 
     - `Height`: Input field for the vertical dimension of the render canvas.
 
-- <img src="../../../../img/user_interface/render_controls/aspect_ratio_unlocked.png"> / <img src="../../../../img/user_interface/render_controls/aspect_ratio_locked.png"> `Lock aspect ratio`: Changes whether the aspect ratio of the render canvas is locked <img src="../../../../img/user_interface/render_controls/aspect_ratio_locked.png"> or unlocked <img src="../../../../img/user_interface/render_controls/aspect_ratio_unlocked.png">. If the aspect ratio of the render canvas is locked, then changing one dimension of the resolution causes the other dimension to change proportionally to the other.
+- <img src="../../../../img/user_interface/render_controls/aspect_ratio_unlocked.png" style="vertical-align: middle;"> / <img src="../../../../img/user_interface/render_controls/aspect_ratio_locked.png" style="vertical-align: middle;"> `Lock aspect ratio`: Changes whether the aspect ratio of the render canvas is locked <img src="../../../../img/user_interface/render_controls/aspect_ratio_locked.png" style="vertical-align: middle;"> or unlocked <img src="../../../../img/user_interface/render_controls/aspect_ratio_unlocked.png" style="vertical-align: middle;">. If the aspect ratio of the render canvas is locked, then changing one dimension of the resolution causes the other dimension to change proportionally to the other.
 
 The resolution and aspect ratio of the render canvas are displayed directly below the input fields.
 
@@ -148,10 +150,11 @@ The `Settings Export` dialog box, shown in [Figure 3.2.11.3](#figure-3-2-11-3), 
   <p class="figure">
   Figure 3.2.11.3: Settings Export dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/settings_export.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/settings_export.png" alt="Settings Export dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/settings_export.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/settings_export.png" alt="Settings Export dialog box">
+    </a>
+  </div>
 </div>
 
 - `Settings to export`: A list of settings which can be selected to be exported in the JSON string.
@@ -170,10 +173,11 @@ The `Settings Import` dialog box, shown in [Figure 3.2.11.4](#figure-3-2-11-4), 
   <p class="figure">
   Figure 3.2.11.4: Settings Import dialog box
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/settings_import.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/settings_import.png" alt="Settings Import dialog box">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/settings_import.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/settings_import.png" alt="Settings Import dialog box">
+    </a>
+  </div>
 </div>
 
 - `Settings JSON`: Input field for a JSON-formatted string of text that describes Chunky settings and their corresponding values.

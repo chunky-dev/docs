@@ -8,10 +8,11 @@ The `Lighting` tab, which is the second tab in the left control panel, contains 
   <p class="figure">
   Figure 3.2.12.1: The Lighting tab
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/lighting_tab_2.4.x.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/lighting_tab_2.4.x.png" alt="Lighting tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/lighting_tab_2.4.x.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/lighting_tab_2.4.x.png" alt="Lighting tab">
+    </a>
+  </div>
 </div>
 
 ---
@@ -26,14 +27,13 @@ The `Lighting` tab, which is the second tab in the left control panel, contains 
   <p class="figure">
   Figure 3.2.12.2: Enabling emitters enables the emittance of light from set blocks
   </p>
-  <hr>
-  <div style="display: grid; grid: 400px / 420px 400px;">
-  <a href="../../../../img/examples/render_controls/lighting/emitters_disabled.png">
-  <img class="figure" src="../../../../img/examples/render_controls/lighting/emitters_disabled.png" alt="Emitters disabled">
-  </a>
-  <a href="../../../../img/examples/render_controls/lighting/emitters_enabled.png">
-  <img class="figure" src="../../../../img/examples/render_controls/lighting/emitters_enabled.png" alt="Emitters enabled">
-  </a>
+  <div class="figuregridcontainer">
+    <a href="../../../../img/examples/render_controls/lighting/emitters_disabled.png">
+      <img class="figure" src="../../../../img/examples/render_controls/lighting/emitters_disabled.png" alt="Emitters disabled">
+    </a>
+    <a href="../../../../img/examples/render_controls/lighting/emitters_enabled.png">
+      <img class="figure" src="../../../../img/examples/render_controls/lighting/emitters_enabled.png" alt="Emitters enabled">
+    </a>
   </div>
 </div>
 
@@ -71,10 +71,11 @@ The `Lighting` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_
   <p class="figure">
   Figure 3.2.12.3: The Lighting tab in Chunky 2.5.0 snapshots
   </p>
-  <hr>
-  <a href="../../../../img/user_interface/render_controls/lighting_tab_2.5.0.png">
-  <img class="figure" src="../../../../img/user_interface/render_controls/lighting_tab_2.5.0.png" alt="2.5.0 Snapshot Lighting tab">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/user_interface/render_controls/lighting_tab_2.5.0.png">
+      <img class="figure" src="../../../../img/user_interface/render_controls/lighting_tab_2.5.0.png" alt="2.5.0 Snapshot Lighting tab">
+    </a>
+  </div>
 </div>
 
 - `Emitter Sampling Strategy`: Dropdown menu to select the [Emitter Sampling Strategy](../../../introduction/next_event_estimation#emitter-sampling-strategy-ess) method to be used while rendering. ESS is only effective when emitters are enabled.

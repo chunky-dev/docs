@@ -73,9 +73,9 @@ Further setup instructions for [Windows](#windows), [Linux](#linux), and [macOS]
 
 On M1-equipped macs, which are aarch64 (ARM-based), Rosetta 2 enables an emulation, of sorts, of x64 macOS applications. Please ensure that both the JRE and OpenJFX have matching architectures. We recommended native aarch64; however, x64 performance should be similar. Furthermore, there are many other issues and bugs that are difficult to resolve. Please ask for assistance and we will try our best.
 
-Step 4: Install or extract Java 17 on your computer.
+- Step 4: Install or extract Java 17 on your computer.
 
-Step 5: Open the `Terminal` and run the following commands (change the path to the OpenJFX ZIP archive in the second command to match its location on your computer):
+- Step 5: Open the `Terminal` and run the following commands (change the path to the OpenJFX ZIP archive in the second command to match its location on your computer):
 
 ```
 mkdir "~/.chunky"
@@ -83,7 +83,7 @@ unzip "~/Downloads/openjfx-18.0.2_osx-aarch64_bin-sdk.zip" -d "~/.chunky/javafx"
 ```
 [^6]
 
-Step 6: Start the ChunkyLauncher.jar with the command, `"</path/to/java 17/java>" --module-path "~/.chunky/javafx/lib" --add-modules javafx.controls,javafx.fxml -jar "</path/to/ChunkyLauncher.jar>" --launcher`.[^6] [^7]
+- Step 6: Start the ChunkyLauncher.jar with the command, `"</path/to/java 17/java>" --module-path "~/.chunky/javafx/lib" --add-modules javafx.controls,javafx.fxml -jar "</path/to/ChunkyLauncher.jar>" --launcher`.[^6] [^7]
 
 ---
 
@@ -95,10 +95,11 @@ The first time you start Chunky, you will be asked to pick a [settings directory
   <p class="figure">
   Figure 1.1.1: Chunky First-Time Setup Window
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_first-time_setup.png">
-  <img class="figure" src="../../img/getting_started/chunky_first-time_setup.png" alt="Chunky First-Time Setup">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_first-time_setup.png">
+      <img class="figure" src="../../img/getting_started/chunky_first-time_setup.png" alt="Chunky First-Time Setup">
+    </a>
+  </div>
 </div>
 
 The recommended directory is usually the best option. Click `Use Selected Directory` to continue.
@@ -109,10 +110,11 @@ Next, you will see the Chunky Launcher:
   <p class="figure">
   Figure 1.1.2: The Chunky Launcher
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_launcher.png">
-  <img class="figure" src="../../img/getting_started/chunky_launcher.png" alt="Chunky Launcher">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_launcher.png">
+      <img class="figure" src="../../img/getting_started/chunky_launcher.png" alt="Chunky Launcher">
+    </a>
+  </div>
 </div>
 
 ### Updating Chunky
@@ -125,10 +127,11 @@ In the Launcher, click the `Check for update` button to make the Launcher check 
   <p class="figure">
   Figure 1.1.3: Chunky Update Available Window
   </p>
-  <hr>
-  <a href="../../img/getting_started/chunky_update_available_2.4.0.png">
-  <img class="figure" src="../../img/getting_started/chunky_update_available_2.4.0.png" alt="Chunky Update Available Window">
-  </a>
+  <div class="figureimgcontainer">
+    <a href="../../img/getting_started/chunky_update_available_2.4.0.png">
+      <img class="figure" src="../../img/getting_started/chunky_update_available_2.4.0.png" alt="Chunky Update Available Window">
+    </a>
+  </div>
 </div>
 
 Click the `Update to New Version` button to start downloading the required files.
