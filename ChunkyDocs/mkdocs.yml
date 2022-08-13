@@ -66,6 +66,8 @@ plugins:
             'faq/minecraft_compatibility.md': 'support/minecraft_compatibility.md'
             'user_interface/chunky_ui.md': 'reference/user_interface/chunky_gui.md'
             'user_interface/render.md': 'reference/user_interface/render_controls/index.md'
+            'gallery/index.md': 'https://chunky-dev.github.io/gallery/'
+            'gallery/old_gallery.md': 'https://chunky-dev.github.io/gallery/old_gallery/'
     - search:
         lang: en
 
@@ -148,7 +150,7 @@ nav:
     - "Chunky Plugins": "plugins/chunky_plugins.md"
     - "Plugin List": "plugins/plugin_list.md"
     - "Plugin Development": "plugins/plugin_development.md"
-  - "Gallery": "gallery/index.md"
+  - "Gallery": "https://chunky-dev.github.io/gallery/"
 
 
 
