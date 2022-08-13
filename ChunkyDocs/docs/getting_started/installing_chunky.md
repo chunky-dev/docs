@@ -71,7 +71,7 @@ Further setup instructions for [Windows](#windows), [Linux](#linux), and [macOS]
 
 ### macOS
 
-On M1-equipped macs, which are aarch64 (ARM-based), Rosetta 2 enables an emulation, of sorts, of x64 macOS applications. Please ensure that both the JRE and OpenJFX have matching architectures. We recommended native aarch64; however, x64 performance should be similar. Furthermore, there are many other issues and bugs that are difficult to resolve. Please ask for assistance and we will try our best.
+On M1-equipped macs, which are aarch64 (ARM-based), Rosetta 2 enables an emulation, of sorts, of x64 macOS applications. Please ensure that both the JRE and OpenJFX have matching architectures. We recommended native aarch64; however, x64 performance should be similar.
 
 - Step 4: Install or extract Java 17 on your computer.
 

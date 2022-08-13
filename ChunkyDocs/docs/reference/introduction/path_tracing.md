@@ -26,7 +26,7 @@ Path tracing uses random sampling to incrementally compute a final image. The ra
 
 ---
 
-## Data structures
+## Data Structures
 
 Chunky uses two data structures to hold world data once loaded. These structures are chosen to help increase performance while path tracing.
 

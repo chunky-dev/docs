@@ -37,7 +37,7 @@ A table at the top of the `Entities` tab displays a list of all loaded entities 
 
 ---
 
-### Player controls
+### Player Controls
 
 If the selected entity is a player, then controls pertaining to player entities become available.
 

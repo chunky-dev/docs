@@ -68,7 +68,7 @@ Hold down a modifier key to multiply the movement of the camera when using the m
 
 ---
 
-### Right-click menu
+### Right-click Menu
 
 Right-clicking the render preview displays a context menu containing some camera and canvas appearance controls.
 
@@ -128,7 +128,7 @@ The Chunky GUI was improved and reorganized in [Chunky 2.5.0 snapshots](../../..
 
 ---
 
-### Target details
+### Target Details
 
 The render preview displays a box containing information about the currently-targeted object, if any, and camera information, in the lower left-hand corner.
 

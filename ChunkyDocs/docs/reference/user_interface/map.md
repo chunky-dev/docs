@@ -103,7 +103,7 @@ The map will display one of two display modes, depending on the map [`Scale`](..
 
 ---
 
-### Right-click menu
+### Right-click Menu
 
 Right-clicking in the map opens a context menu containing some selection- and scene-related options.
 

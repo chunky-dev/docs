@@ -104,7 +104,7 @@ nav:
   - "Support":
     - "FAQ": "support/faq.md"
     - "Troubleshooting": "support/troubleshooting.md"
-    - "Minecraft compatibility": "support/minecraft_compatibility.md"
+    - "Minecraft Compatibility": "support/minecraft_compatibility.md"
   - "Reference":
     - "Introduction":
       - "Path Tracing": "reference/introduction/path_tracing.md"
@@ -146,8 +146,8 @@ nav:
       - "Scene Format": "reference/technical/scene_format.md"
   - "Plugins":
     - "Chunky Plugins": "plugins/chunky_plugins.md"
-    - "Plugin list": "plugins/plugin_list.md"
-    - "Plugin development": "plugins/plugin_development.md"
+    - "Plugin List": "plugins/plugin_list.md"
+    - "Plugin Development": "plugins/plugin_development.md"
   - "Gallery": "gallery/index.md"
 
 

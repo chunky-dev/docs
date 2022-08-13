@@ -2,7 +2,7 @@
 
 ---
 
-## Random sampling
+## Random Sampling
 
 Path tracing uses the <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">Monte Carlo method</a> to render scenes. With this method, rays are distributed randomly within each pixel of the canvas. At each intersection with an object in the scene, a new reflection ray, pointing in a random direction, is generated. The same process repeats if the reflection ray also intersects the scene. After some number of bounces, clamped by the [Ray Depth](../../user_interface/render_controls/advanced/#controls), each ray either exits the scene or is absorbed. When the ray has finished bouncing around the scene, a *sample* value is calculated based on the objects the ray bounced against, and is added to the average for the source pixel. The color of each pixel is averaged from every sample computed for that pixel. Due to the randomness of path tracing, the rendered image can appear noisy at first. The noise decreases over time as more samples are calculated, which is a process that is called convergence.
 
@@ -81,7 +81,7 @@ Outside of simply brute-forcing more samples to reduce noise, there are a number
 
 ---
 
-## Render time
+## Render Time
 
 There is no definite answer to the amount of time it will take to render a scene. The general guideline is that the longer the image is rendered, the better it will become. Take into account the diminishing returns explained [above](#samples-per-pixel-spp).
 

@@ -18,7 +18,7 @@ Command-line arguments that start with one dash, like `-snapshot` are sent to Ch
 
 ---
 
-### JVM options
+### JVM Options
 
 Any JVM (Java Virtual Machine) arguments used when starting the Chunky Launcher apply to the Launcher and not to the Chunky process itself. Any JVM options that must be added to Chunky itself must be specified in the chunky-launcher.json file, under the `javaOptions` variable. The chunky-launcher.json file is located in the root of the Chunky [settings directory](../../../getting_started/configuring_chunky_launcher#controls).
 
@@ -30,7 +30,7 @@ To see the Java command line arguments used to start Chunky you can add the `--v
 
 ---
 
-## Custom settings directory
+## Custom Settings Directory
 
 A custom Chunky settings directory can be specified by adding the `-Dchunky.home` Java option to the Chunky Launcher startup command. The launcher will also pass the option to Chunky itself.
 

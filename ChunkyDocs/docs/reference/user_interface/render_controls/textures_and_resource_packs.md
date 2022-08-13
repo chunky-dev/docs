@@ -68,7 +68,7 @@ The `Select Resource Packs` dialog box, shown in [Figure 3.2.19.2](#figure-3-2-1
 
 - `Apply as default`: Applies the new resource pack configuration as the default and closes the `Select Resource Packs` dialog box.
 
-#### Right-click menu
+#### Right-click Menu
 
 Right-clicking within either of the resource pack lists opens a context menu containing more controls.
 

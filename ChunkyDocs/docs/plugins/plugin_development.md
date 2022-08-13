@@ -102,6 +102,8 @@ To demonstrate some features of the Plugin API, llbit created a few demo plugins
 
 - <a href="https://github.com/llbit/Chunky-TabMod" target="_blank">Tab Plugin Template</a>
 
+The Ambient Occlusion plugin and the Depth Buffer plugin use a deprecated API to add renderers to Chunky. The [Chunky AOV](../plugin_list#aov-plugin) plugin adds these renderers using the new API.
+
 [^1]: leMaik's Maven repository contains all release builds of Chunky starting with 2.3.0 as well as the nightly builds as maven snapshots.
 
 [^2]: Chunky doesn't support range checks yet but they may be added in the future. That would allow you to specify e.g. `>= 2.4.0` for compatibility with 2.4.0 or later.

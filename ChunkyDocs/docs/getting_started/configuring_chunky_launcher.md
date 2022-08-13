@@ -27,7 +27,11 @@ The Chunky Launcher contains controls that are set before launching Chunky.
 
 - `Memory limit (MiB)`: Changes the amount of RAM that is allocated to Chunky. The default is 1024 MiB; however, it is highly recommended that you raise this value to better reflect the amount of memory in your system. Please take into account that the operating system and other applications will also require some memory, so don't over-set this. If Chunky fails to launch if this is raised past 2000 MiB, double-check that your Java installation is 64-bit.
 
-- `Always open Launcher`: Changes whether the Launcher is shown when starting Chunky. It is recommended that this remain enabled. It is possible to access the launcher again via the command line or an [option in Chunky](../../reference/user_interface/right_panel_controls/options#controls), but doing so is slightly more complicated.
+- `Always open Launcher`: Changes whether the Launcher is shown when starting Chunky. If it becomes disabled, it is possible to access the launcher again via the command line or an [option in Chunky](../../reference/user_interface/right_panel_controls/options#controls). This is slightly more complicated, however, so it is recommended to keep this option enabled.
+
+- `Cancel`: Closes the Chunky Launcher.
+
+- `Launch`: Attempts to launch the selected version of Chunky with the options set in the Launcher.
 
 ---
 
@@ -110,7 +114,7 @@ Separate Java options from each other with a space.
 
 - `-tile-width <NUM>`: Modifies the frame subdivision size per worker thread. Can potentially provide a boost to render speed or, if set too high, reduce render speeds. It is recommended to use a tile-width of 16 as this seems to be optimal, though you may want to test your system in a typical workload to see what works better.
 
-- `-spp-per-pass <NUM>`: The spp-per-pass defines how many samples a certain tile should be rendered to before moving onto the next tile. The default value of 1 would mean each tile would be sampled to the same SPP before incrementing further. This means that not only will the Preview Window display the most up-to-date SPP, but also that we are able to stop the render upon it completing queued samples for the pass, i.e., the SPP total will increment. Raising the spp-per-pass breaks much of the GUI functionality; however, due to a multitude of factors, rendering performance is improved. It is recommended that this option be only used for headless operation.
+- `-spp-per-pass <NUM>`: The spp-per-pass defines the number of samples a certain tile should be rendered to before moving on to the next tile. The default value of *1* means that each pixel will be sampled once per pass. This results in the render preview displaying the most recent render progress, and responding to changes after only one pass is rendered. Raising the spp-per-pass breaks some of the GUI functionality; however, rendering performance may be improved. It is recommended that this option be only used for headless operation.
 
 ---
 
