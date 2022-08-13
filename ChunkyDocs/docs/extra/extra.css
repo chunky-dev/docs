@@ -202,3 +202,71 @@ btnsub {
   width: 100%;
   max-width: 600px;
 }
+
+/* Figure styling */
+div.figure {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7F7F7F;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 12px;
+}
+
+p.figure {
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #7F7F7F;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+div.figureimgcontainer {
+  text-align: center;
+}
+
+div.figuregridcontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 8px;
+  justify-content: space-evenly;
+}
+
+/* In the event someone wants to style the images */
+
+picture.figure {
+
+}
+
+img.figure {
+  max-height: 800px;
+}
+
+table.figure {
+  border-style: none;
+}
+
+tr.figure {
+  border-style: none;
+}
+
+td.figure {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 0px 0px;
+}
+
+td.figure:hover {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 0px 0px;
+}
+
+td.figure > p {
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
