@@ -48,6 +48,10 @@ Text {
     -fx-fill: #faebd7;
 }
 
+SVGPath {
+    -fx-fill: #faebd7;
+}
+
 Hyperlink {
     -fx-text-fill: orange;
     -fx-underline: false;
@@ -62,10 +66,18 @@ Hyperlink:hover {
     -fx-underline: true;
 }
 
-.text-field.invalid {
+.numeric-text-field.invalid {
     -fx-text-fill: #FF434A;
     -fx-text-box-border: #FF434A;
     -fx-focus-color: #FF434A;
+}
+
+.text-field-label-wrapper > .label {
+    -fx-text-fill: gray;
+}
+
+.text-field-label-wrapper > .text-field {
+    -fx-alignment: baseline-right;
 }
 
 .menu-item:disabled:focused {
@@ -75,6 +87,45 @@ Hyperlink:hover {
 
 .menu-item:disabled:focused > .label {
     -fx-text-fill: white;
+}
+
+.lock-toggle {
+    -fx-label-padding: 0em;
+}
+
+.lock-toggle > .box {
+    -fx-alignment: center;
+    -fx-content-display: graphic-only;
+
+    -fx-padding: 0.5em 0.1em;
+
+    -fx-background-color: none;
+    -fx-border-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-radius: 0.25em;
+}
+
+.lock-toggle:hover > .box {
+    -fx-background-color: #282828;
+    -fx-border-color: black;
+}
+
+.lock-toggle:focused > .box {
+    -fx-border-style: dotted;
+    -fx-border-color: white;
+}
+
+.lock-toggle > .box > .mark {
+    -fx-position-shape: true;
+    -fx-scale-x: 0.45;
+
+    -fx-scale-y: 1.50;
+    -fx-background-color: #999;
+}
+
+.lock-toggle:selected > .box > .mark {
+    -fx-scale-y: 1.27;
+    -fx-background-color: white;
 }
 ```
 
@@ -139,6 +190,10 @@ Text {
     -fx-fill: #080501;
 }
 
+SVGPath {
+    -fx-fill: #080501;
+}
+
 Hyperlink {
     -fx-text-fill: orange;
     -fx-underline: false;
@@ -153,10 +208,22 @@ Hyperlink:hover {
     -fx-underline: true;
 }
 
-.text-field.invalid {
+.tooltip {
+    -fx-text-fill: white;
+}
+
+.numeric-text-field.invalid {
     -fx-text-fill: #FF434A;
     -fx-text-box-border: #FF434A;
     -fx-focus-color: #FF434A;
+}
+
+.text-field-label-wrapper > .label {
+    -fx-text-fill: gray;
+}
+
+.text-field-label-wrapper > .text-field {
+    -fx-alignment: baseline-right;
 }
 
 .menu-item:disabled:focused {
@@ -165,7 +232,46 @@ Hyperlink:hover {
 }
 
 .menu-item:disabled:focused > .label {
-    -fx-text-fill: white;
+    -fx-text-fill: black;
+}
+
+.lock-toggle {
+    -fx-label-padding: 0em;
+}
+
+.lock-toggle > .box {
+    -fx-alignment: center;
+    -fx-content-display: graphic-only;
+
+    -fx-padding: 0.5em 0.1em;
+
+    -fx-background-color: none;
+    -fx-border-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-radius: 0.25em;
+}
+
+.lock-toggle:hover > .box {
+    -fx-background-color: #d7d7d7;
+    -fx-border-color: white;
+}
+
+.lock-toggle:focused > .box {
+    -fx-border-style: dotted;
+    -fx-border-color: black;
+}
+
+.lock-toggle > .box > .mark {
+    -fx-position-shape: true;
+    -fx-scale-x: 0.45;
+
+    -fx-scale-y: 1.50;
+    -fx-background-color: #666666;
+}
+
+.lock-toggle:selected > .box > .mark {
+    -fx-scale-y: 1.27;
+    -fx-background-color: black;
 }
 ```
 
@@ -222,6 +328,10 @@ Text {
     -fx-fill: #faebd7;
 }
 
+SVGPath {
+    -fx-fill: #faebd7;
+}
+
 Hyperlink {
     -fx-text-fill: rgb(17,122,101);
     -fx-underline: false;
@@ -236,10 +346,18 @@ Hyperlink:hover {
     -fx-underline: true;
 }
 
-.text-field.invalid {
+.numeric-text-field.invalid {
     -fx-text-fill: #FF434A;
     -fx-text-box-border: #FF434A;
     -fx-focus-color: #FF434A;
+}
+
+.text-field-label-wrapper > .label {
+    -fx-text-fill: gray;
+}
+
+.text-field-label-wrapper > .text-field {
+    -fx-alignment: baseline-right;
 }
 
 .menu-item:disabled:focused {
@@ -249,6 +367,45 @@ Hyperlink:hover {
 
 .menu-item:disabled:focused > .label {
     -fx-text-fill: white;
+}
+
+.lock-toggle {
+    -fx-label-padding: 0em;
+}
+
+.lock-toggle > .box {
+    -fx-alignment: center;
+    -fx-content-display: graphic-only;
+
+    -fx-padding: 0.5em 0.1em;
+
+    -fx-background-color: none;
+    -fx-border-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-radius: 0.25em;
+}
+
+.lock-toggle:hover > .box {
+    -fx-background-color: #222B2E;
+    -fx-border-color: black;
+}
+
+.lock-toggle:focused > .box {
+    -fx-border-style: dotted;
+    -fx-border-color: white;
+}
+
+.lock-toggle > .box > .mark {
+    -fx-position-shape: true;
+    -fx-scale-x: 0.45;
+
+    -fx-scale-y: 1.50;
+    -fx-background-color: #999;
+}
+
+.lock-toggle:selected > .box > .mark {
+    -fx-scale-y: 1.27;
+    -fx-background-color: white;
 }
 ```
 
