@@ -77,7 +77,7 @@ Links to additional skymaps are below.
 
 - <a href="https://www.mediafire.com/file/5z6zcb6k3cwud06/Skymaps.zip/file" target="_blank">`https://www.mediafire.com/file/5z6zcb6k3cwud06/Skymaps.zip/file`</a>
 
-Skaymaps can also be found in the <a href="https://discord.gg/zKnCf6t9Pu" target="_blank">#skymaps</a> channel of the Chunky Discord server.
+Skymaps can also be found in the <a href="https://discord.gg/zKnCf6t9Pu" target="_blank">#skymaps</a> channel of the Chunky Discord server.
 
 ---
 
