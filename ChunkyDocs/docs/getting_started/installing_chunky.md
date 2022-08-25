@@ -53,7 +53,7 @@ Further setup instructions for [Windows](#windows), [Linux](#linux), and [macOS]
 
 <div class="video-wrap">
   <div class="video-container">
-	<iframe src="https://www.youtube.com/embed/GTUhZVjatPY" allowfullscreen="true"></iframe>
+	  <iframe src="https://www.youtube.com/embed/GTUhZVjatPY" allowfullscreen="true"></iframe>
   </div>
 </div>
 

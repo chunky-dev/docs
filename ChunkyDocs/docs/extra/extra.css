@@ -214,6 +214,7 @@ div.figure {
 }
 
 p.figure {
+  font-size: 14px;
   font-weight: bold;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -252,6 +253,7 @@ tr.figure {
 }
 
 td.figure {
+  width: 50%;
   border-style: solid;
   border-color: black;
   border-width: 1px;
@@ -266,7 +268,10 @@ td.figure:hover {
 }
 
 td.figure > p {
+  font-size: 14px;
   text-align: center;
   margin-left: 16px;
   margin-right: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
