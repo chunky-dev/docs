@@ -28,7 +28,7 @@ Plugins are usually distributed as JAR files. To install a plugin, follow the in
 
 - Step 8: The plugin should be listed in the `Plugin Manager` dialog box. Verify that the checkbox on its list entry is checked.
 
-- Step 9: Click `Save`. The plugin will attempt to load every time Chunky is launched.
+- Step 9: Click `Save`. Chunky will attempt to load the plugin every time it is launched.
 
 Repeat the process for any other plugins. Plugins are loaded in the order that they appear on the list. The loading order usually does not matter, but changing it can solve incompatibility problems in some cases. Read the documentations of the plugins that are being used for further information.
 

@@ -103,7 +103,7 @@ Once you have located the world, click on `Load selected world`. The [`Map`](../
 
 Select the dimension of your world that you want to render using the buttons in the right panel found in the [`Map View`](../../reference/user_interface/right_panel_controls/map_view) tab, and then select the chunks you wish to render using the controls listed below in the [`Map`](../../reference/user_interface/map) tab.
 
-- Left-click a chunk to select / deselect the chunk.
+- Left-click a chunk to select or deselect the chunk.
 
 - Hold `Shift` and left-click + drag to select a rectangular area.
 
@@ -144,7 +144,7 @@ To load chunks, either right click on the map view located in the center panel a
 
 There are a few options inside the [`Scene`](../../reference/user_interface/render_controls/scene) tab that you may wish to change.
 
-`Canvas size` is the resolution you want the preview and the final render to be. Higher values take longer to render, so using a lower resolution, such as 960x540, can massively boost preview/test render performance. The `x2` button can quickly double the measures of both dimensions to 1920x1080.
+`Canvas size` is the resolution you want the preview and the final render to be. Higher values take longer to render, so using a lower resolution, such as *960x540*, can massively boost preview / test render performance. The `x2` button can quickly double the measures of both dimensions to *1920x1080*.
 
 `Save dump once every X` is effectively an auto-save feature. Every time Chunky reaches an SPP value that is a multiple of `X` that you set, it will save your scene. Chunky will not render while dumping so do not set this too low unless you believe your system is unstable.
 
@@ -188,7 +188,7 @@ Using the above conversions with our example results in the following values:
 
 > Chunky Camera X = 32.2 ; Chunky Camera Y = 73.32 ; Z = -232.7 ; Yaw = 22.5 ; Pitch = -81.8
 
-Enter the X, Y, and Z coordinates for the camera into the three text boxes on the `Position` row, pressing the Enter key after each one. Do the same with the Camera pitch and yaw values, but place them into the first two text boxes of the `Orientation` row, pressing the Enter key after each one. If `Load entities > Players` in the [`Scene`](../../reference/user_interface/render_controls/scene) tab was enabled when you clicked `Load selected chunks`, then the camera may clip into the player after you enter the values, as shown in [Figure 1.3.8](#figure-1-3-8).
+Enter the X-, Y-, and Z-coordinates for the camera into the three input fields on the `Position` row, pressing the Enter key after each one. Do the same with the Camera pitch and yaw values, but place them into the first two input fields of the `Orientation` row, pressing the Enter key after each one. If `Load entities > Players` in the [`Scene`](../../reference/user_interface/render_controls/scene) tab was enabled when you clicked `Load selected chunks`, then the camera may clip into the player after you enter the values, as shown in [Figure 1.3.8](#figure-1-3-8).
 
 <div class="figure" id="figure-1-3-8">
   <p class="figure">
@@ -236,7 +236,7 @@ Open the [`Lighting`](../../reference/user_interface/render_controls/lighting) t
   </div>
 </div>
 
-Here you can adjust the amount of light the Sky, Emitters (torches, glowstone, etc.), and Sun produce. The default values should be perfect for daytime renders. Adjusting the Sun azimuth (yaw/rotation) and altitude (height) can change the lighting of the scene dramatically.
+Here you can adjust the amount of light the Sky, Emitters (torches, glowstone, etc.), and Sun produce. The default values should be perfect for daytime renders. Adjusting the Sun azimuth (yaw / rotation) and altitude (height) can change the lighting of the scene dramatically.
 
 For this example, I will simply set the sun altitude to *25*.
 
@@ -259,7 +259,7 @@ Open the [`Sky & Fog`](../../reference/user_interface/render_controls/sky_and_fo
   </div>
 </div>
 
-There is not too much to explain here. The `Sky mode` setting lets you chose between a simulated sky, solid color, color gradient, and Skymaps/cubes. `Cloud X, Y, and Z` control the location of the clouds, and `Cloud size` controls the size of the clouds, if they are enabled using `Enable clouds`. `Fog density` controls the thickness of the fog; set it to *0* to disable it. There is an example fog density listed as a guide. Fog produces much noise, so expect longer render times.
+There is not too much to explain here. The `Sky mode` setting lets you chose between a simulated sky, solid color, color gradient, and skymaps / skycubes. `Cloud X, Y, and Z` control the location of the clouds, and `Cloud size` controls the size of the clouds, if they are enabled using `Enable clouds`. `Fog density` controls the thickness of the fog; set it to *0* to disable it. There is an example fog density listed as a guide. Fog produces much noise, so expect longer render times.
 
 ---
 
@@ -329,7 +329,7 @@ You may wish to change the image `Output mode` here too.
 
 Set the target SPP to whatever you want.
 
-> SPP stands for Samples Per Pixel. Lower target SPP values will be reached sooner, but images rendered to lower SPP values may have more noise/grain/fireflies. A higher target SPP value will take longer to render to, but the image will be less noisy.
+> SPP stands for Samples Per Pixel. Lower target SPP values will be reached sooner, but images rendered to lower SPP values may have more noise / grain / fireflies. A higher target SPP value will take longer to render to, but the image will be less noisy.
 
 Typically, 32-1024 SPP is good for daylight renders without emitters (torches, lava, glowstone, etc.) enabled. For daylight renders with emitters, 4096-16384 SPP is better. For night-time renders or indoor renders with emitters, 16384 SPP or more is required to yield a sufficiently noise-free image.
 
@@ -346,13 +346,13 @@ Typically, 32-1024 SPP is good for daylight renders without emitters (torches, l
   </div>
 </div>
 
-In the top left of the Chunky window, enter a more reasonable scene name in the `Scene` text box. Then click the Save button, which is marked with a blue disk icon. To load a scene, click on the Load scene button, which is marked with a blue disk icon with a green arrow.
+In the top left of the Chunky window, enter a more reasonable scene name in the `Scene` input field. Then click the Save button, which is marked with a blue disk icon. To load a scene, click on the Load scene button, which is marked with a blue disk icon with a green arrow.
 
 ---
 
 ## Render
 
-When you are ready, click `Start`, and wait for your beautiful image to be produced!
+When you are ready, click `Start`, and wait for your beautiful image to be produced.
 
 > This could take anywhere between two minutes and two years. Sit tight!
 
@@ -382,7 +382,6 @@ Alternatively, on the left control panel, inside the `Scene` tab, click `Open Sc
     </a>
   </div>
 </div>
-
 
 ---
 

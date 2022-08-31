@@ -25,7 +25,7 @@ These controls only exist in this format in the 2.5.0 snapshots.
 
 - `Help`: Opens a dropdown menu that contains links to online resources and Chunky information.
 
-    - `Chunky Manual`: A link to the Chunky Manual (This website).
+    - `Chunky Manual`: A link to the Chunky Manual (this website).
 
     - `jackjt8's Guide to Chunky`: A link to <a href="https://jackjt8.github.io/ChunkyGuide/" target="_blank">jackjt8's Guide to Chunky</a>, which contains documentation on advanced rendering techniques.
 

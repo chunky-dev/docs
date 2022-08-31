@@ -51,7 +51,7 @@ Other output formats can be added to Chunky using [plugins](../../../../plugins/
 
     - `NODE`: Sets Chunky to use a NODE octree to store world block data for the scene. `NODE` is the legacy octree implementation; it is not memory-efficient, but there is no limitation on its size.
 
-    - `PACKED`: Sets Chunky to use a PACKED octree to store world block data for the scene. `PACKED` is the default octree implementation; it is more memory-efficient than both `NODE` and `BIGPACKED`, but it is limited to a maximum octree size of 2^31 nodes, or about 400,000 chunks.
+    - `PACKED`: Sets Chunky to use a PACKED octree to store world block data for the scene. `PACKED` is the default octree implementation; it is more memory-efficient than both `NODE` and `BIGPACKED`, but it is limited to a maximum octree size of 2<sup>31</sup> nodes, or about 400,000 chunks.
 
 Other octree implementations can be added to Chunky using [plugins](../../../../plugins/chunky_plugins).
 

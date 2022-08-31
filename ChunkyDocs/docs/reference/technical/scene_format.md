@@ -53,7 +53,7 @@ Stores NBT tags for each block.
 "The octree itself is something like storing it depth first with 0xFFFF FFFF as a node and the type if it is a leaf."
 
 
-#### World/Tint Textures
+#### World / Tint Textures
 
 Stores tint colors for grass, foliage, and water as WorldTexture.
 
@@ -233,9 +233,9 @@ Note - XY Object is a XYZ Object just without the Z component.
 
 #### Material Array Object
 
-| Key                 | Value range     | Default value | Description                        |
-| ------------------- | --------------- | ------------- | ---------------------------------- |
-| "block/entity name" | Material Object |               | Ie `"minecraft:acacia_log": {...}` |
+| Key                   | Value range     | Default value | Description                        |
+| --------------------- | --------------- | ------------- | ---------------------------------- |
+| "block / entity name" | Material Object |               | Ie `"minecraft:acacia_log": {...}` |
 
 #### Material Object
 
@@ -286,17 +286,17 @@ Note - XY Object is a XYZ Object just without the Z component.
 
 #### Actor Object
 
-| Key         | Value range           | Default value | Description                           |
-| ----------- | --------------------- | ------------- | ------------------------------------- |
-| kind        | String                |               | Minecraft posable name                |
-| position    | XYZ Object            |               | See [above](#xyz-object)              |
-| scale       | Number                |               | Scale actor                           |
-| headScale   | Number                |               | Scale actor head                      |
-| showArms    | Boolean               |               | Hide/show actor arms                  |
-| gear        | Array of Gear Objects |               | See [below](#gear-object)             |
-| pose        | Pose Object           |               | See [below](#pose-object)             |
-| invisible   | Boolean               |               | If actor is invisible                 |
-| noBasePlate | Boolean               |               | If armour_stand base plate is visible |
+| Key         | Value range           | Default value | Description                             |
+| ----------- | --------------------- | ------------- | --------------------------------------- |
+| kind        | String                |               | Minecraft posable name                  |
+| position    | XYZ Object            |               | See [above](#xyz-object)                |
+| scale       | Number                |               | Scale actor                             |
+| headScale   | Number                |               | Scale actor head                        |
+| showArms    | Boolean               |               | Hide / show actor arms                  |
+| gear        | Array of Gear Objects |               | See [below](#gear-object)               |
+| pose        | Pose Object           |               | See [below](#pose-object)               |
+| invisible   | Boolean               |               | If actor is invisible                   |
+| noBasePlate | Boolean               |               | If armour_stand base plate is visible   |
 
 #### Gear Object
 

@@ -28,7 +28,7 @@ This plugin adds Arbitrary Output Variable renderers to Chunky. The renderers ad
 
 - Ambient Occlusion
 
-- Depth
+- Depth Buffer
 
 ---
 
@@ -167,7 +167,7 @@ This plugin adds more octree implementations with a range of uses and benefits. 
 
 - Small DAG Implementation: This implementation uses even less memory than `DICTIONARY` does. It is slightly slower while rendering and loading, however.
 
-One more option is available but is not listed here. Further information is located in the <a href="https://github.com/aTom3333/chunky-octree-plugin" target="_blank">GitHub repository</a>
+One more option is available but is not listed here. Further information is located in the <a href="https://github.com/aTom3333/chunky-octree-plugin" target="_blank">GitHub repository</a>.
 
 ---
 

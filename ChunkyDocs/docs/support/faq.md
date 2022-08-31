@@ -6,7 +6,7 @@ If your question is not answered here, then please ask it on either our <a href=
 
 ---
 
-## Why is there noise/grain/random bright dots in the render?
+## Why is there noise / grain / random bright dots in the render?
 
 This is not a bug, but an unfortunate effect of the rendering algorithm that Chunky uses. Torches and other small light sources create very noisy illumination and much time is required to render such lighting nicely. For more information, please read the [Samples and Noise](../../reference/introduction/samples_and_noise) article. You can disable emitters in the [`Lighting`](../../reference/user_interface/render_controls/lighting) tab in the left control panel (render controls) to remove most of the random bright dots. Other light sources are typically larger and noise in the lighting from those light sources typically clears up quickly. However, HDRi skymaps can cause very noisy lighting. Note that rendering for a longer time will eventually clear up the noise, though it may take a very long time.
   
@@ -47,7 +47,7 @@ To create one, open Notepad or another text editor. Then enter the following tex
 
 *As before, replace the text within the angle brackets `< >` with the actual path to the files on your computer, and do not include the angle brackets in the actual command.*
 
-Then use `File` > `Save As...`. Navigate to the folder in which you wish to save the batch file. Change the `Save as type` to `All files (*.*)`. Enter whatever name you wish for the file, and append `.bat` to the end as the file extension. Then click `Save`. This batch file can be double-clicked to start the Chunky Launcher. Shortcuts to the batch file can be pinned to the Start menu, but not to the taskbar. To pin Chunky to the taskbar, a shortcut must be used. To do so, right-click in a file explorer window and create a new shortcut. In the input field for the location of the file, enter the following text:
+Then use `File` > `Save As...`. Navigate to the folder in which you wish to save the batch file. Change the `Save as type` to `All files (*.*)`. Enter whatever name you wish for the file, and append `.bat` to the end as the file extension. Then click `Save`. This batch file can be double-clicked to start the Chunky Launcher. Shortcuts to the batch file can be pinned to the Start menu, but not to the taskbar. To pin Chunky to the taskbar, a different shortcut must be used. To do so, right-click in a file explorer window and create a new shortcut. In the input field for the location of the file, enter the following text:
 
 ```
 cmd /c "<path\to\the\batch file.bat>"
