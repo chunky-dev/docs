@@ -100,7 +100,7 @@ Separate Java options from each other with a space.
 
 - `-DlogLevel=INFO`: `ERROR`, `WARNING`, `INFO` - The default is `WARNING`, which will mean that Chunky will show warnings for missing items. Switching to `ERROR` should disable missing item warnings.
 
-<a href="https://github.com/leMaik/chunky/tree/pbr" target="_blank">WIP PBR builds of Chunky</a> have additional options required. These options may be added to the UI at a later time.
+Work-in-progress <a href="https://github.com/leMaik/chunky/tree/pbr" target="_blank">PBR builds of Chunky</a> have additional options required. These options may be added to the UI at a later time.
 
 - `-Dchunky.pbr.specular=labpbr`: `labpbr`, `oldpbr` - Tells Chunky which format the specular map is in.
 

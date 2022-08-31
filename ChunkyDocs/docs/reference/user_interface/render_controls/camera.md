@@ -21,25 +21,25 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
 
 - `Load preset`: Dropdown menu to select a camera preset to load for the selected camera.
 
-    - <img src="../../../../img/user_interface/render_controls/iso-nw.png" style="vertical-align: middle;"> `Isometric West-North (North-West)`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera North-West with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-nw.png" style="vertical-align: middle;"> `Isometric West-North (North-West)`: Sets the `Projection mode` of the selected camera to `Parallel`, and points the camera North-West with an altitude angle of 45 degrees below the horizon. 
 
-    - <img src="../../../../img/user_interface/render_controls/iso-ne.png" style="vertical-align: middle;"> `Isometric North-East`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera North-East with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-ne.png" style="vertical-align: middle;"> `Isometric North-East`: Sets the `Projection mode` of the selected camera to `Parallel`, and points the camera North-East with an altitude angle of 45 degrees below the horizon. 
 
-    - <img src="../../../../img/user_interface/render_controls/iso-se.png" style="vertical-align: middle;"> `Isometric East-South (South-East)`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera South-East with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-se.png" style="vertical-align: middle;"> `Isometric East-South (South-East)`: Sets the `Projection mode` of the selected camera to `Parallel`, and points the camera South-East with an altitude angle of 45 degrees below the horizon. 
 
-    - <img src="../../../../img/user_interface/render_controls/iso-sw.png" style="vertical-align: middle;"> `Isometric South-West`: Sets the `Projection mode` of the selected camera to `Parallel`, and aims the camera South-West with an altitude angle of 45 degrees below the horizon. 
+    - <img src="../../../../img/user_interface/render_controls/iso-sw.png" style="vertical-align: middle;"> `Isometric South-West`: Sets the `Projection mode` of the selected camera to `Parallel`, and points the camera South-West with an altitude angle of 45 degrees below the horizon. 
 
-    - <img src="../../../../img/user_interface/render_controls/skybox-right.png" style="vertical-align: middle;"> `Skybox Right`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera East.
+    - <img src="../../../../img/user_interface/render_controls/skybox-right.png" style="vertical-align: middle;"> `Skybox Right`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and points the camera East.
 
-    - <img src="../../../../img/user_interface/render_controls/skybox-left.png" style="vertical-align: middle;"> `Skybox Left`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera West.
+    - <img src="../../../../img/user_interface/render_controls/skybox-left.png" style="vertical-align: middle;"> `Skybox Left`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and points the camera West.
 
-    - <img src="../../../../img/user_interface/render_controls/skybox-up.png" style="vertical-align: middle;"> `Skybox Up`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera upward, with North being at the bottom of the frame.
+    - <img src="../../../../img/user_interface/render_controls/skybox-up.png" style="vertical-align: middle;"> `Skybox Up`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and points the camera upward, with North being at the bottom of the frame.
 
-    - <img src="../../../../img/user_interface/render_controls/skybox-down.png" style="vertical-align: middle;"> `Skybox Down`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera downward, with South being at the bottom of the frame.
+    - <img src="../../../../img/user_interface/render_controls/skybox-down.png" style="vertical-align: middle;"> `Skybox Down`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and points the camera downward, with South being at the bottom of the frame.
 
-    - <img src="../../../../img/user_interface/render_controls/skybox-front.png" style="vertical-align: middle;"> `Skybox Front (North)`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera North.
+    - <img src="../../../../img/user_interface/render_controls/skybox-front.png" style="vertical-align: middle;"> `Skybox Front (North)`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and points the camera North.
 
-    - <img src="../../../../img/user_interface/render_controls/skybox-back.png" style="vertical-align: middle;"> `Skybox Back`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and aims the camera South.
+    - <img src="../../../../img/user_interface/render_controls/skybox-back.png" style="vertical-align: middle;"> `Skybox Back`: Sets the `Projection mode` of the selected camera to `Standard`, sets the camera `Field of View (zoom)` to *90*, and points the camera South.
 
 - `Camera`: Input field to set a name for the current camera. By clicking the button immediately to the right of the input field, a dropdown menu containing a list of all named cameras can be accessed. A camera can be switched to by clicking on its list entry.
 
@@ -67,7 +67,7 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
 
     - `Standard`: Sets the selected camera to use <a href="https://en.wikipedia.org/wiki/Pinhole_camera" target="_blank">pinhole projection</a>, which is similar to how many cameras work, and is how Minecraft works.
 
-    - `Parallel`: Sets the selected camera to use <a href="https://en.wikipedia.org/wiki/Parallel_projection" target="_blank">parallel projection</a>, in which the camera is infinitely distant from the scene, and has an infinite focal length (zoom). This causes parallel lines in the three-dimensional scene remain parallel in the two-dimensional image, which causes all blocks to appear the same size, regardless of "distance" from the camera.
+    - `Parallel`: Sets the selected camera to use <a href="https://en.wikipedia.org/wiki/Parallel_projection" target="_blank">parallel projection</a>, in which the camera is infinitely distant from the scene, and has an infinite focal length (zoom). This causes parallel lines in the three-dimensional scene to remain parallel in the two-dimensional image, which causes all blocks to appear the same size, regardless of "distance" from the camera.
 
     - `Fisheye`: Sets the selected camera to use full-frame <a href="https://wiki.panotools.org/Fisheye_Projection" target="_blank">fisheye projection</a>, which maps a portion of the surface of a sphere to a two-dimensional image.
 
