@@ -43,7 +43,7 @@ The `Map View` tab, located in the right control panel, contains controls for th
 
     - `Z=`: Input field for the Z-coordinate over which the map view is centered. 
 
-- `track player`: Centers the map view on the coordinates of the placer.
+- `track player`: Centers the map view on the coordinates of the player.
 
 - `track camera`: Centers the map view on the coordinates of the camera.
 
