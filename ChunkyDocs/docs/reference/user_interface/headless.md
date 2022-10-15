@@ -168,6 +168,8 @@ Add the `-help` argument to the startup command to view a list of all available 
 
 - `-render <SCENE>`: Render in headless mode. You may also need to add the `-f` flag to force a scene to render.
 
+- `-reload-chunks`: Reload the selected chunks before rendering the scene (used in conjunction with `-render`).
+
 - `-texture <FILE>`: Load the specified texture pack.
 
 - `-snapshot <SCENE> <PNG>` - create a snapshot from a scene.
