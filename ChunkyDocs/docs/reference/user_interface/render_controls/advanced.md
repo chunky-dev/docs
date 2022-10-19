@@ -123,7 +123,7 @@ The `Advanced` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_
 
 - `Show launcher when starting Chunky`: Changes whether the Chunky launcher is shown when starting Chunky. It is recommended that this remain enabled.
 
-[^1]: It should be noted that some features break at different ray depths; `minecraft:light` does not function below Ray Depth 5 (issue #1477). ESS:None below Ray Depth 3 (blocks will still glow at Ray Depth 2). Sunlight (off, fast, high_quality), Sky light, and ESS:(one, one_block, all) below Ray Depth 2; thought the sky texture is still visible at Ray Depth 1.
+[^1]: It should be noted that some features break at different ray depths. `minecraft:light` does not emit light below `Ray depth`: 5 (issue #1477). `ESS: NONE` does not function below `Ray depth`: 3 (although blocks will still glow at `Ray depth`: 2). Sunlight (`SSS: OFF`, `FAST`, and `HIGH_QUALITY`), sky light, and `ESS`: (`ONE`, `ONE_BLOCK`, and `ALL`) do not function below `Ray depth`: 2, although the sky texture is still visible at `Ray depth`: 1.
 
 [^2]: The value of the `Target SPP` should be greater than the sum of the current SPP of the currently-loaded scene and the current SPP of the render dump to be merged to prevent unexpected behavior.
 
