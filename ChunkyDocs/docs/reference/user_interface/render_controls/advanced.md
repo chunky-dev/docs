@@ -23,7 +23,7 @@ The `Advanced` tab, which is the ninth tab in the left control panel in the [Chu
 
 - `CPU utilization`: Attempts to change the maximum CPU usage of each render thread by adding sleep cycles to the rendering process. It is recommended to use `Render threads` for more predictable CPU usage scaling.
 
-- `Ray depth`: Changes the maximum number of times a ray is allowed to bounce around the scene before being terminated or exiting into the sky. Greater values increase render accuracy and render quality at the cost of rendering performance. Typically, values from *3* to *6* are enough for outdoor scenes, while indoor scenes benefit from greater values, such as *10*.
+- `Ray depth`: Changes the maximum number of times a ray is allowed to bounce around the scene before being terminated or exiting into the sky. Greater values increase render accuracy and render quality at the cost of rendering performance. Typically, values from *3* to *6* are enough for outdoor scenes, while indoor scenes benefit from greater values, such as *10*.[^3]
 
 - `Merge render dump`: Opens a file explorer dialog box to browse for a scene.dump file to merge the render progress contained therein with the render progress of the currently-loaded scene, even if there is no progress. The resolution of the render dump must match the resolution of the render canvas of the current scene. Useful for multi-PC rendering.[^1]
 
@@ -126,5 +126,7 @@ The `Advanced` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_
 [^1]: The value of the `Target SPP` should be greater than the sum of the current SPP of the currently-loaded scene and the current SPP of the render dump to be merged to prevent unexpected behavior.
 
 [^2]: On Linux, this control will have no effect unless the `shutdown` command, which, by default, requires `sudo` to be run, is allowed to be run without `sudo`.
+
+[^3]: It should be noted that some features break at different ray depths; `minecraft:light` does not function below Ray Depth 5 (issue #1477). ESS:None below Ray Depth 3 (blocks will still glow at Ray Depth 2). Sunlight (off, fast, high_quality), Sky light, and ESS:(one, one_block, all) below Ray Depth 2; thought the sky texture is still visible at Ray Depth 1.
 
 --8<-- "includes/abbreviations.md"
