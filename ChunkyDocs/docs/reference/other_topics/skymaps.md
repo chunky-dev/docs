@@ -31,7 +31,18 @@ To use a skymap with a vertical field of view of 90 degrees, set the `Vertical r
 
 ## Spherical Skymaps
 
-To this day, nothing is known about the type of image projection format to be used with this sky mode, and no such images have been found. However, one can be used by setting the [`Sky mode`](../../user_interface/render_controls/sky_and_fog#sky-mode-settings) to `Skymap (spherical)`.
+A spherical skymap, also known as a *light probe*, is a skymap format that uses the <a href="http://www.paulbourke.net/dome/fisheye/">angular fisheye</a> projection. One can be used by setting the [`Sky mode`](../../user_interface/render_controls/sky_and_fog#sky-mode-settings) to `Skymap (spherical)`.
+
+<div class="figure" id="figure-3-3-2-2">
+  <p class="figure">
+  Figure 3.3.2.2: Spherical (light probe) skymap
+  </p>
+  <div class="figureimgcontainer">
+    <a href="../../../img/examples/skymaps/light_probe.jpg">
+      <img class="figure" src="../../../img/examples/skymaps/light_probe.jpg" alt="Spherical (light probe) skymap">
+    </a>
+  </div>
+</div>
 
 ---
 
@@ -103,9 +114,9 @@ To render an equirectangular skymap, follow the instructions below.
 
 - Step 7: Set the `Canvas size` to a value in which the canvas width (the value before the `x`) is twice as large as the canvas height (the value after the `x`), such as *800x400*, to ensure that the horizontal field of view of the image is 360 degrees and the vertical field of view of the image is 180 degrees.
 
-<div class="figure" id="figure-3-3-2-2">
+<div class="figure" id="figure-3-3-2-3">
   <p class="figure">
-  Figure 3.3.2.2: The Camera tab with correct values displayed
+  Figure 3.3.2.3: The Camera tab with correct values displayed
   </p>
   <div class="figureimgcontainer">
     <a href="../../../img/examples/skymaps/skymap_camera_tab.png">
@@ -115,9 +126,9 @@ To render an equirectangular skymap, follow the instructions below.
 </div>
 <br>
 
-<div class="figure" id="figure-3-3-2-3">
+<div class="figure" id="figure-3-3-2-4">
   <p class="figure">
-  Figure 3.3.2.3: Example of a rendered skymap
+  Figure 3.3.2.4: Example of a rendered skymap
   </p>
   <div class="figureimgcontainer">
     <a href="../../../img/examples/skymaps/skymap_render.png">
