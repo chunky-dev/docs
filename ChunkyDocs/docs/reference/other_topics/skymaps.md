@@ -31,7 +31,7 @@ To use a skymap with a vertical field of view of 90 degrees, set the `Vertical r
 
 ## Spherical Skymaps
 
-A spherical skymap, also known as a *light probe*, is a skymap format that uses the <a href="http://www.paulbourke.net/dome/fisheye/">angular fisheye</a> projection. One can be used by setting the [`Sky mode`](../../user_interface/render_controls/sky_and_fog#sky-mode-settings) to `Skymap (spherical)`.
+A spherical skymap, also known as a *light probe*, is a skymap format that uses the <a href="http://www.paulbourke.net/dome/fisheye/" target="_blank">angular fisheye</a> projection. One can be used by setting the [`Sky mode`](../../user_interface/render_controls/sky_and_fog#sky-mode-settings) to `Skymap (spherical)`.
 
 <div class="figure" id="figure-3-3-2-2">
   <p class="figure">
