@@ -13,13 +13,11 @@ The `Postprocessing` tab in the left control panel contains controls for postpro
   </div>
 </div>
 
----
-
 ## Exposure
 
 The `Exposure` control changes the linear exposure of the image. This is applied before the image is converted to an SDR image, so different exposures can reveal different features of an image.
 
-##  Tone mapping
+## Tone mapping
 
 The `Postprocessing filter` dropdown menu changes the postprocessing filter (eg. tone mapping) that is applied to the render. Which tone mapping operator is best depends on the scene and the look you want to achieve.
 
