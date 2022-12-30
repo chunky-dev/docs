@@ -27,13 +27,13 @@ Chunky includes the following postprocessors (see below for a visual comparison)
 - **Gamma correction**: Performs gamma correction only (the most basic tone mapping)
 - **ACES filmic tone mapping**: ACES filmic tone mapping curve approximation by [Krzysztof Narkowicz](https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/)
 - **Hable tone mapping**: John Hable's [Uncharted 2 tonemapping function](http://filmicworlds.com/blog/filmic-tonemapping-operators/)
+{% if extra.chunky >= 2_05_00 %}  
+    Before Chunky 2.5.0, the Hable tone mapping was missing gamma correction. The previous (technically incorrect but perhaps artistically pleasing) behavior might be moved into a plugin later.
+{% endif %}
 - **Tonemap operator 1**: Tone mapping formula by [Jim Hejl and Richard Burgess-Dawson](http://filmicworlds.com/blog/filmic-tonemapping-operators/)
-
-!!! info "Upcoming changes in Chunky 2.5.0"
-    PR #1519 adds the **Unreal Engine 4 Filmic tone mapping** curve which matches ACES by default but can be configured to customize the tone mapping.
-    It will also be possible to customize the Hable tone mapping parameters.
-
-    The Hable tone mapping is also missing gamma correction, which will be fixed in Chunky 2.5.0. The previous (technically incorrect) postprocessor might be moved into a plugin later.
+{% if extra.chunky >= 2_05_00 %}
+- **Unreal Engine 4 Filmic tone mapping**: The [Filmic Tonemapper from Unreal Engine 4](https://docs.unrealengine.com/4.26/en-US/RenderingAndGraphics/PostProcessEffects/ColorGrading/), which matches ACES by default but has parameters that can be customized.
+{% endif %}
 
 More can be added with plugins, eg. the [Bloom Plugin](../../../plugins/plugin_list.md#bloom-plugin) adds a postprocessor for bloom effects.
 
@@ -47,5 +47,7 @@ More can be added with plugins, eg. the [Bloom Plugin](../../../plugins/plugin_l
     </a>
   </div>
 </div>
+
+{{ macros_info() }}
 
 --8<-- "includes/abbreviations.md"

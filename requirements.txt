@@ -8,6 +8,7 @@ lunr==0.5.8
 Markdown==3.3.4
 MarkupSafe==2.0.0
 mkdocs==1.4.2
+mkdocs-macros-plugin==0.7.0
 mkdocs-material==8.5.11
 nltk==3.6.2
 PyYAML==5.4.1

@@ -70,6 +70,7 @@ plugins:
             'gallery/old_gallery.md': 'https://chunky-dev.github.io/gallery/old_gallery/'
     - search:
         lang: en
+    - macros
 
 extra_css:
   - extra/extra.css
@@ -165,3 +166,6 @@ extra:
     - name: Chunky GitHub
       icon: fontawesome/brands/github
       link: https://github.com/chunky-dev
+  chunky: !ENV [CHUNKY_VERSION, 2_50_00]
+  version:
+    provider: mike
