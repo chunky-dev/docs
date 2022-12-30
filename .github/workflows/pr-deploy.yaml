@@ -24,7 +24,7 @@ jobs:
         with:
           workflow: ${{ github.event.workflow_run.workflow_id }}
           name: site
-          path: ./site/docs/
+          path: ./docs/
 
       - name: Get PR Number
         id: pr
@@ -44,6 +44,8 @@ jobs:
 
       - name: Deploy Surge
         run: |
+          mkdir site
+          mv docs site/docs
           surge ./site/ https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
       - name: Update Comment - Success
