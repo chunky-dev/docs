@@ -29,6 +29,48 @@ If you don't have Python installed, you can also use Docker.
 
 - Build a preview of the final site by using the command, `docker run --rm -it -v ${PWD}/ChunkyDocs:/docs squidfunk/mkdocs-material build`.
 
+## Versioning
+
+We build docs for Chunky 2.4.x ("stable") and 2.5.0 ("snapshot") from the same source code to avoid duplication.
+
+The target version can be specified using the `CHUNKY_VERSION` environment variable when building/serving the docs (defaults to `20500`). The version must be specified as a number equal to `major * 10000 + minor * 100 + patch` (2.4.4 is 20404 and 2.5.0 is 20500), which allows comparing versions easily.
+
+There are two ways to show content for some Chunky versions only:
+
+1. Macros  
+   We use [mkdocs-macros](https://mkdocs-macros-plugin.readthedocs.io/en/latest/) and set `extra.chunky` to the version number.
+
+   ```
+   {% if extra.chunky >= 20500 %}
+   This is only visible if these are the Chunky 2.5.0+ docs.
+   {% endif %}
+   ```
+
+2. Page metadata  
+   If you want to exclude entire pages for some versions, you can specify the minimum and maximum Chunky version a page applies to (both optional, both inclusive) at the very top of the markdown file.
+
+   Eg. for the menu bar pages which are new in Chunky 2.5.0, use `min_chunky_version`:
+
+   ```
+   ---
+   min_chunky_version: 2_05_00
+   ---
+
+   # Some new feature in Chunky 2.5.0
+   ```
+
+   If a page doesn't apply to newer Chunky versions (eg. the right control panels), use `max_chunky_version` like this:
+
+   ```
+   ---
+   max_chunky_version: 2_04_99
+   ---
+
+   # Some feature that was there until 2.5.0
+   ```
+
+   If a navigation section becomes empty due to all of its pages being excluded, it is automatically removed when building the docs.
+
 ## License
 
 Except where otherwise noted, the content of the Chunky Manual is available under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> license.
