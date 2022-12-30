@@ -48,6 +48,4 @@ More can be added with plugins, eg. the [Bloom Plugin](../../../plugins/plugin_l
   </div>
 </div>
 
-{{ macros_info() }}
-
 --8<-- "includes/abbreviations.md"
