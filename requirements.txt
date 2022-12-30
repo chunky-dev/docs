@@ -17,3 +17,4 @@ six==1.16.0
 tornado==6.1
 tqdm==4.60.0
 mkdocs-redirects==1.0.5
+mkdocs-simple-hooks==0.1.5
