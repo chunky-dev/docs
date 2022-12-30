@@ -39,7 +39,7 @@ More can be added with plugins, eg. the [Bloom Plugin](../../../plugins/plugin_l
 
 <div class="figure" id="figure-3-2-13-4">
   <p class="figure">
-  Figure 3.2.18.1: Comparison of different postprocessors (<a href="https://github.com/chunky-dev/docs/tree/master/ChunkyDocs/docs/img/examples/postprocessing" target="_blank">full images</a>)
+  Figure 3.2.18.1: Comparison of different postprocessors (<a href="https://github.com/chunky-dev/docs/tree/master/ChunkyDocs/docs/img/examples/render_controls/postprocessing" target="_blank">full images</a>)
   </p>
   <div class="figureimgcontainer">
     <a href="../../../../img/examples/render_controls/postprocessing/comparison.png">
