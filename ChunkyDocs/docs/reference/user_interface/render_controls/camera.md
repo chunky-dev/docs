@@ -1,8 +1,6 @@
 # Render Controls - Camera
 
----
-
-The `Camera` tab, which is the fifth tab in the left control panel, contains controls for the virtual camera in the scene.
+The `Camera` tab contains controls for the virtual camera in the scene.
 
 <div class="figure" id="figure-3-2-15-1">
   <p class="figure">
@@ -16,8 +14,6 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
 </div>
 
 ---
-
-## Controls
 
 - `Load preset`: Dropdown menu to select a camera preset to load for the selected camera.
 
@@ -56,6 +52,17 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
     - `Orientation`: Each input field on this row changes the yaw, pitch, or roll of the selected camera, respectively, in degrees.
 
     - `Lens shift`: Each input field on this row changes the horizontal lens shift or the vertical lens shift of the selected camera, respectively. <a href="https://jackjt8.github.io/ChunkyGuide/docs/advanced_techniques/lenseshift.html" target="_blank">Lens shift</a> is relative to the canvas height.
+
+<div class="figure" id="figure-3-2-15-2">
+  <p class="figure">
+  Figure 3.2.15.2: Using lens shift for a tilt-shift effect to keep the portal borders parallel
+  </p>
+  <div class="figureimgcontainer">
+    <a href="../../../../img/examples/render_controls/camera/tilt-shift.png">
+      <img class="figure" src="../../../../img/examples/render_controls/camera/tilt-shift.png" alt="Camera tab">
+    </a>
+  </div>
+</div>
 
 - `Camera to player`: Moves the selected camera to the location of one of the players, if loaded. "Which one? No clue."[^1]
 
@@ -130,7 +137,7 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
 
 ---
 
-### 2.5.0 Snapshot controls
+## 2.5.0 Snapshot controls
 
 The `Camera` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_started/configuring_chunky_launcher#advanced-settings).
 
