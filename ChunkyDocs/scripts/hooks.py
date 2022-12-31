@@ -22,7 +22,7 @@ def get_included_items(items, config):
     ret = []
     for item in items:
         if isinstance(item, Page):
-            page_meta = meta.get_data(Path('./docs/' + item.file.src_uri).read_text())[1]
+            page_meta = meta.get_data(Path('./docs/' + item.file.src_uri).read_text(encoding='utf-8'))[1]
             if should_include(page_meta, config):
                 ret.append(item)
         elif isinstance(item, MkDocsSection):
