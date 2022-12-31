@@ -1,7 +1,5 @@
 # Introduction - Path Tracing
 
----
-
 ## Renderer
 
 Chunky uses a rendering method called Path Tracing to render images of 3D scenes.
@@ -9,8 +7,6 @@ Chunky uses a rendering method called Path Tracing to render images of 3D scenes
 Chunky's path tracing renderer uses the CPU of the computer to render a scene. It was built back in 2010 and has slowly been improved over the years. At the time, a CPU-based path tracer made the most sense for a number of reasons, including that the amount of memory required to load a Minecraft world was much higher than the available video RAM (VRAM) of most computer systems. Much has changed since then.
 
 It is possible to switch the renderer in Chunky using [plugins](../../../plugins/chunky_plugins).
-
----
 
 ## Path Tracing
 
@@ -24,8 +20,6 @@ It is possible to switch the renderer in Chunky using [plugins](../../../plugins
 
 Path tracing uses random sampling to incrementally compute a final image. The random sampling process makes it possible to render some complex phenomena which are not handled in regular ray tracing, but it generally takes more time to produce a high quality path-traced image. The random sampling in path tracing causes noise to appear in the rendered image. The noise is removed by letting the algorithm generate more samples, that is, color values, resulting from a single ray. A more in-depth explanation of the path tracing algorithm is given in the next article on [Samples and Noise](../samples_and_noise). Also, you can watch the following video on <a href="https://www.youtube.com/watch?v=frLwRLS_ZR0" target="_blank">Disney's Practical Guide to Path Tracing</a>.
 
----
-
 ## Data Structures
 
 Chunky uses two data structures to hold world data once loaded. These structures are chosen to help increase performance while path tracing.
@@ -36,8 +30,6 @@ Chunky makes use of a <a href="https://en.wikipedia.org/wiki/Sparse_voxel_octree
 
 ### Bounding Volume Hierarchy (BVH)
 
-Entities and objects larger than a single block are stored within a <a href="https://en.wikipedia.org/wiki/Bounding_volume_hierarchy" target="_blank">Bounding Volume Hierarchy (BVH)</a>, which is a tree-like structure similar to the previously mentioned octree, though it stores geometric objects. For more information, read the [Scene Format](../../technical/scene_format#octree) article.
-
----
+Entities and objects larger than a single block are stored within a <a href="https://en.wikipedia.org/wiki/Bounding_volume_hierarchy" target="_blank">Bounding Volume Hierarchy (BVH)</a>, which is a tree-like structure similar to the previously mentioned octree, though it stores geometric objects.
 
 --8<-- "includes/abbreviations.md"

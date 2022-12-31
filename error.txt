@@ -1,0 +1,65 @@
+Traceback (most recent call last):
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\runpy.py", li
+ne 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\runpy.py", li
+ne 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\mkdocs\__main__.py", line 301, in <module>
+    cli()
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\click\core.py", line 1134, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\click\core.py", line 1059, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\click\core.py", line 1665, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\click\core.py", line 1401, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\click\core.py", line 767, in invoke
+    return __callback(*args, **kwargs)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\mkdocs\__main__.py", line 234, in serve_command
+    serve.serve(dev_addr=dev_addr, livereload=livereload, watch=watch, **kwargs)
+
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\mkdocs\commands\serve.py", line 83, in serve
+    builder(config)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\mkdocs\commands\serve.py", line 76, in builder
+    build(config, live_server=live_server, dirty=dirty)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\mkdocs\commands\build.py", line 302, in build
+    nav = config.plugins.run_event('nav', nav, config=config, files=files)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\mkdocs\plugins.py", line 520, in run_event
+    result = method(item, **kwargs)
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\site-packages
+\mkdocs_simple_hooks\__init__.py", line 48, in handle_hook
+    return hook(*args, **kwargs)
+  File "C:\Users\JOSIAH\Documents\GitHub\chunky-dev\docs\ChunkyDocs\scripts\hook
+s.py", line 18, in on_nav
+    items = get_included_items(nav, config)
+  File "C:\Users\JOSIAH\Documents\GitHub\chunky-dev\docs\ChunkyDocs\scripts\hook
+s.py", line 29, in get_included_items
+    children = get_included_items(item.children, config)
+  File "C:\Users\JOSIAH\Documents\GitHub\chunky-dev\docs\ChunkyDocs\scripts\hook
+s.py", line 29, in get_included_items
+    children = get_included_items(item.children, config)
+  File "C:\Users\JOSIAH\Documents\GitHub\chunky-dev\docs\ChunkyDocs\scripts\hook
+s.py", line 25, in get_included_items
+    page_meta = meta.get_data(Path('./docs/' + item.file.src_uri).read_text())[1
+]
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\pathlib.py",
+line 1237, in read_text
+    return f.read()
+  File "C:\Users\JOSIAH\AppData\Local\Programs\Python\Python38\lib\encodings\cp1
+252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 6036: cha
+racter maps to <undefined>
