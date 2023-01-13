@@ -27,7 +27,7 @@ To install Chunky, download the Chunky Launcher (Universal JAR).[^1] This requir
 
 <a href="https://gluonhq.com/products/javafx" target="_blank" class="md-button">:fontawesome-regular-file-zipper: OpenJFX</a>
 
-<a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" target="_blank" class="md-button">Chunky Launcher v1.13.2<br><btnsub>:material-package-variant-closed: Universal JAR</btnsub></a>
+<a href="https://chunkyupdate.lemaik.de/ChunkyLauncher.jar" target="_blank" class="md-button">Chunky Launcher v1.14.0<br><btnsub>:material-package-variant-closed: Universal JAR</btnsub></a>
 
 ---
 
