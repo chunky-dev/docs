@@ -2,16 +2,14 @@
 
 ## Random Sampling
 
-Path tracing uses the <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">Monte Carlo method</a> to render scenes. With this method, rays are distributed randomly within each pixel of the canvas. At each intersection with an object in the scene, a new reflection ray, pointing in a random direction, is generated. The same process repeats if the reflection ray also intersects the scene. After some number of bounces, clamped by the [Ray Depth](../../user_interface/chunky/stable/render_controls/advanced), each ray either exits the scene or is absorbed. When the ray has finished bouncing around the scene, a *sample* value is calculated based on the objects the ray bounced against, and is added to the average for the source pixel. The color of each pixel is averaged from every sample computed for that pixel. Due to the randomness of path tracing, the rendered image can appear noisy at first. The noise decreases over time as more samples are calculated, which is a process that is called convergence.
+Path tracing uses the <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">Monte Carlo method</a> to render scenes. With this method, rays are distributed randomly within each pixel of the canvas. At each intersection with an object in the scene, a new reflection ray, pointing in a random direction, is generated. The same process repeats if the reflection ray also intersects the scene. After some number of bounces, clamped by the [Ray Depth](../../user_interface/chunky/render_controls/advanced), each ray either exits the scene or is absorbed. When the ray has finished bouncing around the scene, a *sample* value is calculated based on the objects the ray bounced against, and is added to the average for the source pixel. The color of each pixel is averaged from every sample computed for that pixel. Due to the randomness of path tracing, the rendered image can appear noisy at first. The noise decreases over time as more samples are calculated, which is a process that is called convergence.
 
 ## Samples Per Pixel (SPP)
 
 The defining factor for render quality is the number of Samples Per Pixel (SPP) it has been rendered to.
 
 <div class="figure" id="figure-1">
-  <p class="figure">
-  Figure 1: Image noise decreases as SPP value increases
-  </p>
+  <p class="figure">Figure 1: Image noise decreases as SPP value increases</p>
   <div class="figureimgcontainer">
     <picture class="figure">
       <source srcset="../../../img/reference/introduction/samples_and_noise/x2_2-sec_loop.webp" type="image/webp">
@@ -24,9 +22,7 @@ The defining factor for render quality is the number of Samples Per Pixel (SPP) 
 The higher the SPP the image is rendered to, the less noise will be noticeable in that image. However, the added quality per sample decreases as the number of samples rendered increases, since each sample is just contributing to an average of all samples. For example, the difference in image quality between 20,000 SPP and 21,000 SPP will not be as noticeable as the difference between 1,000 SPP and 2,000 SPP. This effect is demonstrated in [Figure 2](#figure-2) below. The result of this is that a doubling of the current SPP of the image is required for a reduction of the image noise by half.
 
 <div class="figure" id="figure-2">
-  <p class="figure">
-  Figure 2: Speed at which image quality increases decreases as SPP value increases
-  </p>
+  <p class="figure">Figure 2: Speed at which image quality increases decreases as SPP value increases</p>
   <div class="figuregridcontainer">
     <picture class="figure">
       <source srcset="../../../img/reference/introduction/samples_and_noise/1ki-2ki_2-sec_loop.webp" type="image/webp">
@@ -48,9 +44,7 @@ Small but bright light sources, such as torches, add very much noise to a scene.
 The reason for this effect is based on the low probability for each sampled light path to intersect the torches, coupled with the high luminosity of the object. The final render takes the average of all sampled values, but the average for one pixel can be "too high" for a long time because of the high luminosity in one or more of the samples. The average will decrease over time, as more samples are generated, but for a while there may be one pixel that has been lit by a particular light source that will stand out sharply against several other pixels that have not been lit by the same light source. This causes the bright dots seen in renders at low SPP counts.
 
 <div class="figure" id="figure-3">
-  <p class="figure">
-  Figure 3: Scene lit by torch rendered to 128 SPP
-  </p>
+  <p class="figure">Figure 3: Scene lit by torch rendered to 128 SPP</p>
   <div class="figureimgcontainer">
     <a href="../../../img/reference/introduction/samples_and_noise/noise_torch.png">
       <img class="figure" src="../../../img/reference/introduction/samples_and_noise/noise_torch.png" alt="Scene lit by torch">
@@ -61,9 +55,7 @@ The reason for this effect is based on the low probability for each sampled ligh
 Torches add much noise to the scene and can take long to render. The scene in [Figure 3](#figure-3) was rendered to 128 SPP. Full block emitters, such as glowstone, have a much higher probability for a sampled light path to include the glowstone, because it is much larger. That means noise is reduced in much fewer samples than with torches. [Figure 4](#figure-4) shows a scene lit by glowstone also rendered to 128 SPP. Note how much less noise exists in that scene than the previous one.
 
 <div class="figure" id="figure-4">
-  <p class="figure">
-  Figure 4: Scene lit by glowstone rendered to 128 SPP
-  </p>
+  <p class="figure">Figure 4: Scene lit by glowstone rendered to 128 SPP</p>
   <div class="figureimgcontainer">
     <a href="../../../img/reference/introduction/samples_and_noise/noise_glowstone.png">
       <img class="figure" src="../../../img/reference/introduction/samples_and_noise/noise_glowstone.png" alt="Scene lit by glowstone">

@@ -12,6 +12,7 @@
 *[JFX]: JavaFX
 *[JAR]: Java ARchive
 *[OS]: Operating System
+*[SDK]: Software Development Kit
 
 <!-- General graphics stuff -->
 *[AO]: Ambient Occlusion
