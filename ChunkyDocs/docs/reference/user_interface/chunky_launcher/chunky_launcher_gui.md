@@ -5,8 +5,8 @@ The Chunky Launcher contains controls that are set before launching Chunky.
 <div class="figure" id="figure-1">
   <p class="figure">Figure 1: The Chunky Launcher</p>
   <div class="figureimgcontainer">
-    <a href="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher.png">
-      <img class="figure" src="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher.png" alt="The Chunky Launcher">
+    <a href="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/chunky_launcher.png">
+      <img class="figure" src="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/chunky_launcher.png" alt="The Chunky Launcher">
     </a>
   </div>
 </div>
@@ -30,8 +30,8 @@ The Chunky Launcher contains controls that are set before launching Chunky.
 <div class="figure" id="figure-2">
   <p class="figure">Figure 2: Chunky Launcher Advanced Settings</p>
   <div class="figureimgcontainer">
-    <a href="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_advanced.png">
-      <img class="figure" src="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_advanced.png" alt="Chunky Launcher Advanced Settings">
+    <a href="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/chunky_launcher_advanced_settings.png">
+      <img class="figure" src="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/chunky_launcher_advanced_settings.png" alt="Chunky Launcher Advanced Settings">
     </a>
   </div>
 </div>
@@ -109,8 +109,8 @@ The 'Plugin Manager' dialog box, shown in [Figure 3](#figure-3), displays a list
 <div class="figure" id="figure-3">
   <p class="figure">Figure 3: 'Plugin Manager' dialog box</p>
   <div class="figureimgcontainer">
-    <a href="../../../../img/reference/user_interface/chunky_launcher/plugin_manager_dialog_box.png">
-      <img class="figure" src="../../../../img/reference/user_interface/chunky_launcher/plugin_manager_dialog_box.png" alt="'Plugin Manager' dialog box">
+    <a href="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/plugin_manager_dialog_box.png">
+      <img class="figure" src="../../../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/plugin_manager_dialog_box.png" alt="'Plugin Manager' dialog box">
     </a>
   </div>
 </div>
