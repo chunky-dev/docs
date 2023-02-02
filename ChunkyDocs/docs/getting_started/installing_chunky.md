@@ -87,7 +87,7 @@ The first time you start the Chunky Launcher, you will be asked to pick a [setti
   </div>
 </div>
 
-The recommended directory is usually the best option. Click <samp>Use Selected Directory</samp> to continue. You will see the main Chunky Launcher window next.
+The recommended directory is usually the best option. Click <samp>Use Selected Directory</samp> to continue. You will see the main Chunky Launcher window [next](../configuring_chunky_launcher).
 
 ## Manual Setup
 
