@@ -14,7 +14,7 @@ page_content:
   </div>
 </div>"
   emitter_intensity: "- <samp>Emitter intensity</samp>: Changes the intensity of the light emitted from emitters, if they are enabled. This setting applies to all materials, and is a multiplier of the base emittance value of each material, which can be changed in the [<samp>Materials</samp>](../materials) tab. Positive values beyond the range of the slider can be entered into the associated input field."
-  emitter_sampling_strategy: "- <samp>Emitter Sampling Strategy</samp>: Dropdown menu to select the [Emitter Sampling Strategy](../../../../introduction/next_event_estimation#emitter-sampling-strategy-ess) method to be used while rendering. ESS is only effective when emitters are enabled."
+  emitter_sampling_strategy: "- <samp>Emitter Sampling Strategy</samp>: Dropdown menu to select the [Emitter Sampling Strategy](../../../../../user_guides/introduction/next_event_estimation#emitter-sampling-strategy-ess) method to be used while rendering. ESS is only effective when emitters are enabled."
   emitter_sampling_strategy_none: "    - <samp>NONE</samp>: Disables Emitter Sampling Strategy."
   emitter_sampling_strategy_one: "    - <samp>ONE</samp>: Samples one randomly-selected emitter within the cell of intersection and its adjacent cells per ray intersection."
   emitter_sampling_strategy_one_block: "    - <samp>ONE_BLOCK</samp>: Samples every face of one randomly-selected emitter within the cell of intersection and its adjacent cells per ray intersection."
@@ -130,7 +130,7 @@ The <samp>Lighting</samp> tab contains controls for the lighting in the scene.
 
 {{ page.meta.page_content.draw_sun }}
 
-- <samp>Sun Sampling Strategy</samp>: Dropdown menu to select the [Sun Sampling Strategy](../../../../introduction/next_event_estimation#sunlight-sampling) (SSS) method to be used while rendering.
+- <samp>Sun Sampling Strategy</samp>: Dropdown menu to select the [Sun Sampling Strategy](../../../../../user_guides/introduction/next_event_estimation#sunlight-sampling) (SSS) method to be used while rendering.
 
     - <samp>OFF</samp>: Disables Sun Sampling Strategy. The sun must be directly hit to contribute lighting to the scene.
 

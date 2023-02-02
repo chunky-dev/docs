@@ -19,13 +19,13 @@ The <samp>Materials</samp> tab contains controls for the properties of different
 
     - <samp>Emittance</samp>: Changes the intensity of the light emitted from the selected material. This value is multiplied by the value of the <samp>Emitter intensity</samp> control in the [<samp>Lighting</samp>](../lighting#emitter-controls) tab. Positive values beyond the range of the slider can be entered into the associated input field.
 
-    - <samp>Specular</samp>: Changes the [specularity](../../../../introduction/material_properties#specular) of the selected material.
+    - <samp>Specular</samp>: Changes the [specularity](../../../../../user_guides/introduction/material_properties#specular) of the selected material.
 
-    - <samp>Smoothness</samp>: Changes the [smoothness](../../../../introduction/material_properties#smoothness) of the selected material.
+    - <samp>Smoothness</samp>: Changes the [smoothness](../../../../../user_guides/introduction/material_properties#smoothness) of the selected material.
 
-    - <samp>IoR</samp>: Changes the [Index of Refraction](../../../../introduction/material_properties#index-of-refraction-ior) of the selected material.
+    - <samp>IoR</samp>: Changes the [Index of Refraction](../../../../../user_guides/introduction/material_properties#index-of-refraction-ior) of the selected material.
 
-    - <samp>Metalness</samp>: Changes the [metalness](../../../../introduction/material_properties#metalness) of the selected material.
+    - <samp>Metalness</samp>: Changes the [metalness](../../../../../user_guides/introduction/material_properties#metalness) of the selected material.
 
 <div class="figure" id="figure-2">
   <p class="figure">Figure 2: Comparison of different Specular levels</p>

@@ -212,13 +212,15 @@ By default, the water will have a slight wave effect applied to it. You can disa
 
 ### Entities
 
+Open the [<samp>Entities</samp>](../../reference/user_interface/chunky/render_controls/entities) tab.
+
 Adjust whatever you want in the entity tab to your liking. Press <samp>-</samp> to remove the selected entity from the render, and press <samp>+</samp> to add new entities.
 
 > Entities usually have a minimal effect on render times.
 
 ### Materials & Postprocessing tabs
 
-These tabs shall not be covered in this guide. Explore and experiment on your own.
+These tabs shall not be covered in this guide. Explore and experiment on your own. Read the articles for the [<samp>Materials</samp>](../../reference/user_interface/chunky/render_controls/materials) tab and for the [<samp>Postprocessing</samp>](../../reference/user_interface/chunky/render_controls/postprocessing) tab for more information.
 
 ### Advanced
 

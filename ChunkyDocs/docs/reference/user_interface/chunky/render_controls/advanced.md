@@ -70,7 +70,7 @@ Other output formats can be added to Chunky using [plugins](../../../../../plugi
 
 Other octree implementations can be added to Chunky using [plugins](../../../../../plugins/chunky_plugins).
 
-- <samp>BVH build method</samp>: Dropdown menu to select the method used to build the [BVH](../../../../introduction/path_tracing#bounding-volume-hierarchy-bvh) of the scene, which contains the "entities" in the scene. Chunks must be reloaded for changes to take effect.
+- <samp>BVH build method</samp>: Dropdown menu to select the method used to build the [BVH](../../../../../user_guides/introduction/path_tracing#bounding-volume-hierarchy-bvh) of the scene, which contains the "entities" in the scene. Chunks must be reloaded for changes to take effect.
 
     - <samp>SAH_MA</samp>: Sets Chunky to use the SAH_MA method to build the BVH of the scene. SAH_MA is the default BVH build method; it is fast and nearly optimal.
 
@@ -92,7 +92,7 @@ Other BVH build methods can be added to Chunky using [plugins](../../../../../pl
 
 {% endif %}
 
-- <samp>Emitter grid size</samp>: Changes the size of the cells of the [emittergrid](../../../../introduction/next_event_estimation#emitter-sampling-strategy-ess), measured in meters (blocks), when [Emitter Sampling Strategy](../lighting#emitter-controls) is enabled. Smaller values can increase rendering performance, but can lead to light cut-off.
+- <samp>Emitter grid size</samp>: Changes the size of the cells of the [emittergrid](../../../../technical/scene_format#emittergrid), measured in meters (blocks), when [Emitter Sampling Strategy](../../../../../user_guides/introduction/next_event_estimation#emitter-sampling-strategy-ess) is enabled. Smaller values can increase rendering performance, but can lead to light cut-off.
 
 If <samp>Emitter Sampling Strategy</samp> is enabled for the currently-loaded scene when the <samp>Emitter grid size</samp> is changed, then the chunks must be reloaded for changes to take effect.
 
@@ -100,7 +100,7 @@ If <samp>Emitter Sampling Strategy</samp> is enabled for the currently-loaded sc
 
 - <samp>Renderer</samp>: Dropdown menu to select the renderer that Chunky should use to render the scene when the <samp>Start</samp> control is used.
 
-    - <samp>PathTracingRenderer</samp>: Sets Chunky to use the [path tracing renderer](../../../../introduction/path_tracing), which uses [random sampling](../../../../introduction/samples_and_noise) to render the scene.
+    - <samp>PathTracingRenderer</samp>: Sets Chunky to use the [path tracing renderer](../../../../../user_guides/introduction/path_tracing), which uses [random sampling](../../../../../user_guides/introduction/samples_and_noise) to render the scene.
 
 Other renderers can be added to Chunky using [plugins](../../../../../plugins/chunky_plugins).
 

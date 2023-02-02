@@ -1,12 +1,12 @@
-# Configuring the Chunky launcher
+# Configuring the Chunky Launcher
 
 Before being able to render scenes, some actions must be performed in the Chunky Launcher.
 
 <div class="figure" id="figure-1">
   <p class="figure">Figure 1: The Chunky Launcher</p>
   <div class="figureimgcontainer">
-    <a href="../../img/reference/user_interface/chunky_launcher/chunky_launcher.png">
-      <img class="figure" src="../../img/reference/user_interface/chunky_launcher/chunky_launcher.png" alt="Chunky Launcher">
+    <a href="../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/chunky_launcher.png">
+      <img class="figure" src="../../img/reference/user_interface/chunky_launcher/chunky_launcher_gui/chunky_launcher.png" alt="Chunky Launcher">
     </a>
   </div>
 </div>
@@ -35,7 +35,7 @@ When the download process has completed, you can click on either <samp>Launch Ch
 
 - <samp>Memory limit (MiB)</samp>: Chunky can use much memory depending on a number of factors. Many issues can be caused by Chunky not having enough memory, so raising the memory limit can solve these issues. The default of *1024* can be raised based upon how much memory your system has and how much is typically available. For example, if your system has 16 GiB (16384 MiB) of system memory, allocating up to 75% of that, which is 12 GiB (12288 MiB), is typically fine. You can allocate more; however, you may eventually encounter other problems.
 
-You should not need to access <samp>Advanced Settings</samp>.
+You should not need to access [<samp>Advanced Settings</samp>](../../reference/user_interface/chunky_launcher/chunky_launcher_gui#advanced-settings).
 
 ## Troubleshooting
 

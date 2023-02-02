@@ -25,7 +25,7 @@ The <samp>Postprocessing</samp> tab contains controls for postprocessing of the 
 
     - <samp>Tonemap operator 1</samp>: Uses the <a href="http://filmicworlds.com/blog/filmic-tonemapping-operators/" target="_blank">tone mapping formula</a> by Jim Hejl and Richard Burgess-Dawson.
 
- Other postprocessing filters can be added through the use of plugins, such as the [Bloom plugin](../../../../../plugins/plugin_list#bloom-plugin), which adds a postprocessing filter for bloom effects.
+ Other postprocessing filters can be added through the use of [plugins](../../../../../plugins/chunky_plugins), such as the [Bloom plugin](../../../../../plugins/plugin_list#bloom-plugin), which adds a postprocessing filter for bloom effects.
 
 !!! info "Upcoming changes"
     PR #1519 will add the **Unreal Engine 4 Filmic tone mapping** curve, which matches <samp style="font-size: 1em;">ACES filmic tone mapping</samp> by default, but can be configured to customize the tone mapping. It will also be possible to customize the Hable tone mapping parameters.

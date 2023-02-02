@@ -10,7 +10,7 @@ An equirectangular skymap is a skymap format that uses the <a href="https://wiki
 
 Two types of equirectangular skymaps exist. Both types have a horizontal field of view of 360 degrees, but differ in the vertical field of view. One type has a vertical field of view of 180 degrees, and an aspect ratio of *2:1*, while the other type has a vertical field of view of 90 degrees, and an aspect ratio of *4:1*. A skymap with a vertical field of view of 180 degrees maps the whole sphere, while a skymap with a vertical field of view of 90 degrees maps only the space above the horizon.
 
-<div class="figure" id="figure-3-3-2-1">
+<div class="figure" id="figure-1">
   <p class="figure">Figure 1: Different equirectangular skymap types</p>
   <div class="figureimgcontainer">
     <a href="../../img/user_guides/skymaps/skymap_vertical_resolution.png">
@@ -26,7 +26,7 @@ To use a skymap with a vertical field of view of 90 degrees, set the <samp>Verti
 An angular skymap, also known as a *light probe*, is a skymap format that uses the <a href="http://www.paulbourke.net/dome/fisheye/" target="_blank">angular fisheye</a> projection. One can be used by setting the [<samp>Sky mode</samp>](../../reference/user_interface/chunky/render_controls/sky_and_fog#sky-mode-settings) to <samp>{% if extra.chunky < 2_05_00 %}Skymap (spherical){% endif %}{% if extra.chunky >= 2_05_00 %}Skymap (angular){% endif %}</samp>.
 
 <div class="figure" id="figure-2">
-  <p class="figure">Figure 2: Spherical (light probe) skymap</p>
+  <p class="figure">Figure 2: Angular (light probe) skymap</p>
   <div class="figureimgcontainer">
     <a href="../../img/user_guides/skymaps/light_probe.jpg">
       <img class="figure" src="../../img/user_guides/skymaps/light_probe.jpg" alt="Spherical (light probe) skymap">

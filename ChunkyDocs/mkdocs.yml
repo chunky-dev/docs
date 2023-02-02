@@ -48,7 +48,7 @@ plugins:
             'your_first_render.md': 'getting_started/your_first_render.md'
             'install.md': 'getting_started/installing_chunky.md'
             'tips.md': 'reference/introduction/samples_and_noise.md'
-            'user_interface': 'reference/user_interface/chunky/chunky_gui.md'
+            'user_interface.md': 'reference/user_interface/chunky/chunky_gui.md'
             '2d_map.md': 'reference/user_interface/chunky/map.md'
             '2d_map_map-view.md': 'reference/user_interface/chunky/right_panel_controls/map_view.md'
             '2d_map_chunks.md': 'reference/user_interface/chunky/right_panel_controls/chunks.md'
@@ -61,7 +61,7 @@ plugins:
             'render_controls_sky.md': 'reference/user_interface/chunky/render_controls/sky_and_fog.md'
             'render_controls_camera.md': 'reference/user_interface/chunky/render_controls/camera.md'
             'render_controls_post-processing.md': 'reference/user_interface/chunky/render_controls/postprocessing.md'
-            'render_controls_advanced.md': 'reference/user_interface/chunky/render_controls/acvanced.md'
+            'render_controls_advanced.md': 'reference/user_interface/chunky/render_controls/advanced.md'
             'render_controls_global.md': 'reference/user_interface/chunky/render_controls/render_progress_controls.md'
             'render_preview.md': 'reference/user_interface/chunky/render_preview.md'
             'path_tracing.md': 'reference/introduction/path_tracing.md'
@@ -116,15 +116,15 @@ nav:
     - "Troubleshooting": "support/troubleshooting.md"
     - "Minecraft Compatibility": "support/minecraft_compatibility.md"
   - "User Guides":
+    - "Introduction":
+      - "Path Tracing": "user_guides/introduction/path_tracing.md"
+      - "Samples and Noise": "user_guides/introduction/samples_and_noise.md"
+      - "Next Event Estimation": "user_guides/introduction/next_event_estimation.md"
+      - "Material Properties": "user_guides/introduction/material_properties.md"
     - "Denoising": "user_guides/denoising.md"
     - "Skymaps": "user_guides/skymaps.md"
     - "Styling Chunky": "user_guides/styling_chunky.md"
   - "Reference":
-    - "Introduction":
-      - "Path Tracing": "reference/introduction/path_tracing.md"
-      - "Samples and Noise": "reference/introduction/samples_and_noise.md"
-      - "Next Event Estimation": "reference/introduction/next_event_estimation.md"
-      - "Material Properties": "reference/introduction/material_properties.md"
     - "User Interface":
       - "Chunky Launcher":
         - "Chunky Launcher GUI": "reference/user_interface/chunky_launcher/chunky_launcher_gui.md"

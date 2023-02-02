@@ -26,7 +26,7 @@ Chunky uses two data structures to hold world data once loaded. These structures
 
 ### Octree
 
-Chunky makes use of a <a href="https://en.wikipedia.org/wiki/Sparse_voxel_octree" target="_blank">Sparse Voxel Octree (SVO)</a> (also see <a href="https://en.wikipedia.org/wiki/Octree" target="_blank">Octree</a>) to store loaded world data of blocks for renders in a "bi"nary tree like structure with eight children / siblings instead of two. Use of a SVO grants Chunky two main advantages. First, only pixels that are displayed are computed. Second, interior voxels or blocks which are fully enclosed by other voxels are not included in the SVO, which limits the amount of system memory (RAM) required for the world. For more information, read the [Scene Format](../../technical/scene_format#octree) article.
+Chunky makes use of a <a href="https://en.wikipedia.org/wiki/Sparse_voxel_octree" target="_blank">Sparse Voxel Octree (SVO)</a> (also see <a href="https://en.wikipedia.org/wiki/Octree" target="_blank">Octree</a>) to store loaded world data of blocks for renders in a "bi"nary tree like structure with eight children / siblings instead of two. Use of a SVO grants Chunky two main advantages. First, only pixels that are displayed are computed. Second, interior voxels or blocks which are fully enclosed by other voxels are not included in the SVO, which limits the amount of system memory (RAM) required for the world. For more information, read the [Scene Format](../../../reference/technical/scene_format#octree) article.
 
 ### Bounding Volume Hierarchy (BVH)
 

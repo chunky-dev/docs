@@ -2,7 +2,7 @@
 
 ## Random Sampling
 
-Path tracing uses the <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">Monte Carlo method</a> to render scenes. With this method, rays are distributed randomly within each pixel of the canvas. At each intersection with an object in the scene, a new reflection ray, pointing in a random direction, is generated. The same process repeats if the reflection ray also intersects the scene. After some number of bounces, clamped by the [Ray Depth](../../user_interface/chunky/render_controls/advanced), each ray either exits the scene or is absorbed. When the ray has finished bouncing around the scene, a *sample* value is calculated based on the objects the ray bounced against, and is added to the average for the source pixel. The color of each pixel is averaged from every sample computed for that pixel. Due to the randomness of path tracing, the rendered image can appear noisy at first. The noise decreases over time as more samples are calculated, which is a process that is called convergence.
+Path tracing uses the <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">Monte Carlo method</a> to render scenes. With this method, rays are distributed randomly within each pixel of the canvas. At each intersection with an object in the scene, a new reflection ray, pointing in a random direction, is generated. The same process repeats if the reflection ray also intersects the scene. After some number of bounces, clamped by the [Ray Depth](../../../reference/user_interface/chunky/render_controls/advanced), each ray either exits the scene or is absorbed. When the ray has finished bouncing around the scene, a *sample* value is calculated based on the objects the ray bounced against, and is added to the average for the source pixel. The color of each pixel is averaged from every sample computed for that pixel. Due to the randomness of path tracing, the rendered image can appear noisy at first. The noise decreases over time as more samples are calculated, which is a process that is called convergence.
 
 ## Samples Per Pixel (SPP)
 
@@ -12,9 +12,9 @@ The defining factor for render quality is the number of Samples Per Pixel (SPP) 
   <p class="figure">Figure 1: Image noise decreases as SPP value increases</p>
   <div class="figureimgcontainer">
     <picture class="figure">
-      <source srcset="../../../img/reference/introduction/samples_and_noise/x2_2-sec_loop.webp" type="image/webp">
-      <source srcset="../../../img/reference/introduction/samples_and_noise/x2_2-sec_loop.gif" type="image/gif">
-      <img class="figure" src="../../../img/reference/introduction/samples_and_noise/x2_2-sec_loop.gif" alt="Increasing SPP animation">
+      <source srcset="../../../img/user_guides/introduction/samples_and_noise/x2_2-sec_loop.webp" type="image/webp">
+      <source srcset="../../../img/user_guides/introduction/samples_and_noise/x2_2-sec_loop.gif" type="image/gif">
+      <img class="figure" src="../../../img/user_guides/introduction/samples_and_noise/x2_2-sec_loop.gif" alt="Increasing SPP animation">
     </picture>
   </div>
 </div>
@@ -25,14 +25,14 @@ The higher the SPP the image is rendered to, the less noise will be noticeable i
   <p class="figure">Figure 2: Speed at which image quality increases decreases as SPP value increases</p>
   <div class="figuregridcontainer">
     <picture class="figure">
-      <source srcset="../../../img/reference/introduction/samples_and_noise/1ki-2ki_2-sec_loop.webp" type="image/webp">
-      <source srcset="../../../img/reference/introduction/samples_and_noise/1ki-2ki_2-sec_loop.gif" type="image/gif">
-      <img class="figure" src="../../../img/reference/introduction/samples_and_noise/1ki-2ki_2-sec_loop.gif" alt="1024-2048 SPP comparison">
+      <source srcset="../../../img/user_guides/introduction/samples_and_noise/1ki-2ki_2-sec_loop.webp" type="image/webp">
+      <source srcset="../../../img/user_guides/introduction/samples_and_noise/1ki-2ki_2-sec_loop.gif" type="image/gif">
+      <img class="figure" src="../../../img/user_guides/introduction/samples_and_noise/1ki-2ki_2-sec_loop.gif" alt="1024-2048 SPP comparison">
     </picture>
     <picture class="figure">
-      <source srcset="../../../img/reference/introduction/samples_and_noise/20k-21k_2-sec_loop.webp" type="image/webp">
-      <source srcset="../../../img/reference/introduction/samples_and_noise/20k-21k_2-sec_loop.gif" type="image/gif">
-      <img class="figure" src="../../../img/reference/introduction/samples_and_noise/20k-21k_2-sec_loop.gif" alt="20000-21000 SPP comparison">
+      <source srcset="../../../img/user_guides/introduction/samples_and_noise/20k-21k_2-sec_loop.webp" type="image/webp">
+      <source srcset="../../../img/user_guides/introduction/samples_and_noise/20k-21k_2-sec_loop.gif" type="image/gif">
+      <img class="figure" src="../../../img/user_guides/introduction/samples_and_noise/20k-21k_2-sec_loop.gif" alt="20000-21000 SPP comparison">
     </picture>
   </div>
 </div>
@@ -46,8 +46,8 @@ The reason for this effect is based on the low probability for each sampled ligh
 <div class="figure" id="figure-3">
   <p class="figure">Figure 3: Scene lit by torch rendered to 128 SPP</p>
   <div class="figureimgcontainer">
-    <a href="../../../img/reference/introduction/samples_and_noise/noise_torch.png">
-      <img class="figure" src="../../../img/reference/introduction/samples_and_noise/noise_torch.png" alt="Scene lit by torch">
+    <a href="../../../img/user_guides/introduction/samples_and_noise/noise_torch.png">
+      <img class="figure" src="../../../img/user_guides/introduction/samples_and_noise/noise_torch.png" alt="Scene lit by torch">
     </a>
   </div>
 </div>
@@ -57,8 +57,8 @@ Torches add much noise to the scene and can take long to render. The scene in [F
 <div class="figure" id="figure-4">
   <p class="figure">Figure 4: Scene lit by glowstone rendered to 128 SPP</p>
   <div class="figureimgcontainer">
-    <a href="../../../img/reference/introduction/samples_and_noise/noise_glowstone.png">
-      <img class="figure" src="../../../img/reference/introduction/samples_and_noise/noise_glowstone.png" alt="Scene lit by glowstone">
+    <a href="../../../img/user_guides/introduction/samples_and_noise/noise_glowstone.png">
+      <img class="figure" src="../../../img/user_guides/introduction/samples_and_noise/noise_glowstone.png" alt="Scene lit by glowstone">
     </a>
   </div>
 </div>
