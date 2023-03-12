@@ -1,6 +1,8 @@
-# Options
-
 ---
+max_chunky_version: 2_04_99
+---
+
+# Options
 
 The `Options` tab, located in the right control panel, contains some Chunky options.
 
@@ -14,8 +16,6 @@ The `Options` tab, located in the right control panel, contains some Chunky opti
     </a>
   </div>
 </div>
-
----
 
 ## Controls
 
@@ -31,31 +31,7 @@ The `Options` tab, located in the right control panel, contains some Chunky opti
 
 - `Change Scenes Directory`: Opens the [`Scene Directory Picker`](#scene-directory-picker) dialog box.
 
----
-
-### 2.5.0 Snapshot Controls
-
-The Chunky GUI was improved and reorganized in the [Chunky 2.5.0 snapshots](../../../../getting_started/configuring_chunky_launcher#advanced-settings).
-
-The `Options` tab was removed from the right control panel, and its controls were relocated to other places.
-
-- `Edit Resource Packs`: This control was relocated to the [`Textures & Resource Packs` tab](../../render_controls/textures_and_resource_packs#250-snapshot-controls).
-
-- `Disable default textures (needs restart)`: This control was relocated to the [`Select Resource Packs` dialog box](../../render_controls/textures_and_resource_packs#select-resource-packs).
-
-- `Single color textures (needs restart)`: This control was relocated to the [`Textures & Resource Packs` tab](../../render_controls/textures_and_resource_packs#250-snapshot-controls) and renamed to `Single color textures`.
-
-- `Show launcher when starting Chunky`: This control was relocated to the [`Advanced` tab](../../render_controls/advanced#250-snapshot-controls).
-
-- `Open Scenes Directory`: This control was relocated to the [`Load Chunky Scene` dialog box](../../menu_bar/file#load-chunky-scene).
-
-- `Change Scenes Directory`: This control was relocated to the [`Load Chunky Scene` dialog box](../../menu_bar/file#load-chunky-scene).
-
----
-
-### Resource Packs
-
-<!-- This section should be moved to the `Resource Packs & Textures tab page once 2.5.0 releases. -->
+## Resource Packs
 
 The `Resource Packs` dialog box, shown in [Figure 3.2.9.2](#figure-3-2-9-2), displays a list of currently-loaded resource packs along with some management controls at the bottom.
 
@@ -82,13 +58,7 @@ A resource pack in the list can be clicked to select it.
 
 - `Apply`: Applies the new resource pack configuration as the default and closes the `Resource Packs` dialog box.
 
-#### 2.5.0 Snapshot Controls
-
-The `Resource Packs` dialog box was improved and renamed to [`Select Resource Packs`](../../render_controls/textures_and_resource_packs#select-resource-packs) in the [Chunky 2.5.0 snapshots](../../../../getting_started/configuring_chunky_launcher#advanced-settings).
-
----
-
-### Scene Directory Picker
+## Scene Directory Picker
 
 The `Scenes Directory Picker` dialog box, shown in [Figure 3.2.9.3](#figure-3-2-9-3), allows the directory in which Chunky stores scenes to be changed.
 
@@ -110,11 +80,5 @@ The `Scenes Directory Picker` dialog box, shown in [Figure 3.2.9.3](#figure-3-2-
 - `Ok`: Exits the dialog box and applies any changes made.
 
 - `Cancel`: Exits the `Scene directory picker` dialog box without applying any changes made.
-
-#### 2.5.0 Snapshot Controls
-
-The `Scene Directory Picker` dialog box was completely removed in the [Chunky 2.5.0 snapshots](../../../../getting_started/configuring_chunky_launcher#advanced-settings).
-
----
 
 --8<-- "includes/abbreviations.md"

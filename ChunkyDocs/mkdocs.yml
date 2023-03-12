@@ -70,6 +70,11 @@ plugins:
             'gallery/old_gallery.md': 'https://chunky-dev.github.io/gallery/old_gallery/'
     - search:
         lang: en
+    - macros
+    - mkdocs-simple-hooks:
+        hooks:
+          on_post_page: scripts.hooks:on_post_page
+          on_nav: scripts.hooks:on_nav
 
 extra_css:
   - extra/extra.css
@@ -115,7 +120,7 @@ nav:
       - "Material Properties": "reference/introduction/material_properties.md"
     - "User Interface":
       - "Chunky GUI": "reference/user_interface/chunky_gui.md"
-      - "Menu Bar (2.5.0 Snapshot Controls)":
+      - "Menu Bar":
         - "File (Scene Management)": "reference/user_interface/menu_bar/file.md"
         - "Help (Chunky Resources)": "reference/user_interface/menu_bar/help.md"
       - "Scene Management": "reference/user_interface/scene_management.md"
@@ -135,7 +140,7 @@ nav:
         - "Entities": "reference/user_interface/render_controls/entities.md"
         - "Materials": "reference/user_interface/render_controls/materials.md"
         - "Postprocessing": "reference/user_interface/render_controls/postprocessing.md"
-        - "Textures & Resource Packs (2.5.0 Snapshot Controls)": "reference/user_interface/render_controls/textures_and_resource_packs.md"
+        - "Textures & Resource Packs": "reference/user_interface/render_controls/textures_and_resource_packs.md"
         - "Advanced": "reference/user_interface/render_controls/advanced.md"
         - "Help": "reference/user_interface/render_controls/help.md"
         - "Render Progress Controls": "reference/user_interface/render_controls/render_progress_controls.md"
@@ -165,3 +170,6 @@ extra:
     - name: Chunky GitHub
       icon: fontawesome/brands/github
       link: https://github.com/chunky-dev
+  chunky: !ENV [CHUNKY_VERSION, 2_05_00]
+  version:
+    provider: mike

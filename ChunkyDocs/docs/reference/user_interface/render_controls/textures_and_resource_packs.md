@@ -1,3 +1,7 @@
+---
+min_chunky_version: 2_05_00
+---
+
 # Textures & Resource Packs
 
 ---

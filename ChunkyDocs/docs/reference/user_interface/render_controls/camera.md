@@ -57,7 +57,9 @@ The `Camera` tab, which is the fifth tab in the left control panel, contains con
 
     - `Lens shift`: Each input field on this row changes the horizontal lens shift or the vertical lens shift of the selected camera, respectively. <a href="https://jackjt8.github.io/ChunkyGuide/docs/advanced_techniques/lenseshift.html" target="_blank">Lens shift</a> is relative to the canvas height.
 
-- `Camera to player`: Moves the selected camera to the location of one of the players, if loaded. "Which one? No clue."[^1]
+{% if extra.chunky < 2_05_00 %}
+- `Camera to player`: Moves the selected camera to the location of one of the players, if loaded. "Which one? No clue."
+{% endif %}
 
 - `Center camera`: Moves the selected camera to the center of the loaded chunks.
 
@@ -207,7 +209,5 @@ The `Camera` tab was improved in [Chunky 2.5.0 snapshots](../../../../getting_st
     </a>
   </div>
 </div>
-
-[^1]: This control is out-of-date, and was removed in the 2.5.0 snapshots. Its replacement is the `Camera to entity` control in the [`Entities`](../entities#controls) tab.
 
 --8<-- "includes/abbreviations.md"

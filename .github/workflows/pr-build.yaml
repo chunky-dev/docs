@@ -30,21 +30,20 @@ jobs:
       - name: Build docs
         run: |
           source ./venv/bin/activate
-          cd ChunkyDocs
-          python -m mkdocs build
+          ./build.sh
       
       - name: Replace gallery images
         run: |
-          sed -i -e "s/..\/img\/gallery\//https:\/\/raw.githubusercontent.com\/chunky-dev\/docs\/$GITHUB_SHA\/ChunkyDocs\/docs\/img\/gallery\//g" ./ChunkyDocs/site/gallery/index.html
-          rm -rf ./ChunkyDocs/site/img/gallery/
+          sed -i -e "s/..\/img\/gallery\//https:\/\/raw.githubusercontent.com\/chunky-dev\/docs\/$GITHUB_SHA\/ChunkyDocs\/docs\/img\/gallery\//g" ./docs/gallery/index.html
+          rm -rf ./docs/img/gallery/
 
       - name: Save PR Number
-        run: echo ${{ github.event.number }} > ./ChunkyDocs/site/pr-number.txt
+        run: echo ${{ github.event.number }} > ./docs/pr-number.txt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         if: success()
         with:
           name: site
-          path: ./ChunkyDocs/site/
+          path: ./docs/
           if-no-files-found: error
