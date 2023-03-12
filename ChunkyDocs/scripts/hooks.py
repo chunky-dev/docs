@@ -16,7 +16,12 @@ def on_post_page(output, page, config):
 # Remove pages from the navigation, too
 def on_nav(nav, config, files):
     items = get_included_items(nav, config)
-    return MkDocsNavigation(items, get_by_type(items, Page))
+    pages = get_by_type(items, Page)
+
+    # re-calculate footer links so that we do not link to excluded pages (see #86)
+    add_previous_and_next_links(pages)
+
+    return MkDocsNavigation(items, pages)
 
 def get_included_items(items, config):
     ret = []
@@ -50,3 +55,10 @@ def get_by_type(nav, T):
         if item.children:
             ret.extend(get_by_type(item.children, T))
     return ret
+
+# Copy of mkdocs.structure.nav._add_previous_and_next_links
+def add_previous_and_next_links(pages) -> None:
+    bookended = [None, *pages, None]
+    zipped = zip(bookended[:-2], pages, bookended[2:])
+    for page0, page1, page2 in zipped:
+        page1.previous_page, page1.next_page = page0, page2
