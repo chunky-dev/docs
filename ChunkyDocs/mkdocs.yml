@@ -38,8 +38,11 @@ theme:
 plugins:
     - redirects:
         redirect_maps:
+            # gallery
             'gallery/index.md': 'https://chunky-dev.github.io/gallery/'
             'gallery/old_gallery.md': 'https://chunky-dev.github.io/gallery/old_gallery/'
+
+            # chunky.llbit.se
             'news.md': 'index.md'
             'download.md': 'getting_started/installing_chunky.md'
             'chunky2.md': 'index.md'
@@ -71,6 +74,15 @@ plugins:
             'minecraft_compatibility.md': 'support/minecraft_compatibility.md'
             'plugin_api.md': 'plugins/plugin_development.md'
             'skymaps.md': 'user_guides/skymaps.md'
+
+            # Previous versions of the docs
+            'reference/introduction/path_tracing.md': 'user_guides/introduction/path_tracing.md'
+            'reference/introduction/samples_and_noise.md': 'user_guides/introduction/samples_and_noise.md'
+            'reference/introduction/next_event_estimation.md': 'user_guides/introduction/next_event_estimation.md'
+            'reference/introduction/material_properties.md': 'user_guides/introduction/material_properties.md'
+            'reference/other_topics/denoising.md': 'user_guides/denoising.md'
+            'reference/other_topics/skymaps.md': 'user_guides/skymaps.md'
+            'reference/other_topics/styling_chunky.md': 'user_guides/styling_chunky.md'
 
     - search:
         lang: en
