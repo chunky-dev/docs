@@ -24,6 +24,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+    - navigation.footer
     - navigation.instant
     - navigation.tabs
     - navigation.expand
@@ -37,37 +38,52 @@ theme:
 plugins:
     - redirects:
         redirect_maps:
-            'getting_started/index.md': 'getting_started/installing_chunky.md'
-            'getting_started/installing.md': 'getting_started/installing_chunky.md'
-            'getting_started/configuration.md': 'getting_started/configuring_chunky_launcher.md'
-            'rendering/index.md': 'reference/introduction/path_tracing.md'
-            'rendering/denoising.md': 'reference/other_topics/denoising.md'
-            'user_interface/index.md': 'reference/user_interface/chunky_gui.md'
-            'user_interface/render/scene.md': 'reference/user_interface/render_controls/scene.md'
-            'user_interface/render/lighting.md': 'reference/user_interface/render_controls/lighting.md'
-            'user_interface/render/sky_and_fog.md': 'reference/user_interface/render_controls/sky_and_fog.md'
-            'user_interface/render/water.md': 'reference/user_interface/render_controls/water.md'
-            'user_interface/render/camera.md': 'reference/user_interface/render_controls/camera.md'
-            'user_interface/render/entities.md': 'reference/user_interface/render_controls/entities.md'
-            'user_interface/render/materials.md': 'reference/user_interface/render_controls/materials.md'
-            'user_interface/render/postprocessing.md': 'reference/user_interface/render_controls/postprocessing.md'
-            'user_interface/render/advanced.md': 'reference/user_interface/render_controls/advanced.md'
-            'user_interface/render/help.md': 'reference/user_interface/render_controls/help.md'
-            'user_interface/render/render_preview.md': 'reference/user_interface/render_preview.md'
-            'user_interface/headless.md': 'reference/user_interface/headless.md'
-            'rendering/scene_format.md': 'reference/technical/scene_format.md'
-            'rendering/skymaps.md': 'reference/other_topics/skymaps.md'
-            'user_interface/style.md': 'reference/other_topics/styling_chunky.md'
-            'plugins/index.md': 'plugins/chunky_plugins.md'
-            'plugins/plugins.md': 'plugins/plugin_list.md'
-            'plugins/development.md': 'plugins/plugin_development.md'
-            'faq/index.md': 'support/faq.md'
-            'faq/troubleshooting.md': 'support/troubleshooting.md'
-            'faq/minecraft_compatibility.md': 'support/minecraft_compatibility.md'
-            'user_interface/chunky_ui.md': 'reference/user_interface/chunky_gui.md'
-            'user_interface/render.md': 'reference/user_interface/render_controls/index.md'
+            # gallery
             'gallery/index.md': 'https://chunky-dev.github.io/gallery/'
             'gallery/old_gallery.md': 'https://chunky-dev.github.io/gallery/old_gallery/'
+
+            # chunky.llbit.se
+            'news.md': 'index.md'
+            'download.md': 'getting_started/installing_chunky.md'
+            'chunky2.md': 'index.md'
+            'faq.md': 'support/faq.md'
+            'troubleshooting.md': 'support/troubleshooting.md'
+            'getting_started.md': 'getting_started/installing_chunky.md'
+            'your_first_render.md': 'getting_started/your_first_render.md'
+            'install.md': 'getting_started/installing_chunky.md'
+            'tips.md': 'reference/user_guides/samples_and_noise.md'
+            'user_interface.md': 'reference/user_interface/chunky/chunky_gui.md'
+            '2d_map.md': 'reference/user_interface/chunky/map.md'
+            '2d_map_map-view.md': 'reference/user_interface/chunky/right_panel_controls/map_view.md'
+            '2d_map_chunks.md': 'reference/user_interface/chunky/right_panel_controls/chunks.md'
+            '2d_map_view_highlight.md': 'reference/user_interface/chunky/right_panel_controls/map_view.md'
+            '2d_map_view_options.md': 'reference/user_interface/chunky/right_panel_controls/options.md'
+            '2d_map_3d-render.md': 'reference/user_interface/chunky/render_controls/scene.md'
+            'render_controls.md': 'reference/user_interface/chunky/render_controls/scene.md'
+            'render_controls_general.md': 'reference/user_interface/chunky/render_controls/scene.md'
+            'render_controls_lighting.md': 'reference/user_interface/chunky/render_controls/lighting.md'
+            'render_controls_sky.md': 'reference/user_interface/chunky/render_controls/sky_and_fog.md'
+            'render_controls_camera.md': 'reference/user_interface/chunky/render_controls/camera.md'
+            'render_controls_post-processing.md': 'reference/user_interface/chunky/render_controls/postprocessing.md'
+            'render_controls_advanced.md': 'reference/user_interface/chunky/render_controls/advanced.md'
+            'render_controls_global.md': 'reference/user_interface/chunky/render_controls/render_progress_controls.md'
+            'render_preview.md': 'reference/user_interface/chunky/render_preview.md'
+            'path_tracing.md': 'reference/user_guides/path_tracing.md'
+            'headless.md': 'reference/user_interface/chunky_launcher/headless.md'
+            'scene_format.md': 'reference/technical/scene_format.md'
+            'minecraft_compatibility.md': 'support/minecraft_compatibility.md'
+            'plugin_api.md': 'plugins/plugin_development.md'
+            'skymaps.md': 'user_guides/skymaps.md'
+
+            # Previous versions of the docs
+            'reference/introduction/path_tracing.md': 'user_guides/introduction/path_tracing.md'
+            'reference/introduction/samples_and_noise.md': 'user_guides/introduction/samples_and_noise.md'
+            'reference/introduction/next_event_estimation.md': 'user_guides/introduction/next_event_estimation.md'
+            'reference/introduction/material_properties.md': 'user_guides/introduction/material_properties.md'
+            'reference/other_topics/denoising.md': 'user_guides/denoising.md'
+            'reference/other_topics/skymaps.md': 'user_guides/skymaps.md'
+            'reference/other_topics/styling_chunky.md': 'user_guides/styling_chunky.md'
+
     - search:
         lang: en
     - macros
@@ -106,49 +122,52 @@ nav:
   - "Home": "index.md"
   - "Getting Started":
     - "Installing Chunky": "getting_started/installing_chunky.md"
-    - "Configuring Chunky Launcher": "getting_started/configuring_chunky_launcher.md"
+    - "Configuring the Chunky Launcher": "getting_started/configuring_chunky_launcher.md"
     - "Your First Render": "getting_started/your_first_render.md"
   - "Support":
     - "FAQ": "support/faq.md"
     - "Troubleshooting": "support/troubleshooting.md"
     - "Minecraft Compatibility": "support/minecraft_compatibility.md"
-  - "Reference":
+  - "User Guides":
     - "Introduction":
-      - "Path Tracing": "reference/introduction/path_tracing.md"
-      - "Samples and Noise": "reference/introduction/samples_and_noise.md"
-      - "Next Event Estimation": "reference/introduction/next_event_estimation.md"
-      - "Material Properties": "reference/introduction/material_properties.md"
+      - "Path Tracing": "user_guides/introduction/path_tracing.md"
+      - "Samples and Noise": "user_guides/introduction/samples_and_noise.md"
+      - "Next Event Estimation": "user_guides/introduction/next_event_estimation.md"
+      - "Material Properties": "user_guides/introduction/material_properties.md"
+    - "Denoising": "user_guides/denoising.md"
+    - "Skymaps": "user_guides/skymaps.md"
+    - "Styling Chunky": "user_guides/styling_chunky.md"
+  - "Reference":
     - "User Interface":
-      - "Chunky GUI": "reference/user_interface/chunky_gui.md"
-      - "Menu Bar":
-        - "File (Scene Management)": "reference/user_interface/menu_bar/file.md"
-        - "Help (Chunky Resources)": "reference/user_interface/menu_bar/help.md"
-      - "Scene Management": "reference/user_interface/scene_management.md"
-      - "Map": "reference/user_interface/map.md"
-      - "Render Preview": "reference/user_interface/render_preview.md"
-      - "Right Panel Controls":
-        - "Map View": "reference/user_interface/right_panel_controls/map_view.md"
-        - "Chunks": "reference/user_interface/right_panel_controls/chunks.md"
-        - "Options": "reference/user_interface/right_panel_controls/options.md"
-        - "About": "reference/user_interface/right_panel_controls/about.md"
-      - "Render Controls (Left Panel)":
-        - "Scene": "reference/user_interface/render_controls/scene.md"
-        - "Lighting": "reference/user_interface/render_controls/lighting.md"
-        - "Sky & Fog": "reference/user_interface/render_controls/sky_and_fog.md"
-        - "Water": "reference/user_interface/render_controls/water.md"
-        - "Camera": "reference/user_interface/render_controls/camera.md"
-        - "Entities": "reference/user_interface/render_controls/entities.md"
-        - "Materials": "reference/user_interface/render_controls/materials.md"
-        - "Postprocessing": "reference/user_interface/render_controls/postprocessing.md"
-        - "Textures & Resource Packs": "reference/user_interface/render_controls/textures_and_resource_packs.md"
-        - "Advanced": "reference/user_interface/render_controls/advanced.md"
-        - "Help": "reference/user_interface/render_controls/help.md"
-        - "Render Progress Controls": "reference/user_interface/render_controls/render_progress_controls.md"
-      - "Headless (Command Line)": "reference/user_interface/headless.md"
-    - "Other Topics":
-      - "Denoising": "reference/other_topics/denoising.md"
-      - "Skymaps": "reference/other_topics/skymaps.md"
-      - "Styling Chunky": "reference/other_topics/styling_chunky.md"
+      - "Chunky Launcher":
+        - "Chunky Launcher GUI": "reference/user_interface/chunky_launcher/chunky_launcher_gui.md"
+        - "Headless (Command Line)": "reference/user_interface/chunky_launcher/headless.md"
+      - "Chunky":
+        - "Chunky GUI": "reference/user_interface/chunky/chunky_gui.md"
+        - "Menu Bar":
+          - "File (Scene Management)": "reference/user_interface/chunky/menu_bar/file.md"
+          - "Help (Chunky Resources)": "reference/user_interface/chunky/menu_bar/help.md"
+        - "Scene Management": "reference/user_interface/chunky/scene_management.md"
+        - "Map": "reference/user_interface/chunky/map.md"
+        - "Render Preview": "reference/user_interface/chunky/render_preview.md"
+        - "Right Panel Controls":
+          - "Map View": "reference/user_interface/chunky/right_panel_controls/map_view.md"
+          - "Chunks": "reference/user_interface/chunky/right_panel_controls/chunks.md"
+          - "Options": "reference/user_interface/chunky/right_panel_controls/options.md"
+          - "About": "reference/user_interface/chunky/right_panel_controls/about.md"
+        - "Render Controls (Left Panel)":
+          - "Scene": "reference/user_interface/chunky/render_controls/scene.md"
+          - "Lighting": "reference/user_interface/chunky/render_controls/lighting.md"
+          - "Sky & Fog": "reference/user_interface/chunky/render_controls/sky_and_fog.md"
+          - "Water": "reference/user_interface/chunky/render_controls/water.md"
+          - "Camera": "reference/user_interface/chunky/render_controls/camera.md"
+          - "Entities": "reference/user_interface/chunky/render_controls/entities.md"
+          - "Materials": "reference/user_interface/chunky/render_controls/materials.md"
+          - "Postprocessing": "reference/user_interface/chunky/render_controls/postprocessing.md"
+          - "Textures & Resource Packs": "reference/user_interface/chunky/render_controls/textures_and_resource_packs.md"
+          - "Advanced": "reference/user_interface/chunky/render_controls/advanced.md"
+          - "Help": "reference/user_interface/chunky/render_controls/help.md"
+          - "Render Progress Controls": "reference/user_interface/chunky/render_controls/render_progress_controls.md"
     - "Technical":
       - "Scene Format": "reference/technical/scene_format.md"
   - "Plugins":
@@ -156,8 +175,6 @@ nav:
     - "Plugin List": "plugins/plugin_list.md"
     - "Plugin Development": "plugins/plugin_development.md"
   - "Gallery": "https://chunky-dev.github.io/gallery/"
-
-
 
 extra:
   social:

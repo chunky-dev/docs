@@ -1,10 +1,8 @@
 # Scene Format
 
----
-
 ## Dump
 
-The `.dump` file stores a header containing width, height, spp, render time, and the actual dump which is three "doubles" per pixel. Doubles are Double-precision floating-point format (sometimes called FP64 or float64).
+The ".dump" file stores a header containing width, height, SPP, render time; and the actual dump, which is three "doubles" per pixel. Doubles are double-precision floating-point format (sometimes called FP64 or float64).
 
 
 ### Old Dump Format
@@ -15,28 +13,26 @@ GZIP stream of header + dump stored in column major order
 ### New Dump Format
 
 
-`0x44 0x55 0x4D 0x50 <1 as int> <header> <dump compressed with fpc magic> `
+`0x44 0x55 0x4D 0x50 <1 as int> <header> <dump compressed with fpc magic>`
 
 
 #### Header
 
 `<width int> <height int> <spp int> <render time in millis long>`
 
----
-
 ## Octree
 
-The octree file is GZIP compressed and contains a version integer, block palette, world octree, water octree, grass tinting, foliage tinting, and water tinting data. The first 4 bytes are a version number and currently must be between v3 and v6. v3-v4 octrees are currently converted to v5 for loading as data nodes (only used for water and lava) were replaced by new per-variant types.
+The octree file is GZIP-compressed and contains a version integer, block palette, world octree, water octree, grass tinting, foliage tinting, and water tinting data. The first 4 bytes are a version number and currently must be between v3 and v6. v3-v4 octrees are currently converted to v5 for loading, as data nodes (only used for water and lava) were replaced by new per-variant types.
 
-There are a few different Octrees that are available within Chunky being NODE (legacy), PACKED (default), and BIGPACKED all which have different pros and cons. Available Octrees can be expanded via [Plugins](../../../plugins/chunky_plugins) such as aTom3333's [Octree plugin](../../../plugins/plugin_list#octree-plugin).
+There are a few different octrees that are available within Chunky. These are NODE (legacy), PACKED (default), and BIGPACKED, all which have different pros and cons. Available octrees can be expanded via [plugins](../../../plugins/chunky_plugins) such as aTom3333's [Octree plugin](../../../plugins/plugin_list#octree-plugin).
 
-There are a few different BVH build methods available within Chunky being SAH_MA (default), SAH, and MIDPOINT all which have different pros and cons. Available BVHs can be expanded via [Plugins](../../../plugins/chunky_plugins) such as aTom3333's [BVH plugin](../../../plugins/plugin_list#bvh-plugin).
+There are a few different BVH build methods available within Chunky. Thses are SAH_MA (default), SAH, and MIDPOINT, all which have different pros and cons. Available BVHs can be expanded via [plugins](../../../plugins/chunky_plugins) such as aTom3333's [BVH plugin](../../../plugins/plugin_list#bvh-plugin).
 
 ### Octree Format
 
 `<version int> <block palette data> <world octree data> <water octree data> <grass tinting data> <foliage tinting data> <water tinting data if version >= 4>`
 
-<a href="https://github.com/chunky-dev/chunky/blob/master/chunky/src/java/se/llbit/chunky/resources/OctreeFileFormat.java#L50" target="_blank">The section of code</a>.
+<a href="https://github.com/chunky-dev/chunky/blob/master/chunky/src/java/se/llbit/chunky/resources/OctreeFileFormat.java#L50" target="_blank">The section of code</a>
 
 
 #### Block Palette Data
@@ -59,11 +55,9 @@ Stores tint colors for grass, foliage, and water as WorldTexture.
 
 `<number of tiles (chunks)> for each tile: <chunk x coordinate int> <chunk y coordinate int> <chunk texture in x major order, rgb as floats in linear color space>`
 
----
-
 ## Emittergrid
 
-The .emittergrid is only generated if Emitter Sampling Strategy is set to One or All. Is also GZIP compressed.
+The ".emittergrid" is only generated if <samp>Emitter Sampling Strategy</samp> is set to <samp>ONE</samp> or <samp>All</samp>. Is also GZIP-compressed.
 
 * Version 0 - `<version as int> <grid size as int> <cell size as int> for each emitter position <positions as ints, -x, -y, -z corner, +0.5 to get center> for each grid <number of emitters in grid, index of emitters in positions array>`
 
@@ -71,13 +65,11 @@ The .emittergrid is only generated if Emitter Sampling Strategy is set to One or
 
 * Version 2 - `<x,y,z center float, radius as float> for emitter position`
 
----
-
 ## Scene Description Format (SDF)
 
 Most of the settings in Chunky scenes are stored in Scene Description files using a JSON-based file format. This page documents the SDF file format. The documentation is currently incomplete, and may lag behind the current Chunky version as new versions are released. Check the version history at the end of this page to see the latest updates made to the SDF documentation.
 
-SDF JSON files are stored in the scene directory and the filename is based on the scene name with `.json` appended. For example, the JSON file for a scene named `MyScene` would be `MyScene.json`.
+SDF JSON files are stored in the scene directory and the filename is based on the scene name with `.json` appended. For example, the JSON file for a scene named "MyScene" would be "MyScene.json".
 
 
 ### Structure
@@ -335,13 +327,11 @@ Note - XY Object is a XYZ Object just without the Z component.
 | se.llbit.chunky.entity.PlayerEntity   |             | true          | Whether to load player entities      |
 | other                                 |             | true          | Whether to load “other” entities     |
 
----
-
 ## Scripting
 
 A simple way to process scene files is by using a scripting language such as Python. For example, below is a Python script that generates individual scenes for each chunk in a square grid of chunks. The script uses an original scene as template for the new scenes.
 
-```
+```python
 import json
 import os.path
 original_scene = 'D:\Users\Jesper\.chunky\scenes\shore-sun.json'
@@ -360,8 +350,6 @@ for x in range(-10, 1):
 		with open(new_scene, 'w') as f:
 			json.dump(scene, f)
 ```
-
----
 
 ## Version History
 
@@ -390,7 +378,5 @@ for x in range(-10, 1):
 * **Version 9** (Chunky 1.4.4)
     * Changed entity pose format.
     * Added entity armor items.
-
----
 
 --8<-- "includes/abbreviations.md"

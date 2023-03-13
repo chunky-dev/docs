@@ -30,7 +30,7 @@ jobs:
       - name: Build docs
         run: |
           source ./venv/bin/activate
-          ./build.sh
+          bash ./build.sh
       
       - name: Replace gallery images
         run: |

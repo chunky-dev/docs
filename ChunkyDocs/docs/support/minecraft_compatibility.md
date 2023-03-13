@@ -1,14 +1,12 @@
 # Minecraft Compatibility
 
----
-
 Bedrock Edition worlds are currently not supported; however, they can be converted to Java Edition format by using <a href="https://chunker.app/" target="_blank">Chunker</a>, by Hive Games. Most entities are currently not rendered by Chunky, and some special blocks cannot be rendered either.
 
-Below is a list of the Minecraft versions currently supported by Chunky and everything that Chunky currently cannot render. For more detailed information about which features of Minecraft are not yet supported, check the <a href="https://github.com/chunky-dev/chunky/issues?q=is%3Aissue+is%3Aopen+label%3Aminecraft" target="_blank">issues with the <code>minecraft</code> label</a> on GitHub.
+Below is a list of the Minecraft versions currently supported by Chunky and everything that Chunky currently cannot render. For more detailed information about which features of Minecraft are not yet supported, check the <a href="https://github.com/chunky-dev/chunky/issues?q=is%3Aissue+is%3Aopen+label%3Aminecraft" target="_blank">issues with the "minecraft" label</a> on GitHub.
 
 | Feature                     | Stable (2.4.4) | Stable snapshot (2.4.x) | Snapshot (2.5.0)           | Related issues / pull requests  |
 | --------------------------- | -------------- | ----------------------- | -------------------------- | ------------------------------- |
-| Minecraft Java Versions     | 1.2.1 - 1.19.2 | 1.2.1 - 1.19.2          | 1.2.1 - 1.19.2             | #1308, #1309                    |
+| Minecraft Java Versions     | 1.2.1 - 1.19.3 | 1.2.1 - 1.19.3          | 1.2.1 - 1.20 (partial)     | #1308, #1309, #1548             |
 | Vertical biomes             | Not supported  | Not supported           | Supported (off by default) | #1225                           |
 | Mod blocks                  | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332          |
 | Custom block models         | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332          |
@@ -23,7 +21,5 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 | Particles                   | Not supported  | Not supported           | Not supported              | #41                             |
 | Bubble columns              | Not supported  | Not supported           | Not supported              | #518                            |
 | Campfire with items         | Not supported  | Not supported           | Not supported              |                                 |
-
----
 
 --8<-- "includes/abbreviations.md"

@@ -6,7 +6,7 @@ Read our [Code of Conduct](CODE_OF_CONDUCT.md) to keep our community approachabl
 
 In this guide, you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-When contributing to this repository, please consider discussing significant changes you wish to make via an issue or the <a href="https://discord.gg/4AgAUkCNUh" target="_blank">#docs</a> channel on our Discord server prior to making a change. Correcting spelling or grammar mistakes, or refining existing docs are not considered significant. A full rewrite of larger articles, adding new articles, new mkdoc plugins, etc. can be considered more significant changes.
+When contributing to this repository, please consider discussing significant changes you wish to make via an issue or the <a href="https://discord.gg/4AgAUkCNUh" target="_blank">#docs</a> channel on our Discord server prior to making a change. Correcting spelling or grammar mistakes, or refining existing docs are not considered significant. A full rewrite of larger articles, adding new articles, new mkdocs plugins, etc. can be considered more significant changes.
 
 ## New contributor guide
 
@@ -33,6 +33,8 @@ If you spot a problem with the docs, <a href="https://docs.github.com/en/github/
 Scan through our <a href="https://github.com/chunky-dev/docs/issues" target="_blank">existing issues</a> to find one that interests you. You can narrow down the search using `labels` as filters. As a general rule, we don’t assign issues to anyone. If you find an issue to work on, you are welcome to open a PR with a fix.
 
 ### Make Changes
+
+Be sure to read and understand the [style guide](STYLE_GUIDE.md) and the [versioning guide](VERSIONING_GUIDE.md) before making any changes.
 
 #### Make changes in the UI
 
@@ -68,9 +70,9 @@ Click on the pencil icon at the top right of any docs page to make small changes
 
 1. Change the working directory to `./ChunkyDocs`.
 
-2. Serve the site for development by using the command, `python3 -m mkdocs serve`.
+2. Serve the site for development by using either the command, `CHUNKY_VERSION=20404 python -m mkdocs serve`, or the command, `CHUNKY_VERSION=20500 python -m mkdocs serve`, depending on the version of Chunky for which you want to serve documentation.
 
-Alternatively, on Windows, you can run `serve.bat`.
+Alternatively, on Windows, you can run either "serve_stable.bat" or "serve_snapshot.bat", depending on the version of Chunky for which you want to build documentation.
 
 ### Commit your update
 

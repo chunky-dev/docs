@@ -1,16 +1,12 @@
 # Plugin Development
 
----
-
 A good way to start developing plugins is to take a look at the source code of existing plugins to dive into Chunky's plugin API. Interfaces and methods that are considered *stable for plugin use* are annotated with the `@PluginApi` annotation in Chunky's code.
 
 If you have questions about the API or need any help, the <a href="https://discord.gg/zD9WByHJpK" target="_blank">#tech</a> channel on our Discord server is a good place to start.
 
----
-
 ## Gradle configuration
 
-To build a plugin for Chunky, you need, well, Chunky. More precisely, `chunky-core` is needed as a dependency[^1] in order to build the plugin (and also provide you code completion and javadoc). We recommend using Gradle, and a simple `build.gradle` config for a plugin could look like this:
+To build a plugin for Chunky, you need, well, Chunky. More precisely, `chunky-core` is needed as a dependency[^1] in order to build the plugin (and also provide you code completion and javadoc). We recommend using Gradle, and a simple "build.gradle" config for a plugin could look like this:
 
 ```groovy
 apply plugin: 'java'
@@ -34,11 +30,9 @@ dependencies {
 
 ```
 
----
-
 ## Plugin manifest
 
-Similar to Bukkit plugins, Chunky plugins contain a manifest file that contains information about the plugin name, version, and, most importantly, which class of it Chunky should load. This file must be named `plugin.json` and be located at the root of the plugin JAR file.
+Similar to Bukkit plugins, Chunky plugins contain a manifest file that contains information about the plugin name, version, and, most importantly, which class of it Chunky should load. This file must be named "plugin.json" and be located at the root of the plugin JAR file.
 
 ```json
 {
@@ -54,8 +48,6 @@ Similar to Bukkit plugins, Chunky plugins contain a manifest file that contains 
 The fields should be pretty self-explanatory. The `targetVersion` is the version of Chunky that your plugin supports.[^2] If any other Chunky version is used, a warning will be printed to the console to notify the user, but Chunky will still attempt to load the plugin.
 
 The fully-qualified class name in `main` is the main class of your plugin, which must implement the `se.llbit.chunky.Plugin` interface.
-
----
 
 ## Plugin entrypoint
 
@@ -86,9 +78,7 @@ public class DemoPlugin implements Plugin {
 ```
 
 !!! info "About the main method"
-    The `main` method is added only for convenience. This way, you can launch Chunky with this plugin enabled directly from within your IDE, which is also useful for attaching a debugger. When loading a plugin from a jar, Chunky will create an instance of the plugin class and invoke the `attach` method. You should put all plugin initialization logic there.
-
----
+    The `main` method is added only for convenience. This way, you can launch Chunky with this plugin enabled directly from within your IDE, which is also useful for attaching a debugger. When loading a plugin from a JAR, Chunky will create an instance of the plugin class and invoke the `attach` method. You should put all plugin initialization logic there.
 
 ## Demo plugins
 
