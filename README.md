@@ -33,6 +33,14 @@ If you don't have Python installed, you can also use Docker.
 
 - Build a preview of the final site by using the command, `docker run --rm -it -v ${PWD}/ChunkyDocs:/docs squidfunk/mkdocs-material build`.
 
+## Versioning
+
+Read the [versioning guide](VERSIONING_GUIDE.md).
+
+## Style Guide
+
+Read the [style guide](STYLE_GUIDE.md).
+
 ## License
 
 Except where otherwise noted, the content of the Chunky Manual is available under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> license.

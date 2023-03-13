@@ -26,7 +26,7 @@
 
 ```html
 <div class="figure" id="figure-x">
-  <p class="figure">Figure x: Figure_title</p>
+  <p class="figure">Figure [number]: Figure_title</p>
   <div class="figureimgcontainer">
     <a href="image_url">
       <img class="figure" src="image_url" alt="Image alternate text">
