@@ -19,5 +19,8 @@ jobs:
       - name: Build and Deploy
         run: |
           source ./venv/bin/activate
-          cd ChunkyDocs
-          python -m mkdocs gh-deploy --force
+          ./build.sh
+      - name: Deploy to GH Pages
+        run: |
+          pip install ghp-import
+          ghp-import -p -f -o -m "Deployed $(git rev-parse --short HEAD)" ./docs/
