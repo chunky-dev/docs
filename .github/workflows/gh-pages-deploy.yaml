@@ -23,4 +23,6 @@ jobs:
       - name: Deploy to GH Pages
         run: |
           pip install ghp-import
-          ghp-import -p -f -o -m "Deployed $(git rev-parse --short HEAD)" ./docs/
+          ghp-import --push --force --no-history --no-jekyll \
+            --message="Deployed $(git rev-parse --short HEAD)" \
+            ./docs/
