@@ -28,10 +28,11 @@ jobs:
 
       - name: Get PR Number
         id: pr
-        run: echo "::set-output name=id::$(< ./site/docs/pr-number.txt)"
+        run: echo "::set-output name=id::$(< ./docs/pr-number.txt)"
 
       - name: Create Redirect
         run: |
+          mkdir site
           echo "<html><body><div>Redirecting... <a href=\"/docs\">Click Here</a></div><script>window.location = \"/docs\";</script></body></html>" > ./site/index.html
 
       - name: Setup NPM
@@ -44,7 +45,6 @@ jobs:
 
       - name: Deploy Surge
         run: |
-          mkdir site
           mv docs site/docs
           surge ./site/ https://chunky-dev-docs-pr-${{ steps.pr.outputs.id }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
