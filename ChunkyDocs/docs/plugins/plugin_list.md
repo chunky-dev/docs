@@ -61,6 +61,14 @@ This plugin adds a work-in-progress OpenCL ray tracer to Chunky. Not all blocks 
 
     Plugins which have not yet been updated to support the new `addRenderer` API feature (such as the <a href="https://github.com/llbit/Chunky-AOPlugin" target="_blank">Ambient Occlusion Plugin</a> and <a href="https://github.com/llbit/Chunky-DepthPlugin" target="_blank">Depth Buffer Plugin</a>) are still supported and are added with the name of <samp style="font-size: 1em;">PluginRenderer</samp>.
 
+## Debug Plugin
+
+<a href="https://github.com/ThatRedox" target="_blank">:material-account: ThatRedox</a> &middot; <a href="https://github.com/ThatRedox/chunky-debug" target="_blank">:material-github: GitHub Repository</a>
+
+!!! warning "WIP"
+    This plugin has no releases and must be built from source.
+	
+This plugin adds tools to help developers debug Chunky.
 
 ## Denoising Plugin
 
@@ -80,13 +88,13 @@ This plugin adds AI denoiser functionality using Intel Open Image Denoise. It is
 
 - Step 2: Download the <a href="https://www.openimagedenoise.org/downloads.html" target="_blank">Precompiled Intel Open Image Denoise Binary Packages</a> for your OS. (for example, on Windows, it would be "oidn-1.4.3.x64.vc14.windows.zip".)
 
-- Step 3: Extract the OIDN ZIP file to a location on your computer, such as "C:\Program Files\oidn-1.4.1.x64.vc14.windows".
+- Step 3: Extract the OIDN ZIP file to a location on your computer, such as "C:\Program Files\oidn-1.4.1.x64.vc14.windows". Alternatively, you may optionally only extract "oidnDenoise.exe", "OpenImageDenoise.dll", and "tbb12.dll" to a choisen directory. These are the minimum required files at the time of writing.
 
 - Step 4: Launch Chunky.
 
 - Step 5: Open the <samp>Denoiser</samp> tab in the left control panel.
 
-- Step 6: Click the <samp>...</samp> button, and then browse for "oidnDenoise.exe", which is located in the "bin" folder of the extracted OIDN ZIP file.
+- Step 6: Click the <samp>...</samp> button, and then browse for "oidnDenoise.exe", which is typically located in the "bin" folder of the extracted OIDN ZIP file.
 
 
 ## Discord Rich Presence
