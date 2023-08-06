@@ -88,7 +88,7 @@ This plugin adds AI denoiser functionality using Intel Open Image Denoise. It is
 
 - Step 2: Download the <a href="https://www.openimagedenoise.org/downloads.html" target="_blank">Precompiled Intel Open Image Denoise Binary Packages</a> for your OS. (for example, on Windows, it would be "oidn-1.4.3.x64.vc14.windows.zip".)
 
-- Step 3: Extract the OIDN ZIP file to a location on your computer, such as "C:\Program Files\oidn-1.4.3.x64.vc14.windows". Alternatively, you may optionally only extract "oidnDenoise.exe", "OpenImageDenoise.dll", and "tbb12.dll" to a choisen directory. These are the minimum required files at the time of writing.
+- Step 3: Extract the OIDN ZIP file to a safe location on your computer, such as "C:\Program Files\oidn-1.4.3.x64.vc14.windows". Alternatively, you may optionally extract only "oidnDenoise.exe", "OpenImageDenoise.dll", and "tbb12.dll" to that chosen safe location. These are the minimum required files at the time of writing.
 
 - Step 4: Launch Chunky.
 
