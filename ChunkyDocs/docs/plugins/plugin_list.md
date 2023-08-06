@@ -64,11 +64,12 @@ This plugin adds a work-in-progress OpenCL ray tracer to Chunky. Not all blocks 
 ## Debug Plugin
 
 <a href="https://github.com/ThatRedox" target="_blank">:material-account: ThatRedox</a> &middot; <a href="https://github.com/ThatRedox/chunky-debug" target="_blank">:material-github: GitHub Repository</a>
-
-!!! warning "WIP"
-    This plugin has no releases and must be built from source.
 	
 This plugin adds tools to help developers debug Chunky.
+
+**Installation**
+
+This plugin does not have any releases, and must be built from source. Follow the instructions on the <a href="https://github.com/ThatRedox/chunky-debug" target="_blank">GitHub repository</a>.
 
 ## Denoising Plugin
 
