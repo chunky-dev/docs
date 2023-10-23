@@ -2,7 +2,7 @@
 
 The Chunky Manual builds documentation for separate versions of Chunky from the same source code to avoid duplication of content.
 
-The target version can be specified using the `CHUNKY_VERSION` environment variable when building/serving the docs (defaults to `20500`). The version must be specified as a number equal to `major * 10000 + minor * 100 + patch` (2.4.4 is `20404` and 2.5.0 is `20500`), which allows comparing versions easily.
+The target version can be specified using the `CHUNKY_VERSION` environment variable when building/serving the docs (defaults to `20500`). The version must be specified as a number equal to `major * 10000 + minor * 100 + patch` (2.4.5 is `20405` and 2.5.0 is `20500`), which allows comparing versions easily.
 
 ## Page Versioning
 

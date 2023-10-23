@@ -21,9 +21,9 @@ This site uses <a href="https://www.mkdocs.org/" target="_blank">mkdocs</a>. Pyt
 
 - Step 4: If running Windows, simply run "serve_stable.bat" or "serve_snapshot.bat", depending on the version of Chunky for which you want to serve documentation. Otherwise, change the working directory to "./ChunkyDocs".
 
-- Step 5: Serve the site for development by using the either the command, `CHUNKY_VERSION=20404 python -m mkdocs serve`, or the command, `CHUNKY_VERSION=20500 python -m mkdocs serve`, depending on the version of Chunky for which you want to serve documentation.
+- Step 5: Serve the site for development by using the either the command, `CHUNKY_VERSION=20405 python -m mkdocs serve`, or the command, `CHUNKY_VERSION=20500 python -m mkdocs serve`, depending on the version of Chunky for which you want to serve documentation.
 
-- Step 6: Build a preview of the final site by using either the command, `CHUNKY_VERSION=20404 python -m mkdocs build`, or the command `CHUNKY_VERSION=20500 python -m mkdocs build`, depending on the version of Chunky for which you want to build documentation. On Windows, first run either the command, `set CHUNKY_VERSION=20404`, or the command, `set CHUNKY_VERSION=20500`, depending on the version of Chunky for which you want to build documentation. Then run the command, `python -m mkdocs serve`.
+- Step 6: Build a preview of the final site by using either the command, `CHUNKY_VERSION=20405 python -m mkdocs build`, or the command `CHUNKY_VERSION=20500 python -m mkdocs build`, depending on the version of Chunky for which you want to build documentation. On Windows, first run either the command, `set CHUNKY_VERSION=20405`, or the command, `set CHUNKY_VERSION=20500`, depending on the version of Chunky for which you want to build documentation. Then run the command, `python -m mkdocs serve`.
 
 ### With Docker
 
