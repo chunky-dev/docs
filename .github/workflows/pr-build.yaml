@@ -31,11 +31,6 @@ jobs:
         run: |
           source ./venv/bin/activate
           bash ./build.sh
-      
-      - name: Replace gallery images
-        run: |
-          sed -i -e "s/..\/img\/gallery\//https:\/\/raw.githubusercontent.com\/chunky-dev\/docs\/$GITHUB_SHA\/ChunkyDocs\/docs\/img\/gallery\//g" ./docs/gallery/index.html
-          rm -rf ./docs/img/gallery/
 
       - name: Save PR Number
         run: echo ${{ github.event.number }} > ./docs/pr-number.txt
