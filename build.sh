@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+
 rm -rf docs
 mkdir docs
 cd ChunkyDocs
