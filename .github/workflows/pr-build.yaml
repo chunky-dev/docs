@@ -31,6 +31,7 @@ jobs:
         run: |
           source ./venv/bin/activate
           ./build.sh
+          test -f ./docs/index.html # sanity check
 
       - name: Save PR Number
         run: echo ${{ github.event.number }} > ./docs/pr-number.txt

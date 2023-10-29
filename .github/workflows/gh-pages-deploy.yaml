@@ -20,6 +20,7 @@ jobs:
         run: |
           source ./venv/bin/activate
           ./build.sh
+          test -f ./docs/index.html # sanity check
       - name: Deploy to GH Pages
         run: |
           pip install ghp-import
