@@ -19,7 +19,7 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.12
 
       - name: Setup Python
         run: |
@@ -30,7 +30,8 @@ jobs:
       - name: Build docs
         run: |
           source ./venv/bin/activate
-          bash ./build.sh
+          ./build.sh
+          test -f ./docs/index.html # sanity check
 
       - name: Save PR Number
         run: echo ${{ github.event.number }} > ./docs/pr-number.txt

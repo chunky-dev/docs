@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.12
       - name: Setup Python
         run: |
           python -m venv ./venv --clear
@@ -20,6 +20,7 @@ jobs:
         run: |
           source ./venv/bin/activate
           ./build.sh
+          test -f ./docs/index.html # sanity check
       - name: Deploy to GH Pages
         run: |
           pip install ghp-import
