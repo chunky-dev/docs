@@ -92,7 +92,9 @@ Run Chunky with the `-help` argument to see a list of all available command-line
 
 - `-render <SCENE>`: Renders a scene in headless mode. You may also need to add the `-f` flag to force a scene to render.
 
+{% if extra.chunky >= 2_04_06 %}
 - `-reload-chunks`: Reloads the selected chunks before rendering the scene (used in conjunction with `-render`).
+{% endif %}
 
 - `-texture <FILE>`: Loads the specified texture pack.
 
