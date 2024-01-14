@@ -6,7 +6,7 @@ To install Chunky, download the Chunky Launcher (Universal JAR).[^1] This requir
 
 |                                   | CPU                             | Available RAM | Available Storage                                                                                                                                                                                            |
 | --------------------------------- | ------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Minimum requirements**[^2]      | CPU supported by Java & OpenJFX | 512 MB        | 270 MB for core files: <ul><li><strong>Java 17:</strong> 135 MB</li><li><strong>OpenJFX:</strong> 110 MB</li><li><strong>Chunky 2.4.5:</strong> 25 MB</li></ul>                                              |
+| **Minimum requirements**[^2]      | CPU supported by Java & OpenJFX | 512 MB        | 270 MB for core files: <ul><li><strong>Java 17:</strong> 135 MB</li><li><strong>OpenJFX:</strong> 110 MB</li><li><strong>Chunky 2.4.6:</strong> 25 MB</li></ul>                                              |
 | **Recommended requirements**      | 64-bit CPU                      | 8+ GB         | 270 MB for core files + <ul><li><strong>Multiple Chunky versions:</strong> 50+ MB</li><li><strong>Multiple Chunky scenes:</strong> 1+ GB</li></ul>                                                           |
 
 ## Downloads

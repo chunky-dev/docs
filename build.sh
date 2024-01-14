@@ -23,4 +23,4 @@ else
     sed -i 's/..\/versions.json/\/docs\/versions.json/g' ../docs/assets/javascripts/bundle*.min.js
 fi
 
-echo '[{ "version": "../docs", "title": "2.4.5", "aliases": ["stable"] }, { "version": "../docs/snapshot", "title": "2.5.0 (snapshot)", "aliases": ["snapshot"] }]' > ../docs/versions.json
+echo '[{ "version": "../docs", "title": "2.4.6", "aliases": ["stable"] }, { "version": "../docs/snapshot", "title": "2.5.0 (snapshot)", "aliases": ["snapshot"] }]' > ../docs/versions.json
