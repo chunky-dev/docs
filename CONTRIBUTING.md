@@ -70,7 +70,7 @@ Click on the pencil icon at the top right of any docs page to make small changes
 
 1. Change the working directory to `./ChunkyDocs`.
 
-2. Serve the site for development by using either the command, `CHUNKY_VERSION=20405 python -m mkdocs serve`, or the command, `CHUNKY_VERSION=20500 python -m mkdocs serve`, depending on the version of Chunky for which you want to serve documentation.
+2. Serve the site for development by using either the command, `CHUNKY_VERSION=20406 python -m mkdocs serve`, or the command, `CHUNKY_VERSION=20500 python -m mkdocs serve`, depending on the version of Chunky for which you want to serve documentation.
 
 Alternatively, on Windows, you can run either "serve_stable.bat" or "serve_snapshot.bat", depending on the version of Chunky for which you want to build documentation.
 

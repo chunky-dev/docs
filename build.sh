@@ -14,7 +14,7 @@ else
     sed -i 's/..\/versions.json/\/docs\/versions.json/g' ../docs/snapshot/assets/javascripts/bundle*.min.js
 fi
 
-CHUNKY_VERSION=20405 python -m mkdocs build
+CHUNKY_VERSION=20406 python -m mkdocs build
 cp -r site/* ../docs/
 # get the versions from /docs/versions.json instead of the hard-coded ../versions.json
 if [[ "$OSTYPE" == "darwin"* ]]; then
