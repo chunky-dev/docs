@@ -92,6 +92,9 @@ plugins:
         hooks:
           on_post_page: scripts.hooks:on_post_page
           on_nav: scripts.hooks:on_nav
+    - git-revision-date-localized:
+        enable_creation_date: true
+        type: timeago
 
 extra_css:
   - extra/extra.css
