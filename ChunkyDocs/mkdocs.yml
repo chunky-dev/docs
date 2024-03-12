@@ -31,6 +31,7 @@ theme:
     - navigation.sections
     - navigation.top
     - toc.integrate
+    - content.action.edit
   icon:
     repo: fontawesome/brands/github
   custom_dir: docs/theme_override/
