@@ -21,5 +21,6 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 | Particles                   | Not supported  | Not supported           | Not supported              | #41                            |
 | Bubble columns              | Not supported  | Not supported           | Not supported              | #518                           |
 | Campfire with items         | Not supported  | Not supported           | In development             | #1704                          |
+| Armor trims                 | Not supported  | Planned                 | Planned                    | #1708                          |
 
 --8<-- "includes/abbreviations.md"
