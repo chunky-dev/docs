@@ -49,7 +49,7 @@ This plugin adds an additional BVH to Chunky.
 
 ## ChunkyCL Plugin
 
-<a href="https://github.com/ThatRedox" target="_blank">:material-account: ThatRedox</a> &middot; <a href="https://github.com/ThatRedox/ChunkyClPlugin" target="_blank">:material-github: GitHub Repository</a> &middot; <a href="https://github.com/ThatRedox/ChunkyClPlugin#downloads" target="_blank">:material-tag: Releases</a>
+<a href="https://github.com/ThatRedox" target="_blank">:material-account: ThatRedox</a> &middot; <a href="https://github.com/chunky-dev/chunky-opencl" target="_blank">:material-github: GitHub Repository</a>
 
 This plugin adds a work-in-progress OpenCL ray tracer to Chunky. Not all blocks and features are supported.
 
