@@ -35,6 +35,6 @@ To maintain compatibility with old resource packs, there are flags to switch to 
 
 !!! info "Unsupported block models"
 
-If you're missing an old block model or encounter issues with a block when using a resource pack that is made for an older Minecraft version, please [create an issue](https://github.com/chunky-dev/chunky/issues/new/choose). We will add support for all block models that are present in release versions of Minecraft (ie. block models that only appeared in snapshots will not be supported).
+    If you're missing an old block model or encounter issues with a block when using a resource pack that is made for an older Minecraft version, please [create an issue](https://github.com/chunky-dev/chunky/issues/new/choose). We will add support for all block models that are present in release versions of Minecraft (ie. block models that only appeared in snapshots will not be supported).
 
 --8<-- "includes/abbreviations.md"
