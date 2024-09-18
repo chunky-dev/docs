@@ -23,18 +23,18 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 | Campfire with items         | Not supported  | Not supported           | In development             | #1704                          |
 | Armor trims                 | Not supported  | Planned                 | Planned                    | #1708                          |
 
---8<-- "includes/abbreviations.md"
-
 ## Block models
 
-Sometimes Minecraft changes the block models or textures (and texture mappings) of existing blocks. By default, Chunky uses the _latest_ block models of the Java Edition.
+Mojang sometimes changes the block models or textures (and texture mappings) of existing blocks. By default, Chunky uses the *latest* block models of Java Edition.
 
-To keep compatible with old resource packs, there are flags to switch to older block models. These flags can be specified in the launcher as _Java options_, eg. `-Dchunky.blockModels.cocoa=pre-1.19` to switch to the old cocoa plant model.
+To maintain compatibility with old resource packs, there are flags to switch to older block models. These flags can be specified in the Launcher as <samp>Java options</samp>, eg. `-Dchunky.blockModels.cocoa=pre-1.19` to switch to the old cocoa plant model.
 
-| Block | Flag                     | Values                       | Note                                                                                                                                     |
-| ----- | ------------------------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| cocoa | `chunky.blockModels.cocoa` | `1.19` (default), `pre-1.19` | Block model changed in 1.19, stage 2 cocoa plant is displayed incorrectly when the resource pack and block model don't match (see #1761) |
+| Block | Flag                       | Values                       | Note                                                                                                                                     |
+| ----- | -------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| cocoa | `chunky.blockModels.cocoa` | `1.19` (default), `pre-1.19` | Block model changed in 1.19; stage 2 cocoa plant is displayed incorrectly when the resource pack and block model don't match (see #1761) |
 
 !!! info "Unsupported block models"
 
-    If you're missing an old block model or encounter issues with a block when using a resource pack that is made for an older Minecraft version, please [create an issue](https://github.com/chunky-dev/chunky/issues/new/choose). We will add support for all block models that are present in release versions of Minecraft (ie. block models that only appeared in snapshots will not be supported).
+If you're missing an old block model or encounter issues with a block when using a resource pack that is made for an older Minecraft version, please [create an issue](https://github.com/chunky-dev/chunky/issues/new/choose). We will add support for all block models that are present in release versions of Minecraft (ie. block models that only appeared in snapshots will not be supported).
+
+--8<-- "includes/abbreviations.md"
