@@ -15,9 +15,9 @@ jobs:
 
     steps:
       - name: Setup NPM
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: 8
+          node-version: 20
 
       - name: Install Surge
         run: npm install -g surge
@@ -27,7 +27,7 @@ jobs:
           surge teardown https://chunky-dev-docs-pr-${{ github.event.pull_request.number }}.surge.sh --token ${{ secrets.SURGE_TOKEN }} || true
 
       - name: Update Comment
-        uses: actions-cool/maintain-one-comment@v1.2.1
+        uses: actions-cool/maintain-one-comment@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
