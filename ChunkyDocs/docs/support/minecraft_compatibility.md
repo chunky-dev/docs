@@ -22,7 +22,7 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 | Bubble columns              | Not supported  | Not supported           | Not supported              | #518                           |
 | Campfire with items         | Not supported  | Not supported           | In development             | #1704                          |
 | Armor trims                 | Not supported  | Planned                 | Planned                    | #1708                          |
-| New redstone torch (1.21.2) | Not supported  | Not supported           | In development             | #1788                          |
+| New redstone torch (1.21.2) | Not supported  | Not supported           | Supported                  |                                |
 
 {% if extra.chunky >= 2_05_00 %}
 ## Block models
