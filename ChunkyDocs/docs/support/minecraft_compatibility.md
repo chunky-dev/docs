@@ -6,7 +6,7 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 
 | Feature                     | Stable (2.4.6) | Stable snapshot (2.4.x) | Snapshot (2.5.0)           | Related issues / pull requests |
 | --------------------------- | -------------- | ----------------------- | -------------------------- | ------------------------------ |
-| Minecraft Java Versions     | 1.2.1 - 1.20.4 | 1.2.1 - 1.20.4          | 1.2.1 - 1.21.4             | #1308, #1309                   |
+| Minecraft Java Versions     | 1.2.1 - 1.20.4 | 1.2.1 - 1.20.4          | 1.2.1 - 25w05a             | #1308, #1309, #1811            |
 | Vertical biomes             | Not supported  | Not supported           | Supported (off by default) | #1225                          |
 | Mod blocks                  | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332         |
 | Custom block models         | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332         |
@@ -25,6 +25,7 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 | New redstone torch (1.21.2) | Not supported  | Not supported           | Supported                  |                                |
 
 {% if extra.chunky >= 2_05_00 %}
+
 ## Block models
 
 Mojang sometimes changes the block models or textures (and texture mappings) of existing blocks. By default, Chunky uses the _latest_ block models of Java Edition.
