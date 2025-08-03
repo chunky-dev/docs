@@ -13,7 +13,7 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 | PBR textures                | Not supported  | Not supported           | Planned                    | #751, #1276                    |
 | (Glow) Item frames          | Not supported  | Not supported           | Not Supported              | #790, #789 ,#1705              |
 | Held item rendering         | Not supported  | Not supported           | Not supported              | #669, #595, #1437, #1705       |
-| Mobs (animals and monsters) | Not supported  | Not supported           | Not supported              | #41                            |
+| Mobs (animals and monsters) | Not supported  | Not supported           | Partially supported        | #41                            |
 | Ender crystals              | Not supported  | Not supported           | Not supported              | #41                            |
 | Boats                       | Not supported  | Not supported           | Not supported              |                                |
 | Minecarts                   | Not supported  | Not supported           | Not supported              |                                |
