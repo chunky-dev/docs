@@ -6,14 +6,14 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 
 | Feature                     | Stable (2.4.6) | Stable snapshot (2.4.x) | Snapshot (2.5.0)           | Related issues / pull requests |
 | --------------------------- | -------------- | ----------------------- | -------------------------- | ------------------------------ |
-| Minecraft Java Versions     | 1.2.1 - 1.20.4 | 1.2.1 - 1.20.4          | 1.2.1 - 25w31a             | #1308, #1309, #1811            |
+| Minecraft Java Versions     | 1.2.1 - 1.20.4 | 1.2.1 - 1.20.4          | 1.2.1 - 26.1               | #1308, #1309, #1811            |
 | Vertical biomes             | Not supported  | Not supported           | Supported (off by default) | #1225                          |
 | Mod blocks                  | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332         |
 | Custom block models         | Not supported  | Not supported           | Planned                    | #88, #426, #266, #1332         |
 | PBR textures                | Not supported  | Not supported           | Planned                    | #751, #1276                    |
 | (Glow) Item frames          | Not supported  | Not supported           | Not Supported              | #790, #789 ,#1705              |
 | Held item rendering         | Not supported  | Not supported           | Not supported              | #669, #595, #1437, #1705       |
-| Mobs (animals and monsters) | Not supported  | Not supported           | Partially supported        | #41                            |
+| Mobs (animals and monsters) | Not supported  | Not supported           | Partially supported        | #41, #1864                     |
 | Ender crystals              | Not supported  | Not supported           | Not supported              | #41                            |
 | Boats                       | Not supported  | Not supported           | Not supported              |                                |
 | Minecarts                   | Not supported  | Not supported           | Not supported              |                                |
@@ -23,7 +23,7 @@ Below is a list of the Minecraft versions currently supported by Chunky and ever
 | Campfire with items         | Not supported  | Not supported           | In development             | #1704                          |
 | Armor trims                 | Not supported  | Not supported           | Planned                    | #1708                          |
 | New redstone torch (1.21.2) | Not supported  | Not supported           | Supported                  |                                |
-| Copper golem statue         | Not supported  | Not supported           | Planned                    | #1815                          |
+| Copper golem statue         | Not supported  | Not supported           | Supported                  |                                |
 
 {% if extra.chunky >= 2_05_00 %}
 
