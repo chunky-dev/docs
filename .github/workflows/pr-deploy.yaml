@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Download Artifact
-        uses: dawidd6/action-download-artifact@v4
+        uses: dawidd6/action-download-artifact@v21
         with:
           workflow: ${{ github.event.workflow_run.workflow_id }}
           name: site
@@ -36,9 +36,9 @@ jobs:
           echo "<html><body><div>Redirecting... <a href=\"/docs\">Click Here</a></div><script>window.location = \"/docs\";</script></body></html>" > ./site/index.html
 
       - name: Setup NPM
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install Surge
         run: npm install -g surge
